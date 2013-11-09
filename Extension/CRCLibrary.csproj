@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5618AB0B-8C59-4AAD-83B3-98A0C4107DAB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRC</RootNamespace>
+    <AssemblyName>CRCLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\KeyedCollection.cs" />
+    <Compile Include="Collections\SafeQueue.cs" />
+    <Compile Include="Collections\SortedSplitList.cs" />
+    <Compile Include="Collections\StringCollection.cs" />
+    <Compile Include="DebuggerViews\Fcore_StringCollectionView.cs" />
+    <Compile Include="Extension\ByteExtension.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Extension\ColorExtensions.cs" />
+    <Compile Include="Extension\DictionaryExtension.cs" />
+    <Compile Include="Extension\ExceptionExtension.cs" />
+    <Compile Include="Extension\InvokeExtension.cs" />
+    <Compile Include="Extension\StringFomatExtension.cs" />
+    <Compile Include="Files\INIHelper.cs" />
+    <Compile Include="Files\PathTool.cs" />
+    <Compile Include="Files\SerializationHelper.cs" />
+    <Compile Include="Files\XMLHelper.cs" />
+    <Compile Include="Net\IPUtil.cs" />
+    <Compile Include="Net\XORParity.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Extension\RandomExtension.cs" />
+    <Compile Include="Extension\StringRegexExtension.cs" />
+    <Compile Include="Extension\SwithCaseExtension.cs" />
+    <Compile Include="Util\CodeTime.cs" />
+    <Compile Include="Util\DateTimeUtil.cs" />
+    <Compile Include="Util\DictionaryColletion.cs" />
+    <Compile Include="Util\EncodeUtil.cs" />
+    <Compile Include="Util\EncryptUtil.cs" />
+    <Compile Include="Util\String\ConvertCode.cs" />
+    <Compile Include="Util\Sytems\HotKeyUtil.cs" />
+    <Compile Include="Util\String\StringParser.cs" />
+    <Compile Include="Util\Sytems\OSVersionUtil.cs" />
+    <Compile Include="Util\String\RegenPattern.cs" />
+    <Compile Include="Util\ShortCutLnk.cs" />
+    <Compile Include="Util\Sytems\ShutDownComputer.cs" />
+    <Compile Include="Util\Sytems\SingleInstance.cs" />
+    <Compile Include="Util\Sytems\WindowsAutoRun.cs" />
+    <Compile Include="Util\ThreeDictionary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="开发日志.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Timer\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
