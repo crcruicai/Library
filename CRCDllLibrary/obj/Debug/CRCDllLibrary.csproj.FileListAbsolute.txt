@@ -10,3 +10,9 @@ D:\Documents\Visual Studio 2010\Projects\library\BigProject\CRC_Library\CRCDllLi
 D:\Documents\Visual Studio 2010\Projects\library\BigProject\CRC_Library\CRCDllLibrary\obj\Debug\ResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2010\Projects\library\BigProject\CRC_Library\CRCDllLibrary\obj\Debug\CRCDllLibrary.dll
 D:\Documents\Visual Studio 2010\Projects\library\BigProject\CRC_Library\CRCDllLibrary\obj\Debug\CRCDllLibrary.pdb
+D:\Documents\GitHub\Library\CRCDllLibrary\bin\Debug\CRCDllLibrary.dll
+D:\Documents\GitHub\Library\CRCDllLibrary\bin\Debug\CRCDllLibrary.pdb
+D:\Documents\GitHub\Library\CRCDllLibrary\bin\Debug\ChnCharInfo.dll
+D:\Documents\GitHub\Library\CRCDllLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\GitHub\Library\CRCDllLibrary\obj\Debug\CRCDllLibrary.dll
+D:\Documents\GitHub\Library\CRCDllLibrary\obj\Debug\CRCDllLibrary.pdb

@@ -42,13 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoDockManger.cs">
+    <Compile Include="Froms\AutoDockManger.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\ArtTextLabel.cs">
+    <Compile Include="Controls\Label\ArtTextLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\ChatGroupBox.cs">
+    <Compile Include="Controls\ListBox\ChatGroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\CheckCombox\AutoChangComboBox.cs">
@@ -57,72 +57,74 @@
     <Compile Include="Controls\ButtonEx.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\CaptureImage\CaptureImageTool.cs">
+    <Compile Include="Controls\Picture\CaptureImage\CaptureImageTool.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Controls\CaptureImage\CaptureImageTool.Designer.cs">
+    <Compile Include="Controls\Picture\CaptureImage\CaptureImageTool.Designer.cs">
       <DependentUpon>CaptureImageTool.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\CaptureImage\CaptureImageToolColorTable.cs" />
-    <Compile Include="Controls\CaptureImage\ColorLabel.cs">
+    <Compile Include="Controls\Picture\CaptureImage\CaptureImageToolColorTable.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\ColorLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\CaptureImage\ColorSelector.cs">
+    <Compile Include="Controls\Picture\CaptureImage\ColorSelector.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\CaptureImage\ColorSelector.Designer.cs">
+    <Compile Include="Controls\Picture\CaptureImage\ColorSelector.Designer.cs">
       <DependentUpon>ColorSelector.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\CaptureImage\DrawStyle.cs" />
-    <Compile Include="Controls\CaptureImage\DrawTextData.cs" />
-    <Compile Include="Controls\CaptureImage\DrawToolsControl.cs">
+    <Compile Include="Controls\Picture\CaptureImage\DrawStyle.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\DrawTextData.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\DrawToolsControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\CaptureImage\DrawToolsControl.designer.cs">
+    <Compile Include="Controls\Picture\CaptureImage\DrawToolsControl.designer.cs">
       <DependentUpon>DrawToolsControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\CaptureImage\DrawToolsDockStyle.cs" />
-    <Compile Include="Controls\CaptureImage\OperateManager.cs" />
-    <Compile Include="Controls\CaptureImage\OperateObject.cs" />
-    <Compile Include="Controls\CaptureImage\OperateType.cs" />
-    <Compile Include="Controls\CaptureImage\SizeGrip.cs" />
-    <Compile Include="Controls\CaptureImage\ToolStripRendererEx.cs">
+    <Compile Include="Controls\Picture\CaptureImage\DrawToolsDockStyle.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\OperateManager.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\OperateObject.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\OperateType.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\SizeGrip.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\ToolStripRendererEx.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Controls\ChatListBox\ChatListBox.cs">
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\ChatListBox\ChatListBox.Designer.cs">
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListBox.Designer.cs">
       <DependentUpon>ChatListBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\ChatListBox\ChatListEventArgs.cs" />
-    <Compile Include="Controls\ChatListBox\ChatListItem.cs" />
-    <Compile Include="Controls\ChatListBox\ChatListItemConverter.cs" />
-    <Compile Include="Controls\ChatListBox\ChatListItemIcon.cs" />
-    <Compile Include="Controls\ChatListBox\ChatListSubItem.cs" />
-    <Compile Include="Controls\ChatListBox\ChatListSubItemConverter.cs" />
-    <Compile Include="Controls\ChatListBox\ChatListVScroll.cs" />
-    <Compile Include="Controls\ChatListBox\GroupListBox.cs">
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListEventArgs.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListItem.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListItemConverter.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListItemIcon.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListSubItem.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListSubItemConverter.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListVScroll.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\GroupListBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\ChatListBox\TextGroupItem.cs" />
-    <Compile Include="Controls\ChatListBox\TextSubItem.cs" />
-    <Compile Include="Controls\GroupListbox.cs">
+    <Compile Include="Controls\ListBox\ChatListBox\TextGroupItem.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\TextSubItem.cs" />
+    <Compile Include="Controls\ListBox\GroupListbox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\ListViewEmbeddedControls.cs">
+    <Compile Include="Controls\ListView\ListViewEmbeddedControls.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\ListView\EditListView.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\PictureViewer.cs">
+    <Compile Include="Controls\Label\MultiLineLabel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\ReadOnlyRichTextBox.cs">
+    <Compile Include="Controls\Picture\PictureViewer.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\StringFormatExtension.cs" />
+    <Compile Include="Controls\TextBox\ReadOnlyRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Controls\TreeView\ChatNode.cs" />
     <Compile Include="Controls\CheckCombox\CheckComboBox.cs">
       <SubType>Component</SubType>
@@ -182,7 +184,7 @@
     <Compile Include="Controls\OverWrite\Enum\RoundStyle.cs" />
     <Compile Include="Controls\OverWrite\Render\SmoothingModeGraphics.cs" />
     <Compile Include="Controls\OverWrite\Render\TextRenderingHintGraphics.cs" />
-    <Compile Include="Controls\ImageGroupBox.cs">
+    <Compile Include="Controls\Picture\ImageGroupBox.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Controls\ListBox\MultiLineListBox.cs">
@@ -197,10 +199,10 @@
     <Compile Include="Controls\Panel\CheckBoxPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\AGauge.cs">
+    <Compile Include="Controls\信号\AGauge.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\AGauge.Designer.cs">
+    <Compile Include="Controls\信号\AGauge.Designer.cs">
       <DependentUpon>AGauge.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\Panel\ExpandablePanel.cs">
@@ -283,20 +285,19 @@
     <Content Include="开发日志.txt" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\API\" />
     <Folder Include="Controls\Edit\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Controls\CaptureImage\CaptureImageTool.resx">
+    <EmbeddedResource Include="Controls\Picture\CaptureImage\CaptureImageTool.resx">
       <DependentUpon>CaptureImageTool.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\CaptureImage\ColorSelector.resx">
+    <EmbeddedResource Include="Controls\Picture\CaptureImage\ColorSelector.resx">
       <DependentUpon>ColorSelector.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\CaptureImage\DrawToolsControl.resx">
+    <EmbeddedResource Include="Controls\Picture\CaptureImage\DrawToolsControl.resx">
       <DependentUpon>DrawToolsControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\ChatListBox\ChatListBox.resx">
+    <EmbeddedResource Include="Controls\ListBox\ChatListBox\ChatListBox.resx">
       <DependentUpon>ChatListBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\CheckCombox\PopupComboBox.resx">
