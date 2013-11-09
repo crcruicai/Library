@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41B65ED6-B259-4B14-BC03-9606239A4C1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UILibrary</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CheckComboBox\DataTableWrappers.cs" />
+    <Compile Include="CheckComboBox\FrmCheckComboBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckComboBox\FrmCheckComboBox.Designer.cs">
+      <DependentUpon>FrmCheckComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckComboBox\Statusses.cs" />
+    <Compile Include="FrmAGauge.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAGauge.Designer.cs">
+      <DependentUpon>FrmAGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAutoDockManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAutoDockManage.Designer.cs">
+      <DependentUpon>FrmAutoDockManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChatGroupBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChatGroupBox.Designer.cs">
+      <DependentUpon>FrmChatGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGroupBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGroupBox.Designer.cs">
+      <DependentUpon>FrmGroupBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListViewEmbeddedControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListViewEmbeddedControls.Designer.cs">
+      <DependentUpon>FrmListViewEmbeddedControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBox\FrmChatListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBox\FrmChatListBox.Designer.cs">
+      <DependentUpon>FrmChatListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCloue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCloue.Designer.cs">
+      <DependentUpon>FrmCloue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBox\FrmColorListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\FrmDbListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\FrmDbListView.Designer.cs">
+      <DependentUpon>FrmDbListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView\FrmEditListView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\FrmEditListView.Designer.cs">
+      <DependentUpon>FrmEditListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBox\FrmGroupListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBox\FrmGroupListBox.Designer.cs">
+      <DependentUpon>FrmGroupListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TreeView\FrmLayerTreeView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TreeView\FrmLayerTreeView.Designer.cs">
+      <DependentUpon>FrmLayerTreeView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPictureViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPictureViewer.Designer.cs">
+      <DependentUpon>FrmPictureViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReadOnlyRichTextBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReadOnlyRichTextBox.Designer.cs">
+      <DependentUpon>FrmReadOnlyRichTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBox\FrmMultiLineListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBox\FrmMultiLineListBox.Designer.cs">
+      <DependentUpon>FrmMultiLineListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListBox\FrmRadioListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBox\FrmRadioListBox.Designer.cs">
+      <DependentUpon>FrmRadioListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSlidingScale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSlidingScale.Designer.cs">
+      <DependentUpon>FrmSlidingScale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmInstruments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInstruments.Designer.cs">
+      <DependentUpon>FrmInstruments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CheckComboBox\FrmCheckComboBox.resx">
+      <DependentUpon>FrmCheckComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAGauge.resx">
+      <DependentUpon>FrmAGauge.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAutoDockManage.resx">
+      <DependentUpon>FrmAutoDockManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChatGroupBox.resx">
+      <DependentUpon>FrmChatGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGroupBox.resx">
+      <DependentUpon>FrmGroupBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListViewEmbeddedControls.resx">
+      <DependentUpon>FrmListViewEmbeddedControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBox\FrmChatListBox.resx">
+      <DependentUpon>FrmChatListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCloue.resx">
+      <DependentUpon>FrmCloue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\FrmDbListView.resx">
+      <DependentUpon>FrmDbListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\FrmEditListView.resx">
+      <DependentUpon>FrmEditListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBox\FrmGroupListBox.resx">
+      <DependentUpon>FrmGroupListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TreeView\FrmLayerTreeView.resx">
+      <DependentUpon>FrmLayerTreeView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPictureViewer.resx">
+      <DependentUpon>FrmPictureViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReadOnlyRichTextBox.resx">
+      <DependentUpon>FrmReadOnlyRichTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBox\FrmMultiLineListBox.resx">
+      <DependentUpon>FrmMultiLineListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBox\FrmRadioListBox.resx">
+      <DependentUpon>FrmRadioListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInstruments.resx">
+      <DependentUpon>FrmInstruments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\CRCUILibrary\CRCUILibrary.csproj">
+      <Project>{B463AC21-6B95-4CC0-A115-C4BCE4AB1416}</Project>
+      <Name>CRCUILibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Panel\" />
+    <Folder Include="ui\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

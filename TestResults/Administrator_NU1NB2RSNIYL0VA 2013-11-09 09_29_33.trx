@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="514b72c6-aac2-4150-86c7-7b7a70cdd770" name="Administrator@NU1NB2RSNIYL0VA 2013-11-09 09:29:33" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2013-11-09 09_29_33">
+      <DeploymentItem filename="D:\Documents\Visual Studio 2010\Projects\library\Extension\Extension\bin\Debug\CRCLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-11-09T09:29:33.4652233+08:00" queuing="2013-11-09T09:29:33.5102259+08:00" start="2013-11-09T09:29:33.5152262+08:00" finish="2013-11-09T09:29:33.7562400+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="12" executed="12" passed="9" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestRetriveExistingItem" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="68468ee5-c95d-f829-29bb-2f96d5c49b86">
+      <Execution id="a8f95464-6e1d-459e-bb50-75a17198a016" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestRetriveExistingItem" />
+    </UnitTest>
+    <UnitTest name="SortedSplitListConstructorTest" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="3dffe941-9590-47ae-8884-6ba2eda81f86">
+      <Execution id="edd0e31b-673e-4106-ac3e-dadd0185382d" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SortedSplitListConstructorTest" />
+    </UnitTest>
+    <UnitTest name="TestBinarySearchFound" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="02553865-07ce-72d3-9b2c-c15d1b0c4181">
+      <Execution id="e92ea5fd-c029-48b7-a80b-d734fdb48875" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestBinarySearchFound" />
+    </UnitTest>
+    <UnitTest name="ClearTest" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="c303c48a-128e-44e2-ca78-26b79cb054e2">
+      <Execution id="076a45b6-4159-4d3b-876a-3b35add09bd7" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ClearTest" />
+    </UnitTest>
+    <UnitTest name="TestBinarySearchHightNotFound" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="c731f2cf-c4f1-21e7-a069-32909b776f12">
+      <Execution id="f45bcba7-9ad3-4ba3-b1fa-5e3b23c886b7" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestBinarySearchHightNotFound" />
+    </UnitTest>
+    <UnitTest name="RemoveTest" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="4535dfc6-2f85-f1a9-56ff-f81e28bb9924">
+      <Execution id="6771c0d8-b38f-4c5d-8ce2-f955e8b3e352" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveTest" />
+    </UnitTest>
+    <UnitTest name="AddTest" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="2ec44781-b858-6da1-c689-1c6db9d29b5b">
+      <Execution id="af02a383-3ef1-4b15-844e-02e4ce72b707" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddTest" />
+    </UnitTest>
+    <UnitTest name="BinarySearchTest" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="9428732d-5752-a5b2-8a6c-c8d6aabe4dbd">
+      <Execution id="6b9a0797-b24b-416b-be5b-1b897bbfabb7" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BinarySearchTest" />
+    </UnitTest>
+    <UnitTest name="TestRetrieveNotExistingItem" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="76ebe7d2-5203-383d-1c2a-2c6215e718db">
+      <Execution id="05b383a4-9f72-45b4-920c-98540530ccfa" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestRetrieveNotExistingItem" />
+    </UnitTest>
+    <UnitTest name="TestPartiallyEnumerate" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="2fec98aa-4d83-1647-7423-e7f0cd3a4451">
+      <Execution id="235dbfd7-75fe-4885-9889-ff1d5e1f2ea1" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestPartiallyEnumerate" />
+    </UnitTest>
+    <UnitTest name="TestBinarySearchLowNotFound" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="c7a3a5e1-ab79-fabd-92b1-1602d749596f">
+      <Execution id="a10f8a2b-355a-4937-a55b-0fa5019235e6" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestBinarySearchLowNotFound" />
+    </UnitTest>
+    <UnitTest name="RemoveAllTest" storage="d:\documents\visual studio 2010\projects\library\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="553b421b-08c7-42fb-ee6d-f632c8d6262f">
+      <Execution id="d623815e-e531-43ec-8211-472f7f7a2fcb" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/library/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.SortedSplitListTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveAllTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="02553865-07ce-72d3-9b2c-c15d1b0c4181" executionId="e92ea5fd-c029-48b7-a80b-d734fdb48875" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2ec44781-b858-6da1-c689-1c6db9d29b5b" executionId="af02a383-3ef1-4b15-844e-02e4ce72b707" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2fec98aa-4d83-1647-7423-e7f0cd3a4451" executionId="235dbfd7-75fe-4885-9889-ff1d5e1f2ea1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3dffe941-9590-47ae-8884-6ba2eda81f86" executionId="edd0e31b-673e-4106-ac3e-dadd0185382d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4535dfc6-2f85-f1a9-56ff-f81e28bb9924" executionId="6771c0d8-b38f-4c5d-8ce2-f955e8b3e352" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="553b421b-08c7-42fb-ee6d-f632c8d6262f" executionId="d623815e-e531-43ec-8211-472f7f7a2fcb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="68468ee5-c95d-f829-29bb-2f96d5c49b86" executionId="a8f95464-6e1d-459e-bb50-75a17198a016" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76ebe7d2-5203-383d-1c2a-2c6215e718db" executionId="05b383a4-9f72-45b4-920c-98540530ccfa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9428732d-5752-a5b2-8a6c-c8d6aabe4dbd" executionId="6b9a0797-b24b-416b-be5b-1b897bbfabb7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c303c48a-128e-44e2-ca78-26b79cb054e2" executionId="076a45b6-4159-4d3b-876a-3b35add09bd7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c731f2cf-c4f1-21e7-a069-32909b776f12" executionId="f45bcba7-9ad3-4ba3-b1fa-5e3b23c886b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c7a3a5e1-ab79-fabd-92b1-1602d749596f" executionId="a10f8a2b-355a-4937-a55b-0fa5019235e6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e92ea5fd-c029-48b7-a80b-d734fdb48875" testId="02553865-07ce-72d3-9b2c-c15d1b0c4181" testName="TestBinarySearchFound" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0156338" startTime="2013-11-09T09:29:33.5162262+08:00" endTime="2013-11-09T09:29:33.6852359+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e92ea5fd-c029-48b7-a80b-d734fdb48875">
+    </UnitTestResult>
+    <UnitTestResult executionId="af02a383-3ef1-4b15-844e-02e4ce72b707" testId="2ec44781-b858-6da1-c689-1c6db9d29b5b" testName="AddTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0108833" startTime="2013-11-09T09:29:33.6862360+08:00" endTime="2013-11-09T09:29:33.6992367+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="af02a383-3ef1-4b15-844e-02e4ce72b707">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.SortedSplitListTest.AddTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。</Message>
+          <StackTrace>    在 CRC.Collections.SortedSplitList`1..ctor(IComparer`1 defaultComparer, Int32 deepness) 位置 D:\Documents\Visual Studio 2010\Projects\library\Extension\Extension\Collections\SortedSplitList.cs:行号 134
+   在 TestCRCLibrary.SortedSplitListTest.AddTestHelper[T]() 位置 D:\Documents\Visual Studio 2010\Projects\library\Extension\TestCRCLibrary\Collections\SortedSplitListTest.cs:行号 119
+   在 TestCRCLibrary.SortedSplitListTest.AddTest() 位置 D:\Documents\Visual Studio 2010\Projects\library\Extension\TestCRCLibrary\Collections\SortedSplitListTest.cs:行号 128
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="235dbfd7-75fe-4885-9889-ff1d5e1f2ea1" testId="2fec98aa-4d83-1647-7423-e7f0cd3a4451" testName="TestPartiallyEnumerate" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0210889" startTime="2013-11-09T09:29:33.6992367+08:00" endTime="2013-11-09T09:29:33.7222380+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="235dbfd7-75fe-4885-9889-ff1d5e1f2ea1">
+      <Output>
+        <StdOut>1
+2
+3
+4</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="edd0e31b-673e-4106-ac3e-dadd0185382d" testId="3dffe941-9590-47ae-8884-6ba2eda81f86" testName="SortedSplitListConstructorTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0013576" startTime="2013-11-09T09:29:33.7232381+08:00" endTime="2013-11-09T09:29:33.7262383+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="edd0e31b-673e-4106-ac3e-dadd0185382d">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.SortedSplitListTest.SortedSplitListConstructorTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。</Message>
+          <StackTrace>    在 CRC.Collections.SortedSplitList`1..ctor(IComparer`1 defaultComparer, Int32 deepness) 位置 D:\Documents\Visual Studio 2010\Projects\library\Extension\Extension\Collections\SortedSplitList.cs:行号 134
+   在 TestCRCLibrary.SortedSplitListTest.SortedSplitListConstructorTestHelper[T]() 位置 D:\Documents\Visual Studio 2010\Projects\library\Extension\TestCRCLibrary\Collections\SortedSplitListTest.cs:行号 102
+   在 TestCRCLibrary.SortedSplitListTest.SortedSplitListConstructorTest() 位置 D:\Documents\Visual Studio 2010\Projects\library\Extension\TestCRCLibrary\Collections\SortedSplitListTest.cs:行号 109
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6771c0d8-b38f-4c5d-8ce2-f955e8b3e352" testId="4535dfc6-2f85-f1a9-56ff-f81e28bb9924" testName="RemoveTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0008887" startTime="2013-11-09T09:29:33.7272383+08:00" endTime="2013-11-09T09:29:33.7302385+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6771c0d8-b38f-4c5d-8ce2-f955e8b3e352">
+    </UnitTestResult>
+    <UnitTestResult executionId="d623815e-e531-43ec-8211-472f7f7a2fcb" testId="553b421b-08c7-42fb-ee6d-f632c8d6262f" testName="RemoveAllTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0006407" startTime="2013-11-09T09:29:33.7302385+08:00" endTime="2013-11-09T09:29:33.7332387+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d623815e-e531-43ec-8211-472f7f7a2fcb">
+    </UnitTestResult>
+    <UnitTestResult executionId="a8f95464-6e1d-459e-bb50-75a17198a016" testId="68468ee5-c95d-f829-29bb-2f96d5c49b86" testName="TestRetriveExistingItem" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0003220" startTime="2013-11-09T09:29:33.7332387+08:00" endTime="2013-11-09T09:29:33.7352388+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a8f95464-6e1d-459e-bb50-75a17198a016">
+    </UnitTestResult>
+    <UnitTestResult executionId="05b383a4-9f72-45b4-920c-98540530ccfa" testId="76ebe7d2-5203-383d-1c2a-2c6215e718db" testName="TestRetrieveNotExistingItem" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001587" startTime="2013-11-09T09:29:33.7352388+08:00" endTime="2013-11-09T09:29:33.7372389+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="05b383a4-9f72-45b4-920c-98540530ccfa">
+    </UnitTestResult>
+    <UnitTestResult executionId="6b9a0797-b24b-416b-be5b-1b897bbfabb7" testId="9428732d-5752-a5b2-8a6c-c8d6aabe4dbd" testName="BinarySearchTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0012876" startTime="2013-11-09T09:29:33.7382389+08:00" endTime="2013-11-09T09:29:33.7402391+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b9a0797-b24b-416b-be5b-1b897bbfabb7">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.SortedSplitListTest.BinarySearchTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。</Message>
+          <StackTrace>    在 CRC.Collections.SortedSplitList`1..ctor(IComparer`1 defaultComparer, Int32 deepness) 位置 D:\Documents\Visual Studio 2010\Projects\library\Extension\Extension\Collections\SortedSplitList.cs:行号 134
+   在 TestCRCLibrary.SortedSplitListTest.BinarySearchTestHelper[T]() 位置 D:\Documents\Visual Studio 2010\Projects\library\Extension\TestCRCLibrary\Collections\SortedSplitListTest.cs:行号 138
+   在 TestCRCLibrary.SortedSplitListTest.BinarySearchTest() 位置 D:\Documents\Visual Studio 2010\Projects\library\Extension\TestCRCLibrary\Collections\SortedSplitListTest.cs:行号 151
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="076a45b6-4159-4d3b-876a-3b35add09bd7" testId="c303c48a-128e-44e2-ca78-26b79cb054e2" testName="ClearTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0005182" startTime="2013-11-09T09:29:33.7412391+08:00" endTime="2013-11-09T09:29:33.7432392+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="076a45b6-4159-4d3b-876a-3b35add09bd7">
+    </UnitTestResult>
+    <UnitTestResult executionId="f45bcba7-9ad3-4ba3-b1fa-5e3b23c886b7" testId="c731f2cf-c4f1-21e7-a069-32909b776f12" testName="TestBinarySearchHightNotFound" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001786" startTime="2013-11-09T09:29:33.7442393+08:00" endTime="2013-11-09T09:29:33.7452393+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f45bcba7-9ad3-4ba3-b1fa-5e3b23c886b7">
+    </UnitTestResult>
+    <UnitTestResult executionId="a10f8a2b-355a-4937-a55b-0fa5019235e6" testId="c7a3a5e1-ab79-fabd-92b1-1602d749596f" testName="TestBinarySearchLowNotFound" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001603" startTime="2013-11-09T09:29:33.7462394+08:00" endTime="2013-11-09T09:29:33.7472395+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a10f8a2b-355a-4937-a55b-0fa5019235e6">
+    </UnitTestResult>
+  </Results>
+</TestRun>

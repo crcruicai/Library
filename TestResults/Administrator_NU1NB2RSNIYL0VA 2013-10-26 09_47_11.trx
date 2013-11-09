@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c8e6a1ed-4be7-4af3-b4ff-7cc9743ab180" name="Administrator@NU1NB2RSNIYL0VA 2013-10-26 09:47:11" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2013-10-26 09_47_11">
+      <DeploymentItem filename="D:\Documents\Visual Studio 2010\Projects\Owner\Extension\Extension\bin\Debug\CRCLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-10-26T09:47:11.5782139+08:00" queuing="2013-10-26T09:47:12.4562642+08:00" start="2013-10-26T09:47:12.4872659+08:00" finish="2013-10-26T09:47:12.7012782+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="IsMatchTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="1df5b73e-5da6-5978-0024-87ffc851ad48">
+      <Execution id="745475a9-7559-483b-b55c-01084ed4ea9e" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.RegenPatternTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsMatchTest" />
+    </UnitTest>
+    <UnitTest name="IsNumberTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="460e8c17-b29b-93fd-d06e-b486d1dc0a6c">
+      <Execution id="c0de4436-88d3-41ef-b85a-acc16b06aaff" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.RegenPatternTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsNumberTest" />
+    </UnitTest>
+    <UnitTest name="IsNumberMoreTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="64208872-23ce-1122-abe8-653bc9c9f952">
+      <Execution id="0043bafd-d43d-4589-bade-daa86b854aab" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.RegenPatternTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsNumberMoreTest" />
+    </UnitTest>
+    <UnitTest name="IsNumberRangeTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="c97e6a0d-3e80-4df5-30ec-d3bc8838ec4f">
+      <Execution id="3f702c98-21ca-48b6-bc66-7a2ca47d8538" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.RegenPatternTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsNumberRangeTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1df5b73e-5da6-5978-0024-87ffc851ad48" executionId="745475a9-7559-483b-b55c-01084ed4ea9e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="460e8c17-b29b-93fd-d06e-b486d1dc0a6c" executionId="c0de4436-88d3-41ef-b85a-acc16b06aaff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="64208872-23ce-1122-abe8-653bc9c9f952" executionId="0043bafd-d43d-4589-bade-daa86b854aab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c97e6a0d-3e80-4df5-30ec-d3bc8838ec4f" executionId="3f702c98-21ca-48b6-bc66-7a2ca47d8538" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="745475a9-7559-483b-b55c-01084ed4ea9e" testId="1df5b73e-5da6-5978-0024-87ffc851ad48" testName="IsMatchTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0107828" startTime="2013-10-26T09:47:12.4932663+08:00" endTime="2013-10-26T09:47:12.6822771+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="745475a9-7559-483b-b55c-01084ed4ea9e">
+    </UnitTestResult>
+    <UnitTestResult executionId="c0de4436-88d3-41ef-b85a-acc16b06aaff" testId="460e8c17-b29b-93fd-d06e-b486d1dc0a6c" testName="IsNumberTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0003762" startTime="2013-10-26T09:47:12.6832771+08:00" endTime="2013-10-26T09:47:12.6852773+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0de4436-88d3-41ef-b85a-acc16b06aaff">
+    </UnitTestResult>
+    <UnitTestResult executionId="0043bafd-d43d-4589-bade-daa86b854aab" testId="64208872-23ce-1122-abe8-653bc9c9f952" testName="IsNumberMoreTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0002068" startTime="2013-10-26T09:47:12.6852773+08:00" endTime="2013-10-26T09:47:12.6872774+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0043bafd-d43d-4589-bade-daa86b854aab">
+    </UnitTestResult>
+    <UnitTestResult executionId="3f702c98-21ca-48b6-bc66-7a2ca47d8538" testId="c97e6a0d-3e80-4df5-30ec-d3bc8838ec4f" testName="IsNumberRangeTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0002780" startTime="2013-10-26T09:47:12.6872774+08:00" endTime="2013-10-26T09:47:12.6892775+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f702c98-21ca-48b6-bc66-7a2ca47d8538">
+    </UnitTestResult>
+  </Results>
+</TestRun>

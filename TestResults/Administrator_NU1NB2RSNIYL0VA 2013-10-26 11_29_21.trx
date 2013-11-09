@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9c1ceff5-6405-4096-9788-089ac6e3ff84" name="Administrator@NU1NB2RSNIYL0VA 2013-10-26 11:29:21" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2013-10-26 11_29_21">
+      <DeploymentItem filename="D:\Documents\Visual Studio 2010\Projects\Owner\Extension\Extension\bin\Debug\CRCLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-10-26T11:29:21.8918478+08:00" queuing="2013-10-26T11:29:21.9428507+08:00" start="2013-10-26T11:29:21.9468510+08:00" finish="2013-10-26T11:29:22.1878648+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="7" executed="7" passed="7" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetPortTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="4e3e63f9-9021-3058-c1f5-02dcbf499abe">
+      <Execution id="64f2045e-0a16-4c79-8270-1957e65a650c" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.IPUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetPortTest" />
+    </UnitTest>
+    <UnitTest name="GetIPAddressTest1" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="07d9b3fb-20d2-e699-a6cb-d25fb1e29c5b">
+      <Execution id="abe679e5-fe36-4e4d-8ab1-c9ff6eca1469" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.IPUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetIPAddressTest1" />
+    </UnitTest>
+    <UnitTest name="GetIPTextTest1" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="83a128aa-6bcf-b586-c689-9a4d045e8369">
+      <Execution id="2a3d1dc7-f7be-43fa-861e-8c4d28d2d686" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.IPUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetIPTextTest1" />
+    </UnitTest>
+    <UnitTest name="ParseIPEndPointTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="f71a1a2a-41bb-6050-f8b6-052de32f7e3a">
+      <Execution id="16dbbad4-3fa5-48bd-83b7-cf20ff77e555" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.IPUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ParseIPEndPointTest" />
+    </UnitTest>
+    <UnitTest name="GetIPTextTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="45b35ea2-14c5-7dd5-0a1e-1ba1e5fc6700">
+      <Execution id="b0652a93-e7db-4e13-aa23-82fcc3fb3c6d" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.IPUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetIPTextTest" />
+    </UnitTest>
+    <UnitTest name="GetIPAddressTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="7b169008-b208-c129-2b8f-95d0f8832d06">
+      <Execution id="b8b34aa5-d826-478e-b368-6367af6b7a46" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.IPUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetIPAddressTest" />
+    </UnitTest>
+    <UnitTest name="PortToBytesTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="8bbf893e-2050-b878-bd67-9ede689d769b">
+      <Execution id="92d0ff0d-a0e5-40a8-9fe2-4f734ff39eb5" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.IPUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PortToBytesTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="07d9b3fb-20d2-e699-a6cb-d25fb1e29c5b" executionId="abe679e5-fe36-4e4d-8ab1-c9ff6eca1469" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="45b35ea2-14c5-7dd5-0a1e-1ba1e5fc6700" executionId="b0652a93-e7db-4e13-aa23-82fcc3fb3c6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e3e63f9-9021-3058-c1f5-02dcbf499abe" executionId="64f2045e-0a16-4c79-8270-1957e65a650c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b169008-b208-c129-2b8f-95d0f8832d06" executionId="b8b34aa5-d826-478e-b368-6367af6b7a46" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="83a128aa-6bcf-b586-c689-9a4d045e8369" executionId="2a3d1dc7-f7be-43fa-861e-8c4d28d2d686" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8bbf893e-2050-b878-bd67-9ede689d769b" executionId="92d0ff0d-a0e5-40a8-9fe2-4f734ff39eb5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f71a1a2a-41bb-6050-f8b6-052de32f7e3a" executionId="16dbbad4-3fa5-48bd-83b7-cf20ff77e555" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="abe679e5-fe36-4e4d-8ab1-c9ff6eca1469" testId="07d9b3fb-20d2-e699-a6cb-d25fb1e29c5b" testName="GetIPAddressTest1" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0103899" startTime="2013-10-26T11:29:21.9478510+08:00" endTime="2013-10-26T11:29:22.0838588+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="abe679e5-fe36-4e4d-8ab1-c9ff6eca1469">
+    </UnitTestResult>
+    <UnitTestResult executionId="b0652a93-e7db-4e13-aa23-82fcc3fb3c6d" testId="45b35ea2-14c5-7dd5-0a1e-1ba1e5fc6700" testName="GetIPTextTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0005022" startTime="2013-10-26T11:29:22.0838588+08:00" endTime="2013-10-26T11:29:22.0868590+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b0652a93-e7db-4e13-aa23-82fcc3fb3c6d">
+    </UnitTestResult>
+    <UnitTestResult executionId="64f2045e-0a16-4c79-8270-1957e65a650c" testId="4e3e63f9-9021-3058-c1f5-02dcbf499abe" testName="GetPortTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0009182" startTime="2013-10-26T11:29:22.0868590+08:00" endTime="2013-10-26T11:29:22.0898592+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="64f2045e-0a16-4c79-8270-1957e65a650c">
+    </UnitTestResult>
+    <UnitTestResult executionId="b8b34aa5-d826-478e-b368-6367af6b7a46" testId="7b169008-b208-c129-2b8f-95d0f8832d06" testName="GetIPAddressTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0003742" startTime="2013-10-26T11:29:22.0898592+08:00" endTime="2013-10-26T11:29:22.0918593+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8b34aa5-d826-478e-b368-6367af6b7a46">
+    </UnitTestResult>
+    <UnitTestResult executionId="2a3d1dc7-f7be-43fa-861e-8c4d28d2d686" testId="83a128aa-6bcf-b586-c689-9a4d045e8369" testName="GetIPTextTest1" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0002899" startTime="2013-10-26T11:29:22.0928593+08:00" endTime="2013-10-26T11:29:22.0948594+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a3d1dc7-f7be-43fa-861e-8c4d28d2d686">
+    </UnitTestResult>
+    <UnitTestResult executionId="92d0ff0d-a0e5-40a8-9fe2-4f734ff39eb5" testId="8bbf893e-2050-b878-bd67-9ede689d769b" testName="PortToBytesTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0320823" startTime="2013-10-26T11:29:22.0948594+08:00" endTime="2013-10-26T11:29:22.1768641+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="92d0ff0d-a0e5-40a8-9fe2-4f734ff39eb5">
+    </UnitTestResult>
+    <UnitTestResult executionId="16dbbad4-3fa5-48bd-83b7-cf20ff77e555" testId="f71a1a2a-41bb-6050-f8b6-052de32f7e3a" testName="ParseIPEndPointTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0004025" startTime="2013-10-26T11:29:22.1768641+08:00" endTime="2013-10-26T11:29:22.1798643+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="16dbbad4-3fa5-48bd-83b7-cf20ff77e555">
+    </UnitTestResult>
+  </Results>
+</TestRun>

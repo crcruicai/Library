@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5e4ba338-f2bd-4936-85cf-db3eefd0026a" name="Administrator@NU1NB2RSNIYL0VA 2013-10-24 14:47:39" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2013-10-24 14_47_39">
+      <DeploymentItem filename="D:\Documents\Visual Studio 2010\Projects\Owner\Extension\Extension\bin\Debug\CRCLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-10-24T14:47:39.0000746+08:00" queuing="2013-10-24T14:47:39.0350766+08:00" start="2013-10-24T14:47:39.0390768+08:00" finish="2013-10-24T14:47:39.2670899+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="3" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="InvokeIfNeededTest2" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="125c65d5-dc65-e511-f6f8-d90e7a54cbce">
+      <Execution id="36f8da28-e923-4e49-81e7-066c7e935e7d" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.InvokeExtensionTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvokeIfNeededTest2" />
+    </UnitTest>
+    <UnitTest name="InvokeIfNeededTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="4db46510-3fb8-dd54-7592-7a984db69c5a">
+      <Execution id="4de53cc6-da09-48fc-be86-bb6c0078a9f7" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.InvokeExtensionTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvokeIfNeededTest" />
+    </UnitTest>
+    <UnitTest name="QueueInvokeTest" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="55d3d927-b52b-031a-5932-fbc2845b3f5c">
+      <Execution id="000c9113-e56c-4447-8990-f597665a84c3" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.InvokeExtensionTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueueInvokeTest" />
+    </UnitTest>
+    <UnitTest name="QueueInvokeTest1" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="4b4e61b3-635f-c9db-0d57-8ab0317c2763">
+      <Execution id="7b062334-6d86-4ac3-87a8-fee4b02c00dc" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.InvokeExtensionTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueueInvokeTest1" />
+    </UnitTest>
+    <UnitTest name="QueueInvokeTest2" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="e0a66f2a-5d66-e71d-92d0-aa09bfde9293">
+      <Execution id="df06a888-f758-4ea1-8a05-7767e70c235a" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.InvokeExtensionTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="QueueInvokeTest2" />
+    </UnitTest>
+    <UnitTest name="InvokeIfNeededTest1" storage="d:\documents\visual studio 2010\projects\owner\extension\testcrclibrary\bin\debug\testcrclibrary.dll" id="7068c1e4-d70b-99b8-19a8-bd53b7c4cd67">
+      <Execution id="24db85e6-f5fa-490d-8a59-7153c3f97979" />
+      <TestMethod codeBase="D:/Documents/Visual Studio 2010/Projects/Owner/Extension/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.InvokeExtensionTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InvokeIfNeededTest1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="125c65d5-dc65-e511-f6f8-d90e7a54cbce" executionId="36f8da28-e923-4e49-81e7-066c7e935e7d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b4e61b3-635f-c9db-0d57-8ab0317c2763" executionId="7b062334-6d86-4ac3-87a8-fee4b02c00dc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4db46510-3fb8-dd54-7592-7a984db69c5a" executionId="4de53cc6-da09-48fc-be86-bb6c0078a9f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="55d3d927-b52b-031a-5932-fbc2845b3f5c" executionId="000c9113-e56c-4447-8990-f597665a84c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7068c1e4-d70b-99b8-19a8-bd53b7c4cd67" executionId="24db85e6-f5fa-490d-8a59-7153c3f97979" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e0a66f2a-5d66-e71d-92d0-aa09bfde9293" executionId="df06a888-f758-4ea1-8a05-7767e70c235a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="36f8da28-e923-4e49-81e7-066c7e935e7d" testId="125c65d5-dc65-e511-f6f8-d90e7a54cbce" testName="InvokeIfNeededTest2" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0118837" startTime="2013-10-24T14:47:39.0400769+08:00" endTime="2013-10-24T14:47:39.1780848+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="36f8da28-e923-4e49-81e7-066c7e935e7d">
+    </UnitTestResult>
+    <UnitTestResult executionId="7b062334-6d86-4ac3-87a8-fee4b02c00dc" testId="4b4e61b3-635f-c9db-0d57-8ab0317c2763" testName="QueueInvokeTest1" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0423859" startTime="2013-10-24T14:47:39.1790848+08:00" endTime="2013-10-24T14:47:39.2230873+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b062334-6d86-4ac3-87a8-fee4b02c00dc">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.InvokeExtensionTest.QueueInvokeTest1 引发了异常: 
+System.InvalidOperationException: 在创建窗口句柄之前，不能在控件上调用 Invoke 或 BeginInvoke。</Message>
+          <StackTrace>    在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   在 CRC.Extension.InvokeExtension.QueueInvoke[T,S](Control ctl, Action`2 doit, T arg1, S arg2) 位置 D:\Documents\Visual Studio 2010\Projects\Owner\Extension\Extension\Extension\InvokeExtension.cs:行号 44
+   在 TestCRCLibrary.InvokeExtensionTest.QueueInvokeTest1Helper[T,S]() 位置 D:\Documents\Visual Studio 2010\Projects\Owner\Extension\TestCRCLibrary\Extension\InvokeExtensionTest.cs:行号 143
+   在 TestCRCLibrary.InvokeExtensionTest.QueueInvokeTest1() 位置 D:\Documents\Visual Studio 2010\Projects\Owner\Extension\TestCRCLibrary\Extension\InvokeExtensionTest.cs:行号 150
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4de53cc6-da09-48fc-be86-bb6c0078a9f7" testId="4db46510-3fb8-dd54-7592-7a984db69c5a" testName="InvokeIfNeededTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0013306" startTime="2013-10-24T14:47:39.2230873+08:00" endTime="2013-10-24T14:47:39.2260875+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4de53cc6-da09-48fc-be86-bb6c0078a9f7">
+    </UnitTestResult>
+    <UnitTestResult executionId="000c9113-e56c-4447-8990-f597665a84c3" testId="55d3d927-b52b-031a-5932-fbc2845b3f5c" testName="QueueInvokeTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0219049" startTime="2013-10-24T14:47:39.2270876+08:00" endTime="2013-10-24T14:47:39.2510889+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="000c9113-e56c-4447-8990-f597665a84c3">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.InvokeExtensionTest.QueueInvokeTest 引发了异常: 
+System.InvalidOperationException: 在创建窗口句柄之前，不能在控件上调用 Invoke 或 BeginInvoke。</Message>
+          <StackTrace>    在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   在 System.Windows.Forms.Control.BeginInvoke(Delegate method)
+   在 CRC.Extension.InvokeExtension.QueueInvoke(Control ctl, Action doit) 位置 D:\Documents\Visual Studio 2010\Projects\Owner\Extension\Extension\Extension\InvokeExtension.cs:行号 30
+   在 TestCRCLibrary.InvokeExtensionTest.QueueInvokeTest() 位置 D:\Documents\Visual Studio 2010\Projects\Owner\Extension\TestCRCLibrary\Extension\InvokeExtensionTest.cs:行号 127
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="24db85e6-f5fa-490d-8a59-7153c3f97979" testId="7068c1e4-d70b-99b8-19a8-bd53b7c4cd67" testName="InvokeIfNeededTest1" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0007360" startTime="2013-10-24T14:47:39.2510889+08:00" endTime="2013-10-24T14:47:39.2540891+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="24db85e6-f5fa-490d-8a59-7153c3f97979">
+    </UnitTestResult>
+    <UnitTestResult executionId="df06a888-f758-4ea1-8a05-7767e70c235a" testId="e0a66f2a-5d66-e71d-92d0-aa09bfde9293" testName="QueueInvokeTest2" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0020468" startTime="2013-10-24T14:47:39.2540891+08:00" endTime="2013-10-24T14:47:39.2580893+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df06a888-f758-4ea1-8a05-7767e70c235a">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.InvokeExtensionTest.QueueInvokeTest2 引发了异常: 
+System.InvalidOperationException: 在创建窗口句柄之前，不能在控件上调用 Invoke 或 BeginInvoke。</Message>
+          <StackTrace>    在 System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   在 System.Windows.Forms.Control.BeginInvoke(Delegate method, Object[] args)
+   在 CRC.Extension.InvokeExtension.QueueInvoke[T](Control ctl, Action`1 doit, T aras) 位置 D:\Documents\Visual Studio 2010\Projects\Owner\Extension\Extension\Extension\InvokeExtension.cs:行号 57
+   在 TestCRCLibrary.InvokeExtensionTest.QueueInvokeTest2Helper[T]() 位置 D:\Documents\Visual Studio 2010\Projects\Owner\Extension\TestCRCLibrary\Extension\InvokeExtensionTest.cs:行号 161
+   在 TestCRCLibrary.InvokeExtensionTest.QueueInvokeTest2() 位置 D:\Documents\Visual Studio 2010\Projects\Owner\Extension\TestCRCLibrary\Extension\InvokeExtensionTest.cs:行号 167
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
