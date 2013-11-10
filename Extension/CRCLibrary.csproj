@@ -65,12 +65,15 @@
     <Compile Include="Extension\RandomExtension.cs" />
     <Compile Include="Extension\StringRegexExtension.cs" />
     <Compile Include="Extension\SwithCaseExtension.cs" />
-    <Compile Include="Util\CodeTime.cs" />
+    <Compile Include="Register\RegisterUtil.cs" />
+    <Compile Include="Timer\CodeTime.cs" />
     <Compile Include="Util\DateTimeUtil.cs" />
-    <Compile Include="Util\DictionaryColletion.cs" />
+    <Compile Include="Collections\DictionaryColletion.cs" />
     <Compile Include="Util\EncodeUtil.cs" />
     <Compile Include="Util\EncryptUtil.cs" />
+    <Compile Include="Util\HotKeyUtil.cs" />
     <Compile Include="Util\String\ConvertCode.cs" />
+    <Compile Include="Util\Sytems\SystemIconUtil.cs" />
     <Compile Include="Util\Sytems\HotKeyUtil.cs" />
     <Compile Include="Util\String\StringParser.cs" />
     <Compile Include="Util\Sytems\OSVersionUtil.cs" />
@@ -79,14 +82,12 @@
     <Compile Include="Util\Sytems\ShutDownComputer.cs" />
     <Compile Include="Util\Sytems\SingleInstance.cs" />
     <Compile Include="Util\Sytems\WindowsAutoRun.cs" />
-    <Compile Include="Util\ThreeDictionary.cs" />
+    <Compile Include="Collections\ThreeDictionary.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="开发日志.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Timer\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

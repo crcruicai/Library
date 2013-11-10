@@ -8,3 +8,7 @@ D:\Documents\Visual Studio 2010\Projects\library\Extension\Extension\bin\Debug\C
 D:\Documents\Visual Studio 2010\Projects\library\Extension\Extension\obj\Debug\ResolveAssemblyReference.cache
 D:\Documents\Visual Studio 2010\Projects\library\Extension\Extension\obj\Debug\CRCLibrary.dll
 D:\Documents\Visual Studio 2010\Projects\library\Extension\Extension\obj\Debug\CRCLibrary.pdb
+G:\Code\Library\Extension\bin\Debug\CRCLibrary.dll
+G:\Code\Library\Extension\bin\Debug\CRCLibrary.pdb
+G:\Code\Library\Extension\obj\Debug\CRCLibrary.dll
+G:\Code\Library\Extension\obj\Debug\CRCLibrary.pdb
