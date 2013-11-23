@@ -183,7 +183,11 @@ namespace CRC.Controls
                 VerticalScroll.Value = 0;
             else
             {
-                VerticalScroll.Value = pos - ClientRectangle.Height;
+                if (pos - ClientRectangle.Height < VerticalScroll.Maximum)
+                    VerticalScroll.Value = pos - ClientRectangle.Height;
+                else
+                    VerticalScroll.Value = VerticalScroll.Maximum;
+                
             }
             this.Invalidate();
         }

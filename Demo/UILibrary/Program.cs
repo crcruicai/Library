@@ -20,8 +20,8 @@ namespace UILibrary
             //Application.Run(new FrmAutoDockManage());
             //Application.Run(new FrmListViewEmbeddedControls());
             //Application.Run(new FrmChatGroupBox());
-            Application.Run(new FrmGroupBox());
-            
+            //Application.Run(new FrmGroupBox());
+            Application.Run(new FrmLoadingBar());
        
         }
 

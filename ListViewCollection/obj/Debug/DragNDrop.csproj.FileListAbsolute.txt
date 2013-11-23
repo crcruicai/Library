@@ -1,0 +1,8 @@
+D:\Documents\Visual Studio 2010\Projects\library\newlib\ListViewEX\DragDropListView\DragAndDropListView_src\bin\Debug\DragNDrop.dll
+D:\Documents\Visual Studio 2010\Projects\library\newlib\ListViewEX\DragDropListView\DragAndDropListView_src\bin\Debug\DragNDrop.pdb
+D:\Documents\Visual Studio 2010\Projects\library\newlib\ListViewEX\DragDropListView\DragAndDropListView_src\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\library\newlib\ListViewEX\DragDropListView\DragAndDropListView_src\obj\Debug\DragNDrop.DragAndDropListView.resources
+D:\Documents\Visual Studio 2010\Projects\library\newlib\ListViewEX\DragDropListView\DragAndDropListView_src\obj\Debug\ResGen.read.1.tlog
+D:\Documents\Visual Studio 2010\Projects\library\newlib\ListViewEX\DragDropListView\DragAndDropListView_src\obj\Debug\ResGen.write.1.tlog
+D:\Documents\Visual Studio 2010\Projects\library\newlib\ListViewEX\DragDropListView\DragAndDropListView_src\obj\Debug\DragNDrop.dll
+D:\Documents\Visual Studio 2010\Projects\library\newlib\ListViewEX\DragDropListView\DragAndDropListView_src\obj\Debug\DragNDrop.pdb

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\DoubleKeyDictionary.cs" />
     <Compile Include="Collections\KeyedCollection.cs" />
     <Compile Include="Collections\SafeQueue.cs" />
     <Compile Include="Collections\SortedSplitList.cs" />
@@ -55,6 +56,7 @@
     <Compile Include="Extension\ExceptionExtension.cs" />
     <Compile Include="Extension\InvokeExtension.cs" />
     <Compile Include="Extension\StringFomatExtension.cs" />
+    <Compile Include="Extension\StringVerifyExtension.cs" />
     <Compile Include="Files\INIHelper.cs" />
     <Compile Include="Files\PathTool.cs" />
     <Compile Include="Files\SerializationHelper.cs" />

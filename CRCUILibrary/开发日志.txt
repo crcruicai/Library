@@ -1,4 +1,9 @@
-﻿
+﻿2013-11-18
+1 添加PlayerTrackBar 播放器时间滚动条.
+2 添加LoadingBar 载入滚动条.
+3 添加DragableListBox 支持拖拽的listbox.
+
+
 2013-11-09
 1 添加MultiLineLabel 多行文本框.支持字符截断并显示省略号.
 

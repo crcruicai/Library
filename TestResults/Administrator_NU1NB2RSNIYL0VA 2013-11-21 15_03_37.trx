@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b09eea2f-22ba-42d4-9e9d-7d715de03433" name="Administrator@NU1NB2RSNIYL0VA 2013-11-21 15:03:37" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2013-11-21 15_03_37">
+      <DeploymentItem filename="D:\Documents\GitHub\Library\Extension\bin\Debug\CRCLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-11-21T15:03:37.6528637+08:00" queuing="2013-11-21T15:03:37.6948661+08:00" start="2013-11-21T15:03:37.6998664+08:00" finish="2013-11-21T15:03:38.0748878+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="19" executed="19" passed="14" error="0" failed="5" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetEnumeratorOneTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="3a310c4f-f79c-b2c6-77f5-19ee42eb9a46">
+      <Execution id="2e116f4f-4d3c-424e-826a-246d6beb507f" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetEnumeratorOneTest" />
+    </UnitTest>
+    <UnitTest name="AddTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="4e487412-a84f-5407-14fb-b97267209e13">
+      <Execution id="1bde511e-b110-4115-9aa8-8358ae9a99cb" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddTest" />
+    </UnitTest>
+    <UnitTest name="SetOneValueTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="2b4ef174-c462-097c-6a3e-1aa16ce8aa1f">
+      <Execution id="4e3a3aff-8dee-4df7-b242-b198aa16825c" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SetOneValueTest" />
+    </UnitTest>
+    <UnitTest name="KeysOneTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="91e03d4a-dcf5-2ebb-028c-a5f44700fe4c">
+      <Execution id="e9ef4508-950e-4dde-aeea-accb3b19f98d" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KeysOneTest" />
+    </UnitTest>
+    <UnitTest name="ClearTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="5eb80387-92b2-640e-e81d-00d44d8d438c">
+      <Execution id="559be7c3-35b3-4f6b-8872-64e2677df13e" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ClearTest" />
+    </UnitTest>
+    <UnitTest name="GetTwoValueTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="c0f12b05-9fcc-a16b-8cc9-7357b1f8ed6a">
+      <Execution id="b4d920ef-55a8-403d-a99c-b68fe178b4be" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetTwoValueTest" />
+    </UnitTest>
+    <UnitTest name="KeysTwoTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="50994e70-9b7e-e7e4-d350-1886cc4d90f0">
+      <Execution id="1937e736-f04a-47a4-b6a1-2f0e286d4fb3" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="KeysTwoTest" />
+    </UnitTest>
+    <UnitTest name="DoubleKeyDictionaryConstructorTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="1f6f77c7-2d47-0710-4dcb-b0145b30ebaa">
+      <Execution id="6fc1cd46-aa22-4631-bdca-93eb0f4a695e" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DoubleKeyDictionaryConstructorTest" />
+    </UnitTest>
+    <UnitTest name="SetTwoValueTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="fba52ecd-62a0-929d-d202-df2156b8bb48">
+      <Execution id="44673ff0-de5b-431a-9f35-5d83848feccf" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SetTwoValueTest" />
+    </UnitTest>
+    <UnitTest name="IsReadOnlyTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="f4360abe-b907-39a7-f9a0-9c7f29962bbf">
+      <Execution id="f4d262b3-4458-4458-98f0-98229d4c2e94" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsReadOnlyTest" />
+    </UnitTest>
+    <UnitTest name="RemoveTwoTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="fc5d65be-c4b7-c7ac-9c58-54d23110da25">
+      <Execution id="a488e49c-449e-428c-81ca-ade3e6bbd77b" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveTwoTest" />
+    </UnitTest>
+    <UnitTest name="CountTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="a7fe6c26-0623-e44e-31b8-ef7a5b9a4a08">
+      <Execution id="8b5b74e1-49f7-4756-a4ab-66ab0576cef1" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CountTest" />
+    </UnitTest>
+    <UnitTest name="ContainsKeyTwoTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="e42fed48-875f-4a9e-0345-fba3f0f9e432">
+      <Execution id="3b7124b4-884c-41e0-8050-cc29f47a8b8c" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ContainsKeyTwoTest" />
+    </UnitTest>
+    <UnitTest name="GetOneValueTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="9f0c02c1-741c-d76d-91c9-6c941adee950">
+      <Execution id="7b213775-9715-4dd0-a7e8-3a9ef863e896" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetOneValueTest" />
+    </UnitTest>
+    <UnitTest name="GetEnumeratorTwoTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="420229dc-f827-00be-7908-75d0f1ca5dfe">
+      <Execution id="252244ca-054c-4efa-9a58-4da3d1c5039d" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetEnumeratorTwoTest" />
+    </UnitTest>
+    <UnitTest name="TryGetValueTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="fc2a6da0-65b6-eca3-2187-e2d86fe1c25f">
+      <Execution id="6b2f4c6f-92f0-42e6-a848-82815b30cc3a" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TryGetValueTest" />
+    </UnitTest>
+    <UnitTest name="ValuesTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="1bf91859-540c-b7cc-00cc-23d58f8ae5af">
+      <Execution id="72b1d174-136a-4b55-a025-297ad15f97fa" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ValuesTest" />
+    </UnitTest>
+    <UnitTest name="RemoveOneTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="33ecc17f-8c6a-bd99-526f-af623d0e9aca">
+      <Execution id="caca7728-bffc-42bf-aedc-a34a7432de6f" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveOneTest" />
+    </UnitTest>
+    <UnitTest name="ContainsKeyOneTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="c6e5ebb2-9be5-8a2b-b22e-2aa0aa232ad9">
+      <Execution id="8c591813-3c1b-4522-ac5d-6ef98b4ffc97" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ContainsKeyOneTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1bf91859-540c-b7cc-00cc-23d58f8ae5af" executionId="72b1d174-136a-4b55-a025-297ad15f97fa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f6f77c7-2d47-0710-4dcb-b0145b30ebaa" executionId="6fc1cd46-aa22-4631-bdca-93eb0f4a695e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b4ef174-c462-097c-6a3e-1aa16ce8aa1f" executionId="4e3a3aff-8dee-4df7-b242-b198aa16825c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="33ecc17f-8c6a-bd99-526f-af623d0e9aca" executionId="caca7728-bffc-42bf-aedc-a34a7432de6f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3a310c4f-f79c-b2c6-77f5-19ee42eb9a46" executionId="2e116f4f-4d3c-424e-826a-246d6beb507f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="420229dc-f827-00be-7908-75d0f1ca5dfe" executionId="252244ca-054c-4efa-9a58-4da3d1c5039d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e487412-a84f-5407-14fb-b97267209e13" executionId="1bde511e-b110-4115-9aa8-8358ae9a99cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50994e70-9b7e-e7e4-d350-1886cc4d90f0" executionId="1937e736-f04a-47a4-b6a1-2f0e286d4fb3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5eb80387-92b2-640e-e81d-00d44d8d438c" executionId="559be7c3-35b3-4f6b-8872-64e2677df13e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="91e03d4a-dcf5-2ebb-028c-a5f44700fe4c" executionId="e9ef4508-950e-4dde-aeea-accb3b19f98d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9f0c02c1-741c-d76d-91c9-6c941adee950" executionId="7b213775-9715-4dd0-a7e8-3a9ef863e896" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7fe6c26-0623-e44e-31b8-ef7a5b9a4a08" executionId="8b5b74e1-49f7-4756-a4ab-66ab0576cef1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c0f12b05-9fcc-a16b-8cc9-7357b1f8ed6a" executionId="b4d920ef-55a8-403d-a99c-b68fe178b4be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c6e5ebb2-9be5-8a2b-b22e-2aa0aa232ad9" executionId="8c591813-3c1b-4522-ac5d-6ef98b4ffc97" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e42fed48-875f-4a9e-0345-fba3f0f9e432" executionId="3b7124b4-884c-41e0-8050-cc29f47a8b8c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f4360abe-b907-39a7-f9a0-9c7f29962bbf" executionId="f4d262b3-4458-4458-98f0-98229d4c2e94" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fba52ecd-62a0-929d-d202-df2156b8bb48" executionId="44673ff0-de5b-431a-9f35-5d83848feccf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc2a6da0-65b6-eca3-2187-e2d86fe1c25f" executionId="6b2f4c6f-92f0-42e6-a848-82815b30cc3a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc5d65be-c4b7-c7ac-9c58-54d23110da25" executionId="a488e49c-449e-428c-81ca-ade3e6bbd77b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="72b1d174-136a-4b55-a025-297ad15f97fa" testId="1bf91859-540c-b7cc-00cc-23d58f8ae5af" testName="ValuesTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0135628" startTime="2013-11-21T15:03:37.7018665+08:00" endTime="2013-11-21T15:03:37.8408744+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72b1d174-136a-4b55-a025-297ad15f97fa">
+    </UnitTestResult>
+    <UnitTestResult executionId="6fc1cd46-aa22-4631-bdca-93eb0f4a695e" testId="1f6f77c7-2d47-0710-4dcb-b0145b30ebaa" testName="DoubleKeyDictionaryConstructorTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0002084" startTime="2013-11-21T15:03:37.8408744+08:00" endTime="2013-11-21T15:03:37.8438746+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6fc1cd46-aa22-4631-bdca-93eb0f4a695e">
+    </UnitTestResult>
+    <UnitTestResult executionId="4e3a3aff-8dee-4df7-b242-b198aa16825c" testId="2b4ef174-c462-097c-6a3e-1aa16ce8aa1f" testName="SetOneValueTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.1194311" startTime="2013-11-21T15:03:37.8438746+08:00" endTime="2013-11-21T15:03:37.9648815+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e3a3aff-8dee-4df7-b242-b198aa16825c">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.DoubleKeyDictionaryTest.SetOneValueTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。
+参数名: key</Message>
+          <StackTrace>    在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 CRC.Collections.DoubleKeyDictionary`3.SetOneValue(TKeyOne key, TValue value) 位置 D:\Documents\GitHub\Library\Extension\Collections\DoubleKeyDictionary.cs:行号 199
+   在 TestCRCLibrary.DoubleKeyDictionaryTest.SetOneValueTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\DoubleKeyDictionaryTest.cs:行号 222
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="caca7728-bffc-42bf-aedc-a34a7432de6f" testId="33ecc17f-8c6a-bd99-526f-af623d0e9aca" testName="RemoveOneTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0189753" startTime="2013-11-21T15:03:37.9658816+08:00" endTime="2013-11-21T15:03:37.9868828+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caca7728-bffc-42bf-aedc-a34a7432de6f">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.DoubleKeyDictionaryTest.RemoveOneTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。
+参数名: key</Message>
+          <StackTrace>    在 System.Collections.Generic.Dictionary`2.Remove(TKey key)
+   在 CRC.Collections.DoubleKeyDictionary`3.RemoveOne(TKeyOne key) 位置 D:\Documents\GitHub\Library\Extension\Collections\DoubleKeyDictionary.cs:行号 115
+   在 TestCRCLibrary.DoubleKeyDictionaryTest.RemoveOneTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\DoubleKeyDictionaryTest.cs:行号 190
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2e116f4f-4d3c-424e-826a-246d6beb507f" testId="3a310c4f-f79c-b2c6-77f5-19ee42eb9a46" testName="GetEnumeratorOneTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0021728" startTime="2013-11-21T15:03:37.9878828+08:00" endTime="2013-11-21T15:03:37.9928831+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2e116f4f-4d3c-424e-826a-246d6beb507f">
+    </UnitTestResult>
+    <UnitTestResult executionId="252244ca-054c-4efa-9a58-4da3d1c5039d" testId="420229dc-f827-00be-7908-75d0f1ca5dfe" testName="GetEnumeratorTwoTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001690" startTime="2013-11-21T15:03:37.9938832+08:00" endTime="2013-11-21T15:03:37.9978834+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="252244ca-054c-4efa-9a58-4da3d1c5039d">
+    </UnitTestResult>
+    <UnitTestResult executionId="1bde511e-b110-4115-9aa8-8358ae9a99cb" testId="4e487412-a84f-5407-14fb-b97267209e13" testName="AddTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0004650" startTime="2013-11-21T15:03:37.9998835+08:00" endTime="2013-11-21T15:03:38.0028837+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1bde511e-b110-4115-9aa8-8358ae9a99cb">
+    </UnitTestResult>
+    <UnitTestResult executionId="1937e736-f04a-47a4-b6a1-2f0e286d4fb3" testId="50994e70-9b7e-e7e4-d350-1886cc4d90f0" testName="KeysTwoTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0003162" startTime="2013-11-21T15:03:38.0028837+08:00" endTime="2013-11-21T15:03:38.0048838+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1937e736-f04a-47a4-b6a1-2f0e286d4fb3">
+    </UnitTestResult>
+    <UnitTestResult executionId="559be7c3-35b3-4f6b-8872-64e2677df13e" testId="5eb80387-92b2-640e-e81d-00d44d8d438c" testName="ClearTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0003431" startTime="2013-11-21T15:03:38.0048838+08:00" endTime="2013-11-21T15:03:38.0068839+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="559be7c3-35b3-4f6b-8872-64e2677df13e">
+    </UnitTestResult>
+    <UnitTestResult executionId="e9ef4508-950e-4dde-aeea-accb3b19f98d" testId="91e03d4a-dcf5-2ebb-028c-a5f44700fe4c" testName="KeysOneTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0003386" startTime="2013-11-21T15:03:38.0078840+08:00" endTime="2013-11-21T15:03:38.0088841+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9ef4508-950e-4dde-aeea-accb3b19f98d">
+    </UnitTestResult>
+    <UnitTestResult executionId="7b213775-9715-4dd0-a7e8-3a9ef863e896" testId="9f0c02c1-741c-d76d-91c9-6c941adee950" testName="GetOneValueTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0004621" startTime="2013-11-21T15:03:38.0098841+08:00" endTime="2013-11-21T15:03:38.0118842+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b213775-9715-4dd0-a7e8-3a9ef863e896">
+    </UnitTestResult>
+    <UnitTestResult executionId="8b5b74e1-49f7-4756-a4ab-66ab0576cef1" testId="a7fe6c26-0623-e44e-31b8-ef7a5b9a4a08" testName="CountTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001321" startTime="2013-11-21T15:03:38.0118842+08:00" endTime="2013-11-21T15:03:38.0138843+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b5b74e1-49f7-4756-a4ab-66ab0576cef1">
+    </UnitTestResult>
+    <UnitTestResult executionId="b4d920ef-55a8-403d-a99c-b68fe178b4be" testId="c0f12b05-9fcc-a16b-8cc9-7357b1f8ed6a" testName="GetTwoValueTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0003402" startTime="2013-11-21T15:03:38.0138843+08:00" endTime="2013-11-21T15:03:38.0158845+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b4d920ef-55a8-403d-a99c-b68fe178b4be">
+    </UnitTestResult>
+    <UnitTestResult executionId="8c591813-3c1b-4522-ac5d-6ef98b4ffc97" testId="c6e5ebb2-9be5-8a2b-b22e-2aa0aa232ad9" testName="ContainsKeyOneTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001815" startTime="2013-11-21T15:03:38.0168845+08:00" endTime="2013-11-21T15:03:38.0178846+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c591813-3c1b-4522-ac5d-6ef98b4ffc97">
+    </UnitTestResult>
+    <UnitTestResult executionId="3b7124b4-884c-41e0-8050-cc29f47a8b8c" testId="e42fed48-875f-4a9e-0345-fba3f0f9e432" testName="ContainsKeyTwoTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0335070" startTime="2013-11-21T15:03:38.0178846+08:00" endTime="2013-11-21T15:03:38.0538866+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b7124b4-884c-41e0-8050-cc29f47a8b8c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsFalse 失败。</Message>
+          <StackTrace>   在 TestCRCLibrary.AssertExtension.IsFalse(Boolean obj) 位置 D:\Documents\GitHub\Library\TestCRCLibrary\Util\AssertExtension.cs:行号 151
+   在 TestCRCLibrary.DoubleKeyDictionaryTest.ContainsKeyTwoTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\DoubleKeyDictionaryTest.cs:行号 135
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f4d262b3-4458-4458-98f0-98229d4c2e94" testId="f4360abe-b907-39a7-f9a0-9c7f29962bbf" testName="IsReadOnlyTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0002113" startTime="2013-11-21T15:03:38.0538866+08:00" endTime="2013-11-21T15:03:38.0558867+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4d262b3-4458-4458-98f0-98229d4c2e94">
+    </UnitTestResult>
+    <UnitTestResult executionId="44673ff0-de5b-431a-9f35-5d83848feccf" testId="fba52ecd-62a0-929d-d202-df2156b8bb48" testName="SetTwoValueTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0014746" startTime="2013-11-21T15:03:38.0568868+08:00" endTime="2013-11-21T15:03:38.0598870+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="44673ff0-de5b-431a-9f35-5d83848feccf">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.DoubleKeyDictionaryTest.SetTwoValueTest 引发了异常: 
+System.Collections.Generic.KeyNotFoundException: 给定关键字不在字典中。</Message>
+          <StackTrace>    在 CRC.Collections.DoubleKeyDictionary`3.SetTwoValue(TKeyTwo key, TValue value) 位置 D:\Documents\GitHub\Library\Extension\Collections\DoubleKeyDictionary.cs:行号 214
+   在 TestCRCLibrary.DoubleKeyDictionaryTest.SetTwoValueTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\DoubleKeyDictionaryTest.cs:行号 236
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6b2f4c6f-92f0-42e6-a848-82815b30cc3a" testId="fc2a6da0-65b6-eca3-2187-e2d86fe1c25f" testName="TryGetValueTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0005904" startTime="2013-11-21T15:03:38.0598870+08:00" endTime="2013-11-21T15:03:38.0618871+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b2f4c6f-92f0-42e6-a848-82815b30cc3a">
+    </UnitTestResult>
+    <UnitTestResult executionId="a488e49c-449e-428c-81ca-ade3e6bbd77b" testId="fc5d65be-c4b7-c7ac-9c58-54d23110da25" testName="RemoveTwoTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0014297" startTime="2013-11-21T15:03:38.0628871+08:00" endTime="2013-11-21T15:03:38.0658873+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a488e49c-449e-428c-81ca-ade3e6bbd77b">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.DoubleKeyDictionaryTest.RemoveTwoTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。
+参数名: key</Message>
+          <StackTrace>    在 System.Collections.Generic.Dictionary`2.Remove(TKey key)
+   在 CRC.Collections.DoubleKeyDictionary`3.RemoveTwo(TKeyTwo key) 位置 D:\Documents\GitHub\Library\Extension\Collections\DoubleKeyDictionary.cs:行号 126
+   在 TestCRCLibrary.DoubleKeyDictionaryTest.RemoveTwoTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\DoubleKeyDictionaryTest.cs:行号 206
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

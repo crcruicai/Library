@@ -78,3 +78,5 @@ D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmInstruments.re
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.Properties.Resources.resources
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\GenerateResource.read.1.tlog
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\GenerateResource.write.1.tlog
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmPlayerTrackBar.resources
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmLoadingBar.resources

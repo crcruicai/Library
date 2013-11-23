@@ -1,0 +1,10 @@
+D:\Documents\GitHub\Library\ComboBoxCollection\ComboBoxCollection\bin\Debug\ComboBoxCollection.dll.config
+D:\Documents\GitHub\Library\ComboBoxCollection\ComboBoxCollection\bin\Debug\ComboBoxCollection.dll
+D:\Documents\GitHub\Library\ComboBoxCollection\ComboBoxCollection\bin\Debug\ComboBoxCollection.pdb
+D:\Documents\GitHub\Library\ComboBoxCollection\ComboBoxCollection\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Documents\GitHub\Library\ComboBoxCollection\ComboBoxCollection\obj\x86\Debug\CRC.Properties.Resources.resources
+D:\Documents\GitHub\Library\ComboBoxCollection\ComboBoxCollection\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Documents\GitHub\Library\ComboBoxCollection\ComboBoxCollection\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Documents\GitHub\Library\ComboBoxCollection\ComboBoxCollection\obj\x86\Debug\ComboBoxCollection.dll
+D:\Documents\GitHub\Library\ComboBoxCollection\ComboBoxCollection\obj\x86\Debug\ComboBoxCollection.pdb
+D:\Documents\GitHub\Library\ComboBoxCollection\ComboBoxCollection\obj\x86\Debug\CRC.Controls.ColorPopupBox.resources

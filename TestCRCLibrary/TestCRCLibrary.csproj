@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConvertCodeTest.cs" />
+    <Compile Include="DoubleKeyDictionaryTest.cs" />
     <Compile Include="EncryptUtilTest.cs" />
     <Compile Include="JhEncryptTest.cs" />
     <Compile Include="Net\IPUtilTest.cs" />

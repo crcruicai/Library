@@ -42,6 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\DragableListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\LoadingBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PlayerTrackBar.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Froms\AutoDockManger.cs">
       <SubType>Component</SubType>
     </Compile>

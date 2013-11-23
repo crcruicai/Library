@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="caae9b83-cae5-490f-b282-adb1764a7954" name="Administrator@NU1NB2RSNIYL0VA 2013-11-21 15:04:46" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2013-11-21 15_04_46">
+      <DeploymentItem filename="D:\Documents\GitHub\Library\Extension\bin\Debug\CRCLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-11-21T15:04:46.2597878+08:00" queuing="2013-11-21T15:04:46.3227914+08:00" start="2013-11-21T15:04:46.3257916+08:00" finish="2013-11-21T15:04:46.4818005+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="SetOneValueTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="2b4ef174-c462-097c-6a3e-1aa16ce8aa1f">
+      <Execution id="bd744ecb-c663-4070-9cde-b06c658a4a24" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DoubleKeyDictionaryTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SetOneValueTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2b4ef174-c462-097c-6a3e-1aa16ce8aa1f" executionId="bd744ecb-c663-4070-9cde-b06c658a4a24" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="bd744ecb-c663-4070-9cde-b06c658a4a24" testId="2b4ef174-c462-097c-6a3e-1aa16ce8aa1f" testName="SetOneValueTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0224150" startTime="2013-11-21T15:04:46.3267916+08:00" endTime="2013-11-21T15:04:46.4738000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd744ecb-c663-4070-9cde-b06c658a4a24">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.DoubleKeyDictionaryTest.SetOneValueTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。
+参数名: key</Message>
+          <StackTrace>    在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   在 CRC.Collections.DoubleKeyDictionary`3.SetOneValue(TKeyOne key, TValue value) 位置 D:\Documents\GitHub\Library\Extension\Collections\DoubleKeyDictionary.cs:行号 199
+   在 TestCRCLibrary.DoubleKeyDictionaryTest.SetOneValueTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\DoubleKeyDictionaryTest.cs:行号 222
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

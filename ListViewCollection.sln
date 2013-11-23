@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewCollection", "ListViewCollection\ListViewCollection.csproj", "{C7E21F05-C166-4DCC-8429-EC8A4C1A67B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListViewCollectionDemo", "ListViewCollectionDemo\ListViewCollectionDemo.csproj", "{44453656-BB80-4E3F-ACCD-A9F843E00EBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7E21F05-C166-4DCC-8429-EC8A4C1A67B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7E21F05-C166-4DCC-8429-EC8A4C1A67B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7E21F05-C166-4DCC-8429-EC8A4C1A67B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7E21F05-C166-4DCC-8429-EC8A4C1A67B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44453656-BB80-4E3F-ACCD-A9F843E00EBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44453656-BB80-4E3F-ACCD-A9F843E00EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44453656-BB80-4E3F-ACCD-A9F843E00EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44453656-BB80-4E3F-ACCD-A9F843E00EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

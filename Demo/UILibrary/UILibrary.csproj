@@ -92,11 +92,23 @@
     <Compile Include="FrmGroupBox.Designer.cs">
       <DependentUpon>FrmGroupBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmListViewEmbeddedControls.cs">
+    <Compile Include="FrmLoadingBar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmListViewEmbeddedControls.Designer.cs">
+    <Compile Include="FrmLoadingBar.Designer.cs">
+      <DependentUpon>FrmLoadingBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListView\FrmListViewEmbeddedControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListView\FrmListViewEmbeddedControls.Designer.cs">
       <DependentUpon>FrmListViewEmbeddedControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPlayerTrackBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPlayerTrackBar.Designer.cs">
+      <DependentUpon>FrmPlayerTrackBar.cs</DependentUpon>
     </Compile>
     <Compile Include="ListBox\FrmChatListBox.cs">
       <SubType>Form</SubType>
@@ -197,8 +209,14 @@
     <EmbeddedResource Include="FrmGroupBox.resx">
       <DependentUpon>FrmGroupBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmListViewEmbeddedControls.resx">
+    <EmbeddedResource Include="FrmLoadingBar.resx">
+      <DependentUpon>FrmLoadingBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListView\FrmListViewEmbeddedControls.resx">
       <DependentUpon>FrmListViewEmbeddedControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPlayerTrackBar.resx">
+      <DependentUpon>FrmPlayerTrackBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListBox\FrmChatListBox.resx">
       <DependentUpon>FrmChatListBox.cs</DependentUpon>
