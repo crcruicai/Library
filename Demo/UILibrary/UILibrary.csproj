@@ -86,29 +86,23 @@
     <Compile Include="FrmChatGroupBox.Designer.cs">
       <DependentUpon>FrmChatGroupBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmControlPaintExTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmControlPaintExTest.Designer.cs">
+      <DependentUpon>FrmControlPaintExTest.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGroupBox.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmGroupBox.Designer.cs">
       <DependentUpon>FrmGroupBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmLoadingBar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmLoadingBar.Designer.cs">
-      <DependentUpon>FrmLoadingBar.cs</DependentUpon>
-    </Compile>
     <Compile Include="ListView\FrmListViewEmbeddedControls.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ListView\FrmListViewEmbeddedControls.Designer.cs">
       <DependentUpon>FrmListViewEmbeddedControls.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmPlayerTrackBar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmPlayerTrackBar.Designer.cs">
-      <DependentUpon>FrmPlayerTrackBar.cs</DependentUpon>
     </Compile>
     <Compile Include="ListBox\FrmChatListBox.cs">
       <SubType>Form</SubType>
@@ -206,17 +200,14 @@
     <EmbeddedResource Include="FrmChatGroupBox.resx">
       <DependentUpon>FrmChatGroupBox.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmControlPaintExTest.resx">
+      <DependentUpon>FrmControlPaintExTest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmGroupBox.resx">
       <DependentUpon>FrmGroupBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmLoadingBar.resx">
-      <DependentUpon>FrmLoadingBar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ListView\FrmListViewEmbeddedControls.resx">
       <DependentUpon>FrmListViewEmbeddedControls.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmPlayerTrackBar.resx">
-      <DependentUpon>FrmPlayerTrackBar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListBox\FrmChatListBox.resx">
       <DependentUpon>FrmChatListBox.cs</DependentUpon>
@@ -277,14 +268,14 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\CRCUILibrary\CRCUILibrary.csproj">
+    <Folder Include="Panel\" />
+    <Folder Include="ui\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\UI\CRCUILibrary\CRCUILibrary.csproj">
       <Project>{B463AC21-6B95-4CC0-A115-C4BCE4AB1416}</Project>
       <Name>CRCUILibrary</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Panel\" />
-    <Folder Include="ui\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

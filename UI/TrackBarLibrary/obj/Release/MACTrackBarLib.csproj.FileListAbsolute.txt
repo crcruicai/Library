@@ -1,0 +1,10 @@
+D:\Documents\Visual Studio 2010\Projects\library\httpwww.codeguru.com\MAC_Slider_src\MACTrackBarLib\bin\Release\MACTrackBarLib.dll
+D:\Documents\Visual Studio 2010\Projects\library\httpwww.codeguru.com\MAC_Slider_src\MACTrackBarLib\obj\Release\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\library\httpwww.codeguru.com\MAC_Slider_src\MACTrackBarLib\obj\Release\EConTech.Windows.MACUI.MACTrackBar.resources
+D:\Documents\Visual Studio 2010\Projects\library\httpwww.codeguru.com\MAC_Slider_src\MACTrackBarLib\obj\Release\ResGen.read.1.tlog
+D:\Documents\Visual Studio 2010\Projects\library\httpwww.codeguru.com\MAC_Slider_src\MACTrackBarLib\obj\Release\ResGen.write.1.tlog
+D:\Documents\Visual Studio 2010\Projects\library\httpwww.codeguru.com\MAC_Slider_src\MACTrackBarLib\obj\Release\MACTrackBarLib.dll
+G:\Projects\C#\httpwww.codeguru.com\MAC_Slider_src\MACTrackBarLib\bin\Release\MACTrackBarLib.dll
+G:\Projects\C#\httpwww.codeguru.com\MAC_Slider_src\MACTrackBarLib\obj\Release\MACTrackBarLib.csproj.GenerateResource.Cache
+G:\Projects\C#\httpwww.codeguru.com\MAC_Slider_src\MACTrackBarLib\obj\Release\MACTrackBarLib.dll
+G:\Projects\C#\httpwww.codeguru.com\MAC_Slider_src\MACTrackBarLib\obj\Release\CRC.Controls.MacTrackBar.resources

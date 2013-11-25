@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B463AC21-6B95-4CC0-A115-C4BCE4AB1416}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CRC</RootNamespace>
+    <AssemblyName>CRCUILibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\DragableListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Froms\AutoDockManger.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Label\ArtTextLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListBox\ChatGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckCombox\AutoChangComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ButtonEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Picture\CaptureImage\CaptureImageTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Picture\CaptureImage\CaptureImageTool.Designer.cs">
+      <DependentUpon>CaptureImageTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Picture\CaptureImage\CaptureImageToolColorTable.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\ColorLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Picture\CaptureImage\ColorSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Picture\CaptureImage\ColorSelector.Designer.cs">
+      <DependentUpon>ColorSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Picture\CaptureImage\DrawStyle.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\DrawTextData.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\DrawToolsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Picture\CaptureImage\DrawToolsControl.designer.cs">
+      <DependentUpon>DrawToolsControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Picture\CaptureImage\DrawToolsDockStyle.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\OperateManager.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\OperateObject.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\OperateType.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\SizeGrip.cs" />
+    <Compile Include="Controls\Picture\CaptureImage\ToolStripRendererEx.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListBox.Designer.cs">
+      <DependentUpon>ChatListBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListEventArgs.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListItem.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListItemConverter.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListItemIcon.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListSubItem.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListSubItemConverter.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\ChatListVScroll.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\GroupListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListBox\ChatListBox\TextGroupItem.cs" />
+    <Compile Include="Controls\ListBox\ChatListBox\TextSubItem.cs" />
+    <Compile Include="Controls\ListBox\GroupListbox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListView\ListViewEmbeddedControls.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListView\EditListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Label\MultiLineLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Picture\PictureViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TextBox\ReadOnlyRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TreeView\ChatNode.cs" />
+    <Compile Include="Controls\CheckCombox\CheckComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckCombox\CheckComboBox.Designer.cs">
+      <DependentUpon>CheckComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckCombox\GripBounds.cs" />
+    <Compile Include="Controls\CheckCombox\NativeMethods.cs" />
+    <Compile Include="Controls\CheckCombox\Popup.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckCombox\Popup.Designer.cs">
+      <DependentUpon>Popup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckCombox\PopupComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckCombox\PopupComboBox.Designer.cs">
+      <DependentUpon>PopupComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckCombox\Selection Wrappers\ListSelectionWrapper.cs" />
+    <Compile Include="Controls\CheckCombox\Selection Wrappers\ObjectSelectionWrapper.cs" />
+    <Compile Include="Controls\TreeView\ChatTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TreeView\ChatTreeViewEventArgs.cs" />
+    <Compile Include="Controls\TreeView\LayerTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListBox\MultiTextListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\OverWrite\Events.cs" />
+    <Compile Include="Controls\OverWrite\ImageCombobox\ComboBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\OverWrite\ImageCombobox\ControlPaintEx.cs" />
+    <Compile Include="Controls\OverWrite\Enum\ControlState.cs" />
+    <Compile Include="Controls\OverWrite\ImageCombobox\EditorAssemblyName.cs" />
+    <Compile Include="Controls\OverWrite\Helper\GraphicsPathHelper.cs" />
+    <Compile Include="Controls\OverWrite\ImageCombobox\ImageComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\OverWrite\ImageCombobox\ImageComboBoxItem.cs" />
+    <Compile Include="Controls\OverWrite\ImageCombobox\ImageIndexer.cs" />
+    <Compile Include="Controls\OverWrite\Helper\RegionHelper.cs" />
+    <Compile Include="Controls\OverWrite\Menu\ProfessionalToolStripRendererEx.cs" />
+    <Compile Include="Controls\OverWrite\Menu\ToolStripColorTable.cs" />
+    <Compile Include="Controls\OverWrite\PopupControlHost.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\OverWrite\Render\InterpolationModeGraphics.cs" />
+    <Compile Include="Controls\OverWrite\NativeMethods.cs" />
+    <Compile Include="Controls\OverWrite\ImageCombobox\NoneExcludedImageIndexConverter.cs" />
+    <Compile Include="Controls\OverWrite\Helper\RenderHelper.cs" />
+    <Compile Include="Controls\OverWrite\Enum\RoundStyle.cs" />
+    <Compile Include="Controls\OverWrite\Render\SmoothingModeGraphics.cs" />
+    <Compile Include="Controls\OverWrite\Render\TextRenderingHintGraphics.cs" />
+    <Compile Include="Controls\Picture\ImageGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListBox\MultiLineListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\OverWrite\SplitContainerEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\OverWrite\TabControlEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Panel\CheckBoxPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\信号\AGauge.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\信号\AGauge.Designer.cs">
+      <DependentUpon>AGauge.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Panel\ExpandablePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\ListView\DbListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TreeView\DbTreeView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="API\NativeInterop.cs" />
+    <Compile Include="Controls\perfChart\PerfChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\perfChart\PerfChart.Designer.cs">
+      <DependentUpon>PerfChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\perfChart\PerfChartStyle.cs" />
+    <Compile Include="Controls\ListBox\RadioListBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\OverWrite\Enum\ThumbArrowDirection.cs" />
+    <Compile Include="Controls\信号\SlidingScale.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\信号\SlidingScale.Designer.cs">
+      <DependentUpon>SlidingScale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SignalGeneratorPanel\SignalGenerator.cs" />
+    <Compile Include="Controls\SignalGeneratorPanel\SignalGeneratorPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DebugExtension.cs" />
+    <Compile Include="Froms\FormEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FormEx.Designer.cs">
+      <DependentUpon>FormEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\KeyStateCheck.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StringFomatExtension.cs" />
+    <Compile Include="TaskInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Controls\控件功能简介.txt" />
+    <None Include="Resources\Away.png" />
+    <None Include="Resources\Busy.png" />
+    <None Include="Resources\Dont Disturb.png" />
+    <None Include="Resources\Invisible.png" />
+    <None Include="Resources\null.png" />
+    <None Include="Resources\OffLine.png" />
+    <None Include="Resources\OnLine.png" />
+    <None Include="Resources\QMe.png" />
+    <None Include="Resources\Accept.ico" />
+    <None Include="Resources\Arrow.ico" />
+    <None Include="Resources\Ellipse.ico" />
+    <None Include="Resources\Exit.ico" />
+    <None Include="Resources\Line.ico" />
+    <None Include="Resources\Rectangular.ico" />
+    <None Include="Resources\Redo.png" />
+    <None Include="Resources\Save.ico" />
+    <None Include="Resources\Text.ico" />
+    <None Include="Resources\Accept.bmp" />
+    <None Include="Resources\Arrow.bmp" />
+    <None Include="Resources\Ellipse.bmp" />
+    <None Include="Resources\Exit.bmp" />
+    <None Include="Resources\Line.bmp" />
+    <None Include="Resources\Rectangular.bmp" />
+    <None Include="Resources\Save.bmp" />
+    <None Include="Resources\Text.bmp" />
+    <None Include="Resources\minus.png" />
+    <None Include="Resources\plus.png" />
+    <Content Include="开发日志.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\Edit\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Picture\CaptureImage\CaptureImageTool.resx">
+      <DependentUpon>CaptureImageTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Picture\CaptureImage\ColorSelector.resx">
+      <DependentUpon>ColorSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Picture\CaptureImage\DrawToolsControl.resx">
+      <DependentUpon>DrawToolsControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ListBox\ChatListBox\ChatListBox.resx">
+      <DependentUpon>ChatListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CheckCombox\PopupComboBox.resx">
+      <DependentUpon>PopupComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+G:\Projects\C#\httpwww.codeguru.com\MAC_Slider_src\TrackBarLibrary\bin\Debug\TrackBarLibrary.dll
+G:\Projects\C#\httpwww.codeguru.com\MAC_Slider_src\TrackBarLibrary\bin\Debug\TrackBarLibrary.pdb
+G:\Projects\C#\httpwww.codeguru.com\MAC_Slider_src\TrackBarLibrary\obj\Debug\CRC.Controls.MacTrackBar.resources
+G:\Projects\C#\httpwww.codeguru.com\MAC_Slider_src\TrackBarLibrary\obj\Debug\TrackBarLibrary.csproj.GenerateResource.Cache
+G:\Projects\C#\httpwww.codeguru.com\MAC_Slider_src\TrackBarLibrary\obj\Debug\TrackBarLibrary.dll
+G:\Projects\C#\httpwww.codeguru.com\MAC_Slider_src\TrackBarLibrary\obj\Debug\TrackBarLibrary.pdb
+G:\Code\Library\UI\TrackBarLibrary\bin\Debug\TrackBarLibrary.dll
+G:\Code\Library\UI\TrackBarLibrary\bin\Debug\TrackBarLibrary.pdb
+G:\Code\Library\UI\TrackBarLibrary\obj\Debug\CRC.Controls.MacTrackBar.resources
+G:\Code\Library\UI\TrackBarLibrary\obj\Debug\TrackBarLibrary.csproj.GenerateResource.Cache
+G:\Code\Library\UI\TrackBarLibrary\obj\Debug\TrackBarLibrary.dll
+G:\Code\Library\UI\TrackBarLibrary\obj\Debug\TrackBarLibrary.pdb

@@ -1,0 +1,38 @@
+﻿2013-11-18
+1 添加PlayerTrackBar 播放器时间滚动条.
+2 添加LoadingBar 载入滚动条.
+3 添加DragableListBox 支持拖拽的listbox.
+
+
+2013-11-09
+1 添加MultiLineLabel 多行文本框.支持字符截断并显示省略号.
+
+2013-10-22
+1 添加PictureViewer 图片查看器.支持滚动栏.
+
+
+2013-10-21
+1 添加LayerTreeView
+2 修改ChatListBox,绘制边框.
+3 正在实现ChatTreeView.
+
+2013-10-08
+1 添加MultiTextBox.
+2 为GroupListBox,添加新的事件支持.并在绘制子项时,支持多行文本.
+3 修改AutoChangComboBox,支持自定义刷选子项.
+
+
+2013-10-05
+1 添加 ChatListBox
+2 添加 GroupListBox
+
+2013-10-04
+1 添加 PopupControlHost
+2 添加 TabControlEx
+
+2013-09-30 
+1 添加PopupControlHost
+2 添加ProfessionToolStripRendererEx
+
+
+
