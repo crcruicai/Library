@@ -265,7 +265,7 @@ namespace CRC.Controls
             Graphics g = e.Graphics;
             g.SmoothingMode = SmoothingMode.AntiAlias;
 
-            using (GraphicsPath path = GraphicsPathHelper.CreatePath(
+            using (GraphicsPath path = GraphicsPathHelper.CreateFilletRectangle(
                ClientRectangle, 8, RoundStyle.All, false))
             {
                 using (SolidBrush brush = new SolidBrush(ColorTable.BackColorNormal))
@@ -276,7 +276,7 @@ namespace CRC.Controls
                 {
                     g.DrawPath(pen, path);
 
-                    using (GraphicsPath innerPath = GraphicsPathHelper.CreatePath(
+                    using (GraphicsPath innerPath = GraphicsPathHelper.CreateFilletRectangle(
                         ClientRectangle, 8, RoundStyle.All, true))
                     {
                         g.DrawPath(pen, innerPath);
@@ -291,7 +291,7 @@ namespace CRC.Controls
 
         private void SetRegion()
         {
-            using (GraphicsPath path = GraphicsPathHelper.CreatePath(
+            using (GraphicsPath path = GraphicsPathHelper.CreateFilletRectangle(
                 ClientRectangle, 8, RoundStyle.All, false))
             {
                 if (base.Region != null)

@@ -13,16 +13,25 @@ namespace CRC.Controls
      * 你可以免费使用或修改以下代码，但请保留版权信息。
      * 具体请查看 CS程序员之窗开源协议（http://www.csharpwin.com/csol.html）。
      */
+
+    /// <summary>
+    /// 颜色标签.
+    /// </summary>
     public class ColorLabel : Control
     {
         #region Fields
-
-        private Color _borderColor = Color.FromArgb(65, 173, 236);
+        /// <summary>
+        /// 边框的颜色.
+        /// </summary>
+        private Color _BorderColor = Color.FromArgb(65, 173, 236);
 
         #endregion
 
         #region Constructors
 
+        /// <summary>
+        /// 颜色标签.
+        /// </summary>
         public ColorLabel()
             : base()
         {
@@ -33,17 +42,23 @@ namespace CRC.Controls
 
         #region Properties
 
+        /// <summary>
+        /// 获取或设置边框的颜色.
+        /// </summary>
         [DefaultValue(typeof(Color),"65, 173, 236")]
         public Color BorderColor
         {
-            get { return _borderColor; }
+            get { return _BorderColor; }
             set 
             {
-                _borderColor = value;
+                _BorderColor = value;
                 base.Invalidate();
             }
         }
 
+        /// <summary>
+        /// 获取默认设置的Size
+        /// </summary>
         protected override Size DefaultSize
         {
             get { return new Size(16, 16); }
@@ -53,6 +68,9 @@ namespace CRC.Controls
 
         #region Private Methods
 
+        /// <summary>
+        /// 设置控件的绘制样式
+        /// </summary>
         private void SetStyles()
         {
             base.SetStyle(
@@ -75,23 +93,13 @@ namespace CRC.Controls
             Rectangle rect = ClientRectangle;
             using (SolidBrush brush = new SolidBrush(base.BackColor))
             {
-                g.FillRectangle(
-                    brush,
-                    rect);
+                g.FillRectangle(brush,rect);
             }
 
-            ControlPaint.DrawBorder(
-                g,
-                rect,
-                _borderColor,
-                ButtonBorderStyle.Solid);
-
+            ControlPaint.DrawBorder(g,rect,_BorderColor,ButtonBorderStyle.Solid);
             rect.Inflate(-1, -1);
-            ControlPaint.DrawBorder(
-                g,
-                rect,
-                Color.White,
-                ButtonBorderStyle.Solid);
+            ControlPaint.DrawBorder(g,rect,Color.White,ButtonBorderStyle.Solid);
+                
         }
 
         #endregion

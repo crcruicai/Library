@@ -247,8 +247,6 @@ namespace CRC.Controls
 
         #endregion
 
-
-
         #region  函数
 
         /// <summary>

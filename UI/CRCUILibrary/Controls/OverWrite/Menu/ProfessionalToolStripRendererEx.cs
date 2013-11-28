@@ -52,8 +52,7 @@ namespace CRC.Controls
             }
         }
 
-        protected override void OnRenderToolStripBackground(
-            ToolStripRenderEventArgs e)
+        protected override void OnRenderToolStripBackground(ToolStripRenderEventArgs e)
         {
             ToolStrip toolStrip = e.ToolStrip;
             Graphics g = e.Graphics;
@@ -61,7 +60,7 @@ namespace CRC.Controls
 
             if (toolStrip is ToolStripDropDown)
             {
-                RegionHelper.CreateRegion(toolStrip, bounds);
+                RegionHelper.SetControlRegion(toolStrip, bounds);
                 using (SolidBrush brush = new SolidBrush(ColorTable.BackNormal))
                 {
                     g.FillRectangle(brush, bounds);
@@ -91,8 +90,8 @@ namespace CRC.Controls
             }
         }
 
-        protected override void OnRenderImageMargin(
-            ToolStripRenderEventArgs e)
+        protected override void OnRenderImageMargin(ToolStripRenderEventArgs e)
+            
         {
             ToolStrip toolStrip = e.ToolStrip;
             Graphics g = e.Graphics;
@@ -136,7 +135,7 @@ namespace CRC.Controls
                         logoRect.Y += 1;
                         logoRect.Height -= 2;
                         using (GraphicsPath path =
-                            GraphicsPathHelper.CreatePath(logoRect, 8, RoundStyle.All, false))
+                            GraphicsPathHelper.CreateFilletRectangle(logoRect, 8, RoundStyle.All, false))
                         {
                             using (SmoothingModeGraphics sg = new SmoothingModeGraphics(g))
                             {
@@ -220,8 +219,7 @@ namespace CRC.Controls
             }
         }
 
-        protected override void OnRenderToolStripBorder(
-            ToolStripRenderEventArgs e)
+        protected override void OnRenderToolStripBorder(ToolStripRenderEventArgs e)
         {
             ToolStrip toolStrip = e.ToolStrip;
             Graphics g = e.Graphics;
@@ -232,7 +230,7 @@ namespace CRC.Controls
                 using (SmoothingModeGraphics sg = new SmoothingModeGraphics(g))
                 {
                     using (GraphicsPath path =
-                        GraphicsPathHelper.CreatePath(bounds, 8, RoundStyle.All, true))
+                        GraphicsPathHelper.CreateFilletRectangle(bounds, 8, RoundStyle.All, true))
                     {
                         using (Pen pen = new Pen(ColorTable.DropDownImageSeparator))
                         {
@@ -243,7 +241,7 @@ namespace CRC.Controls
                 }
 
                 bounds.Inflate(-1, -1);
-                using (GraphicsPath innerPath = GraphicsPathHelper.CreatePath(
+                using (GraphicsPath innerPath = GraphicsPathHelper.CreateFilletRectangle(
                     bounds, 8, RoundStyle.All, true))
                 {
                     using (Pen pen = new Pen(ColorTable.BackNormal))
@@ -274,8 +272,7 @@ namespace CRC.Controls
             }
         }
 
-        protected override void OnRenderMenuItemBackground(
-           ToolStripItemRenderEventArgs e)
+        protected override void OnRenderMenuItemBackground( ToolStripItemRenderEventArgs e)
         {
             ToolStrip toolStrip = e.ToolStrip;
             ToolStripItem item = e.Item;
@@ -290,34 +287,17 @@ namespace CRC.Controls
 
             if (toolStrip is MenuStrip)
             {
-                LinearGradientMode mode =
-                    toolStrip.Orientation == Orientation.Horizontal ?
+                LinearGradientMode mode =toolStrip.Orientation == Orientation.Horizontal ?
                     LinearGradientMode.Vertical : LinearGradientMode.Horizontal;
                 if (item.Selected)
                 {
-                    RenderHelper.RenderBackgroundInternal(
-                        g,
-                        rect,
-                        ColorTable.BackHover,
-                        ColorTable.Border,
-                        ColorTable.BackNormal,
-                        RoundStyle.All,
-                        true,
-                        true,
-                        mode);
+                    RenderHelper.RenderBackgroundInternal(g,rect,ColorTable.BackHover,ColorTable.Border,
+                        ColorTable.BackNormal,RoundStyle.All,true,true,mode);
                 }
                 else if (item.Pressed)
                 {
-                    RenderHelper.RenderBackgroundInternal(
-                       g,
-                       rect,
-                       ColorTable.BackPressed,
-                       ColorTable.Border,
-                       ColorTable.BackNormal,
-                       RoundStyle.All,
-                       true,
-                       true,
-                       mode);
+                    RenderHelper.RenderBackgroundInternal(g,rect,ColorTable.BackPressed,ColorTable.Border,
+                        ColorTable.BackNormal,RoundStyle.All,true,true,mode);
                 }
                 else
                 {
@@ -343,16 +323,8 @@ namespace CRC.Controls
 
                 if (item.Selected)
                 {
-                    RenderHelper.RenderBackgroundInternal(
-                       g,
-                       rect,
-                       ColorTable.BackHover,
-                       ColorTable.Border,
-                       ColorTable.BackNormal,
-                       RoundStyle.All,
-                       true,
-                       true,
-                       LinearGradientMode.Vertical);
+                    RenderHelper.RenderBackgroundInternal(g,rect,ColorTable.BackHover,ColorTable.Border,ColorTable.BackNormal,
+                        RoundStyle.All,true,true,LinearGradientMode.Vertical);
                 }
                 else
                 {
@@ -365,14 +337,12 @@ namespace CRC.Controls
             }
         }
 
-        protected override void OnRenderItemImage(
-            ToolStripItemImageRenderEventArgs e)
+        protected override void OnRenderItemImage(ToolStripItemImageRenderEventArgs e)
         {
             ToolStrip toolStrip = e.ToolStrip;
             Graphics g = e.Graphics;
 
-            if (toolStrip is ToolStripDropDown &&
-               e.Item is ToolStripMenuItem)
+            if (toolStrip is ToolStripDropDown && e.Item is ToolStripMenuItem)
             {
                 bool bDrawLogo = NeedDrawLogo(toolStrip);
                 int offsetMargin = bDrawLogo ? OffsetMargin : 0;
@@ -392,12 +362,10 @@ namespace CRC.Controls
                     rect.X += offsetMargin + 2;
                 }
 
-                using (InterpolationModeGraphics ig = 
-                    new InterpolationModeGraphics(g))
+                using (InterpolationModeGraphics ig = new InterpolationModeGraphics(g))
                 {
-                    ToolStripItemImageRenderEventArgs ne =
-                        new ToolStripItemImageRenderEventArgs(
-                        g, e.Item, e.Image, rect);
+                    ToolStripItemImageRenderEventArgs ne =new ToolStripItemImageRenderEventArgs(g, e.Item, e.Image, rect);
+                        
                     base.OnRenderItemImage(ne);
                 }
             }
@@ -407,15 +375,13 @@ namespace CRC.Controls
             }
         }
 
-        protected override void OnRenderItemText(
-            ToolStripItemTextRenderEventArgs e)
+        protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
         {
             ToolStrip toolStrip = e.ToolStrip;
 
             e.TextColor = ColorTable.Fore;
 
-            if (toolStrip is ToolStripDropDown &&
-                e.Item is ToolStripMenuItem)
+            if (toolStrip is ToolStripDropDown && e.Item is ToolStripMenuItem)
             {
                 bool bDrawLogo = NeedDrawLogo(toolStrip);
 
@@ -436,14 +402,12 @@ namespace CRC.Controls
             base.OnRenderItemText(e);
         }
 
-        protected override void OnRenderItemCheck(
-            ToolStripItemImageRenderEventArgs e)
+        protected override void OnRenderItemCheck( ToolStripItemImageRenderEventArgs e)
         {
             ToolStrip toolStrip = e.ToolStrip;
             Graphics g = e.Graphics;
 
-            if (toolStrip is ToolStripDropDown &&
-               e.Item is ToolStripMenuItem)
+            if (toolStrip is ToolStripDropDown &&e.Item is ToolStripMenuItem)
             {
                 bool bDrawLogo = NeedDrawLogo(toolStrip);
                 int offsetMargin = bDrawLogo ? OffsetMargin : 0;
@@ -493,18 +457,13 @@ namespace CRC.Controls
             }
         }
 
-        protected override void OnRenderArrow(
-            ToolStripArrowRenderEventArgs e)
+        protected override void OnRenderArrow(ToolStripArrowRenderEventArgs e)        
         {
-            if (e.Item.Enabled)
-            {
-                e.ArrowColor = ColorTable.Fore;
-            }
+            if (e.Item.Enabled) e.ArrowColor = ColorTable.Fore;
 
             ToolStrip toolStrip = e.Item.Owner;
 
-            if (toolStrip is ToolStripDropDown &&
-                e.Item is ToolStripMenuItem)
+            if (toolStrip is ToolStripDropDown && e.Item is ToolStripMenuItem)              
             {
                 bool bDrawLogo = NeedDrawLogo(toolStrip);
 
@@ -526,8 +485,7 @@ namespace CRC.Controls
             base.OnRenderArrow(e);
         }
 
-        protected override void OnRenderSeparator(
-            ToolStripSeparatorRenderEventArgs e)
+        protected override void OnRenderSeparator(ToolStripSeparatorRenderEventArgs e)         
         {
             ToolStrip toolStrip = e.ToolStrip;
             Rectangle rect = e.Item.ContentRectangle;
@@ -537,9 +495,8 @@ namespace CRC.Controls
             {
                 bool bDrawLogo = NeedDrawLogo(toolStrip);
 
-                int offsetMargin = bDrawLogo ? 
-                    OffsetMargin * 2 : OffsetMargin;
-
+                int offsetMargin = bDrawLogo ? OffsetMargin * 2 : OffsetMargin;
+                    
                 if (e.Item.RightToLeft != RightToLeft.Yes)
                 {
                     rect.X += offsetMargin + 2;
@@ -547,22 +504,12 @@ namespace CRC.Controls
                 rect.Width -= offsetMargin + 4;
             }
 
-            RenderSeparatorLine(
-               g,
-               rect,
-               ColorTable.DropDownImageSeparator,
-               ColorTable.BackNormal,
-               SystemColors.ControlLightLight,
-               e.Vertical);
+            RenderSeparatorLine(g,rect,ColorTable.DropDownImageSeparator,ColorTable.BackNormal,SystemColors.ControlLightLight,e.Vertical);
+  
         }
 
-        internal void RenderSeparatorLine(
-            Graphics g,
-            Rectangle rect,
-            Color baseColor,
-            Color backColor,
-            Color shadowColor,
-            bool vertical)
+        internal void RenderSeparatorLine( Graphics g,Rectangle rect,Color baseColor,Color backColor,Color shadowColor, bool vertical)
+           
         {
             float angle;
             if (vertical)
@@ -573,11 +520,7 @@ namespace CRC.Controls
             {
                 angle = 180F;
             }
-            using (LinearGradientBrush brush = new LinearGradientBrush(
-                    rect,
-                    baseColor,
-                    backColor,
-                    angle))
+            using (LinearGradientBrush brush = new LinearGradientBrush( rect,baseColor,backColor,angle))                    
             {
                 Blend blend = new Blend();
                 blend.Positions = new float[] { 0f, .2f, .5f, .8f, 1f };
@@ -612,9 +555,7 @@ namespace CRC.Controls
         internal bool NeedDrawLogo(ToolStrip toolStrip)
         {
             ToolStripDropDown dropDown = toolStrip as ToolStripDropDown;
-            bool bDrawLogo =
-                (dropDown.OwnerItem != null &&
-                dropDown.OwnerItem.Owner is MenuStrip) ||
+            bool bDrawLogo =(dropDown.OwnerItem != null && dropDown.OwnerItem.Owner is MenuStrip) ||
                 (toolStrip is ContextMenuStrip);
             return bDrawLogo;
         }

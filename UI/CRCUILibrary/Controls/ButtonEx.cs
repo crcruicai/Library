@@ -231,7 +231,8 @@ namespace CRC.Controls
         }
 
 
-        internal void RenderBackgroundInternal(Graphics g, Rectangle rect, Color baseColor, Color borderColor, Color innerBorderColor, RoundStyle style, int roundWidth, float basePosition, bool drawBorder, bool drawGlass, LinearGradientMode mode)
+        internal void RenderBackgroundInternal(Graphics g, Rectangle rect, Color baseColor, Color borderColor, 
+            Color innerBorderColor, RoundStyle style, int roundWidth, float basePosition, bool drawBorder, bool drawGlass, LinearGradientMode mode)
         {
             if (drawBorder)
             {
@@ -260,7 +261,7 @@ namespace CRC.Controls
                 };
                 if (style != RoundStyle.None)
                 {
-                    using (GraphicsPath graphicsPath = GraphicsPathHelper.CreatePath(rect, roundWidth, style, false))
+                    using (GraphicsPath graphicsPath = GraphicsPathHelper.CreateFilletRectangle(rect, roundWidth, style, false))
                     {
                         g.FillPath(linearGradientBrush, graphicsPath);
                     }
@@ -275,7 +276,7 @@ namespace CRC.Controls
                         {
                             rect2.Width = (int)((float)rect.Width * basePosition);
                         }
-                        using (GraphicsPath graphicsPath2 = GraphicsPathHelper.CreatePath(rect2, roundWidth, RoundStyle.Top, false))
+                        using (GraphicsPath graphicsPath2 = GraphicsPathHelper.CreateFilletRectangle(rect2, roundWidth, RoundStyle.Top, false))
                         {
                             using (SolidBrush solidBrush = new SolidBrush(Color.FromArgb(80, 255, 255, 255)))
                             {
@@ -300,7 +301,7 @@ namespace CRC.Controls
                     }
                     if (drawBorder)
                     {
-                        using (GraphicsPath graphicsPath = GraphicsPathHelper.CreatePath(rect, roundWidth, style, false))
+                        using (GraphicsPath graphicsPath = GraphicsPathHelper.CreateFilletRectangle(rect, roundWidth, style, false))
                         {
                             using (Pen pen = new Pen(borderColor))
                             {
@@ -308,7 +309,7 @@ namespace CRC.Controls
                             }
                         }
                         rect.Inflate(-1, -1);
-                        using (GraphicsPath graphicsPath = GraphicsPathHelper.CreatePath(rect, roundWidth, style, false))
+                        using (GraphicsPath graphicsPath = GraphicsPathHelper.CreateFilletRectangle(rect, roundWidth, style, false))
                         {
                             using (Pen pen = new Pen(innerBorderColor))
                             {
@@ -479,7 +480,7 @@ namespace CRC.Controls
                     case ContentAlignment.TopCenter:
                         textFormatFlags |= TextFormatFlags.HorizontalCenter;
                         break;
-                    case (ContentAlignment)3:
+                    case (ContentAlignment.TopLeft | ContentAlignment.TopCenter ):
                         break;
                     case ContentAlignment.TopRight:
                         textFormatFlags |= TextFormatFlags.Right;

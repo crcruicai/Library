@@ -59,17 +59,17 @@ namespace CRC.Controls
     {
         #region Fields
 
-        private ToolStripControlHost _controlHost;
-        private Control _popupControl;
-        private bool _changeRegion;
-        private bool _openFocused;
-        private bool _acceptAlt;
-        private bool _resizableTop;
+        private ToolStripControlHost _ControlHost;
+        private Control _PopupControl;
+        private bool _ChangeRegion;
+        private bool _OpenFocused;
+        private bool _AcceptAlt;
+        private bool _ResizableTop;
         private bool _resizableLeft;
-        private bool _canResize = false;
-        private PopupControlHost _ownerPopup;
-        private PopupControlHost _childPopup;
-        private Color _borderColor = Color.FromArgb(23, 169, 254);
+        private bool _CanResize = false;
+        private PopupControlHost _OwnerPopup;
+        private PopupControlHost _ChildPopup;
+        private Color _BorderColor = Color.FromArgb(23, 169, 254);
 
         #endregion
 
@@ -97,40 +97,40 @@ namespace CRC.Controls
         /// </summary>
         public bool ChangeRegion
         {
-            get { return _changeRegion; }
-            set { _changeRegion = value; }
+            get { return _ChangeRegion; }
+            set { _ChangeRegion = value; }
         }
         /// <summary>
         /// 展开时是否处于焦点状态.
         /// </summary>
         public bool OpenFocused
         {
-            get { return _openFocused; }
-            set { _openFocused = value; }
+            get { return _OpenFocused; }
+            set { _OpenFocused = value; }
         }
         /// <summary>
         /// 是否接受Alt+F4关闭控件.
         /// </summary>
         public bool AcceptAlt
         {
-            get { return _acceptAlt; }
-            set { _acceptAlt = value; }
+            get { return _AcceptAlt; }
+            set { _AcceptAlt = value; }
         }
         /// <summary>
         /// 是否接受重新设置大小.
         /// </summary>
         public bool CanResize
         {
-            get { return _canResize; }
-            set { _canResize = value; }
+            get { return _CanResize; }
+            set { _CanResize = value; }
         }
         /// <summary>
         /// 获取或设置边框的颜色.
         /// </summary>
         public Color BorderColor
         {
-            get { return _borderColor; }
-            set { _borderColor = value; }
+            get { return _BorderColor; }
+            set { _BorderColor = value; }
         }
 
         #endregion
@@ -143,7 +143,7 @@ namespace CRC.Controls
         /// <returns></returns>
         protected override bool ProcessDialogKey(Keys keyData)
         {
-            if (_acceptAlt && ((keyData & Keys.Alt) == Keys.Alt))
+            if (_AcceptAlt && ((keyData & Keys.Alt) == Keys.Alt))
             {
                 if ((keyData & Keys.F4) != Keys.F4)
                 {
@@ -162,13 +162,13 @@ namespace CRC.Controls
         /// <param name="e"></param>
         protected override void OnOpening(CancelEventArgs e)
         {
-            if (_popupControl.IsDisposed || _popupControl.Disposing)
+            if (_PopupControl.IsDisposed || _PopupControl.Disposing)
             {
                 e.Cancel = true;
                 base.OnOpening(e);
                 return;
             }
-            _popupControl.RegionChanged += new EventHandler(PopupControlRegionChanged);
+            _PopupControl.RegionChanged += new EventHandler(PopupControlRegionChanged);
             UpdateRegion();
             base.OnOpening(e);
         }
@@ -178,9 +178,9 @@ namespace CRC.Controls
         /// <param name="e"></param>
         protected override void OnOpened(EventArgs e)
         {
-            if (_openFocused)
+            if (_OpenFocused)
             {
-                _popupControl.Focus();
+                _PopupControl.Focus();
             }
             base.OnOpened(e);
         }
@@ -190,16 +190,16 @@ namespace CRC.Controls
         /// <param name="e"></param>
         protected override void OnClosing(ToolStripDropDownClosingEventArgs e)
         {
-            _popupControl.RegionChanged -= new EventHandler(PopupControlRegionChanged);
+            _PopupControl.RegionChanged -= new EventHandler(PopupControlRegionChanged);
             base.OnClosing(e);
         }
 
         protected override void OnSizeChanged(EventArgs e)
         {
             base.OnSizeChanged(e);
-            if (_controlHost != null)
+            if (_ControlHost != null)
             {
-                _controlHost.Size = new Size(
+                _ControlHost.Size = new Size(
                     Width - Padding.Horizontal, Height - Padding.Vertical);
             }
         }
@@ -220,13 +220,9 @@ namespace CRC.Controls
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            if (!_changeRegion)
+            if (!_ChangeRegion)
             {
-                ControlPaint.DrawBorder(
-                    e.Graphics,
-                    ClientRectangle,
-                    _borderColor,
-                    ButtonBorderStyle.Solid);
+                ControlPaint.DrawBorder(e.Graphics,ClientRectangle,_BorderColor, ButtonBorderStyle.Solid);
             }
         }
         /// <summary>
@@ -234,7 +230,7 @@ namespace CRC.Controls
         /// </summary>
         protected void UpdateRegion()
         {
-            if(!_changeRegion)
+            if(!_ChangeRegion)
             {
                 return;
             }
@@ -244,9 +240,9 @@ namespace CRC.Controls
                 base.Region.Dispose();
                 base.Region = null;
             }
-            if (_popupControl.Region != null)
+            if (_PopupControl.Region != null)
             {
-                base.Region = _popupControl.Region.Clone();
+                base.Region = _PopupControl.Region.Clone();
             }
         }
 
@@ -294,11 +290,11 @@ namespace CRC.Controls
 
             SetOwnerItem(control);
 
-            if (_canResize && !_changeRegion)
+            if (_CanResize && !_ChangeRegion)
             {
                 Padding = new Padding(3);
             }
-            else if (!_changeRegion)
+            else if (!_ChangeRegion)
             {
                 Padding = new Padding(1);
             }
@@ -310,14 +306,12 @@ namespace CRC.Controls
             int width = Padding.Horizontal;
             int height = Padding.Vertical;
 
-            base.Size = new Size(
-                   _popupControl.Width + width,
-                   _popupControl.Height + height);
+            base.Size = new Size(_PopupControl.Width + width,_PopupControl.Height + height);
 
-            _resizableTop = false;
+            _ResizableTop = false;
             _resizableLeft = false;
-            Point location = control.PointToScreen(
-                new Point(rect.Left, rect.Bottom));
+            Point location = control.PointToScreen( new Point(rect.Left, rect.Bottom));
+               
             Rectangle screen = Screen.FromControl(control).WorkingArea;
             //是否在中心.
             if (center)
@@ -343,7 +337,7 @@ namespace CRC.Controls
 
             if (location.Y + Size.Height > (screen.Top + screen.Height))
             {
-                _resizableTop = true;
+                _ResizableTop = true;
                 location.Y -= Size.Height + rect.Height;
             }
             //计算在屏幕上显示的坐标.
@@ -368,8 +362,8 @@ namespace CRC.Controls
             if (control is PopupControlHost) //如果父控件是PopupControlHost
             {
                 PopupControlHost popupControl = control as PopupControlHost;
-                _ownerPopup = popupControl;
-                _ownerPopup._childPopup = this;
+                _OwnerPopup = popupControl;
+                _OwnerPopup._ChildPopup = this;
                 OwnerItem = popupControl.Items[0];
                 return;
             }
@@ -389,15 +383,15 @@ namespace CRC.Controls
                 throw new ArgumentException("control");
             }
 
-            _popupControl = control;
-            _controlHost = new ToolStripControlHost(control, "popupControlHost");
-            _controlHost.AutoSize = false;
-            _controlHost.Padding = Padding.Empty;
-            _controlHost.Margin = Padding.Empty;
+            _PopupControl = control;
+            _ControlHost = new ToolStripControlHost(control, "popupControlHost");
+            _ControlHost.AutoSize = false;
+            _ControlHost.Padding = Padding.Empty;
+            _ControlHost.Margin = Padding.Empty;
             base.Size = new Size(
                 control.Size.Width + Padding.Horizontal,
                 control.Size.Height + Padding.Vertical);
-            base.Items.Add(_controlHost);
+            base.Items.Add(_ControlHost);
         }
         /// <summary>
         /// 大小更改时
@@ -417,7 +411,7 @@ namespace CRC.Controls
            Flags = SecurityPermissionFlag.UnmanagedCode)]
         private bool ProcessGrip(ref Message m)
         {
-            if (_canResize && !_changeRegion)
+            if (_CanResize && !_ChangeRegion)
             {
                 switch (m.Msg)
                 {
@@ -438,7 +432,7 @@ namespace CRC.Controls
             Flags = SecurityPermissionFlag.UnmanagedCode)]
         private bool OnGetMinMaxInfo(ref Message m)
         {
-            Control hostedControl = _popupControl;
+            Control hostedControl = _PopupControl;
             if (hostedControl != null)
             {
                 NativeMethods.MINMAXINFO minmax =
@@ -477,39 +471,30 @@ namespace CRC.Controls
         /// <returns></returns>
         private bool OnNcHitTest(ref Message m)
         {
-            Point location = PointToClient(new Point(
-                NativeMethods.LOWORD(m.LParam), NativeMethods.HIWORD(m.LParam)));
+            Point location = PointToClient(new Point(NativeMethods.LOWORD(m.LParam), NativeMethods.HIWORD(m.LParam)));    
             Rectangle gripRect = Rectangle.Empty;
-            if (_canResize && !_changeRegion)
+            if (_CanResize && !_ChangeRegion)
             {
                 if (_resizableLeft)
                 {
-                    if (_resizableTop)
+                    if (_ResizableTop)
                     {
                         gripRect = new Rectangle(0, 0, 6, 6);
                     }
                     else
                     {
-                        gripRect = new Rectangle(
-                            0,
-                            Height - 6,
-                            6,
-                            6);
+                        gripRect = new Rectangle( 0,Height - 6, 6, 6);
                     }
                 }
                 else
                 {
-                    if (_resizableTop)
+                    if (_ResizableTop)
                     {
                         gripRect = new Rectangle(Width - 6, 0, 6, 6);
                     }
                     else
                     {
-                        gripRect = new Rectangle(
-                            Width - 6,
-                            Height - 6,
-                            6,
-                            6);
+                        gripRect = new Rectangle(Width - 6, Height - 6,6, 6);
                     }
                 }
             }
@@ -518,7 +503,7 @@ namespace CRC.Controls
             {
                 if (_resizableLeft)
                 {
-                    if (_resizableTop)
+                    if (_ResizableTop)
                     {
                         m.Result = (IntPtr)NativeMethods.HTTOPLEFT;
                         return true;
@@ -531,7 +516,7 @@ namespace CRC.Controls
                 }
                 else
                 {
-                    if (_resizableTop)
+                    if (_ResizableTop)
                     {
                         m.Result = (IntPtr)NativeMethods.HTTOPRIGHT;
                         return true;
@@ -546,16 +531,14 @@ namespace CRC.Controls
             else
             {
                 Rectangle rectClient = ClientRectangle;
-                if (location.X > rectClient.Right - 3 &&
-                    location.X <= rectClient.Right &&
-                    !_resizableLeft)
+                if (location.X > rectClient.Right - 3 && location.X <= rectClient.Right && !_resizableLeft)  
                 {
                     m.Result = (IntPtr)NativeMethods.HTRIGHT;
                     return true;
                 }
                 else if (location.Y > rectClient.Bottom - 3 &&
                     location.Y <= rectClient.Bottom &&
-                    !_resizableTop)
+                    !_ResizableTop)
                 {
                     m.Result = (IntPtr)NativeMethods.HTBOTTOM;
                     return true;
@@ -569,7 +552,7 @@ namespace CRC.Controls
                 }
                 else if (location.Y > -1 &&
                     location.Y < 3 &&
-                    _resizableTop)
+                    _ResizableTop)
                 {
                     m.Result = (IntPtr)NativeMethods.HTTOP;
                     return true;

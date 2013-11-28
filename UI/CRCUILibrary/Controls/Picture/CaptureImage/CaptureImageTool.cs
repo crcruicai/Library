@@ -940,24 +940,16 @@ namespace CRC.Controls
         private Image GetDestopImage()
         {
             Rectangle rect = Screen.GetBounds(this);
-            Bitmap bmp = new Bitmap(
-                rect.Width, rect.Height, PixelFormat.Format32bppArgb);
+            Bitmap bmp = new Bitmap(rect.Width, rect.Height, PixelFormat.Format32bppArgb);
+                
             Graphics g = Graphics.FromImage(bmp);
 
             IntPtr gHdc = g.GetHdc();
             IntPtr deskHandle = NativeMethods.GetDesktopWindow();
 
             IntPtr dHdc = NativeMethods.GetDC(deskHandle);
-            NativeMethods.BitBlt(
-                gHdc,
-                0,
-                0,
-                Width,
-                Height,
-                dHdc,
-                0,
-                0,
-                NativeMethods.TernaryRasterOperations.SRCCOPY);
+            NativeMethods.BitBlt(gHdc,0,0, Width,Height,dHdc,0,0, NativeMethods.TernaryRasterOperations.SRCCOPY);
+               
             NativeMethods.ReleaseDC(deskHandle, dHdc);
             g.ReleaseHdc(gHdc);
             return bmp;
@@ -965,12 +957,7 @@ namespace CRC.Controls
 
         private Rectangle GetSelectImageRect(Point endPoint)
         {
-            _selectImageBounds = Rectangle.FromLTRB(
-                _mouseDownPoint.X,
-                _mouseDownPoint.Y,
-                endPoint.X,
-                endPoint.Y);
-
+            _selectImageBounds = Rectangle.FromLTRB(_mouseDownPoint.X,_mouseDownPoint.Y,endPoint.X,endPoint.Y);
             return ImageBoundsToRect(_selectImageBounds);
         }
 
@@ -985,31 +972,14 @@ namespace CRC.Controls
 
             Dictionary<SizeGrip,Rectangle> list = SizeGripRectList;
             list.Clear();
-
-            list.Add(
-                SizeGrip.TopLeft,
-                new Rectangle(x - 2, y - 2, 5, 5));
-            list.Add(
-                SizeGrip.TopRight,
-                new Rectangle(rect.Right - 2, y - 2, 5, 5));
-            list.Add(
-                SizeGrip.BottomLeft,
-                new Rectangle(x - 2, rect.Bottom - 2, 5, 5));
-            list.Add(
-                SizeGrip.BottomRight,
-                new Rectangle(rect.Right - 2, rect.Bottom - 2, 5, 5));
-            list.Add(
-                SizeGrip.Top,
-                new Rectangle(centerX - 2, y - 2, 5, 5));
-            list.Add(
-                SizeGrip.Bottom, 
-                new Rectangle(centerX - 2, rect.Bottom - 2, 5, 5));
-            list.Add(
-                SizeGrip.Left,
-                new Rectangle(x - 2, centerY - 2, 5, 5));
-            list.Add(
-                SizeGrip.Right,
-                new Rectangle(rect.Right - 2, centerY - 2, 5, 5));
+            list.Add(SizeGrip.TopLeft,new Rectangle(x - 2, y - 2, 5, 5));
+            list.Add(SizeGrip.TopRight,new Rectangle(rect.Right - 2, y - 2, 5, 5));
+            list.Add( SizeGrip.BottomLeft,new Rectangle(x - 2, rect.Bottom - 2, 5, 5));
+            list.Add(SizeGrip.BottomRight,new Rectangle(rect.Right - 2, rect.Bottom - 2, 5, 5));
+            list.Add(SizeGrip.Top,new Rectangle(centerX - 2, y - 2, 5, 5));
+            list.Add(SizeGrip.Bottom, new Rectangle(centerX - 2, rect.Bottom - 2, 5, 5));
+            list.Add(SizeGrip.Left,new Rectangle(x - 2, centerY - 2, 5, 5));
+            list.Add(SizeGrip.Right,new Rectangle(rect.Right - 2, centerY - 2, 5, 5));
         }
 
         private void SetSizeGrip(Point point)

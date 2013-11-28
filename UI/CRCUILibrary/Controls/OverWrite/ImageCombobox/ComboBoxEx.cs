@@ -16,6 +16,9 @@ namespace CRC.Controls
      * 具体请查看 CS程序员之窗开源协议（http://www.csharpwin.com/csol.html）。
      */
 
+    /// <summary>
+    /// 美化的ComboBox.
+    /// </summary>
     [ToolboxBitmap(typeof(ComboBox))]
     public class ComboBoxEx : ComboBox
     {

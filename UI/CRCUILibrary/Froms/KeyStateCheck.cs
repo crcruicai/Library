@@ -7,28 +7,42 @@ using System.Windows.Forms;
 
 namespace CRC.Froms
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public enum KeyState { Up = 0, Down = 1 }
+    /// <summary>
+    /// 
+    /// </summary>
     public enum KeyValue { Untoggled = 0, Toggled = 1 }
 
+    /// <summary>
+    /// 
+    /// </summary>
     internal static class KeyStateCheck
     {
         //GetKeyState Win32 API declaration
         [DllImport("user32.dll")]
         private static extern short GetKeyState(int nVirtKey);
 
-        private static short m_KeyDown = Convert.ToInt16("1000000000000000", 2); //High-Order bit set (KeyDown)
-        private static short m_KeyUp = Convert.ToInt16("0000000000000000", 2); //High-Order bit not set (Key Up)
-        private static short m_KeyToggled = Convert.ToInt16("0000000000000001", 2); //Low-Order bit set (Key Toggled)
-        private static short m_KeyUnToggled = Convert.ToInt16("0000000000000000", 2); // Low-Order bit not set (Key Untoggled)
+        private static short _KeyDown = Convert.ToInt16("1000000000000000", 2); //High-Order bit set (KeyDown)
+        private static short _KeyUp = Convert.ToInt16("0000000000000000", 2); //High-Order bit not set (Key Up)
+        private static short _KeyToggled = Convert.ToInt16("0000000000000001", 2); //Low-Order bit set (Key Toggled)
+        private static short _KeyUnToggled = Convert.ToInt16("0000000000000000", 2); // Low-Order bit not set (Key Untoggled)
 
         // Get if Key is Up or Down
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="virtualKey"></param>
+        /// <returns></returns>
         public static KeyState GetKeyState(Keys virtualKey)
         {
             short keyState = GetKeyState((int)virtualKey);
             KeyState state;
 
             // Bitwise AND to get wether the key is Down
-            if ((keyState & m_KeyDown) == m_KeyDown)
+            if ((keyState & _KeyDown) == _KeyDown)
                 state = KeyState.Down;
             else
                 state = KeyState.Up;
@@ -43,7 +57,7 @@ namespace CRC.Froms
             KeyValue value;
 
             // Bitwise AND to get wether the key is toggled
-            if ((keyState & m_KeyToggled) == m_KeyToggled)
+            if ((keyState & _KeyToggled) == _KeyToggled)
                 value = KeyValue.Toggled;
             else
                 value = KeyValue.Untoggled;

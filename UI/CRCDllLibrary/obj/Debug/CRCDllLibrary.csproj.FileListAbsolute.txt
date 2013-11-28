@@ -22,3 +22,9 @@ G:\Code\Library\UI\CRCDllLibrary\bin\Debug\ChnCharInfo.dll
 G:\Code\Library\UI\CRCDllLibrary\obj\Debug\CRCDllLibrary.csprojResolveAssemblyReference.cache
 G:\Code\Library\UI\CRCDllLibrary\obj\Debug\CRCDllLibrary.dll
 G:\Code\Library\UI\CRCDllLibrary\obj\Debug\CRCDllLibrary.pdb
+D:\Documents\GitHub\Library\UI\CRCDllLibrary\bin\Debug\CRCDllLibrary.dll
+D:\Documents\GitHub\Library\UI\CRCDllLibrary\bin\Debug\CRCDllLibrary.pdb
+D:\Documents\GitHub\Library\UI\CRCDllLibrary\bin\Debug\ChnCharInfo.dll
+D:\Documents\GitHub\Library\UI\CRCDllLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\GitHub\Library\UI\CRCDllLibrary\obj\Debug\CRCDllLibrary.dll
+D:\Documents\GitHub\Library\UI\CRCDllLibrary\obj\Debug\CRCDllLibrary.pdb

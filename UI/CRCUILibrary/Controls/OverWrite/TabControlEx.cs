@@ -23,11 +23,11 @@ namespace CRC.Controls
     {
         #region Fields
 
-        private UpDownButtonNativeWindow _upDownButtonNativeWindow;
-        private Color _baseColor = Color.FromArgb(166, 222, 255);
-        private Color _backColor = Color.FromArgb(234, 247, 254);
-        private Color _borderColor = Color.FromArgb(23, 169, 254);
-        private Color _arrowColor = Color.FromArgb(0, 79, 125);
+        private UpDownButtonNativeWindow _UpDownButtonNativeWindow;
+        private Color _BaseColor = Color.FromArgb(166, 222, 255);
+        private Color _BackColor = Color.FromArgb(234, 247, 254);
+        private Color _BorderColor = Color.FromArgb(23, 169, 254);
+        private Color _ArrowColor = Color.FromArgb(0, 79, 125);
 
         private const string UpDownButtonClassName = "msctls_updown32";
         private static readonly int Radius = 8;
@@ -63,10 +63,10 @@ namespace CRC.Controls
         [DefaultValue(typeof(Color), "166, 222, 255")]
         public Color BaseColor
         {
-            get { return _baseColor; }
+            get { return _BaseColor; }
             set
             {
-                _baseColor = value;
+                _BaseColor = value;
                 base.Invalidate(true);
             }
         }
@@ -79,10 +79,10 @@ namespace CRC.Controls
         [DefaultValue(typeof(Color), "234, 247, 254")]
         public override Color BackColor
         {
-            get { return _backColor; }
+            get { return _BackColor; }
             set
             {
-                _backColor = value;
+                _BackColor = value;
                 base.Invalidate(true);
             }
         }
@@ -93,10 +93,10 @@ namespace CRC.Controls
         [DefaultValue(typeof(Color), "23, 169, 254")]
         public Color BorderColor
         {
-            get { return _borderColor; }
+            get { return _BorderColor; }
             set
             {
-                _borderColor = value;
+                _BorderColor = value;
                 base.Invalidate(true);
             }
         }
@@ -107,10 +107,10 @@ namespace CRC.Controls
         [DefaultValue(typeof(Color), "0, 95, 152")]
         public Color ArrowColor
         {
-            get { return _arrowColor; }
+            get { return _ArrowColor; }
             set
             {
-                _arrowColor = value;
+                _ArrowColor = value;
                 base.Invalidate(true);
             }
         }
@@ -127,19 +127,18 @@ namespace CRC.Controls
         /// 
         /// </summary>
         /// <param name="e"></param>
-        protected virtual void OnPaintUpDownButton(
-            UpDownButtonPaintEventArgs e)
+        protected virtual void OnPaintUpDownButton(UpDownButtonPaintEventArgs e)
         {
             Graphics g = e.Graphics;
             Rectangle rect = e.ClipRectangle;
 
-            Color upButtonBaseColor = _baseColor;
-            Color upButtonBorderColor = _borderColor;
-            Color upButtonArrowColor = _arrowColor;
+            Color upButtonBaseColor = _BaseColor;
+            Color upButtonBorderColor = _BorderColor;
+            Color upButtonArrowColor = _ArrowColor;
 
-            Color downButtonBaseColor = _baseColor;
-            Color downButtonBorderColor = _borderColor;
-            Color downButtonArrowColor = _arrowColor;
+            Color downButtonBaseColor = _BaseColor;
+            Color downButtonBorderColor = _BorderColor;
+            Color downButtonArrowColor = _ArrowColor;
 
             Rectangle upButtonRect = rect;
             upButtonRect.X += 4;
@@ -161,22 +160,22 @@ namespace CRC.Controls
                     {
                         if (e.MouseInUpButton)
                         {
-                            upButtonBaseColor = GetColor(_baseColor, 0, -35, -24, -9);
+                            upButtonBaseColor = GetColor(_BaseColor, 0, -35, -24, -9);
                         }
                         else
                         {
-                            downButtonBaseColor = GetColor(_baseColor, 0, -35, -24, -9);
+                            downButtonBaseColor = GetColor(_BaseColor, 0, -35, -24, -9);
                         }
                     }
                     else
                     {
                         if (e.MouseInUpButton)
                         {
-                            upButtonBaseColor = GetColor(_baseColor, 0, 35, 24, 9);
+                            upButtonBaseColor = GetColor(_BaseColor, 0, 35, 24, 9);
                         }
                         else
                         {
-                            downButtonBaseColor = GetColor(_baseColor, 0, 35, 24, 9);
+                            downButtonBaseColor = GetColor(_BaseColor, 0, 35, 24, 9);
                         }
                     }
                 }
@@ -194,31 +193,18 @@ namespace CRC.Controls
 
             g.SmoothingMode = SmoothingMode.AntiAlias;
 
-            Color backColor = Enabled ? _backColor : SystemColors.Control;
+            Color backColor = Enabled ? _BackColor : SystemColors.Control;
 
-            using (SolidBrush brush = new SolidBrush(_backColor))
+            using (SolidBrush brush = new SolidBrush(_BackColor))
             {
                 rect.Inflate(1, 1);
                 g.FillRectangle(brush, rect);
             }
 
-            RenderButton(
-                g,
-                upButtonRect,
-                upButtonBaseColor,
-                upButtonBorderColor,
-                upButtonArrowColor,
-                ArrowDirection.Left);
-            RenderButton(
-                g,
-                downButtonRect,
-                downButtonBaseColor,
-                downButtonBorderColor,
-                downButtonArrowColor,
-                ArrowDirection.Right);
-
-            UpDownButtonPaintEventHandler handler =
-                base.Events[EventPaintUpDownButton] as UpDownButtonPaintEventHandler;
+            RenderButton(g,upButtonRect,upButtonBaseColor,upButtonBorderColor,upButtonArrowColor,ArrowDirection.Left);
+            RenderButton(g, upButtonRect, upButtonBaseColor, upButtonBorderColor, upButtonArrowColor, ArrowDirection.Right);             
+            UpDownButtonPaintEventHandler handler =  base.Events[EventPaintUpDownButton] as UpDownButtonPaintEventHandler;
+              
             if (handler != null)
             {
                 handler(this, e);
@@ -248,9 +234,9 @@ namespace CRC.Controls
             base.OnHandleCreated(e);
             if (UpDownButtonHandle != IntPtr.Zero)
             {
-                if (_upDownButtonNativeWindow == null)
+                if (_UpDownButtonNativeWindow == null)
                 {
-                    _upDownButtonNativeWindow = new UpDownButtonNativeWindow(this);
+                    _UpDownButtonNativeWindow = new UpDownButtonNativeWindow(this);
                 }
             }
         }
@@ -261,9 +247,9 @@ namespace CRC.Controls
 
             if (UpDownButtonHandle != IntPtr.Zero)
             {
-                if (_upDownButtonNativeWindow == null)
+                if (_UpDownButtonNativeWindow == null)
                 {
-                    _upDownButtonNativeWindow = new UpDownButtonNativeWindow(this);
+                    _UpDownButtonNativeWindow = new UpDownButtonNativeWindow(this);
                 }
             }
         }
@@ -271,10 +257,10 @@ namespace CRC.Controls
         protected override void OnHandleDestroyed(EventArgs e)
         {
             base.OnHandleDestroyed(e);
-            if (_upDownButtonNativeWindow != null)
+            if (_UpDownButtonNativeWindow != null)
             {
-                _upDownButtonNativeWindow.Dispose();
-                _upDownButtonNativeWindow = null;
+                _UpDownButtonNativeWindow.Dispose();
+                _UpDownButtonNativeWindow = null;
             }
         }
 
@@ -284,9 +270,9 @@ namespace CRC.Controls
 
             if (UpDownButtonHandle != IntPtr.Zero)
             {
-                if (_upDownButtonNativeWindow == null)
+                if (_UpDownButtonNativeWindow == null)
                 {
-                    _upDownButtonNativeWindow = new UpDownButtonNativeWindow(this);
+                    _UpDownButtonNativeWindow = new UpDownButtonNativeWindow(this);
                 }
             }
         }
@@ -296,9 +282,9 @@ namespace CRC.Controls
             base.OnSizeChanged(e);
             if (UpDownButtonHandle != IntPtr.Zero)
             {
-                if (_upDownButtonNativeWindow == null)
+                if (_UpDownButtonNativeWindow == null)
                 {
-                    _upDownButtonNativeWindow = new UpDownButtonNativeWindow(this);
+                    _UpDownButtonNativeWindow = new UpDownButtonNativeWindow(this);
                 }
             }
         }
@@ -309,11 +295,7 @@ namespace CRC.Controls
 
         private IntPtr FindUpDownButton()
         {
-            return NativeMethods.FindWindowEx(
-                base.Handle,
-                IntPtr.Zero,
-                UpDownButtonClassName,
-                null);
+            return NativeMethods.FindWindowEx(base.Handle,IntPtr.Zero,UpDownButtonClassName,null);
         }
 
         private void SetStyles()
@@ -381,7 +363,7 @@ namespace CRC.Controls
             }
 
             Rectangle headerRect = new Rectangle(x, y, width, height);
-            Color backColor = Enabled ? _backColor : SystemColors.Control;
+            Color backColor = Enabled ? _BackColor : SystemColors.Control;
             using (SolidBrush brush = new SolidBrush(backColor))
             {
                 //渲染页区域.
@@ -402,11 +384,10 @@ namespace CRC.Controls
             bool hover;
             bool selected;
             bool hasSetClip = false;
-            bool alignHorizontal =
-                (Alignment == TabAlignment.Top || 
-                Alignment == TabAlignment.Bottom);
-            LinearGradientMode mode = alignHorizontal ?
-                LinearGradientMode.Vertical : LinearGradientMode.Horizontal;
+            bool alignHorizontal =(Alignment == TabAlignment.Top ||   Alignment == TabAlignment.Bottom);
+  
+            LinearGradientMode mode = alignHorizontal ?LinearGradientMode.Vertical : LinearGradientMode.Horizontal;
+                
 
             //头是否在水平方向.
             if (alignHorizontal)
@@ -421,11 +402,7 @@ namespace CRC.Controls
                         NativeMethods.RECT upDownButtonRect = new NativeMethods.RECT();
                         NativeMethods.GetWindowRect(
                             upDownButtonHandle, ref upDownButtonRect);
-                        Rectangle upDownRect = Rectangle.FromLTRB(
-                            upDownButtonRect.Left,
-                            upDownButtonRect.Top,
-                            upDownButtonRect.Right,
-                            upDownButtonRect.Bottom);
+                        Rectangle upDownRect = Rectangle.FromLTRB(upDownButtonRect.Left,upDownButtonRect.Top,upDownButtonRect.Right,upDownButtonRect.Bottom);
                         upDownRect = RectangleToClient(upDownRect);
 
                         switch (Alignment)
@@ -453,25 +430,19 @@ namespace CRC.Controls
                 hover = tabRect.Contains(cusorPoint);//检查鼠标是否停留
                 selected = SelectedIndex == index;//检查是否被选中.
 
-                Color baseColor = _baseColor;
-                Color borderColor = _borderColor;
+                Color baseColor = _BaseColor;
+                Color borderColor = _BorderColor;
                 //如果选项卡被选中.更改颜色.
                 if (selected)
                 {
-                    baseColor = GetColor(_baseColor, 0, -45, -30, -14);
+                    baseColor = GetColor(_BaseColor, 0, -45, -30, -14);
                 }
                 else if (hover)//鼠标停留时的颜色.
                 {
-                    baseColor = GetColor(_baseColor, 0, 35, 24, 9);
+                    baseColor = GetColor(_BaseColor, 0, 35, 24, 9);
                 }
 
-                RenderTabBackgroundInternal(
-                    g,
-                    tabRect,
-                    baseColor,
-                    borderColor,
-                    .45F,
-                    mode);
+                RenderTabBackgroundInternal(g,tabRect,baseColor,borderColor,.45F,mode);
 
                 bool hasImage = DrawTabImage(g, page, tabRect);
                 //绘制Text
@@ -490,8 +461,7 @@ namespace CRC.Controls
         /// <param name="page"></param>
         /// <param name="tabRect"></param>
         /// <param name="hasImage"></param>
-        private void DrawtabText(
-            Graphics g, TabPage page, Rectangle tabRect, bool hasImage)
+        private void DrawtabText(Graphics g, TabPage page, Rectangle tabRect, bool hasImage)
         {
             Rectangle textRect = tabRect;
             RectangleF newTextRect;
@@ -516,7 +486,7 @@ namespace CRC.Controls
                     }
                     g.TranslateTransform(textRect.X, textRect.Bottom);
                     g.RotateTransform(270F);
-                    
+
                     sf = new StringFormat(StringFormatFlags.DirectionRightToLeft);
                     sf.Alignment = StringAlignment.Center;
                     sf.LineAlignment = StringAlignment.Center;
@@ -589,107 +559,55 @@ namespace CRC.Controls
                     if (NativeMethods.IsWindowVisible(upDownButtonHandle))
                     {
                         NativeMethods.RECT upDownButtonRect = new NativeMethods.RECT();
-                        NativeMethods.GetWindowRect(
-                            upDownButtonHandle,
-                            ref upDownButtonRect);
+                        NativeMethods.GetWindowRect(upDownButtonHandle, ref upDownButtonRect);
+                           
                         Rectangle upDownRect = Rectangle.FromLTRB(
                             upDownButtonRect.Left,
                             upDownButtonRect.Top,
                             upDownButtonRect.Right,
                             upDownButtonRect.Bottom);
                         upDownRect = RectangleToClient(upDownRect);
-
-                        tabRect.X = tabRect.X > upDownRect.X ?
-                            upDownRect.X : tabRect.X;
-                        tabRect.Width = tabRect.Right > upDownRect.X ?
-                            upDownRect.X - tabRect.X : tabRect.Width;
+                        tabRect.X = tabRect.X > upDownRect.X ? upDownRect.X : tabRect.X;
+                        tabRect.Width = tabRect.Right > upDownRect.X ? upDownRect.X - tabRect.X : tabRect.Width;
                     }
                 }
 
                 switch (Alignment)
                 {
                     case TabAlignment.Top:
-                        points[0] = new Point(
-                            tabRect.X,
-                            tabRect.Bottom);
-                        points[1] = new Point(
-                            clipRect.X,
-                            tabRect.Bottom);
-                        points[2] = new Point(
-                            clipRect.X,
-                            clipRect.Bottom - 1);
-                        points[3] = new Point(
-                            clipRect.Right - 1,
-                            clipRect.Bottom - 1);
-                        points[4] = new Point(
-                            clipRect.Right - 1,
-                            tabRect.Bottom);
-                        points[5] = new Point(
-                            tabRect.Right,
-                            tabRect.Bottom);
+                        points[0] = new Point(tabRect.X,tabRect.Bottom);
+                        points[1] = new Point(clipRect.X,tabRect.Bottom);
+                        points[2] = new Point(clipRect.X,clipRect.Bottom - 1);
+                        points[3] = new Point(clipRect.Right - 1, clipRect.Bottom - 1);
+                        points[4] = new Point(clipRect.Right - 1, tabRect.Bottom);
+                        points[5] = new Point(tabRect.Right,tabRect.Bottom);
                         break;
                     case TabAlignment.Bottom:
-                        points[0] = new Point(
-                            tabRect.X,
-                            tabRect.Y);
-                        points[1] = new Point(
-                            clipRect.X,
-                            tabRect.Y);
-                        points[2] = new Point(
-                            clipRect.X,
-                            clipRect.Y);
-                        points[3] = new Point(
-                            clipRect.Right - 1,
-                            clipRect.Y);
-                        points[4] = new Point(
-                            clipRect.Right - 1,
-                            tabRect.Y);
-                        points[5] = new Point(
-                            tabRect.Right,
-                            tabRect.Y);
+                        points[0] = new Point(tabRect.X,tabRect.Y);
+                        points[1] = new Point(clipRect.X,tabRect.Y);
+                        points[2] = new Point(clipRect.X,clipRect.Y);
+                        points[3] = new Point(clipRect.Right - 1,clipRect.Y);
+                        points[4] = new Point(clipRect.Right - 1,tabRect.Y);
+                        points[5] = new Point(tabRect.Right,tabRect.Y);
                         break;
                     case TabAlignment.Left:
-                        points[0] = new Point(
-                            tabRect.Right,
-                            tabRect.Y);
-                        points[1] = new Point(
-                            tabRect.Right,
-                            clipRect.Y);
-                        points[2] = new Point(
-                            clipRect.Right - 1,
-                            clipRect.Y);
-                        points[3] = new Point(
-                            clipRect.Right - 1,
-                            clipRect.Bottom - 1);
-                        points[4] = new Point(
-                            tabRect.Right,
-                            clipRect.Bottom - 1);
-                        points[5] = new Point(
-                            tabRect.Right,
-                            tabRect.Bottom);
+                        points[0] = new Point(tabRect.Right,tabRect.Y);
+                        points[1] = new Point(tabRect.Right,clipRect.Y);
+                        points[2] = new Point(clipRect.Right - 1,clipRect.Y);
+                        points[3] = new Point(clipRect.Right - 1,clipRect.Bottom - 1);
+                        points[4] = new Point(tabRect.Right,clipRect.Bottom - 1);
+                        points[5] = new Point(tabRect.Right,tabRect.Bottom);
                         break;
                     case TabAlignment.Right:
-                        points[0] = new Point(
-                            tabRect.X,
-                            tabRect.Y);
-                        points[1] = new Point(
-                            tabRect.X,
-                            clipRect.Y);
-                        points[2] = new Point(
-                            clipRect.X,
-                            clipRect.Y);
-                        points[3] = new Point(
-                            clipRect.X,
-                            clipRect.Bottom - 1);
-                        points[4] = new Point(
-                            tabRect.X,
-                            clipRect.Bottom - 1);
-                        points[5] = new Point(
-                            tabRect.X,
-                            tabRect.Bottom);
+                        points[0] = new Point(tabRect.X,tabRect.Y);
+                        points[1] = new Point(tabRect.X,clipRect.Y);
+                        points[2] = new Point(clipRect.X,clipRect.Y);
+                        points[3] = new Point(clipRect.X,clipRect.Bottom - 1);
+                        points[4] = new Point(tabRect.X,clipRect.Bottom - 1);
+                        points[5] = new Point(tabRect.X,tabRect.Bottom);
                         break;
                 }
-                using (Pen pen = new Pen(_borderColor))
+                using (Pen pen = new Pen(_BorderColor))
                 {
                     g.DrawLines(pen, points);
                 }
@@ -703,11 +621,7 @@ namespace CRC.Controls
         /// <param name="dropDownRect"></param>
         /// <param name="direction"></param>
         /// <param name="brush"></param>
-        internal void RenderArrowInternal(
-             Graphics g,
-             Rectangle dropDownRect,
-             ArrowDirection direction,
-             Brush brush)
+        internal void RenderArrowInternal( Graphics g,Rectangle dropDownRect,ArrowDirection direction, Brush brush)  
         {
             Point point = new Point(
                 dropDownRect.Left + (dropDownRect.Width / 2),
@@ -746,36 +660,18 @@ namespace CRC.Controls
             g.FillPolygon(brush, points);
         }
 
-        internal void RenderButton(
-            Graphics g,
-            Rectangle rect,
-            Color baseColor,
-            Color borderColor,
-            Color arrowColor,
-            ArrowDirection direction)
+        internal void RenderButton(Graphics g,Rectangle rect,Color baseColor,Color borderColor,Color arrowColor,ArrowDirection direction)
         {
-            RenderBackgroundInternal(
-                g,
-                rect,
-                baseColor,
-                borderColor,
-                0.45f,
-                true,
-                LinearGradientMode.Vertical);
+            RenderBackgroundInternal(g, rect, baseColor, borderColor, 0.45f, true, LinearGradientMode.Vertical);
             using (SolidBrush brush = new SolidBrush(arrowColor))
             {
-                RenderArrowInternal(
-                    g,
-                    rect,
-                    direction,
-                    brush);
+                RenderHelper.RenderArrowInternal(g,rect,direction,brush);
             }
         }
 
         internal void RenderBackgroundInternal(Graphics g,Rectangle rect,Color baseColor,Color borderColor,float basePosition,bool drawBorder,LinearGradientMode mode)
         {
-            using (LinearGradientBrush brush = new LinearGradientBrush(
-               rect, Color.Transparent, Color.Transparent, mode))
+            using (LinearGradientBrush brush = new LinearGradientBrush(rect, Color.Transparent, Color.Transparent, mode))
             {
                 Color[] colors = new Color[4];
                 colors[0] = GetColor(baseColor, 0, 35, 24, 9);
@@ -784,8 +680,7 @@ namespace CRC.Controls
                 colors[3] = GetColor(baseColor, 0, 68, 69, 54);
 
                 ColorBlend blend = new ColorBlend();
-                blend.Positions =
-                    new float[] { 0.0f, basePosition, basePosition + 0.05f, 1.0f };
+                blend.Positions =new float[] { 0.0f, basePosition, basePosition + 0.05f, 1.0f };
                 blend.Colors = colors;
                 brush.InterpolationColors = blend;
                 g.FillRectangle(brush, rect);
@@ -931,33 +826,21 @@ namespace CRC.Controls
                     {
                         case TabAlignment.Top:
                         case TabAlignment.Bottom:
-                            destRect = new Rectangle(
-                                 rect.X + Radius / 2 + 2,
-                                 rect.Y + 2,
-                                 rect.Height - 4,
-                                 rect.Height - 4);
+                            destRect = new Rectangle( rect.X + Radius / 2 + 2,rect.Y + 2,
+                                rect.Height - 4, rect.Height - 4);
                             break;
                         case TabAlignment.Left:
-                            destRect = new Rectangle(
-                                rect.X + 2,
-                                rect.Bottom - (rect.Width - 4) - Radius / 2 - 2,
-                                rect.Width - 4,
-                                rect.Width - 4);
+                            destRect = new Rectangle(rect.X + 2,rect.Bottom - (rect.Width - 4) - Radius / 2 - 2,
+                                rect.Width - 4,rect.Width - 4);
+                                
                             break;
                         case TabAlignment.Right:
-                            destRect = new Rectangle(
-                                rect.X + 2,
-                                rect.Y + Radius / 2 + 2,
-                                rect.Width - 4,
-                                rect.Width - 4);
+                            destRect = new Rectangle(rect.X + 2,rect.Y + Radius / 2 + 2,
+                                rect.Width - 4,rect.Width - 4);
                             break;
                     }
 
-                    g.DrawImage(
-                        image,
-                        destRect,
-                        srcRect,
-                        GraphicsUnit.Pixel);
+                    g.DrawImage(image,destRect,srcRect,GraphicsUnit.Pixel);
                 }
             }
             return hasImage;
@@ -983,87 +866,26 @@ namespace CRC.Controls
                 case TabAlignment.Bottom:
                     rect.X++;
                     rect.Width-=2;
-                    path.AddLine(
-                        rect.X,
-                        rect.Y,
-                        rect.X,
-                        rect.Bottom - Radius / 2);
-                    path.AddArc(
-                        rect.X,
-                        rect.Bottom - Radius,
-                        Radius,
-                        Radius,
-                        180,
-                        -90);
-                    path.AddArc(
-                        rect.Right - Radius,
-                        rect.Bottom - Radius,
-                        Radius,
-                        Radius,
-                        90,
-                        -90);
-                    path.AddLine(
-                        rect.Right,
-                        rect.Bottom - Radius / 2,
-                        rect.Right,
-                        rect.Y);
-
+                    path.AddLine(rect.X,rect.Y,rect.X,rect.Bottom - Radius / 2);
+                    path.AddArc(rect.X,rect.Bottom - Radius,Radius,Radius,180,-90);
+                    path.AddArc(rect.Right - Radius,rect.Bottom - Radius,Radius,Radius,90,-90);
+                    path.AddLine(rect.Right,rect.Bottom - Radius / 2,rect.Right,rect.Y);
                     break;
                 case TabAlignment.Left:
                     rect.Y++;
                     rect.Height -= 2;
-                    path.AddLine(
-                        rect.Right,
-                        rect.Y,
-                        rect.X + Radius / 2,
-                        rect.Y);
-                    path.AddArc(
-                        rect.X,
-                        rect.Y,
-                        Radius,
-                        Radius,
-                        270F,
-                        -90F);
-                    path.AddArc(
-                        rect.X,
-                        rect.Bottom - Radius,
-                        Radius,
-                        Radius,
-                        180F,
-                        -90F);
-                    path.AddLine(
-                        rect.X + Radius / 2,
-                        rect.Bottom,
-                        rect.Right,
-                        rect.Bottom);
+                    path.AddLine(rect.Right,rect.Y,rect.X + Radius / 2,rect.Y);
+                    path.AddArc(rect.X,rect.Y,Radius,Radius,270F,-90F);
+                    path.AddArc(rect.X,rect.Bottom - Radius,Radius,Radius,180F,-90F);
+                    path.AddLine(rect.X + Radius / 2,rect.Bottom,rect.Right,rect.Bottom);
                     break;
                 case TabAlignment.Right:
                     rect.Y++;
                     rect.Height -= 2;
-                    path.AddLine(
-                        rect.X,
-                        rect.Y,
-                        rect.Right - Radius / 2,
-                        rect.Y);
-                    path.AddArc(
-                        rect.Right - Radius,
-                        rect.Y,
-                        Radius,
-                        Radius,
-                        270F,
-                        90F);
-                    path.AddArc(
-                        rect.Right - Radius,
-                        rect.Bottom - Radius,
-                        Radius,
-                        Radius,
-                        0F,
-                        90F);
-                    path.AddLine(
-                        rect.Right - Radius / 2,
-                        rect.Bottom,
-                        rect.X,
-                        rect.Bottom);
+                    path.AddLine(rect.X,rect.Y,rect.Right - Radius / 2,rect.Y);
+                    path.AddArc(rect.Right - Radius,rect.Y,Radius,Radius,270F,90F);
+                    path.AddArc(rect.Right - Radius,rect.Bottom - Radius,Radius,Radius,0F,90F);
+                    path.AddLine(rect.Right - Radius / 2,rect.Bottom,rect.X,rect.Bottom);
                     break;
             }
             path.CloseFigure();
@@ -1206,9 +1028,9 @@ namespace CRC.Controls
     /// </summary>
     /// <param name="sender"></param>
     /// <param name="e"></param>
-    public delegate void UpDownButtonPaintEventHandler(
-        object sender,
-        UpDownButtonPaintEventArgs e);
+    public delegate void UpDownButtonPaintEventHandler(object sender,UpDownButtonPaintEventArgs e);
+        
+      
 
     /// <summary>
     /// 
@@ -1219,13 +1041,8 @@ namespace CRC.Controls
         private bool _mousePress;
         private bool _mouseInUpButton;
 
-        public UpDownButtonPaintEventArgs(
-            Graphics graphics,
-            Rectangle clipRect,
-            bool mouseOver,
-            bool mousePress,
-            bool mouseInUpButton)
-            : base(graphics, clipRect)
+        public UpDownButtonPaintEventArgs( Graphics graphics,Rectangle clipRect,bool mouseOver,bool mousePress,bool mouseInUpButton)
+           : base(graphics, clipRect)
         {
             _mouseOver = mouseOver;
             _mousePress = mousePress;

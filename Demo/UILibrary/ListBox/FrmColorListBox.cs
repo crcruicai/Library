@@ -67,27 +67,27 @@ namespace ColorListBox
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.lstColor = new System.Windows.Forms.ListBox();
-			this.SuspendLayout();
-			// 
-			// lstColor
-			// 
-			this.lstColor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-			this.lstColor.DrawItem += new DrawItemEventHandler(this.DrawItemHandler);
-			this.lstColor.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.MeasureItemHandler);
-			this.lstColor.Location = new System.Drawing.Point(8, 16);
-			this.lstColor.Name = "lstColor";
-			this.lstColor.Size = new System.Drawing.Size(272, 251);
-			this.lstColor.TabIndex = 0;
-			// 
-			// Form1
-			// 
-			this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-			this.ClientSize = new System.Drawing.Size(288, 273);
-			this.Controls.AddRange(new System.Windows.Forms.Control[] {this.lstColor});
-			this.Name = "Form1";
-			this.Text = "ColorListBox Demo by Sanjay Ahuja";
-			this.ResumeLayout(false);
+            this.lstColor = new System.Windows.Forms.ListBox();
+            this.SuspendLayout();
+            // 
+            // lstColor
+            // 
+            this.lstColor.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.lstColor.Location = new System.Drawing.Point(10, 17);
+            this.lstColor.Name = "lstColor";
+            this.lstColor.Size = new System.Drawing.Size(326, 271);
+            this.lstColor.TabIndex = 0;
+            this.lstColor.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.DrawItemHandler);
+            this.lstColor.MeasureItem += new System.Windows.Forms.MeasureItemEventHandler(this.MeasureItemHandler);
+            // 
+            // FrmColorListBox
+            // 
+            this.AutoScaleBaseSize = new System.Drawing.Size(6, 14);
+            this.ClientSize = new System.Drawing.Size(354, 315);
+            this.Controls.Add(this.lstColor);
+            this.Name = "FrmColorListBox";
+            this.Text = "ColorListBox Demo by Sanjay Ahuja";
+            this.ResumeLayout(false);
 
 		}
 		#endregion

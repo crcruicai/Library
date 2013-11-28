@@ -14,15 +14,16 @@ namespace CRC.Controls
 {
     public static class RegionHelper
     {
-        public static void CreateRegion(
-            Control control,
-            Rectangle bounds,
-            int radius,
-            RoundStyle roundStyle)
+        /// <summary>
+        /// 为控件设置关联的窗口区域.
+        /// </summary>
+        /// <param name="control">要设置窗口区域的控件.</param>
+        /// <param name="bounds">窗口区域.</param>
+        /// <param name="radius">圆角半径.</param>
+        /// <param name="roundStyle">圆角样式.</param>
+        public static void SetControlRegion(Control control, Rectangle bounds,int radius,RoundStyle roundStyle)
         {
-            using (GraphicsPath path =
-                GraphicsPathHelper.CreatePath(
-                bounds, radius, roundStyle, true))
+            using (GraphicsPath path =GraphicsPathHelper.CreateFilletRectangle(bounds, radius, roundStyle, true)) 
             {
                 Region region = new Region(path);
                 path.Widen(Pens.White);
@@ -35,11 +36,14 @@ namespace CRC.Controls
             }
         }
 
-        public static void CreateRegion(
-            Control control,
-            Rectangle bounds)
+        /// <summary>
+        /// 为控件设置关联的窗口区域.
+        /// </summary>
+        /// <param name="control">要设置窗口区域的控件.</param>
+        /// <param name="bounds">窗口区域.</param>
+        public static void SetControlRegion(Control control, Rectangle bounds)
         {
-            CreateRegion(control, bounds, 8, RoundStyle.All);
+            SetControlRegion(control, bounds, 8, RoundStyle.All);
         }
     }
 

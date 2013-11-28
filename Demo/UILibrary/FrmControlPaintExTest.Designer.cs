@@ -28,13 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.colorButton1 = new CRC.Controls.ColorButton();
             this.SuspendLayout();
+            // 
+            // colorButton1
+            // 
+            this.colorButton1.Location = new System.Drawing.Point(713, 12);
+            this.colorButton1.Name = "colorButton1";
+            this.colorButton1.Size = new System.Drawing.Size(100, 47);
+            this.colorButton1.TabIndex = 0;
+            this.colorButton1.Text = "colorButton1";
+            this.colorButton1.UseVisualStyleBackColor = true;
             // 
             // FrmControlPaintExTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 262);
+            this.ClientSize = new System.Drawing.Size(825, 462);
+            this.Controls.Add(this.colorButton1);
             this.Name = "FrmControlPaintExTest";
             this.Text = "FrmControlPaintExTest";
             this.ResumeLayout(false);
@@ -42,6 +53,8 @@
         }
 
         #endregion
+
+        private CRC.Controls.ColorButton colorButton1;
 
     }
 }

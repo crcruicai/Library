@@ -17,12 +17,12 @@ namespace CRC.Froms
     {
         #region 字段与变量
         //Member variables
-        private bool m_EnableCloseButton;
-        private bool m_FullScreen;
-        private bool m_Sizable;
-        private Boolean m_Movable;
-        private bool m_DesktopAttached;
-        private IntPtr m_PreviousParent;
+        private bool _EnableCloseButton;
+        private bool _FullScreen;
+        private bool _Sizable;
+        private Boolean _Movable;
+        private bool _DesktopAttached;
+        private IntPtr _PreviousParent;
 
         /*
          * Constants
@@ -59,12 +59,12 @@ namespace CRC.Froms
         private const int SC_MOVE = 0xF010; //SysCommand Move with keyboard command
 
         //Remember Window State before beeing set to FullScreen
-        private FormWindowState m_fws;
-        private Point m_Location;
-        private bool m_TopMost;
-        private Size m_Size;
-        private bool m_MaxBox;
-        private Graphics m_GraphicsFrameArea = null;
+        private FormWindowState _FormWindowState;
+        private Point _Location;
+        private bool _TopMost;
+        private Size _Size;
+        private bool _MaxBox;
+        private Graphics _GraphicsFrameArea = null;
 
         #endregion
 
@@ -107,11 +107,11 @@ namespace CRC.Froms
         #region 构造函数
         public FormEx()
         {
-            m_Movable = true;
-            m_FullScreen = false;
-            m_EnableCloseButton = true;
-            m_Sizable = true;
-            m_DesktopAttached = false;
+            _Movable = true;
+            _FullScreen = false;
+            _EnableCloseButton = true;
+            _Sizable = true;
+            _DesktopAttached = false;
             InitializeComponent();
             SaveFormState();
         }
@@ -129,12 +129,12 @@ namespace CRC.Froms
         {
             get
             {
-                return m_EnableCloseButton;
+                return _EnableCloseButton;
             }
             set
             {
-                m_EnableCloseButton = value;
-                CloseBoxEnable(m_EnableCloseButton);
+                _EnableCloseButton = value;
+                CloseBoxEnable(_EnableCloseButton);
             }
         }
 
@@ -148,20 +148,20 @@ namespace CRC.Froms
         {
             get
             {
-                return m_FullScreen;
+                return _FullScreen;
             }
             set
             {
                 if (!DesignMode)
                 {
-                    if (value && m_FullScreen != value)
+                    if (value && _FullScreen != value)
                         SetFullScreen(true);
 
-                    if (!value && m_FullScreen != value)
+                    if (!value && _FullScreen != value)
                         SetFullScreen(false);
                 }
                 else
-                    m_FullScreen = value;
+                    _FullScreen = value;
             }
         }
 
@@ -175,11 +175,11 @@ namespace CRC.Froms
         {
             get
             {
-                return m_Movable;
+                return _Movable;
             }
             set
             {
-                m_Movable = value;
+                _Movable = value;
             }
         }
 
@@ -193,11 +193,11 @@ namespace CRC.Froms
         {
             get
             {
-                return m_Sizable;
+                return _Sizable;
             }
             set
             {
-                m_Sizable = value;
+                _Sizable = value;
             }
         }
 
@@ -211,17 +211,17 @@ namespace CRC.Froms
         {
             get
             {
-                return m_DesktopAttached;
+                return _DesktopAttached;
             }
             set
             {
-                m_DesktopAttached = value;
+                _DesktopAttached = value;
                 this.MinimizeBox = !value;
 
                 if (value)
-                    m_PreviousParent = SetParent(this.Handle, FindWindow("Progman", null));
+                    _PreviousParent = SetParent(this.Handle, FindWindow("Progman", null));
                 else
-                    SetParent(this.Handle, m_PreviousParent);
+                    SetParent(this.Handle, _PreviousParent);
             }
         }
 
@@ -233,11 +233,11 @@ namespace CRC.Froms
         /// </summary>
         private void SaveFormState()
         {
-            m_fws = this.WindowState;
-            m_Location = this.Location;
-            m_TopMost = this.TopMost;
-            m_Size = this.Size;
-            m_MaxBox = this.MaximizeBox;
+            _FormWindowState = this.WindowState;
+            _Location = this.Location;
+            _TopMost = this.TopMost;
+            _Size = this.Size;
+            _MaxBox = this.MaximizeBox;
         }
 
         /// <summary>
@@ -245,11 +245,11 @@ namespace CRC.Froms
         /// </summary>
         private void RecallFormState()
         {
-            this.WindowState = this.m_fws;
-            this.TopMost = this.m_TopMost;
-            this.Size = this.m_Size;
-            this.MaximizeBox = this.m_MaxBox;
-            this.Location = this.m_Location;
+            this.WindowState = this._FormWindowState;
+            this.TopMost = this._TopMost;
+            this.Size = this._Size;
+            this.MaximizeBox = this._MaxBox;
+            this.Location = this._Location;
         }
         /// <summary>
         /// 设置获取取消窗体全屏.
@@ -257,7 +257,7 @@ namespace CRC.Froms
         /// <param name="fullscreen">true:全屏.flase 取消全屏</param>
         private void SetFullScreen(bool fullscreen)
         {
-            m_FullScreen = fullscreen;
+            _FullScreen = fullscreen;
 
             if (fullscreen)
             {
@@ -299,7 +299,7 @@ namespace CRC.Froms
             // Prevents moving or resizing through the task bar
             if ((m.Msg == WM_SYSCOMMAND && (m.WParam == new IntPtr(SC_DRAGMOVE) || m.WParam == new IntPtr(SC_MOVE))))
             {
-                if (m_FullScreen || !m_Movable)
+                if (_FullScreen || !_Movable)
                     return;
             }
 
@@ -308,7 +308,7 @@ namespace CRC.Froms
                 || m.WParam == new IntPtr(HT_TOPRIGHT) || m.WParam == new IntPtr(HT_RIGHT) || m.WParam == new IntPtr(HT_BOTTOMRIGHT)
                 || m.WParam == new IntPtr(HT_BOTTOM) || m.WParam == new IntPtr(HT_BOTTOMLEFT) || m.WParam == new IntPtr(HT_LEFT))))
             {
-                if (m_FullScreen || !m_Sizable || !m_Movable)
+                if (_FullScreen || !_Sizable || !_Movable)
                     return;
             }
 
@@ -318,23 +318,23 @@ namespace CRC.Froms
             if (m.Msg == WM_NCPAINT || m.Msg == WM_IME_NOTIFY || m.Msg == WM_SIZE || m.Msg == WM_NCACTIVATE)
             {
                 // To avoid unnecessary graphics recreation and thus improving performance
-                if (m_GraphicsFrameArea == null || m.Msg == WM_SIZE)
+                if (_GraphicsFrameArea == null || m.Msg == WM_SIZE)
                 {
                     ReleaseDC(this.Handle, m_WndHdc);
                     m_WndHdc = GetWindowDC(this.Handle);
-                    m_GraphicsFrameArea = Graphics.FromHdc(m_WndHdc);
+                    _GraphicsFrameArea = Graphics.FromHdc(m_WndHdc);
 
                     Rectangle clientRecToScreen = new Rectangle(this.PointToScreen(new Point(this.ClientRectangle.X, this.ClientRectangle.Y)), new System.Drawing.Size(this.ClientRectangle.Width, this.ClientRectangle.Height));
                     Rectangle clientRectangle = new Rectangle(clientRecToScreen.X - this.Location.X, clientRecToScreen.Y - this.Location.Y, clientRecToScreen.Width, clientRecToScreen.Height);
 
-                    m_GraphicsFrameArea.ExcludeClip(clientRectangle);
+                    _GraphicsFrameArea.ExcludeClip(clientRectangle);
                 }
 
-                RectangleF recF = m_GraphicsFrameArea.VisibleClipBounds;
+                RectangleF recF = _GraphicsFrameArea.VisibleClipBounds;
 
-                PaintEventArgs pea = new PaintEventArgs(m_GraphicsFrameArea, new Rectangle((int)recF.X, (int)recF.Y, (int)recF.Width, (int)recF.Height));
+                PaintEventArgs pea = new PaintEventArgs(_GraphicsFrameArea, new Rectangle((int)recF.X, (int)recF.Y, (int)recF.Width, (int)recF.Height));
                 OnPaintFrameArea(pea);
-                CloseBoxEnable(m_EnableCloseButton);
+                CloseBoxEnable(_EnableCloseButton);
                 this.Refresh();
             }
         }
@@ -361,7 +361,7 @@ namespace CRC.Froms
         //Overrides attempts to move the form by code when in Full Screen mode.
         protected override void OnLocationChanged(EventArgs e)
         {
-            if (m_FullScreen)
+            if (_FullScreen)
             {
                 this.Location = new Point(0, 0);
                 return;
@@ -374,7 +374,7 @@ namespace CRC.Froms
         protected override void OnChangeUICues(UICuesEventArgs e)
         {
             base.OnChangeUICues(e);
-            CloseBoxEnable(m_EnableCloseButton);
+            CloseBoxEnable(_EnableCloseButton);
         }
 
         protected override void OnFormClosing(FormClosingEventArgs e)

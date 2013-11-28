@@ -89,7 +89,7 @@
     <Compile Include="Controls\Picture\CaptureImage\OperateObject.cs" />
     <Compile Include="Controls\Picture\CaptureImage\OperateType.cs" />
     <Compile Include="Controls\Picture\CaptureImage\SizeGrip.cs" />
-    <Compile Include="Controls\Picture\CaptureImage\ToolStripRendererEx.cs">
+    <Compile Include="Controls\OverWrite\Menu\ToolStripRendererEx.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Controls\ListBox\ChatListBox\ChatListBox.cs">
@@ -161,11 +161,10 @@
     <Compile Include="Controls\ListBox\MultiTextListBox.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\OverWrite\Events.cs" />
     <Compile Include="Controls\OverWrite\ImageCombobox\ComboBoxEx.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Controls\OverWrite\ImageCombobox\ControlPaintEx.cs" />
+    <Compile Include="Controls\OverWrite\Helper\ControlPaintEx.cs" />
     <Compile Include="Controls\OverWrite\Enum\ControlState.cs" />
     <Compile Include="Controls\OverWrite\ImageCombobox\EditorAssemblyName.cs" />
     <Compile Include="Controls\OverWrite\Helper\GraphicsPathHelper.cs" />

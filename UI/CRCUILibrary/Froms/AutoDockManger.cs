@@ -27,16 +27,16 @@ namespace CRC
         /// <summary>
         /// 指定的窗体.
         /// </summary>
-        private Form _form;
+        private Form _Form;
 
         /// <summary>
         /// 
         /// </summary>
-        private bool IsOrg = false;
+        private bool _IsOrg = false;
         /// <summary>
         /// 窗体的所在区域.
         /// </summary>
-        private Rectangle lastBoard;
+        private Rectangle _LastBoard;
         /// <summary>
         /// 正在停靠的状态.
         /// </summary>
@@ -49,16 +49,16 @@ namespace CRC
         /// 关闭停靠.
         /// </summary>
         private const int OFF = 2;
-        private Timer timer;
+        private Timer _Timer;
         /// <summary>
         /// 状态.
         /// </summary>
-        private int status = 2;
-        private bool isopen = false;
+        private int _Status = 2;
+        private bool _IsOpen = false;
         /// <summary>
         /// 描述如何靠边锚定.
         /// </summary>
-        internal AnchorStyles dockSide = AnchorStyles.None;
+        internal AnchorStyles _DockSide = AnchorStyles.None;
 
         #endregion
 
@@ -90,16 +90,16 @@ namespace CRC
         {
             get
             {
-                return _form;
+                return _Form;
             }
             set
             {
-                _form = value;
-                if (_form != null)
+                _Form = value;
+                if (_Form != null)
                 {
-                    _form.LocationChanged += new EventHandler(_form_LocationChanged);
-                    _form.SizeChanged += new EventHandler(_form_SizeChanged);
-                    _form.TopMost = true;
+                    _Form.LocationChanged += new EventHandler(_form_LocationChanged);
+                    _Form.SizeChanged += new EventHandler(_form_SizeChanged);
+                    _Form.TopMost = true;
                 }
             }
         }
@@ -110,19 +110,19 @@ namespace CRC
         {
             get
             {
-                return isopen;
+                return _IsOpen;
             }
             set
             {
                 if (value == true)
                 {
-                    timer.Start();//启动定时器.
+                    _Timer.Start();//启动定时器.
                 }
                 else
                 {
-                    timer.Stop();//关闭定时器.
+                    _Timer.Stop();//关闭定时器.
                 }
-                isopen = value;
+                _IsOpen = value;
             }
         }
         #endregion
@@ -133,8 +133,8 @@ namespace CRC
         /// </summary>
         private void InitializeComponent()
         {
-            timer = new Timer();
-            timer.Tick += this.CheckPosTimer_Tick;
+            _Timer = new Timer();
+            _Timer.Tick += this.CheckPosTimer_Tick;
 
         }
 
@@ -145,51 +145,51 @@ namespace CRC
                 return;
             }
 
-            if (_form == null || IsOrg == false)
+            if (_Form == null || _IsOrg == false)
             {
                 return;
             }
 
-            if (_form.Bounds.Contains(Cursor.Position))//鼠标是否在窗体上面.
+            if (_Form.Bounds.Contains(Cursor.Position))//鼠标是否在窗体上面.
             {
-                switch (dockSide)
+                switch (_DockSide)
                 {
                     case AnchorStyles.Top://顶部停靠
-                        if (status == DOCKING)
-                            _form.Location = new Point(_form.Location.X, 0);
+                        if (_Status == DOCKING)
+                            _Form.Location = new Point(_Form.Location.X, 0);
                         break;
                     case AnchorStyles.Right://右边停靠
-                        if (status == DOCKING)
-                            _form.Location = new Point(Screen.PrimaryScreen.Bounds.Width - _form.Width, 1);
+                        if (_Status == DOCKING)
+                            _Form.Location = new Point(Screen.PrimaryScreen.Bounds.Width - _Form.Width, 1);
                         break;
                     case AnchorStyles.Left://左边停靠.
-                        if (status == DOCKING)
-                            _form.Location = new Point(0, 1);
+                        if (_Status == DOCKING)
+                            _Form.Location = new Point(0, 1);
                         break;
                 }
             }
             else
             {
                 //鼠标不在窗体上面.
-                switch (dockSide)
+                switch (_DockSide)
                 {
                     case AnchorStyles.Top://
-                        _form.Location = new Point(_form.Location.X, (_form.Height - 4) * (-1));
+                        _Form.Location = new Point(_Form.Location.X, (_Form.Height - 4) * (-1));
                         break;
                     case AnchorStyles.Right:
-                        _form.Size = new Size(_form.Width, Screen.PrimaryScreen.WorkingArea.Height);
-                        _form.Location = new Point(Screen.PrimaryScreen.Bounds.Width - 4, 1);
+                        _Form.Size = new Size(_Form.Width, Screen.PrimaryScreen.WorkingArea.Height);
+                        _Form.Location = new Point(Screen.PrimaryScreen.Bounds.Width - 4, 1);
                         break;
                     case AnchorStyles.Left:
-                        _form.Size = new Size(_form.Width, Screen.PrimaryScreen.WorkingArea.Height);
-                        _form.Location = new Point((-1) * (_form.Width - 4), 1);
+                        _Form.Size = new Size(_Form.Width, Screen.PrimaryScreen.WorkingArea.Height);
+                        _Form.Location = new Point((-1) * (_Form.Width - 4), 1);
                         break;
                     case AnchorStyles.None:
-                        if (IsOrg == true && status == OFF)
+                        if (_IsOrg == true && _Status == OFF)
                         {
-                            if (_form.Bounds.Width != lastBoard.Width || _form.Bounds.Height != lastBoard.Height)
+                            if (_Form.Bounds.Width != _LastBoard.Width || _Form.Bounds.Height != _LastBoard.Height)
                             {
-                                _form.Size = new Size(lastBoard.Width, lastBoard.Height);
+                                _Form.Size = new Size(_LastBoard.Width, _LastBoard.Height);
                             }
                         }
                         break;
@@ -204,35 +204,35 @@ namespace CRC
         /// </summary>
         private void GetDockSide()
         {
-            if (_form.Top <= 0)
+            if (_Form.Top <= 0)
             {
-                dockSide = AnchorStyles.Top;
-                if (_form.Bounds.Contains(Cursor.Position))
-                    status = PRE_DOCKING;
+                _DockSide = AnchorStyles.Top;
+                if (_Form.Bounds.Contains(Cursor.Position))
+                    _Status = PRE_DOCKING;
                 else
-                    status = DOCKING;
+                    _Status = DOCKING;
             }
-            else if (_form.Left <= 0)
+            else if (_Form.Left <= 0)
             {
-                dockSide = AnchorStyles.Left;
-                if (_form.Bounds.Contains(Cursor.Position))
-                    status = PRE_DOCKING;
+                _DockSide = AnchorStyles.Left;
+                if (_Form.Bounds.Contains(Cursor.Position))
+                    _Status = PRE_DOCKING;
                 else
-                    status = DOCKING;
+                    _Status = DOCKING;
             }
-            else if (_form.Left >= Screen.PrimaryScreen.Bounds.Width - _form.Width)
+            else if (_Form.Left >= Screen.PrimaryScreen.Bounds.Width - _Form.Width)
             {
-                dockSide = AnchorStyles.Right;
-                if (_form.Bounds.Contains(Cursor.Position))
-                    status = PRE_DOCKING;
+                _DockSide = AnchorStyles.Right;
+                if (_Form.Bounds.Contains(Cursor.Position))
+                    _Status = PRE_DOCKING;
                 else
-                    status = DOCKING;
+                    _Status = DOCKING;
             }
             else
             {
                 //窗体没有 停靠在屏幕侧边
-                dockSide = AnchorStyles.None;
-                status = OFF;
+                _DockSide = AnchorStyles.None;
+                _Status = OFF;
             }
         }
 
@@ -240,20 +240,20 @@ namespace CRC
         private void _form_LocationChanged(object sender, EventArgs e)
         {
             GetDockSide();
-            if (IsOrg == false)
+            if (_IsOrg == false)
             {
                 //保存窗体所在的区域.
-                lastBoard = _form.Bounds;
-                IsOrg = true;
+                _LastBoard = _Form.Bounds;
+                _IsOrg = true;
             }
         }
 
         //窗体大小改变时
         private void _form_SizeChanged(object sender, EventArgs e)
         {
-            if (IsOrg == true && status == OFF)
+            if (_IsOrg == true && _Status == OFF)
             {
-                lastBoard = _form.Bounds;
+                _LastBoard = _Form.Bounds;
             }
         }
 

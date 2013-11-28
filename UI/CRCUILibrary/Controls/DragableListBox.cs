@@ -15,6 +15,7 @@ using System.Windows.Forms;
 using System.Reflection;
 using System.Drawing;
 using System.ComponentModel;
+using System.Diagnostics;
 
 namespace CRC.Controls
 {
@@ -26,16 +27,16 @@ namespace CRC.Controls
     public class DragableListBox:ListBox
     {
         #region 字段
-        private bool isDraw; //是否执行绘制
-        SolidBrush evenRowBursh ;
-        SolidBrush oddRowBursh;
-        Brush normalFontBursh=SystemBrushes.ControlText;
-        Brush selectFontBursh = SystemBrushes.HighlightText;
-        Brush selectRowBursh =  SystemBrushes.Highlight;
-        private bool dragAcross;
-        private bool dragSort;
+        private bool _isDraw; //是否执行绘制
+        SolidBrush _EvenRowBursh ;
+        SolidBrush _OddRowBursh;
+        Brush _NormalFontBursh=SystemBrushes.ControlText;
+        Brush _SelectFontBursh = SystemBrushes.HighlightText;
+        Brush _SelectRowBursh =  SystemBrushes.Highlight;
+        private bool _DragAcross;
+        private bool _DragSort;
 
-        public static ListBox dragSource;
+        public static ListBox _DragSource;
         #endregion
 
         public DragableListBox()
@@ -48,29 +49,35 @@ namespace CRC.Controls
 
         #region 属性
 
+        /// <summary>
+        /// 获取或设置是否允许在不同的ListBox之间拖放元素.
+        /// </summary>
         [Description("跨ListBox拖放元素"), Category("行为")]
         public bool DragAcross 
         {
-            get { return (dragAcross&&AllowDrop&&SelectionMode== System.Windows.Forms.SelectionMode.One); }
+            get { return (_DragAcross && AllowDrop && SelectionMode== System.Windows.Forms.SelectionMode.One); }
             set 
             {
-                dragAcross = value;
+                _DragAcross = value;
                 if (value) this.AllowDrop = true;
             }
         }
 
+        /// <summary>
+        /// 获取或设置是否允许拖动排序.
+        /// </summary>
         [Description("元素拖动排序"),Category("行为")]
         public bool DragSort
         {
-            get { return dragSort && AllowDrop && SelectionMode == System.Windows.Forms.SelectionMode.One; }
+            get { return _DragSort && AllowDrop && SelectionMode == System.Windows.Forms.SelectionMode.One; }
             set
             {
-                dragSort = value;
+                _DragSort = value;
                 if (value) this.AllowDrop = true;
             }
         }
 
-        private Color oddColor;
+        private Color oddColor=Color.RoyalBlue ;
         [Description("单数行的底色"), Category("外观")]
         public Color OddColor
         {
@@ -78,8 +85,8 @@ namespace CRC.Controls
             set 
             {
                 oddColor = value;
-                isDraw = oddColor != this.BackColor;
-                if (isDraw) DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+                _isDraw = oddColor != this.BackColor;
+                if (_isDraw) DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
                 else DrawMode = System.Windows.Forms.DrawMode.Normal;
             }
         }
@@ -107,27 +114,28 @@ namespace CRC.Controls
             base.OnDragDrop(drgevent);
             if (!DragAcross && !DragSort) return;
 
-            object item = dragSource.SelectedItem;
+            object item = _DragSource.SelectedItem;
+            Debug.WriteLine("OnDragDrop {0}  {1}".FormatWith(Name,item));
 
-            if (DragAcross && !DragSort && dragSource != this)
+            if (DragAcross && !DragSort && _DragSource != this)
             {
-                dragSource.Items.Remove(item);
+                _DragSource.Items.Remove(item);
                 this.Items.Add(item);
                 if (DraggedAcross != null)
-                    DraggedAcross(this, new DraggedEventArgs() { DragItem=item, SourceControl=dragSource });
+                    DraggedAcross(this, new DraggedEventArgs() { DragItem=item, SourceControl=_DragSource });
             }
-            else if (DragSort &&(( dragSource == this&&! DragAcross)||DragAcross))
+            else if (DragSort &&(( _DragSource == this&&! DragAcross)||DragAcross))
             {
                 int index = this.IndexFromPoint(this.PointToClient(new Point(drgevent.X, drgevent.Y)));
-                dragSource.Items.Remove(item);
+                _DragSource.Items.Remove(item);
                 if (index < 0)
                     this.Items.Add(item);
                 else
                     this.Items.Insert(index, item);
                 if (DragAcross && DraggedAcross != null)
-                    DraggedAcross(this, new DraggedEventArgs() { DragItem=item,SourceControl=dragSource });
+                    DraggedAcross(this, new DraggedEventArgs() { DragItem=item,SourceControl=_DragSource });
                 if (DraggedSort != null)
-                    DraggedSort(this, new DraggedEventArgs() { DragItem=item,SourceControl=dragSource, DestineIndex=index });
+                    DraggedSort(this, new DraggedEventArgs() { DragItem=item,SourceControl=_DragSource, DestineIndex=index });
             }
             
         }
@@ -148,7 +156,7 @@ namespace CRC.Controls
 
             if (this.Items.Count == 0 || e.Button != MouseButtons.Left || this.SelectedIndex == -1 || e.Clicks == 2)
                 return;
-            dragSource = this;
+            _DragSource = this;
             
             int index = this.SelectedIndex;
             object item = this.Items[index];
@@ -163,12 +171,12 @@ namespace CRC.Controls
         protected override void OnDrawItem(DrawItemEventArgs e)
         {
             if (this.Items.Count < 0) return;
-            if (!isDraw) return;
+            if (!_isDraw) return;
             if (e.Index < 0) return;
             bool selected = (e.State & DrawItemState.Selected) == DrawItemState.Selected;
             if(selected)
             //if (e.Index == this.SelectedIndex)
-                e.Graphics.FillRectangle(selectRowBursh, e.Bounds);
+                e.Graphics.FillRectangle(_SelectRowBursh, e.Bounds);
             else if (e.Index % 2 != 0)
                 e.Graphics.FillRectangle(OddRowBursh, e.Bounds);
             else
@@ -178,13 +186,13 @@ namespace CRC.Controls
             if(selected)
             {
                 e.Graphics.DrawString(this.GetItemText(e.Index), e.Font,
-                            selectFontBursh, e.Bounds);
+                            _SelectFontBursh, e.Bounds);
                 
             }
             else
             {
                 e.Graphics.DrawString(this.GetItemText(e.Index), e.Font,
-                            normalFontBursh, e.Bounds);
+                            _NormalFontBursh, e.Bounds);
             }
             e.DrawFocusRectangle();
             base.OnDrawItem(e);
@@ -193,8 +201,8 @@ namespace CRC.Controls
         protected override void Dispose(bool disposing)
         {
             base.Dispose(disposing);
-            if (oddRowBursh != null) oddRowBursh.Dispose();
-            if (evenRowBursh != null) evenRowBursh.Dispose();
+            if (_OddRowBursh != null) _OddRowBursh.Dispose();
+            if (_EvenRowBursh != null) _EvenRowBursh.Dispose();
         }
 
         #endregion
@@ -207,20 +215,20 @@ namespace CRC.Controls
         {
             get 
             {
-                if(evenRowBursh==null)
+                if(_EvenRowBursh==null)
                 {
-                    evenRowBursh = new SolidBrush(this.BackColor);
-                    return evenRowBursh;
+                    _EvenRowBursh = new SolidBrush(this.BackColor);
+                    return _EvenRowBursh;
                 }
-                if ( evenRowBursh.Color == this.BackColor)return evenRowBursh;
-                evenRowBursh.Dispose();
-                evenRowBursh = new SolidBrush(this.BackColor);
-                return evenRowBursh;
+                if ( _EvenRowBursh.Color == this.BackColor)return _EvenRowBursh;
+                _EvenRowBursh.Dispose();
+                _EvenRowBursh = new SolidBrush(this.BackColor);
+                return _EvenRowBursh;
             }
             set 
             {
-                if(evenRowBursh!=null) evenRowBursh.Dispose();
-                evenRowBursh = value;
+                if(_EvenRowBursh!=null) _EvenRowBursh.Dispose();
+                _EvenRowBursh = value;
             }
         }
 
@@ -228,20 +236,20 @@ namespace CRC.Controls
         {
             get 
             {
-                if (oddRowBursh == null)
+                if (_OddRowBursh == null)
                 {
-                    oddRowBursh = new SolidBrush(this.OddColor);
-                    return oddRowBursh;
+                    _OddRowBursh = new SolidBrush(this.OddColor);
+                    return _OddRowBursh;
                 }
-                if (oddRowBursh.Color == this.OddColor) return oddRowBursh;
-                oddRowBursh.Dispose();
-                oddRowBursh = new SolidBrush(this.OddColor);
-                return oddRowBursh;
+                if (_OddRowBursh.Color == this.OddColor) return _OddRowBursh;
+                _OddRowBursh.Dispose();
+                _OddRowBursh = new SolidBrush(this.OddColor);
+                return _OddRowBursh;
             }
             set 
             {
-                if (oddRowBursh != null) oddRowBursh.Dispose();
-                oddRowBursh = value;
+                if (_OddRowBursh != null) _OddRowBursh.Dispose();
+                _OddRowBursh = value;
             }
         }
 

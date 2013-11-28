@@ -10,11 +10,27 @@ namespace CRC.Controls
      * 你可以免费使用或修改以下代码，但请保留版权信息。
      * 具体请查看 CS程序员之窗开源协议（http://www.csharpwin.com/csol.html）。
      */
+
+    /// <summary>
+    /// 工具栏停靠方式.
+    /// </summary>
     public enum DrawToolsDockStyle
     {
+        /// <summary>
+        /// 无.
+        /// </summary>
         None = 0,
+        /// <summary>
+        /// 顶部.
+        /// </summary>
         Top,
+        /// <summary>
+        /// 底部上方.
+        /// </summary>
         BottomUp,
+        /// <summary>
+        /// 底部下方.
+        /// </summary>
         Bottom
     }
 }

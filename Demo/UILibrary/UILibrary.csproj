@@ -92,6 +92,12 @@
     <Compile Include="FrmControlPaintExTest.Designer.cs">
       <DependentUpon>FrmControlPaintExTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListBox\FrmDragableListBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBox\FrmDragableListBox.Designer.cs">
+      <DependentUpon>FrmDragableListBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmGroupBox.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -202,6 +208,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmControlPaintExTest.resx">
       <DependentUpon>FrmControlPaintExTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBox\FrmColorListBox.resx">
+      <DependentUpon>FrmColorListBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBox\FrmDragableListBox.resx">
+      <DependentUpon>FrmDragableListBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmGroupBox.resx">
       <DependentUpon>FrmGroupBox.cs</DependentUpon>

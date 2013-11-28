@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
 using System.Drawing.Drawing2D;
+using System.Windows.Forms;
 
 namespace CRC.Controls
 {
@@ -20,15 +21,14 @@ namespace CRC.Controls
     public static class GraphicsPathHelper
     {
         /// <summary>
-        /// 建立带有圆角样式的路径。
+        /// 建立带有圆角样式的矩形路径。
         /// </summary>
         /// <param name="rect">用来建立路径的矩形。</param>
         /// <param name="_radius">圆角的大小。</param>
         /// <param name="style">圆角的样式。</param>
         /// <param name="correction">是否把矩形长宽减 1,以便画出边框。</param>
         /// <returns>建立的路径。</returns>
-        public static GraphicsPath CreatePath(
-            Rectangle rect, int radius, RoundStyle style, bool correction)
+        public static GraphicsPath CreateFilletRectangle(Rectangle rect, int radius, RoundStyle style, bool correction)
         {
             GraphicsPath path = new GraphicsPath();
             int radiusCorrection = correction ? 1 : 0;
@@ -39,124 +39,103 @@ namespace CRC.Controls
                     break;
                 case RoundStyle.All:
                     path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
-                    path.AddArc(
-                        rect.Right - radius - radiusCorrection,
-                        rect.Y,
-                        radius,
-                        radius,
-                        270,
-                        90);
-                    path.AddArc(
-                        rect.Right - radius - radiusCorrection,
-                        rect.Bottom - radius - radiusCorrection,
-                        radius,
-                        radius, 0, 90);
-                    path.AddArc(
-                        rect.X,
-                        rect.Bottom - radius - radiusCorrection,
-                        radius,
-                        radius,
-                        90,
-                        90);
+                    path.AddArc(rect.Right - radius - radiusCorrection,rect.Y,radius,radius,270,90);
+                    path.AddArc(rect.Right - radius - radiusCorrection,rect.Bottom - radius - radiusCorrection,radius,radius, 0, 90);
+                    path.AddArc(rect.X,rect.Bottom - radius - radiusCorrection,radius,radius,90,90);
                     break;
                 case RoundStyle.Left:
                     path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
-                    path.AddLine(
-                        rect.Right - radiusCorrection, rect.Y,
-                        rect.Right - radiusCorrection, rect.Bottom - radiusCorrection);
-                    path.AddArc(
-                        rect.X,
-                        rect.Bottom - radius - radiusCorrection,
-                        radius,
-                        radius,
-                        90,
-                        90);
+                    path.AddLine(rect.Right - radiusCorrection, rect.Y,rect.Right - radiusCorrection, rect.Bottom - radiusCorrection);
+                    path.AddArc(rect.X,rect.Bottom - radius - radiusCorrection,radius,radius,90,90);
                     break;
                 case RoundStyle.Right:
-                    path.AddArc(
-                        rect.Right - radius - radiusCorrection,
-                        rect.Y,
-                        radius,
-                        radius,
-                        270,
-                        90);
-                    path.AddArc(
-                       rect.Right - radius - radiusCorrection,
-                       rect.Bottom - radius - radiusCorrection,
-                       radius,
-                       radius,
-                       0,
-                       90);
+                    path.AddArc(rect.Right - radius - radiusCorrection,rect.Y,radius,radius,270,90);
+                    path.AddArc(rect.Right - radius - radiusCorrection,rect.Bottom - radius - radiusCorrection,radius,radius,0,90);
                     path.AddLine(rect.X, rect.Bottom - radiusCorrection, rect.X, rect.Y);
                     break;
                 case RoundStyle.Top:
                     path.AddArc(rect.X, rect.Y, radius, radius, 180, 90);
-                    path.AddArc(
-                        rect.Right - radius - radiusCorrection,
-                        rect.Y,
-                        radius,
-                        radius,
-                        270,
-                        90);
-                    path.AddLine(
-                        rect.Right - radiusCorrection, rect.Bottom - radiusCorrection,
-                        rect.X, rect.Bottom - radiusCorrection);
+                    path.AddArc(rect.Right - radius - radiusCorrection,rect.Y,radius,radius,270,90);
+                    path.AddLine(rect.Right - radiusCorrection, rect.Bottom - radiusCorrection,rect.X, rect.Bottom - radiusCorrection);
                     break;
                 case RoundStyle.Bottom:
-                    path.AddArc(
-                        rect.Right - radius - radiusCorrection,
-                        rect.Bottom - radius - radiusCorrection,
-                        radius,
-                        radius,
-                        0,
-                        90);
-                    path.AddArc(
-                        rect.X,
-                        rect.Bottom - radius - radiusCorrection,
-                        radius,
-                        radius,
-                        90,
-                        90);
+                    path.AddArc(rect.Right - radius - radiusCorrection,rect.Bottom - radius - radiusCorrection,radius,radius,0,90);
+                    path.AddArc(rect.X,rect.Bottom - radius - radiusCorrection,radius,radius,90,90);
                     path.AddLine(rect.X, rect.Y, rect.Right - radiusCorrection, rect.Y);
                     break;
                 case RoundStyle.BottomLeft:
-                    path.AddArc(
-                        rect.X,
-                        rect.Bottom - radius - radiusCorrection,
-                        radius,
-                        radius,
-                        90,
-                        90);
+                    path.AddArc(rect.X,rect.Bottom - radius - radiusCorrection,radius,radius,90,90);
                     path.AddLine(rect.X, rect.Y, rect.Right - radiusCorrection, rect.Y);
-                    path.AddLine(
-                        rect.Right - radiusCorrection,
-                        rect.Y,
-                        rect.Right - radiusCorrection,
-                        rect.Bottom - radiusCorrection);
+                    path.AddLine(rect.Right - radiusCorrection,rect.Y,rect.Right - radiusCorrection,rect.Bottom - radiusCorrection);
                     break;
                 case RoundStyle.BottomRight:
-                    path.AddArc(
-                        rect.Right - radius - radiusCorrection,
-                        rect.Bottom - radius - radiusCorrection,
-                        radius,
-                        radius,
-                        0,
-                        90);
+                    path.AddArc(rect.Right - radius - radiusCorrection,rect.Bottom - radius - radiusCorrection,radius,radius,0,90);
                     path.AddLine(rect.X, rect.Bottom - radiusCorrection, rect.X, rect.Y);
                     path.AddLine(rect.X, rect.Y, rect.Right - radiusCorrection, rect.Y);
                     break;
             }
             path.CloseFigure();
-
             return path;
         }
 
-        public static GraphicsPath CreateTrackBarThumbPath(
-            Rectangle rect, ThumbArrowDirection arrowDirection)
+        /// <summary>
+        /// 创建圆角矩形.
+        /// </summary>
+        /// <param name="rect"></param>
+        /// <returns></returns>
+        public static GraphicsPath CreateTabPath(Rectangle rect, TabAlignment alignment, int radius)
         {
             GraphicsPath path = new GraphicsPath();
-            PointF centerPoint = new PointF(
-                rect.X + rect.Width / 2f, rect.Y + rect.Height / 2f);
+            switch (alignment)
+            {
+                case TabAlignment.Top:
+                    rect.X++;
+                    rect.Width -= 2;
+                    path.AddLine(rect.X, rect.Bottom, rect.X, rect.Y + radius / 2);
+                    path.AddArc(rect.X, rect.Y, radius, radius, 180F, 90F);
+                    path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270F, 90F);
+                    path.AddLine(rect.Right, rect.Y + radius / 2, rect.Right, rect.Bottom);
+                    break;
+                case TabAlignment.Bottom:
+                    rect.X++;
+                    rect.Width -= 2;
+                    path.AddLine(rect.X, rect.Y, rect.X, rect.Bottom - radius / 2);
+                    path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 180, -90);
+                    path.AddArc(rect.Right - radius, rect.Bottom - radius, radius, radius, 90, -90);
+                    path.AddLine(rect.Right, rect.Bottom - radius / 2, rect.Right, rect.Y);
+                    break;
+                case TabAlignment.Left:
+                    rect.Y++;
+                    rect.Height -= 2;
+                    path.AddLine(rect.Right, rect.Y, rect.X + radius / 2, rect.Y);
+                    path.AddArc(rect.X, rect.Y, radius, radius, 270F, -90F);
+                    path.AddArc(rect.X, rect.Bottom - radius, radius, radius, 180F, -90F);
+                    path.AddLine(rect.X + radius / 2, rect.Bottom, rect.Right, rect.Bottom);
+                    break;
+                case TabAlignment.Right:
+                    rect.Y++;
+                    rect.Height -= 2;
+                    path.AddLine(rect.X, rect.Y, rect.Right - radius / 2, rect.Y);
+                    path.AddArc(rect.Right - radius, rect.Y, radius, radius, 270F, 90F);
+                    path.AddArc(rect.Right - radius, rect.Bottom - radius, radius, radius, 0F, 90F);
+                    path.AddLine(rect.Right - radius / 2, rect.Bottom, rect.X, rect.Bottom);
+                    break;
+            }
+            path.CloseFigure();
+            return path;
+        }
+
+
+        /// <summary>
+        /// 创建一个指定方向的箭头.
+        /// </summary>
+        /// <param name="rect">绘制箭头的矩形区域.</param>
+        /// <param name="arrowDirection">箭头的方向.</param>
+        /// <returns></returns>
+        public static GraphicsPath CreateTrackBarThumbPath(Rectangle rect, ThumbArrowDirection arrowDirection)
+        {
+            GraphicsPath path = new GraphicsPath();
+            PointF centerPoint = new PointF(rect.X + rect.Width / 2f, rect.Y + rect.Height / 2f);
             float offset = 0;
 
             switch (arrowDirection)
@@ -174,36 +153,24 @@ namespace CRC.Controls
             switch (arrowDirection)
             {
                 case ThumbArrowDirection.Left:
-                    path.AddLine(
-                        rect.X, centerPoint.Y, rect.X + offset, rect.Y);
-                    path.AddLine(
-                        rect.Right, rect.Y, rect.Right, rect.Bottom);
-                    path.AddLine(
-                        rect.X + offset, rect.Bottom, rect.X, centerPoint.Y);
+                    path.AddLine(rect.X, centerPoint.Y, rect.X + offset, rect.Y);
+                    path.AddLine(rect.Right, rect.Y, rect.Right, rect.Bottom);
+                    path.AddLine(rect.X + offset, rect.Bottom, rect.X, centerPoint.Y);
                     break;
                 case ThumbArrowDirection.Right:
-                    path.AddLine(
-                        rect.Right, centerPoint.Y, rect.Right - offset, rect.Bottom);
-                    path.AddLine(
-                        rect.X, rect.Bottom, rect.X, rect.Y);
-                    path.AddLine(
-                        rect.Right - offset, rect.Y, rect.Right, centerPoint.Y);
+                    path.AddLine(rect.Right, centerPoint.Y, rect.Right - offset, rect.Bottom);
+                    path.AddLine(rect.X, rect.Bottom, rect.X, rect.Y);
+                    path.AddLine(rect.Right - offset, rect.Y, rect.Right, centerPoint.Y);
                     break;
                 case ThumbArrowDirection.Up:
-                    path.AddLine(
-                        centerPoint.X, rect.Y, rect.X, rect.Y + offset);
-                    path.AddLine(
-                        rect.X, rect.Bottom, rect.Right, rect.Bottom);
-                    path.AddLine(
-                        rect.Right, rect.Y + offset, centerPoint.X, rect.Y);
+                    path.AddLine(centerPoint.X, rect.Y, rect.X, rect.Y + offset);
+                    path.AddLine(rect.X, rect.Bottom, rect.Right, rect.Bottom);
+                    path.AddLine(rect.Right, rect.Y + offset, centerPoint.X, rect.Y);
                     break;
                 case ThumbArrowDirection.Down:
-                    path.AddLine(
-                         centerPoint.X, rect.Bottom, rect.X, rect.Bottom - offset);
-                    path.AddLine(
-                        rect.X, rect.Y, rect.Right, rect.Y);
-                    path.AddLine(
-                        rect.Right, rect.Bottom - offset, centerPoint.X, rect.Bottom);
+                    path.AddLine(centerPoint.X, rect.Bottom, rect.X, rect.Bottom - offset);
+                    path.AddLine(rect.X, rect.Y, rect.Right, rect.Y);
+                    path.AddLine(rect.Right, rect.Bottom - offset, centerPoint.X, rect.Bottom);
                     break;
                 case ThumbArrowDirection.LeftRight:
                     break;
@@ -213,7 +180,6 @@ namespace CRC.Controls
                     path.AddRectangle(rect);
                     break;
             }
-
             path.CloseFigure();
             return path;
         }

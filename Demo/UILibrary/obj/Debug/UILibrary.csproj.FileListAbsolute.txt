@@ -78,8 +78,6 @@ D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmInstruments.re
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.Properties.Resources.resources
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\GenerateResource.read.1.tlog
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\GenerateResource.write.1.tlog
-D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmPlayerTrackBar.resources
-D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmLoadingBar.resources
 G:\Code\Library\Demo\UILibrary\bin\Debug\Test.exe.config
 G:\Code\Library\Demo\UILibrary\obj\Debug\Test.exe
 G:\Code\Library\Demo\UILibrary\obj\Debug\Test.pdb
@@ -108,3 +106,6 @@ G:\Code\Library\Demo\UILibrary\bin\Debug\CRCUILibrary.dll
 G:\Code\Library\Demo\UILibrary\bin\Debug\CRCUILibrary.pdb
 G:\Code\Library\Demo\UILibrary\obj\Debug\UILibrary.csprojResolveAssemblyReference.cache
 G:\Code\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmControlPaintExTest.resources
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmControlPaintExTest.resources
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmDragableListBox.resources
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\ColorListBox.FrmColorListBox.resources

@@ -12,38 +12,49 @@ namespace CRC.Controls
      * 具体请查看 CS程序员之窗开源协议（http://www.csharpwin.com/csol.html）。
      */
 
+    /// <summary>
+    /// 操作命令的对象.
+    /// </summary>
     internal class OperateObject
     {
-        private OperateType _operateType;
-        private Color _color;
-        private object _data;
+        private OperateType _OperateType;
+        private Color _Color;
+        private object _Data;
 
         public OperateObject() { }
 
-        public OperateObject(
-            OperateType operateType, Color color, object data)
+        public OperateObject(OperateType operateType, Color color, object data)
         {
-            _operateType = operateType;
-            _color = color;
-            _data = data;
+            _OperateType = operateType;
+            _Color = color;
+            _Data = data;
         }
 
+        /// <summary>
+        /// 操作命令类型
+        /// </summary>
         public OperateType OperateType
         {
-            get { return _operateType; }
-            set { _operateType = value; }
+            get { return _OperateType; }
+            set { _OperateType = value; }
         }
 
+        /// <summary>
+        /// 颜色.
+        /// </summary>
         public Color Color
         {
-            get { return _color; }
-            set { _color = value; }
+            get { return _Color; }
+            set { _Color = value; }
         }
 
+        /// <summary>
+        /// 数据.
+        /// </summary>
         public object Data
         {
-            get { return _data; }
-            set { _data = value; }
+            get { return _Data; }
+            set { _Data = value; }
         }
     }
 }

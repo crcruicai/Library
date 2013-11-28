@@ -53,13 +53,20 @@ namespace CRC.Controls
         SynchronizedSum
     }
 
+    /// <summary>
+    /// 网格,可用于作为示波器界面.
+    /// </summary>
     public partial class PerfChart : UserControl
         {
             #region *** Constants ***
 
-            // Keep only a maximum MAX_VALUE_COUNT amount of values; This will allow
+            /// <summary>
+            /// Keep only a maximum MAX_VALUE_COUNT amount of values; This will allow
+            /// </summary>
             private const int MAX_VALUE_COUNT = 512;
-            // Draw a background grid with a fixed line spacing
+            /// <summary>
+            /// Draw a background grid with a fixed line spacing
+            /// </summary>
             private const int GRID_SPACING = 16;
 
             #endregion
@@ -67,7 +74,10 @@ namespace CRC.Controls
 
             #region *** Member Variables ***
 
-            // Amount of currently visible values (calculated from control width and value spacing)
+            //
+            /// <summary>
+            ///  Amount of currently visible values (calculated from control width and value spacing)
+            /// </summary>
             private int visibleValues = 0;
             // Horizontal value space in Pixels
             private int valueSpacing = 5;

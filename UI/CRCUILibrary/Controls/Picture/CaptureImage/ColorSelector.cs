@@ -15,16 +15,19 @@ namespace CRC.Controls
      * 你可以免费使用或修改以下代码，但请保留版权信息。
      * 具体请查看 CS程序员之窗开源协议（http://www.csharpwin.com/csol.html）。
      */
+    /// <summary>
+    /// 颜色选择器.
+    /// </summary>
     public partial class ColorSelector : UserControl
     {
         #region Fields
 
-        private CaptureImageToolColorTable _colorTable;
+        private CaptureImageToolColorTable _ColorTable;
 
-        private static readonly Color InnerBorderColor = 
-            Color.FromArgb(200, 255, 255, 255);
-        private static readonly object EventColorChanged = new object();
-        private static readonly object EventFontSizeChanged = new object();
+        private static readonly Color _InnerBorderColor =  Color.FromArgb(200, 255, 255, 255);
+           
+        private static readonly object _EventColorChanged = new object();
+        private static readonly object _EventFontSizeChanged = new object();
 
         #endregion
 
@@ -45,46 +48,55 @@ namespace CRC.Controls
 
         public event EventHandler ColorChanged
         {
-            add { base.Events.AddHandler(EventColorChanged, value); }
-            remove { base.Events.RemoveHandler(EventColorChanged, value); }
+            add { base.Events.AddHandler(_EventColorChanged, value); }
+            remove { base.Events.RemoveHandler(_EventColorChanged, value); }
         }
 
         public event EventHandler FontSizeChanged
         {
-            add { base.Events.AddHandler(EventFontSizeChanged, value); }
-            remove { base.Events.RemoveHandler(EventFontSizeChanged, value); }
+            add { base.Events.AddHandler(_EventFontSizeChanged, value); }
+            remove { base.Events.RemoveHandler(_EventFontSizeChanged, value); }
         }
 
         #endregion
 
         #region Properties
 
+        /// <summary>
+        /// 获取或设置颜色表.
+        /// </summary>
         [Browsable(false)]
         [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
         public CaptureImageToolColorTable ColorTable
         {
             get
             {
-                if (_colorTable == null)
+                if (_ColorTable == null)
                 {
-                    _colorTable = new CaptureImageToolColorTable();
+                    _ColorTable = new CaptureImageToolColorTable();
                 }
-                return _colorTable;
+                return _ColorTable;
             }
             set
             {
-                _colorTable = value;
+                _ColorTable = value;
                 base.Invalidate();
                 SetColorLabelBorderColor(ColorTable.BorderColor);
             }
         }
 
+        /// <summary>
+        /// 获取当前被选中的颜色.
+        /// </summary>
         [Browsable(false)]
         public Color SelectedColor
         {
             get { return colorLabelSelected.BackColor; }
         }
 
+        /// <summary>
+        /// 获取字体的大小.
+        /// </summary>
         [Browsable(false)]
         public int FontSize
         {
@@ -94,7 +106,9 @@ namespace CRC.Controls
         #endregion
 
         #region Public Methods
-
+        /// <summary>
+        /// 将颜色选择器重置为默认设置.
+        /// </summary>
         public void Reset()
         {
             colorLabelSelected.BackColor = Color.Red;
@@ -104,6 +118,9 @@ namespace CRC.Controls
             Width = 189;
         }
 
+        /// <summary>
+        /// 将字体样式更改为默认样式.
+        /// </summary>
         public void ChangeToFontStyle()
         {
             colorLabelSelected.BackColor = Color.Red;
@@ -119,7 +136,7 @@ namespace CRC.Controls
 
         protected virtual void OnColorChanged(EventArgs e)
         {
-            EventHandler handler = base.Events[EventColorChanged] as EventHandler;
+            EventHandler handler = base.Events[_EventColorChanged] as EventHandler;
             if (handler != null)
             {
                 handler(this, e);
@@ -128,7 +145,7 @@ namespace CRC.Controls
 
         protected virtual void OnFontSizeChanged(EventArgs e)
         {
-            EventHandler handler = base.Events[EventFontSizeChanged] as EventHandler;
+            EventHandler handler = base.Events[_EventFontSizeChanged] as EventHandler;
             if (handler != null)
             {
                 handler(this, e);
@@ -155,83 +172,32 @@ namespace CRC.Controls
             g.SmoothingMode = SmoothingMode.AntiAlias;
 
             RenderBackgroundInternal(
-                g,
-                ClientRectangle,
-                ColorTable.BackColorHover,
-                ColorTable.BorderColor,
-                InnerBorderColor,
-                RoundStyle.All,
-                true,
-                true,
-                LinearGradientMode.Vertical);
+                g,ClientRectangle,ColorTable.BackColorHover,ColorTable.BorderColor,
+                _InnerBorderColor,RoundStyle.All,true,true,LinearGradientMode.Vertical);
+                
+                
+                
+                
         }
 
         #endregion
 
         #region Draw Help Methods
 
-        internal void RenderBackgroundInternal(
-            Graphics g,
-            Rectangle rect,
-            Color baseColor,
-            Color borderColor,
-            Color innerBorderColor,
-            RoundStyle style,
-            bool drawBorder,
-            bool drawGlass,
-            LinearGradientMode mode)
+        internal void RenderBackgroundInternal(Graphics g,Rectangle rect,Color baseColor,Color borderColor,
+            Color innerBorderColor,RoundStyle style,bool drawBorder,bool drawGlass,LinearGradientMode mode)
         {
-            RenderBackgroundInternal(
-                g,
-                rect,
-                baseColor,
-                borderColor,
-                innerBorderColor,
-                style,
-                8,
-                drawBorder,
-                drawGlass,
-                mode);
+            RenderBackgroundInternal(g,rect,baseColor,borderColor,innerBorderColor,style,8,drawBorder,drawGlass,mode);
         }
 
-        internal void RenderBackgroundInternal(
-           Graphics g,
-           Rectangle rect,
-           Color baseColor,
-           Color borderColor,
-           Color innerBorderColor,
-           RoundStyle style,
-           int roundWidth,
-           bool drawBorder,
-           bool drawGlass,
-           LinearGradientMode mode)
+        internal void RenderBackgroundInternal(Graphics g,Rectangle rect,Color baseColor,Color borderColor,
+            Color innerBorderColor,RoundStyle style,int roundWidth,bool drawBorder,bool drawGlass,LinearGradientMode mode)
         {
-            RenderBackgroundInternal(
-                 g,
-                 rect,
-                 baseColor,
-                 borderColor,
-                 innerBorderColor,
-                 style,
-                 8,
-                 0.45f,
-                 drawBorder,
-                 drawGlass,
-                 mode);
+            RenderBackgroundInternal(g,rect,baseColor,borderColor,innerBorderColor,style,8,0.45f,drawBorder,drawGlass,mode);
         }
 
-        internal void RenderBackgroundInternal(
-           Graphics g,
-           Rectangle rect,
-           Color baseColor,
-           Color borderColor,
-           Color innerBorderColor,
-           RoundStyle style,
-           int roundWidth,
-           float basePosition,
-           bool drawBorder,
-           bool drawGlass,
-           LinearGradientMode mode)
+        internal void RenderBackgroundInternal(Graphics g,Rectangle rect,Color baseColor,Color borderColor,
+            Color innerBorderColor,RoundStyle style,int roundWidth,float basePosition,bool drawBorder,bool drawGlass,LinearGradientMode mode)
         {
             if (drawBorder)
             {
@@ -239,8 +205,7 @@ namespace CRC.Controls
                 rect.Height--;
             }
 
-            using (LinearGradientBrush brush = new LinearGradientBrush(
-                rect, Color.Transparent, Color.Transparent, mode))
+            using (LinearGradientBrush brush = new LinearGradientBrush( rect, Color.Transparent, Color.Transparent, mode))              
             {
                 Color[] colors = new Color[4];
                 colors[0] = GetColor(baseColor, 0, 35, 24, 9);
@@ -255,7 +220,7 @@ namespace CRC.Controls
                 if (style != RoundStyle.None)
                 {
                     using (GraphicsPath path =
-                        GraphicsPathHelper.CreatePath(rect, roundWidth, style, false))
+                        GraphicsPathHelper.CreateFilletRectangle(rect, roundWidth, style, false))
                     {
                         g.FillPath(brush, path);
                     }
@@ -272,7 +237,7 @@ namespace CRC.Controls
                         {
                             rectTop.Width = (int)(rect.Width * basePosition);
                         }
-                        using (GraphicsPath pathTop = GraphicsPathHelper.CreatePath(
+                        using (GraphicsPath pathTop = GraphicsPathHelper.CreateFilletRectangle(
                             rectTop, roundWidth, RoundStyle.Top, false))
                         {
                             using (SolidBrush brushAlpha =
@@ -302,7 +267,7 @@ namespace CRC.Controls
                     if (drawBorder)
                     {
                         using (GraphicsPath path =
-                            GraphicsPathHelper.CreatePath(rect, roundWidth, style, false))
+                            GraphicsPathHelper.CreateFilletRectangle(rect, roundWidth, style, false))
                         {
                             using (Pen pen = new Pen(borderColor))
                             {
@@ -312,7 +277,7 @@ namespace CRC.Controls
 
                         rect.Inflate(-1, -1);
                         using (GraphicsPath path =
-                            GraphicsPathHelper.CreatePath(rect, roundWidth, style, false))
+                            GraphicsPathHelper.CreateFilletRectangle(rect, roundWidth, style, false))
                         {
                             using (Pen pen = new Pen(innerBorderColor))
                             {
@@ -381,7 +346,7 @@ namespace CRC.Controls
 
         private void SetRegion()
         {
-            using (GraphicsPath path = GraphicsPathHelper.CreatePath(
+            using (GraphicsPath path = GraphicsPathHelper.CreateFilletRectangle(
                 ClientRectangle, 8, RoundStyle.All, false))
             {
                 if (base.Region != null)
