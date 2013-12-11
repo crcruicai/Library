@@ -1,0 +1,1103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b4c75bdc-2cab-47c3-8ecf-b64c1e90e548" name="Administrator@QO5P9AA3YLGC5OR 2013-11-10 09:56:38" runUser="QO5P9AA3YLGC5OR\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="a5544eb8-3911-41ab-bc85-489b668152d2">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_QO5P9AA3YLGC5OR 2013-11-10 09_56_38">
+      <DeploymentItem filename="H:\QQSDK1.3\QQMessage\bin\Debug\QQMessage.dll" />
+      <DeploymentItem filename="H:\QQSDK1.3\QQServer\bin\Debug\QQServer.exe" />
+      <DeploymentItem filename="H:\QQSDK1.3\QQSDK\bin\Debug\QQSDK.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-11-10T09:56:38.7220000+08:00" queuing="2013-11-10T09:56:39.0090000+08:00" start="2013-11-10T09:56:39.1280000+08:00" finish="2013-11-10T10:15:40.6860000+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="95" executed="50" passed="2" error="0" failed="18" timeout="0" aborted="1" inconclusive="24" passedButRunAborted="5" notRunnable="0" notExecuted="45" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="QO5P9AA3YLGC5OR" outcome="Warning" timestamp="2013-11-10T09:56:38.8130000+08:00">
+        <Text>当前已禁用部署。未部署测试“TestQQSDK.QQMessageEventArgsTest.QQMessageEventArgsConstructorTest1”中的部署项“QQSDK.exe”。</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="QQMessageEventArgsConstructorTest1" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="015b417a-cb9e-b316-fd29-19af06e70095">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="04553f75-788e-4225-b144-af043b8e57aa" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.QQMessageEventArgsTest, TestQQSDK" name="QQMessageEventArgsConstructorTest1" />
+    </UnitTest>
+    <UnitTest name="CheckQQPasswordTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="ae40523a-e262-4cec-bb6a-4ea2f07325cc">
+      <Execution id="fb011578-d0d9-4236-bc54-848e78b3cbc7" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.ToolTest, TestQQSDK" name="CheckQQPasswordTest" />
+    </UnitTest>
+    <UnitTest name="QQMessageEventArgsConstructorTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="5ccca116-310e-957d-431d-468c8f8c1c30">
+      <Execution id="8b1c5b52-faf3-4bdb-8fc8-c9d22cb72e06" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.QQMessageEventArgsTest, TestQQSDK" name="QQMessageEventArgsConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ToUTF8Test" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="5ef8b5e7-d592-7034-c829-9947a55ec7ed">
+      <Execution id="ac44764a-8781-40bf-aa02-4920ea630807" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="ToUTF8Test" />
+    </UnitTest>
+    <UnitTest name="GetLoginTokenTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="2c138d8e-d4ed-fdb3-7570-a7bfcbc67e53">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="53063e75-57fa-40e7-95e1-f18cf9ffc615" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="GetLoginTokenTest" />
+    </UnitTest>
+    <UnitTest name="GetLoginVCImageTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="b0f598b4-ef64-b23b-454f-cdbac1d01ce5">
+      <Execution id="f591ebb9-1e83-4186-8c1e-f3f94f4f619f" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="GetLoginVCImageTest" />
+    </UnitTest>
+    <UnitTest name="GetQQNumberTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="3f65735f-d8de-e2aa-a1c2-8998846e2f9e">
+      <Execution id="f5cb2033-00a3-4348-97f0-821a6833dc24" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="GetQQNumberTest" />
+    </UnitTest>
+    <UnitTest name="SysHeperConstructorTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="de48329e-1155-52d4-726c-dc29bc1d6639">
+      <Execution id="d1404ab6-9960-453f-beb5-ce5feb10859c" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.SysHeperTest, TestQQSDK" name="SysHeperConstructorTest" />
+    </UnitTest>
+    <UnitTest name="TestTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="c9304d9a-15a8-14a6-6b8a-55b1c54be809">
+      <Execution id="c3db8393-182b-4471-8e89-d5a33ccc1720" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.Form1Test, TestQQSDK" name="TestTest" />
+    </UnitTest>
+    <UnitTest name="LoginStatusToStringTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="65264aca-b359-54a1-587b-d262bcf1b1ea">
+      <Execution id="7f055190-6e6e-41ea-af45-51d9adc9821f" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.SysHeperTest, TestQQSDK" name="LoginStatusToStringTest" />
+    </UnitTest>
+    <UnitTest name="GetFriendMessageTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="663c56d1-746b-77fe-c07a-40fccce6f0ee">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="df209435-6539-4901-a75a-f4f754ef74ba" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.QQMessageEventArgsTest, TestQQSDK" name="GetFriendMessageTest" />
+    </UnitTest>
+    <UnitTest name="MD5EncryptTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="b4b13681-42db-d9a0-2f05-e9a9e6946305">
+      <Execution id="be7db963-ef87-4146-b4f1-bf36754305c8" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.PasswordEncryptTest, TestQQSDK" name="MD5EncryptTest" />
+    </UnitTest>
+    <UnitTest name="PostWebRequestTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="fd4e4b9b-67ae-f454-4949-a639f2984ba0">
+      <Execution id="b7dd79e7-9665-4706-8e1c-8296c2c3153a" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="PostWebRequestTest" />
+    </UnitTest>
+    <UnitTest name="WriteLogTest1" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="3d3dd427-ec64-e5be-1956-33d26d62e364">
+      <Execution id="9c4d16da-431e-49a5-baa6-29b5c6ab9084" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.LogerTest, TestQQSDK" name="WriteLogTest1" />
+    </UnitTest>
+    <UnitTest name="GetImageTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="0656927f-61a4-7b9c-f8d9-ccfca8343c2d">
+      <Execution id="410c1bcf-fadd-47f3-b174-db8a95485bc6" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="GetImageTest" />
+    </UnitTest>
+    <UnitTest name="ParseTips" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="17551c60-ec71-febc-524e-97298ac0ae89">
+      <Execution id="b9ff3e2a-4a6c-46ef-a0ed-0f6a1557022b" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.QQMessageEventArgsTest, TestQQSDK" name="ParseTips" />
+    </UnitTest>
+    <UnitTest name="SendGetAsyncTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="3299c06e-f012-0803-e368-d458dd6775a6">
+      <Execution id="f7e2cbd9-f3ed-49f0-80bf-7abc8a62a23b" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="SendGetAsyncTest" />
+    </UnitTest>
+    <UnitTest name="CheckQQNumberTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="036125ef-6824-99f7-e07d-38131b2376df">
+      <Execution id="a673da8e-a597-4f66-b87a-ff03c8834d0c" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.ToolTest, TestQQSDK" name="CheckQQNumberTest" />
+    </UnitTest>
+    <UnitTest name="GetOnlineStatusTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="4385087c-7652-8629-18af-33e1fa678c91">
+      <Execution id="40354763-6c58-4f6b-9f1e-f44fca318877" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="GetOnlineStatusTest" />
+    </UnitTest>
+    <UnitTest name="SendMessageTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="c12ce2a4-e949-83db-66de-e48f4a84ec3f">
+      <Execution id="d66f63e6-ce0a-4184-a726-a135d351e0b6" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="SendMessageTest" />
+    </UnitTest>
+    <UnitTest name="OnReciveMessageTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="fad608b0-6a19-01ab-dcf0-bbcb42b92936">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="136bbbba-a60d-45ce-8dbb-0122c016c9aa" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="OnReciveMessageTest" />
+    </UnitTest>
+    <UnitTest name="MD5GetBytesTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="41640cc8-a74b-7106-6325-bf8f1fdb7485">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="149a51e7-ded8-4f55-ad13-69e98fb10528" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.PasswordEncryptTest, TestQQSDK" name="MD5GetBytesTest" />
+    </UnitTest>
+    <UnitTest name="LoginTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="be2f4b24-2f8e-cb7e-ff67-7afc226cc40f">
+      <Execution id="f32ef402-2e52-4542-9345-fa00847ee88b" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="LoginTest" />
+    </UnitTest>
+    <UnitTest name="OnReciveMessageTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="e04a87c5-ab2d-0c52-0896-29ef2e659e11">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="946df1ac-62b4-4ae9-93ef-c6d0173fa29e" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="OnReciveMessageTest" />
+    </UnitTest>
+    <UnitTest name="ReadTextCallbackTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="3e900735-734a-7dd0-5d87-003f67e2c0ee">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="3f3a9d45-a187-4e85-abd5-61116674ecc9" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="ReadTextCallbackTest" />
+    </UnitTest>
+    <UnitTest name="GetColorTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="d09c94d5-2b09-c4ae-9097-3de9500df433">
+      <Execution id="1d586216-d528-4f81-9b82-42f33f606e0d" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.ToolTest, TestQQSDK" name="GetColorTest" />
+    </UnitTest>
+    <UnitTest name="SendAsynToTextTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="3117f253-b04b-c165-cddb-82fadec17f17">
+      <Execution id="5ad5987d-09cb-420f-bedf-219ec5f8a512" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="SendAsynToTextTest" />
+    </UnitTest>
+    <UnitTest name="SaveTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="3549935a-11ab-62f4-7cbe-ef02450fcabc">
+      <Execution id="f4ec69e7-476b-4009-87b5-36fb4e83ca21" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="SaveTest" />
+    </UnitTest>
+    <UnitTest name="ReadCallBackTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="9ca87c3e-53e1-1bfe-2668-0a20d128a0af">
+      <Execution id="62006eb1-3e44-404e-94d0-a5df36c4c880" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="ReadCallBackTest" />
+    </UnitTest>
+    <UnitTest name="HashTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="972d652d-8a35-0b2f-4855-6908a57fc0a2">
+      <Execution id="ff280862-5774-4790-a31d-52b5b1cbb66d" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.ToolTest, TestQQSDK" name="HashTest" />
+    </UnitTest>
+    <UnitTest name="IsUserExistTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="17af2147-c134-cca1-d356-868f4e465ebc">
+      <DeploymentItems>
+        <DeploymentItem filename="QQServer.exe" />
+      </DeploymentItems>
+      <Execution id="91390c09-4943-48ae-92e4-e20ec87aa6f7" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="IsUserExistTest" />
+    </UnitTest>
+    <UnitTest name="GetDirecteUrlTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="8a364c9f-bb15-2698-d4cb-0d9d92ecfa59">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="0f4304b3-336b-403b-bafe-485bbd2f107e" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="GetDirecteUrlTest" />
+    </UnitTest>
+    <UnitTest name="EncodeConstructorTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="d2676d4c-8654-4f6d-4a55-8c9c5e459d6c">
+      <Execution id="b5497193-0759-4660-b042-b515eea64934" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="EncodeConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ToUnicodeTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="e5c88fb6-8266-136c-67f6-6af7de08a58a">
+      <Execution id="5811d094-5a1e-4284-bd38-e26d43cb39e7" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="ToUnicodeTest" />
+    </UnitTest>
+    <UnitTest name="DeleteUserTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="0c593857-dc48-c658-943a-c08e94a2b67b">
+      <Execution id="493a3956-6bff-416e-be9f-2715e6ec5808" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="DeleteUserTest" />
+    </UnitTest>
+    <UnitTest name="DeBase64Test" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="54147d65-5a1f-6df9-5ec9-048b403db885">
+      <Execution id="76e8296b-08ae-4e2d-bb4a-3f615aa4037a" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="DeBase64Test" />
+    </UnitTest>
+    <UnitTest name="DeUnicodeTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="ea3e9170-65d3-92a5-158a-d1254916d2ac">
+      <Execution id="3b181a62-d938-4f47-9090-ae7329105695" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="DeUnicodeTest" />
+    </UnitTest>
+    <UnitTest name="ListenMessageTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="8136fb99-c4ff-7722-0bf9-0c4c37d1b7ab">
+      <Execution id="da62b9ad-fcc8-4851-8e88-64ff87b34085" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="ListenMessageTest" />
+    </UnitTest>
+    <UnitTest name="LogerConstructorTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="680d911b-09a2-6dcd-f885-4bbb25f43788">
+      <Execution id="1cb84874-e20c-4a9b-aee2-5a566e4000e3" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.LogerTest, TestQQSDK" name="LogerConstructorTest" />
+    </UnitTest>
+    <UnitTest name="CookieTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="8fe2e91f-a50e-fff5-719e-770863d0fa14">
+      <Execution id="4d655380-7576-4735-89cf-f767a37676a0" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="CookieTest" />
+    </UnitTest>
+    <UnitTest name="UpdateUserTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="953d1187-908c-311d-f2dc-d44663e78175">
+      <Execution id="98e9c78b-f8a0-451b-802d-e112b905647a" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="UpdateUserTest" />
+    </UnitTest>
+    <UnitTest name="SendAsynToStreamTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="22f35bd1-760a-4632-af79-444dc9efbc80">
+      <Execution id="f933fac1-5eba-47fb-99b9-5e4b36a42e80" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="SendAsynToStreamTest" />
+    </UnitTest>
+    <UnitTest name="CreateUserTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="8cbf22b4-8ac0-ab2d-1c04-b48674e1530e">
+      <Execution id="8694d8bd-093c-4dfe-8ceb-4bf360ce273e" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="CreateUserTest" />
+    </UnitTest>
+    <UnitTest name="HttpWebConstructorTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="164b197d-6dfe-c489-8c3e-62e93318dd65">
+      <Execution id="9f12164b-b276-4bd3-a6cc-fd5ee14c4844" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="HttpWebConstructorTest" />
+    </UnitTest>
+    <UnitTest name="GetUserFriendsTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="c1b534fe-db36-8f9f-c1dd-6cc54bd5e0c6">
+      <Execution id="6ddabc10-4590-4bd7-a38a-fe3e84653336" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="GetUserFriendsTest" />
+    </UnitTest>
+    <UnitTest name="CheckLoginImageTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="1dc58957-faa1-8234-d857-ac85b8c0f74e">
+      <Execution id="902959da-0b9b-4b57-ac82-5b23840ddcb1" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="CheckLoginImageTest" />
+    </UnitTest>
+    <UnitTest name="CheckUserExiteTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="3fcef8e4-d37f-7102-3dbc-58be72257905">
+      <DeploymentItems>
+        <DeploymentItem filename="QQServer.exe" />
+      </DeploymentItems>
+      <Execution id="446db273-8796-40f2-b420-b8caba9fc6d4" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="CheckUserExiteTest" />
+    </UnitTest>
+    <UnitTest name="HeadersTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="38a46333-f06e-bfb9-36aa-ae56ea6bb475">
+      <Execution id="2ec73e8a-800c-47de-b155-f156aa6bd596" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="HeadersTest" />
+    </UnitTest>
+    <UnitTest name="Sha1EncodeTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="0ff32680-bdb0-4be8-9ca6-f5f28b199f7b">
+      <Execution id="1a78269e-cb98-43b9-b202-b4281ab8eb9f" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="Sha1EncodeTest" />
+    </UnitTest>
+    <UnitTest name="ParseGroup" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="2c03af87-55a5-9f06-7845-9ad9ee2ac795">
+      <Execution id="4febf85d-a8c0-47e8-8c9b-209b51756d45" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.QQMessageEventArgsTest, TestQQSDK" name="ParseGroup" />
+    </UnitTest>
+    <UnitTest name="GetUserListTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="f8730511-3b68-f2c5-0bd7-79fdb0753b60">
+      <Execution id="28984507-a676-4a5d-a444-d64ee01a2d3b" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="GetUserListTest" />
+    </UnitTest>
+    <UnitTest name="ToGB2312Test" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="f389bd5e-8558-022e-99c8-3da4bcd2efa4">
+      <Execution id="9f5bc55b-a286-499d-bbd1-2e7ed30372e1" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="ToGB2312Test" />
+    </UnitTest>
+    <UnitTest name="GetKeyTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="097c59b1-e89c-b3af-cf82-d401257da7d6">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="70215fb5-074b-4afe-aae6-5628c78e3132" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="GetKeyTest" />
+    </UnitTest>
+    <UnitTest name="CheckStateTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="9b3a8cd6-9acf-02f2-6579-a3622c22c55c">
+      <DeploymentItems>
+        <DeploymentItem filename="QQServer.exe" />
+      </DeploymentItems>
+      <Execution id="1b559e3b-3521-4555-b315-64ae55f717ff" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="CheckStateTest" />
+    </UnitTest>
+    <UnitTest name="KeepOnlineTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="3f0e89c3-76d5-4522-ec1c-a93924ee3ab0">
+      <Execution id="6bfc97fb-9c69-4412-b16f-f5ad472f5d4e" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="KeepOnlineTest" />
+    </UnitTest>
+    <UnitTest name="GetFontStyleTest1" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="4b6b69f9-4363-3f79-a7b3-3b71eba34996">
+      <Execution id="6fac26a4-d6b7-47e5-81dd-887fbb457612" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.ToolTest, TestQQSDK" name="GetFontStyleTest1" />
+    </UnitTest>
+    <UnitTest name="LoginTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="8576ed06-aa91-fe80-339b-df030d0c3d77">
+      <Execution id="77b64f3c-ac9c-451b-845d-9d40abad64e9" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="LoginTest" />
+    </UnitTest>
+    <UnitTest name="MyQQNumberTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="3dd86633-51b0-5795-6a4f-7c16c3740ac7">
+      <Execution id="a123a229-35e3-4190-ae79-feb2de3ec522" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="MyQQNumberTest" />
+    </UnitTest>
+    <UnitTest name="WebQQConstructorTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="3ebcdc60-be34-24c1-a217-ddd8240149f1">
+      <Execution id="da973d1d-ec04-4829-9de3-692f9eb97109" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="WebQQConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ClientIDTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="49e9d48b-0bb8-85c5-2d29-0a0c74a63217">
+      <Execution id="2a0f139a-ca16-4d3c-8dfb-ae179198488c" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="ClientIDTest" />
+    </UnitTest>
+    <UnitTest name="SaveSettingsTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="16ba44cc-d399-4933-d0ca-7d43e247dbdf">
+      <Execution id="670a7fa8-80ea-4740-90ae-321849cf8f23" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="SaveSettingsTest" />
+    </UnitTest>
+    <UnitTest name="GetHashTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="9098e44b-76d2-c943-6cd3-6b1007a1954d">
+      <Execution id="ddb0605c-0a2c-4b79-a14b-12fb2a206e37" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.ToolTest, TestQQSDK" name="GetHashTest" />
+    </UnitTest>
+    <UnitTest name="MD5EncryptTest1" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="de6b0bf0-6de3-01d9-3c30-a0a8d533f373">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="e1599c9a-ae4a-4147-86de-266833117e4b" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.PasswordEncryptTest, TestQQSDK" name="MD5EncryptTest1" />
+    </UnitTest>
+    <UnitTest name="MD5EncodeTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="fd560ca7-110f-860d-4659-4c645c1825ed">
+      <Execution id="9e987fe3-28c9-4dd6-84e2-f755e8a5aed0" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="MD5EncodeTest" />
+    </UnitTest>
+    <OrderedTest name="OrderedTest1" storage="h:\qqsdk1.3\testqqserver\orderedtest1.orderedtest" id="7f73b4d7-6706-49bc-a6a6-0ba3c637c268">
+      <Execution id="69f7bef3-0014-48f3-bfa8-5357eb4ff7c2" />
+      <TestLinks>
+        <TestLink id="8576ed06-aa91-fe80-339b-df030d0c3d77" name="LoginTest" storage="bin\debug\testqqserver.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+        <TestLink id="8cbf22b4-8ac0-ab2d-1c04-b48674e1530e" name="CreateUserTest" storage="bin\debug\testqqserver.dll" type="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestElement, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.ObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      </TestLinks>
+    </OrderedTest>
+    <UnitTest name="ParseMessage" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="b74431cd-5016-fd11-207a-02b65a6d518f">
+      <Execution id="682c389d-87cc-4cee-b6a6-817c317e280e" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.QQMessageEventArgsTest, TestQQSDK" name="ParseMessage" />
+    </UnitTest>
+    <UnitTest name="HttpUrlEncodeTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="789a1ff8-9e1f-41ca-21bb-2680cf618881">
+      <Execution id="e3ee35d7-3523-4607-8a57-0999677abffe" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="HttpUrlEncodeTest" />
+    </UnitTest>
+    <UnitTest name="MD5QQEncryptTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="aaf40b7b-163e-0551-d173-f83d8370194b">
+      <Execution id="9c806843-59e2-4f73-b6a2-089055256c88" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.PasswordEncryptTest, TestQQSDK" name="MD5QQEncryptTest" />
+    </UnitTest>
+    <UnitTest name="AddLoginStateTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="76a41904-cfbd-dcae-1e0d-679a553b57f9">
+      <DeploymentItems>
+        <DeploymentItem filename="QQServer.exe" />
+      </DeploymentItems>
+      <Execution id="26f51000-83a4-4cc0-b17e-93c7d2559aca" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="AddLoginStateTest" />
+    </UnitTest>
+    <UnitTest name="RespCallbackTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="4468db32-1f8a-7f6b-0413-cecaeea58a3e">
+      <Execution id="91db64c0-5d77-438b-a70e-5bcdd70ce383" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="RespCallbackTest" />
+    </UnitTest>
+    <UnitTest name="ParseKickMessage" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="a17f268f-d0b5-6c84-851c-51b16417f583">
+      <Execution id="1ac4ae06-6562-46a6-bcd4-c4ed9c4dc270" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.QQMessageEventArgsTest, TestQQSDK" name="ParseKickMessage" />
+    </UnitTest>
+    <UnitTest name="CreateHttpWebRequestTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="ca6a5832-777c-4417-4036-3107db167edf">
+      <Execution id="f204b651-ae1a-45e3-8b5b-05cf0957ef4f" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="CreateHttpWebRequestTest" />
+    </UnitTest>
+    <UnitTest name="RefererTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="fc6e0900-dc5f-f6a5-4d06-44a9dced8635">
+      <Execution id="cdac9fa3-6342-4b0c-83be-8569a0fdd67d" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="RefererTest" />
+    </UnitTest>
+    <UnitTest name="RequestCallbackTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="169962c6-f9ae-63ae-d08b-e77c189238c8">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.exe" />
+      </DeploymentItems>
+      <Execution id="c0155bf1-d652-4f8f-9343-02e055face41" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="RequestCallbackTest" />
+    </UnitTest>
+    <UnitTest name="GetCookieTextTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="2c070cb2-f40c-fda2-8421-ec774a69e578">
+      <Execution id="688fd3bd-a350-442f-b65a-f70215c84a67" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="GetCookieTextTest" />
+    </UnitTest>
+    <UnitTest name="GetLoginVCTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="f3583493-34ca-8e76-7522-f8d09d1bf83c">
+      <Execution id="c90ec1e5-5071-40c7-ae66-44f5ffed1d20" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="GetLoginVCTest" />
+    </UnitTest>
+    <UnitTest name="ToUnicodeStringTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="9124d0b0-b563-37b5-f3cc-c6eda345f2e9">
+      <Execution id="190bc541-98d9-44ee-8e54-aed32e6d02c3" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="ToUnicodeStringTest" />
+    </UnitTest>
+    <UnitTest name="GetFontStyleTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="bee7c668-71ea-8e4e-1fb1-3e1f310840a3">
+      <Execution id="a44113b3-7a1b-4ab6-b0ad-3287716a4365" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.ToolTest, TestQQSDK" name="GetFontStyleTest" />
+    </UnitTest>
+    <UnitTest name="BytesToMD5StringTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="cae2ff19-01ca-b2e9-7a59-97a2ed5a07c5">
+      <Execution id="661c2945-c121-415f-9d29-753d9d83f4fb" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="BytesToMD5StringTest" />
+    </UnitTest>
+    <UnitTest name="PollWebRequestTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="a21973e8-7b0b-2c26-de29-220476bb851a">
+      <Execution id="ff46d14f-3844-456a-98f9-bbe8ceff59c2" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="PollWebRequestTest" />
+    </UnitTest>
+    <UnitTest name="CloseUserTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="18ca9f4c-527c-8b8f-4e37-e23c2616f66e">
+      <Execution id="0a506935-4685-4eb8-a537-624b2f04007e" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="CloseUserTest" />
+    </UnitTest>
+    <UnitTest name="SendAsynToTextTest1" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="57a3041a-ece9-eacc-8b0a-817dc3ebb293">
+      <Execution id="93345b2c-063f-44e7-a9c2-d35521482d2d" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="SendAsynToTextTest1" />
+    </UnitTest>
+    <UnitTest name="WriteLogTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="9c6ea83d-b77e-43ab-c3a5-a26d1fe36f60">
+      <Execution id="1c8b07fd-58a6-410a-b499-0f2fed1fcade" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.LogerTest, TestQQSDK" name="WriteLogTest" />
+    </UnitTest>
+    <UnitTest name="GetRandomNumberTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="32699d2b-7dec-1707-e269-97ce6b637cba">
+      <Execution id="5eda395f-5d5a-4d3d-b67d-5cf80b57324f" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.ToolTest, TestQQSDK" name="GetRandomNumberTest" />
+    </UnitTest>
+    <UnitTest name="byteToUpperTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="855d5d94-1e07-644e-9f5e-6b05f47829dc">
+      <DeploymentItems>
+        <DeploymentItem filename="QQSDK.dll" />
+      </DeploymentItems>
+      <Execution id="0540712b-821b-4f6c-af3a-5823349b12bb" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="byteToUpperTest" />
+    </UnitTest>
+    <UnitTest name="SendToTextTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="3d6e4e02-04fb-832c-de34-eb214f6777d8">
+      <Execution id="b479d992-31ad-4612-b955-8b9ec778394f" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="SendToTextTest" />
+    </UnitTest>
+    <UnitTest name="GetColorTest1" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="f3958ead-3511-efed-63b0-086cd100726b">
+      <Execution id="0ccb757b-5e5b-45b1-b6e8-1d8c3d02d7e8" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.ToolTest, TestQQSDK" name="GetColorTest1" />
+    </UnitTest>
+    <UnitTest name="UserMangerConstructorTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="f483b767-ef7f-680d-d44e-42dce8c5c5ab">
+      <Execution id="00b8f84f-3dca-492c-8e1f-b3b184180448" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="UserMangerConstructorTest" />
+    </UnitTest>
+    <UnitTest name="UserAgentTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="fcbe154b-67ce-3b02-40e0-9bb403ff03b8">
+      <Execution id="6eecaae2-babf-414c-853f-c24012c08684" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.HttpWebTest, TestQQSDK" name="UserAgentTest" />
+    </UnitTest>
+    <UnitTest name="ReLoginTest" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="e8b52a67-201b-2cc0-4524-e1c777a01f39">
+      <Execution id="780584d3-d6ab-4a6b-aa7f-6df543d81c3f" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.WebQQTest, TestQQSDK" name="ReLoginTest" />
+    </UnitTest>
+    <UnitTest name="LoadTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="810ec632-166d-7fd2-f310-bb80274d7e46">
+      <Execution id="f5b235da-13ba-495d-9179-2134672cb870" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="LoadTest" />
+    </UnitTest>
+    <UnitTest name="RemoveLoginStateTest" storage="h:\qqsdk1.3\testqqserver\bin\debug\testqqserver.dll" id="a07e097f-9fe0-a430-92eb-3d07f0c610b3">
+      <DeploymentItems>
+        <DeploymentItem filename="QQServer.exe" />
+      </DeploymentItems>
+      <Execution id="4e3c61cb-dac8-4816-83e2-d99ca2c3b3be" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="RemoveLoginStateTest" />
+    </UnitTest>
+    <UnitTest name="ToBase64Test" storage="h:\qqsdk1.3\testqqsdk\bin\debug\testqqsdk.dll" id="2cea8f23-8179-3c46-95ac-fded852aa29e">
+      <Execution id="98f23f90-1c2d-4967-ae9a-f84ac54460fb" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.EncodeTest, TestQQSDK" name="ToBase64Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="015b417a-cb9e-b316-fd29-19af06e70095" executionId="04553f75-788e-4225-b144-af043b8e57aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="036125ef-6824-99f7-e07d-38131b2376df" executionId="a673da8e-a597-4f66-b87a-ff03c8834d0c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0656927f-61a4-7b9c-f8d9-ccfca8343c2d" executionId="410c1bcf-fadd-47f3-b174-db8a95485bc6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="097c59b1-e89c-b3af-cf82-d401257da7d6" executionId="70215fb5-074b-4afe-aae6-5628c78e3132" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c593857-dc48-c658-943a-c08e94a2b67b" executionId="493a3956-6bff-416e-be9f-2715e6ec5808" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ff32680-bdb0-4be8-9ca6-f5f28b199f7b" executionId="1a78269e-cb98-43b9-b202-b4281ab8eb9f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="164b197d-6dfe-c489-8c3e-62e93318dd65" executionId="9f12164b-b276-4bd3-a6cc-fd5ee14c4844" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="169962c6-f9ae-63ae-d08b-e77c189238c8" executionId="c0155bf1-d652-4f8f-9343-02e055face41" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="16ba44cc-d399-4933-d0ca-7d43e247dbdf" executionId="670a7fa8-80ea-4740-90ae-321849cf8f23" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17551c60-ec71-febc-524e-97298ac0ae89" executionId="b9ff3e2a-4a6c-46ef-a0ed-0f6a1557022b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17af2147-c134-cca1-d356-868f4e465ebc" executionId="91390c09-4943-48ae-92e4-e20ec87aa6f7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18ca9f4c-527c-8b8f-4e37-e23c2616f66e" executionId="0a506935-4685-4eb8-a537-624b2f04007e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1dc58957-faa1-8234-d857-ac85b8c0f74e" executionId="902959da-0b9b-4b57-ac82-5b23840ddcb1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="22f35bd1-760a-4632-af79-444dc9efbc80" executionId="f933fac1-5eba-47fb-99b9-5e4b36a42e80" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c03af87-55a5-9f06-7845-9ad9ee2ac795" executionId="4febf85d-a8c0-47e8-8c9b-209b51756d45" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c070cb2-f40c-fda2-8421-ec774a69e578" executionId="688fd3bd-a350-442f-b65a-f70215c84a67" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2c138d8e-d4ed-fdb3-7570-a7bfcbc67e53" executionId="53063e75-57fa-40e7-95e1-f18cf9ffc615" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2cea8f23-8179-3c46-95ac-fded852aa29e" executionId="98f23f90-1c2d-4967-ae9a-f84ac54460fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3117f253-b04b-c165-cddb-82fadec17f17" executionId="5ad5987d-09cb-420f-bedf-219ec5f8a512" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="32699d2b-7dec-1707-e269-97ce6b637cba" executionId="5eda395f-5d5a-4d3d-b67d-5cf80b57324f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3299c06e-f012-0803-e368-d458dd6775a6" executionId="f7e2cbd9-f3ed-49f0-80bf-7abc8a62a23b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3549935a-11ab-62f4-7cbe-ef02450fcabc" executionId="f4ec69e7-476b-4009-87b5-36fb4e83ca21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38a46333-f06e-bfb9-36aa-ae56ea6bb475" executionId="2ec73e8a-800c-47de-b155-f156aa6bd596" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d3dd427-ec64-e5be-1956-33d26d62e364" executionId="9c4d16da-431e-49a5-baa6-29b5c6ab9084" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d6e4e02-04fb-832c-de34-eb214f6777d8" executionId="b479d992-31ad-4612-b955-8b9ec778394f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3dd86633-51b0-5795-6a4f-7c16c3740ac7" executionId="a123a229-35e3-4190-ae79-feb2de3ec522" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e900735-734a-7dd0-5d87-003f67e2c0ee" executionId="3f3a9d45-a187-4e85-abd5-61116674ecc9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3ebcdc60-be34-24c1-a217-ddd8240149f1" executionId="da973d1d-ec04-4829-9de3-692f9eb97109" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f0e89c3-76d5-4522-ec1c-a93924ee3ab0" executionId="6bfc97fb-9c69-4412-b16f-f5ad472f5d4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3f65735f-d8de-e2aa-a1c2-8998846e2f9e" executionId="f5cb2033-00a3-4348-97f0-821a6833dc24" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3fcef8e4-d37f-7102-3dbc-58be72257905" executionId="446db273-8796-40f2-b420-b8caba9fc6d4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41640cc8-a74b-7106-6325-bf8f1fdb7485" executionId="149a51e7-ded8-4f55-ad13-69e98fb10528" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4385087c-7652-8629-18af-33e1fa678c91" executionId="40354763-6c58-4f6b-9f1e-f44fca318877" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4468db32-1f8a-7f6b-0413-cecaeea58a3e" executionId="91db64c0-5d77-438b-a70e-5bcdd70ce383" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49e9d48b-0bb8-85c5-2d29-0a0c74a63217" executionId="2a0f139a-ca16-4d3c-8dfb-ae179198488c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4b6b69f9-4363-3f79-a7b3-3b71eba34996" executionId="6fac26a4-d6b7-47e5-81dd-887fbb457612" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="54147d65-5a1f-6df9-5ec9-048b403db885" executionId="76e8296b-08ae-4e2d-bb4a-3f615aa4037a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="57a3041a-ece9-eacc-8b0a-817dc3ebb293" executionId="93345b2c-063f-44e7-a9c2-d35521482d2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ccca116-310e-957d-431d-468c8f8c1c30" executionId="8b1c5b52-faf3-4bdb-8fc8-c9d22cb72e06" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5ef8b5e7-d592-7034-c829-9947a55ec7ed" executionId="ac44764a-8781-40bf-aa02-4920ea630807" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65264aca-b359-54a1-587b-d262bcf1b1ea" executionId="7f055190-6e6e-41ea-af45-51d9adc9821f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="663c56d1-746b-77fe-c07a-40fccce6f0ee" executionId="df209435-6539-4901-a75a-f4f754ef74ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="680d911b-09a2-6dcd-f885-4bbb25f43788" executionId="1cb84874-e20c-4a9b-aee2-5a566e4000e3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76a41904-cfbd-dcae-1e0d-679a553b57f9" executionId="26f51000-83a4-4cc0-b17e-93c7d2559aca" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="789a1ff8-9e1f-41ca-21bb-2680cf618881" executionId="e3ee35d7-3523-4607-8a57-0999677abffe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7f73b4d7-6706-49bc-a6a6-0ba3c637c268" executionId="69f7bef3-0014-48f3-bfa8-5357eb4ff7c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <TestEntries>
+        <TestEntry testId="8576ed06-aa91-fe80-339b-df030d0c3d77" executionId="d070d10d-ff4e-455a-805a-863338bf9197" parentExecutionId="69f7bef3-0014-48f3-bfa8-5357eb4ff7c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+        <TestEntry testId="8cbf22b4-8ac0-ab2d-1c04-b48674e1530e" executionId="35c2a25d-4ab2-4f96-b90e-fff3aa2af9b8" parentExecutionId="69f7bef3-0014-48f3-bfa8-5357eb4ff7c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+      </TestEntries>
+    </TestEntry>
+    <TestEntry testId="810ec632-166d-7fd2-f310-bb80274d7e46" executionId="f5b235da-13ba-495d-9179-2134672cb870" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8136fb99-c4ff-7722-0bf9-0c4c37d1b7ab" executionId="da62b9ad-fcc8-4851-8e88-64ff87b34085" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="855d5d94-1e07-644e-9f5e-6b05f47829dc" executionId="0540712b-821b-4f6c-af3a-5823349b12bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8576ed06-aa91-fe80-339b-df030d0c3d77" executionId="77b64f3c-ac9c-451b-845d-9d40abad64e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a364c9f-bb15-2698-d4cb-0d9d92ecfa59" executionId="0f4304b3-336b-403b-bafe-485bbd2f107e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8cbf22b4-8ac0-ab2d-1c04-b48674e1530e" executionId="8694d8bd-093c-4dfe-8ceb-4bf360ce273e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8fe2e91f-a50e-fff5-719e-770863d0fa14" executionId="4d655380-7576-4735-89cf-f767a37676a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9098e44b-76d2-c943-6cd3-6b1007a1954d" executionId="ddb0605c-0a2c-4b79-a14b-12fb2a206e37" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9124d0b0-b563-37b5-f3cc-c6eda345f2e9" executionId="190bc541-98d9-44ee-8e54-aed32e6d02c3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="953d1187-908c-311d-f2dc-d44663e78175" executionId="98e9c78b-f8a0-451b-802d-e112b905647a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="972d652d-8a35-0b2f-4855-6908a57fc0a2" executionId="ff280862-5774-4790-a31d-52b5b1cbb66d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b3a8cd6-9acf-02f2-6579-a3622c22c55c" executionId="1b559e3b-3521-4555-b315-64ae55f717ff" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9c6ea83d-b77e-43ab-c3a5-a26d1fe36f60" executionId="1c8b07fd-58a6-410a-b499-0f2fed1fcade" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9ca87c3e-53e1-1bfe-2668-0a20d128a0af" executionId="62006eb1-3e44-404e-94d0-a5df36c4c880" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a07e097f-9fe0-a430-92eb-3d07f0c610b3" executionId="4e3c61cb-dac8-4816-83e2-d99ca2c3b3be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a17f268f-d0b5-6c84-851c-51b16417f583" executionId="1ac4ae06-6562-46a6-bcd4-c4ed9c4dc270" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a21973e8-7b0b-2c26-de29-220476bb851a" executionId="ff46d14f-3844-456a-98f9-bbe8ceff59c2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aaf40b7b-163e-0551-d173-f83d8370194b" executionId="9c806843-59e2-4f73-b6a2-089055256c88" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ae40523a-e262-4cec-bb6a-4ea2f07325cc" executionId="fb011578-d0d9-4236-bc54-848e78b3cbc7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0f598b4-ef64-b23b-454f-cdbac1d01ce5" executionId="f591ebb9-1e83-4186-8c1e-f3f94f4f619f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4b13681-42db-d9a0-2f05-e9a9e6946305" executionId="be7db963-ef87-4146-b4f1-bf36754305c8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b74431cd-5016-fd11-207a-02b65a6d518f" executionId="682c389d-87cc-4cee-b6a6-817c317e280e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be2f4b24-2f8e-cb7e-ff67-7afc226cc40f" executionId="f32ef402-2e52-4542-9345-fa00847ee88b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bee7c668-71ea-8e4e-1fb1-3e1f310840a3" executionId="a44113b3-7a1b-4ab6-b0ad-3287716a4365" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c12ce2a4-e949-83db-66de-e48f4a84ec3f" executionId="d66f63e6-ce0a-4184-a726-a135d351e0b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c1b534fe-db36-8f9f-c1dd-6cc54bd5e0c6" executionId="6ddabc10-4590-4bd7-a38a-fe3e84653336" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c9304d9a-15a8-14a6-6b8a-55b1c54be809" executionId="c3db8393-182b-4471-8e89-d5a33ccc1720" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ca6a5832-777c-4417-4036-3107db167edf" executionId="f204b651-ae1a-45e3-8b5b-05cf0957ef4f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cae2ff19-01ca-b2e9-7a59-97a2ed5a07c5" executionId="661c2945-c121-415f-9d29-753d9d83f4fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d09c94d5-2b09-c4ae-9097-3de9500df433" executionId="1d586216-d528-4f81-9b82-42f33f606e0d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d2676d4c-8654-4f6d-4a55-8c9c5e459d6c" executionId="b5497193-0759-4660-b042-b515eea64934" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de48329e-1155-52d4-726c-dc29bc1d6639" executionId="d1404ab6-9960-453f-beb5-ce5feb10859c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de6b0bf0-6de3-01d9-3c30-a0a8d533f373" executionId="e1599c9a-ae4a-4147-86de-266833117e4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e04a87c5-ab2d-0c52-0896-29ef2e659e11" executionId="946df1ac-62b4-4ae9-93ef-c6d0173fa29e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e5c88fb6-8266-136c-67f6-6af7de08a58a" executionId="5811d094-5a1e-4284-bd38-e26d43cb39e7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e8b52a67-201b-2cc0-4524-e1c777a01f39" executionId="780584d3-d6ab-4a6b-aa7f-6df543d81c3f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ea3e9170-65d3-92a5-158a-d1254916d2ac" executionId="3b181a62-d938-4f47-9090-ae7329105695" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3583493-34ca-8e76-7522-f8d09d1bf83c" executionId="c90ec1e5-5071-40c7-ae66-44f5ffed1d20" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f389bd5e-8558-022e-99c8-3da4bcd2efa4" executionId="9f5bc55b-a286-499d-bbd1-2e7ed30372e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f3958ead-3511-efed-63b0-086cd100726b" executionId="0ccb757b-5e5b-45b1-b6e8-1d8c3d02d7e8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f483b767-ef7f-680d-d44e-42dce8c5c5ab" executionId="00b8f84f-3dca-492c-8e1f-b3b184180448" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f8730511-3b68-f2c5-0bd7-79fdb0753b60" executionId="28984507-a676-4a5d-a444-d64ee01a2d3b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fad608b0-6a19-01ab-dcf0-bbcb42b92936" executionId="136bbbba-a60d-45ce-8dbb-0122c016c9aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc6e0900-dc5f-f6a5-4d06-44a9dced8635" executionId="cdac9fa3-6342-4b0c-83be-8569a0fdd67d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fcbe154b-67ce-3b02-40e0-9bb403ff03b8" executionId="6eecaae2-babf-414c-853f-c24012c08684" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd4e4b9b-67ae-f454-4949-a639f2984ba0" executionId="b7dd79e7-9665-4706-8e1c-8296c2c3153a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fd560ca7-110f-860d-4659-4c645c1825ed" executionId="9e987fe3-28c9-4dd6-84e2-f755e8a5aed0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="04553f75-788e-4225-b144-af043b8e57aa" testId="015b417a-cb9e-b316-fd29-19af06e70095" testName="QQMessageEventArgsConstructorTest1" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.1239456" startTime="2013-11-10T09:56:39.5310000+08:00" endTime="2013-11-10T09:56:40.6630000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="04553f75-788e-4225-b144-af043b8e57aa">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。TODO: 实现用来验证目标的代码</Message>
+          <StackTrace>   在 TestQQSDK.QQMessageEventArgsTest.QQMessageEventArgsConstructorTest1() 位置 H:\QQSDK1.3\TestQQSDK\QQMessageEventArgsTest.cs:行号 120
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a673da8e-a597-4f66-b87a-ff03c8834d0c" testId="036125ef-6824-99f7-e07d-38131b2376df" testName="CheckQQNumberTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0206290" startTime="2013-11-10T09:56:40.6770000+08:00" endTime="2013-11-10T09:56:40.7070000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a673da8e-a597-4f66-b87a-ff03c8834d0c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;False&gt;，实际为: &lt;True&gt;。</Message>
+          <StackTrace>   在 TestQQSDK.ToolTest.CheckQQNumberTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\ToolTest.cs:行号 189
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="410c1bcf-fadd-47f3-b174-db8a95485bc6" testId="0656927f-61a4-7b9c-f8d9-ccfca8343c2d" testName="GetImageTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0872410" startTime="2013-11-10T09:56:40.7270000+08:00" endTime="2013-11-10T09:56:40.8200000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="410c1bcf-fadd-47f3-b174-db8a95485bc6">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.HttpWebTest.GetImageTest 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 QQSDK.Net.HttpWeb.GetImage(HttpWebRequest request) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 157
+   在 TestQQSDK.HttpWebTest.GetImageTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 242
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="70215fb5-074b-4afe-aae6-5628c78e3132" testId="097c59b1-e89c-b3af-cf82-d401257da7d6" testName="GetKeyTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0541483" startTime="2013-11-10T09:56:40.8330000+08:00" endTime="2013-11-10T09:56:40.9010000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="70215fb5-074b-4afe-aae6-5628c78e3132">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.WebQQTest.GetKeyTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。
+参数名: uriString</Message>
+          <StackTrace>   在 QQSDK.Net.WebQQ_Accessor.GetKey()
+   在 TestQQSDK.WebQQTest.GetKeyTest() 位置 H:\QQSDK1.3\TestQQSDK\WebQQTest.cs:行号 224
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="493a3956-6bff-416e-be9f-2715e6ec5808" testId="0c593857-dc48-c658-943a-c08e94a2b67b" testName="DeleteUserTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0407718" startTime="2013-11-10T09:56:40.9150000+08:00" endTime="2013-11-10T09:56:41.2450000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="PassedButRunAborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="493a3956-6bff-416e-be9f-2715e6ec5808">
+    </UnitTestResult>
+    <UnitTestResult executionId="1a78269e-cb98-43b9-b202-b4281ab8eb9f" testId="0ff32680-bdb0-4be8-9ca6-f5f28b199f7b" testName="Sha1EncodeTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0003770" startTime="2013-11-10T09:56:41.2610000+08:00" endTime="2013-11-10T09:56:41.2680000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="PassedButRunAborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1a78269e-cb98-43b9-b202-b4281ab8eb9f">
+    </UnitTestResult>
+    <UnitTestResult executionId="9f12164b-b276-4bd3-a6cc-fd5ee14c4844" testId="164b197d-6dfe-c489-8c3e-62e93318dd65" testName="HttpWebConstructorTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0010990" startTime="2013-11-10T09:56:41.2820000+08:00" endTime="2013-11-10T09:56:41.2900000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f12164b-b276-4bd3-a6cc-fd5ee14c4844">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。TODO: 实现用来验证目标的代码</Message>
+          <StackTrace>   在 TestQQSDK.HttpWebTest.HttpWebConstructorTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 275
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c0155bf1-d652-4f8f-9343-02e055face41" testId="169962c6-f9ae-63ae-d08b-e77c189238c8" testName="RequestCallbackTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0269714" startTime="2013-11-10T09:56:41.3090000+08:00" endTime="2013-11-10T09:56:41.3420000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0155bf1-d652-4f8f-9343-02e055face41">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.HttpWebTest.RequestCallbackTest 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>   在 QQSDK.Net.HttpWeb_Accessor.RequestCallback(IAsyncResult ar)
+   在 TestQQSDK.HttpWebTest.RequestCallbackTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 174
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="670a7fa8-80ea-4740-90ae-321849cf8f23" testId="16ba44cc-d399-4933-d0ca-7d43e247dbdf" testName="SaveSettingsTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.1416424" startTime="2013-11-10T09:56:41.3580000+08:00" endTime="2013-11-10T09:56:41.5140000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="670a7fa8-80ea-4740-90ae-321849cf8f23">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestQQServer.UserMangerTest.SaveSettingsTest() 位置 H:\QQSDK1.3\TestQQServer\UserMangerTest.cs:行号 281
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b9ff3e2a-4a6c-46ef-a0ed-0f6a1557022b" testId="17551c60-ec71-febc-524e-97298ac0ae89" testName="ParseTips" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0244534" startTime="2013-11-10T09:56:41.5310000+08:00" endTime="2013-11-10T09:56:41.5620000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b9ff3e2a-4a6c-46ef-a0ed-0f6a1557022b">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.QQMessageEventArgsTest.ParseTips 引发了异常: 
+System.IO.FileNotFoundException: 未能找到文件“H:\QQSDK1.3\TestResults\File\PollTipse.txt”。</Message>
+          <StackTrace>    在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path)
+   在 TestQQSDK.ReadTestFile.Read(String name) 位置 H:\QQSDK1.3\TestQQSDK\ReadTestFile.cs:行号 20
+   在 TestQQSDK.ReadTestFile.GetPollTips() 位置 H:\QQSDK1.3\TestQQSDK\ReadTestFile.cs:行号 48
+   在 TestQQSDK.QQMessageEventArgsTest.ParseTips() 位置 H:\QQSDK1.3\TestQQSDK\QQMessageEventArgsTest.cs:行号 92
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="91390c09-4943-48ae-92e4-e20ec87aa6f7" testId="17af2147-c134-cca1-d356-868f4e465ebc" testName="IsUserExistTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0107511" startTime="2013-11-10T09:56:41.5740000+08:00" endTime="2013-11-10T09:56:41.5920000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91390c09-4943-48ae-92e4-e20ec87aa6f7">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQServer.UserMangerTest.IsUserExistTest() 位置 H:\QQSDK1.3\TestQQServer\UserMangerTest.cs:行号 220
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0a506935-4685-4eb8-a537-624b2f04007e" testId="18ca9f4c-527c-8b8f-4e37-e23c2616f66e" testName="CloseUserTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0015119" startTime="2013-11-10T09:56:41.6100000+08:00" endTime="2013-11-10T09:56:41.6180000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0a506935-4685-4eb8-a537-624b2f04007e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQServer.UserMangerTest.CloseUserTest() 位置 H:\QQSDK1.3\TestQQServer\UserMangerTest.cs:行号 121
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="902959da-0b9b-4b57-ac82-5b23840ddcb1" testId="1dc58957-faa1-8234-d857-ac85b8c0f74e" testName="CheckLoginImageTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0011986" startTime="2013-11-10T09:56:41.6310000+08:00" endTime="2013-11-10T09:56:41.6380000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="902959da-0b9b-4b57-ac82-5b23840ddcb1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.WebQQTest.CheckLoginImageTest() 位置 H:\QQSDK1.3\TestQQSDK\WebQQTest.cs:行号 253
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f933fac1-5eba-47fb-99b9-5e4b36a42e80" testId="22f35bd1-760a-4632-af79-444dc9efbc80" testName="SendAsynToStreamTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0045870" startTime="2013-11-10T09:56:41.6600000+08:00" endTime="2013-11-10T09:56:41.6750000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f933fac1-5eba-47fb-99b9-5e4b36a42e80">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.HttpWebTest.SendAsynToStreamTest 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 QQSDK.Net.HttpWeb.SendAsynToStream(HttpWebRequest request, ReciveData recive) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 349
+   在 TestQQSDK.HttpWebTest.SendAsynToStreamTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 155
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4febf85d-a8c0-47e8-8c9b-209b51756d45" testId="2c03af87-55a5-9f06-7845-9ad9ee2ac795" testName="ParseGroup" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0208721" startTime="2013-11-10T09:56:41.6860000+08:00" endTime="2013-11-10T09:56:41.7140000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4febf85d-a8c0-47e8-8c9b-209b51756d45">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;KickMessage&gt;，实际为: &lt;Friend&gt;。</Message>
+          <StackTrace>   在 TestQQSDK.QQMessageEventArgsTest.ParseGroup() 位置 H:\QQSDK1.3\TestQQSDK\QQMessageEventArgsTest.cs:行号 63
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="688fd3bd-a350-442f-b65a-f70215c84a67" testId="2c070cb2-f40c-fda2-8421-ec774a69e578" testName="GetCookieTextTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0044434" startTime="2013-11-10T09:56:41.7270000+08:00" endTime="2013-11-10T09:56:41.7390000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="688fd3bd-a350-442f-b65a-f70215c84a67">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.HttpWebTest.GetCookieTextTest 引发了异常: 
+System.ArgumentNullException: 值不能为 null。
+参数名: uriString</Message>
+          <StackTrace>    在 System.Uri..ctor(String uriString)
+   在 QQSDK.Net.HttpWeb.GetCookieText(String url) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 127
+   在 TestQQSDK.HttpWebTest.GetCookieTextTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 254
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="53063e75-57fa-40e7-95e1-f18cf9ffc615" testId="2c138d8e-d4ed-fdb3-7570-a7bfcbc67e53" testName="GetLoginTokenTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.7398350" startTime="2013-11-10T09:56:41.7550000+08:00" endTime="2013-11-10T09:56:42.5020000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53063e75-57fa-40e7-95e1-f18cf9ffc615">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.WebQQTest.GetLoginTokenTest() 位置 H:\QQSDK1.3\TestQQSDK\WebQQTest.cs:行号 210
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="98f23f90-1c2d-4967-ae9a-f84ac54460fb" testId="2cea8f23-8179-3c46-95ac-fded852aa29e" testName="ToBase64Test" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0049375" startTime="2013-11-10T09:56:42.5140000+08:00" endTime="2013-11-10T09:56:42.5310000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98f23f90-1c2d-4967-ae9a-f84ac54460fb">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.EncodeTest.ToBase64Test() 位置 H:\QQSDK1.3\TestQQSDK\Helper\EncodeTest.cs:行号 131
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5ad5987d-09cb-420f-bedf-219ec5f8a512" testId="3117f253-b04b-c165-cddb-82fadec17f17" testName="SendAsynToTextTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0058688" startTime="2013-11-10T09:56:42.5540000+08:00" endTime="2013-11-10T09:56:42.5680000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ad5987d-09cb-420f-bedf-219ec5f8a512">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.HttpWebTest.SendAsynToTextTest 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 QQSDK.Net.HttpWeb.SendAsynToText(HttpWebRequest request, ReciveData recive) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 342
+   在 TestQQSDK.HttpWebTest.SendAsynToTextTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 135
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5eda395f-5d5a-4d3d-b67d-5cf80b57324f" testId="32699d2b-7dec-1707-e269-97ce6b637cba" testName="GetRandomNumberTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0016931" startTime="2013-11-10T09:56:42.5850000+08:00" endTime="2013-11-10T09:56:42.5950000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="PassedButRunAborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5eda395f-5d5a-4d3d-b67d-5cf80b57324f">
+    </UnitTestResult>
+    <UnitTestResult executionId="f7e2cbd9-f3ed-49f0-80bf-7abc8a62a23b" testId="3299c06e-f012-0803-e368-d458dd6775a6" testName="SendGetAsyncTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0251190" startTime="2013-11-10T09:56:42.6080000+08:00" endTime="2013-11-10T09:56:42.6390000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f7e2cbd9-f3ed-49f0-80bf-7abc8a62a23b">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.HttpWebTest.SendGetAsyncTest 引发了异常: 
+System.UriFormatException: 无效的 URI: 此 URI 为空。</Message>
+          <StackTrace>    在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 QQSDK.Net.HttpWeb.SendGetAsync(String url) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 428
+   在 TestQQSDK.HttpWebTest.SendGetAsyncTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 125
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f4ec69e7-476b-4009-87b5-36fb4e83ca21" testId="3549935a-11ab-62f4-7cbe-ef02450fcabc" testName="SaveTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0100670" startTime="2013-11-10T09:56:42.6600000+08:00" endTime="2013-11-10T09:56:42.6760000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4ec69e7-476b-4009-87b5-36fb4e83ca21">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQServer.UserMangerTest.SaveTestHelper[T]() 位置 H:\QQSDK1.3\TestQQServer\UserMangerTest.cs:行号 268
+   在 TestQQServer.UserMangerTest.SaveTest() 位置 H:\QQSDK1.3\TestQQServer\UserMangerTest.cs:行号 274
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2ec73e8a-800c-47de-b155-f156aa6bd596" testId="38a46333-f06e-bfb9-36aa-ae56ea6bb475" testName="HeadersTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0017339" startTime="2013-11-10T09:56:42.6900000+08:00" endTime="2013-11-10T09:56:42.6980000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2ec73e8a-800c-47de-b155-f156aa6bd596">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.HttpWebTest.HeadersTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 93
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9c4d16da-431e-49a5-baa6-29b5c6ab9084" testId="3d3dd427-ec64-e5be-1956-33d26d62e364" testName="WriteLogTest1" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0015181" startTime="2013-11-10T09:56:42.7150000+08:00" endTime="2013-11-10T09:56:42.7230000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c4d16da-431e-49a5-baa6-29b5c6ab9084">
+      <Output>
+        <StdOut>写入文件出错:未将对象引用设置到对象的实例。</StdOut>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestQQSDK.LogerTest.WriteLogTest1() 位置 H:\QQSDK1.3\TestQQSDK\LogerTest.cs:行号 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b479d992-31ad-4612-b955-8b9ec778394f" testId="3d6e4e02-04fb-832c-de34-eb214f6777d8" testName="SendToTextTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0246015" startTime="2013-11-10T09:56:42.7400000+08:00" endTime="2013-11-10T09:56:42.7710000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b479d992-31ad-4612-b955-8b9ec778394f">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;&gt;，实际为: &lt;无效的 URI: 此 URI 为空。&gt;。</Message>
+          <StackTrace>   在 TestQQSDK.HttpWebTest.SendToTextTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 116
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a123a229-35e3-4190-ae79-feb2de3ec522" testId="3dd86633-51b0-5795-6a4f-7c16c3740ac7" testName="MyQQNumberTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0011296" startTime="2013-11-10T09:56:42.7800000+08:00" endTime="2013-11-10T09:56:42.7870000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a123a229-35e3-4190-ae79-feb2de3ec522">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.WebQQTest.MyQQNumberTest() 位置 H:\QQSDK1.3\TestQQSDK\WebQQTest.cs:行号 67
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3f3a9d45-a187-4e85-abd5-61116674ecc9" testId="3e900735-734a-7dd0-5d87-003f67e2c0ee" testName="ReadTextCallbackTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0073605" startTime="2013-11-10T09:56:42.8070000+08:00" endTime="2013-11-10T09:56:42.8200000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f3a9d45-a187-4e85-abd5-61116674ecc9">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.HttpWebTest.ReadTextCallbackTest 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>   在 QQSDK.Net.HttpWeb_Accessor.ReadTextCallback(IAsyncResult ar)
+   在 TestQQSDK.HttpWebTest.ReadTextCallbackTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 184
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="da973d1d-ec04-4829-9de3-692f9eb97109" testId="3ebcdc60-be34-24c1-a217-ddd8240149f1" testName="WebQQConstructorTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0011027" startTime="2013-11-10T09:56:42.8330000+08:00" endTime="2013-11-10T09:56:42.8400000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da973d1d-ec04-4829-9de3-692f9eb97109">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。TODO: 实现用来验证目标的代码</Message>
+          <StackTrace>   在 TestQQSDK.WebQQTest.WebQQConstructorTest() 位置 H:\QQSDK1.3\TestQQSDK\WebQQTest.cs:行号 260
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6bfc97fb-9c69-4412-b16f-f5ad472f5d4e" testId="3f0e89c3-76d5-4522-ec1c-a93924ee3ab0" testName="KeepOnlineTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0016410" startTime="2013-11-10T09:56:42.8520000+08:00" endTime="2013-11-10T09:56:42.8630000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6bfc97fb-9c69-4412-b16f-f5ad472f5d4e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestQQServer.UserMangerTest.KeepOnlineTest() 位置 H:\QQSDK1.3\TestQQServer\UserMangerTest.cs:行号 229
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f5cb2033-00a3-4348-97f0-821a6833dc24" testId="3f65735f-d8de-e2aa-a1c2-8998846e2f9e" testName="GetQQNumberTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.3797204" startTime="2013-11-10T09:56:42.8770000+08:00" endTime="2013-11-10T09:56:43.2630000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5cb2033-00a3-4348-97f0-821a6833dc24">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.WebQQTest.GetQQNumberTest 引发了异常: 
+System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: startIndex</Message>
+          <StackTrace>    在 System.String.IndexOf(String value, Int32 startIndex, Int32 count, StringComparison comparisonType)
+   在 System.String.IndexOf(String value, Int32 startIndex)
+   在 QQSDK.Net.WebQQ.GetQQNumber(String uin) 位置 H:\QQSDK1.3\QQSDK\Net\WebQQ.cs:行号 408
+   在 TestQQSDK.WebQQTest.GetQQNumberTest() 位置 H:\QQSDK1.3\TestQQSDK\WebQQTest.cs:行号 157
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="446db273-8796-40f2-b420-b8caba9fc6d4" testId="3fcef8e4-d37f-7102-3dbc-58be72257905" testName="CheckUserExiteTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0023357" startTime="2013-11-10T09:56:43.6200000+08:00" endTime="2013-11-10T09:56:43.6460000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="446db273-8796-40f2-b420-b8caba9fc6d4">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQServer.UserMangerTest.CheckUserExiteTest() 位置 H:\QQSDK1.3\TestQQServer\UserMangerTest.cs:行号 109
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="149a51e7-ded8-4f55-ad13-69e98fb10528" testId="41640cc8-a74b-7106-6325-bf8f1fdb7485" testName="MD5GetBytesTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0072082" startTime="2013-11-10T09:56:43.6750000+08:00" endTime="2013-11-10T09:56:43.6900000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="149a51e7-ded8-4f55-ad13-69e98fb10528">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;(null)&gt;，实际为: &lt;System.Byte[]&gt;。</Message>
+          <StackTrace>   在 TestQQSDK.PasswordEncryptTest.MD5GetBytesTest() 位置 H:\QQSDK1.3\TestQQSDK\PasswordEncryptTest.cs:行号 103
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="40354763-6c58-4f6b-9f1e-f44fca318877" testId="4385087c-7652-8629-18af-33e1fa678c91" testName="GetOnlineStatusTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0012190" startTime="2013-11-10T09:56:43.7040000+08:00" endTime="2013-11-10T09:56:43.7120000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="40354763-6c58-4f6b-9f1e-f44fca318877">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.WebQQTest.GetOnlineStatusTest() 位置 H:\QQSDK1.3\TestQQSDK\WebQQTest.cs:行号 170
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="91db64c0-5d77-438b-a70e-5bcdd70ce383" testId="4468db32-1f8a-7f6b-0413-cecaeea58a3e" testName="RespCallbackTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0054559" startTime="2013-11-10T09:56:43.7210000+08:00" endTime="2013-11-10T09:56:43.7380000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91db64c0-5d77-438b-a70e-5bcdd70ce383">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.HttpWebTest.RespCallbackTest 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>    在 QQSDK.Net.HttpWeb.RespCallback(IAsyncResult ar) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 441
+   在 TestQQSDK.HttpWebTest.RespCallbackTest() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 164
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2a0f139a-ca16-4d3c-8dfb-ae179198488c" testId="49e9d48b-0bb8-85c5-2d29-0a0c74a63217" testName="ClientIDTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0011858" startTime="2013-11-10T09:56:43.7620000+08:00" endTime="2013-11-10T09:56:43.7730000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a0f139a-ca16-4d3c-8dfb-ae179198488c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.WebQQTest.ClientIDTest() 位置 H:\QQSDK1.3\TestQQSDK\WebQQTest.cs:行号 76
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6fac26a4-d6b7-47e5-81dd-887fbb457612" testId="4b6b69f9-4363-3f79-a7b3-3b71eba34996" testName="GetFontStyleTest1" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0018184" startTime="2013-11-10T09:56:43.7860000+08:00" endTime="2013-11-10T09:56:43.8020000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="PassedButRunAborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6fac26a4-d6b7-47e5-81dd-887fbb457612">
+    </UnitTestResult>
+    <UnitTestResult executionId="76e8296b-08ae-4e2d-bb4a-3f615aa4037a" testId="54147d65-5a1f-6df9-5ec9-048b403db885" testName="DeBase64Test" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0038191" startTime="2013-11-10T09:56:43.8210000+08:00" endTime="2013-11-10T09:56:43.8410000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="76e8296b-08ae-4e2d-bb4a-3f615aa4037a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.EncodeTest.DeBase64Test() 位置 H:\QQSDK1.3\TestQQSDK\Helper\EncodeTest.cs:行号 192
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="93345b2c-063f-44e7-a9c2-d35521482d2d" testId="57a3041a-ece9-eacc-8b0a-817dc3ebb293" testName="SendAsynToTextTest1" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0027660" startTime="2013-11-10T09:56:43.8570000+08:00" endTime="2013-11-10T09:56:43.8660000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93345b2c-063f-44e7-a9c2-d35521482d2d">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.HttpWebTest.SendAsynToTextTest1 引发了异常: 
+System.UriFormatException: 无效的 URI: 此 URI 为空。</Message>
+          <StackTrace>    在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 QQSDK.Net.HttpWeb.CreateHttpWebRequest(String url) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 172
+   在 QQSDK.Net.HttpWeb.SendAsynToText(String url, ReciveData recive) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 336
+   在 TestQQSDK.HttpWebTest.SendAsynToTextTest1() 位置 H:\QQSDK1.3\TestQQSDK\Net\HttpWebTest.cs:行号 145
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8b1c5b52-faf3-4bdb-8fc8-c9d22cb72e06" testId="5ccca116-310e-957d-431d-468c8f8c1c30" testName="QQMessageEventArgsConstructorTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0012445" startTime="2013-11-10T09:56:43.8800000+08:00" endTime="2013-11-10T09:56:43.8870000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8b1c5b52-faf3-4bdb-8fc8-c9d22cb72e06">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。TODO: 实现用来验证目标的代码</Message>
+          <StackTrace>   在 TestQQSDK.QQMessageEventArgsTest.QQMessageEventArgsConstructorTest() 位置 H:\QQSDK1.3\TestQQSDK\QQMessageEventArgsTest.cs:行号 111
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ac44764a-8781-40bf-aa02-4920ea630807" testId="5ef8b5e7-d592-7034-c829-9947a55ec7ed" testName="ToUTF8Test" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0016296" startTime="2013-11-10T09:56:43.9020000+08:00" endTime="2013-11-10T09:56:43.9100000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ac44764a-8781-40bf-aa02-4920ea630807">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.EncodeTest.ToUTF8Test() 位置 H:\QQSDK1.3\TestQQSDK\Helper\EncodeTest.cs:行号 106
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7f055190-6e6e-41ea-af45-51d9adc9821f" testId="65264aca-b359-54a1-587b-d262bcf1b1ea" testName="LoginStatusToStringTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0015049" startTime="2013-11-10T09:56:43.9240000+08:00" endTime="2013-11-10T09:56:43.9310000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f055190-6e6e-41ea-af45-51d9adc9821f">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.SysHeperTest.LoginStatusToStringTest() 位置 H:\QQSDK1.3\TestQQSDK\SysHeperTest.cs:行号 67
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="df209435-6539-4901-a75a-f4f754ef74ba" testId="663c56d1-746b-77fe-c07a-40fccce6f0ee" testName="GetFriendMessageTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0086058" startTime="2013-11-10T09:56:43.9440000+08:00" endTime="2013-11-10T09:56:43.9590000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="df209435-6539-4901-a75a-f4f754ef74ba">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQSDK.QQMessageEventArgsTest.GetFriendMessageTest 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>   在 QQSDK.Net.QQMessageEventArgs_Accessor.GetFriendMessage(String[] array, Int32 index)
+   在 TestQQSDK.QQMessageEventArgsTest.GetFriendMessageTest() 位置 H:\QQSDK1.3\TestQQSDK\QQMessageEventArgsTest.cs:行号 131
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1cb84874-e20c-4a9b-aee2-5a566e4000e3" testId="680d911b-09a2-6dcd-f885-4bbb25f43788" testName="LogerConstructorTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0011022" startTime="2013-11-10T09:56:43.9760000+08:00" endTime="2013-11-10T09:56:43.9840000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1cb84874-e20c-4a9b-aee2-5a566e4000e3">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。TODO: 实现用来验证目标的代码</Message>
+          <StackTrace>   在 TestQQSDK.LogerTest.LogerConstructorTest() 位置 H:\QQSDK1.3\TestQQSDK\LogerTest.cs:行号 71
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="26f51000-83a4-4cc0-b17e-93c7d2559aca" testId="76a41904-cfbd-dcae-1e0d-679a553b57f9" testName="AddLoginStateTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0317540" startTime="2013-11-10T09:56:43.9940000+08:00" endTime="2013-11-10T09:56:44.0320000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26f51000-83a4-4cc0-b17e-93c7d2559aca">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestQQServer.UserMangerTest.AddLoginStateTest 引发了异常: 
+System.NullReferenceException: 未将对象引用设置到对象的实例。</Message>
+          <StackTrace>   在 QQServer.UserManger_Accessor.AddLoginState(LoginState_Accessor ls)
+   在 TestQQServer.UserMangerTest.AddLoginStateTest() 位置 H:\QQSDK1.3\TestQQServer\UserMangerTest.cs:行号 86
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e3ee35d7-3523-4607-8a57-0999677abffe" testId="789a1ff8-9e1f-41ca-21bb-2680cf618881" testName="HttpUrlEncodeTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0017980" startTime="2013-11-10T09:56:44.0520000+08:00" endTime="2013-11-10T09:56:44.0610000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3ee35d7-3523-4607-8a57-0999677abffe">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQSDK.EncodeTest.HttpUrlEncodeTest() 位置 H:\QQSDK1.3\TestQQSDK\Helper\EncodeTest.cs:行号 169
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <TestResultAggregation executionId="69f7bef3-0014-48f3-bfa8-5357eb4ff7c2" testId="7f73b4d7-6706-49bc-a6a6-0ba3c637c268" testName="OrderedTest1" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0394334" startTime="2013-11-10T09:56:44.1520000+08:00" endTime="2013-11-10T09:56:44.2150000+08:00" testType="ec4800e8-40e5-4ab3-8510-b8bf29b1904d" outcome="PassedButRunAborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="69f7bef3-0014-48f3-bfa8-5357eb4ff7c2">
+      <Counters error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="2" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="d070d10d-ff4e-455a-805a-863338bf9197" parentExecutionId="69f7bef3-0014-48f3-bfa8-5357eb4ff7c2" testId="8576ed06-aa91-fe80-339b-df030d0c3d77" testName="LoginTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0009158" startTime="2013-11-10T09:56:44.1740000+08:00" endTime="2013-11-10T09:56:44.1980000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d070d10d-ff4e-455a-805a-863338bf9197">
+          <Output>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="35c2a25d-4ab2-4f96-b90e-fff3aa2af9b8" parentExecutionId="69f7bef3-0014-48f3-bfa8-5357eb4ff7c2" testId="8cbf22b4-8ac0-ab2d-1c04-b48674e1530e" testName="CreateUserTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0007497" startTime="2013-11-10T09:56:44.1990000+08:00" endTime="2013-11-10T09:56:44.2130000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35c2a25d-4ab2-4f96-b90e-fff3aa2af9b8">
+          <Output>
+          </Output>
+        </UnitTestResult>
+      </InnerResults>
+    </TestResultAggregation>
+    <UnitTestResult executionId="f5b235da-13ba-495d-9179-2134672cb870" testId="810ec632-166d-7fd2-f310-bb80274d7e46" testName="LoadTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.0016513" startTime="2013-11-10T09:56:44.2340000+08:00" endTime="2013-11-10T09:56:44.2430000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5b235da-13ba-495d-9179-2134672cb870">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestQQServer.UserMangerTest.LoadTestHelper[T]() 位置 H:\QQSDK1.3\TestQQServer\UserMangerTest.cs:行号 239
+   在 TestQQServer.UserMangerTest.LoadTest() 位置 H:\QQSDK1.3\TestQQServer\UserMangerTest.cs:行号 245
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="da62b9ad-fcc8-4851-8e88-64ff87b34085" testId="8136fb99-c4ff-7722-0bf9-0c4c37d1b7ab" testName="ListenMessageTest" computerName="QO5P9AA3YLGC5OR" duration="00:18:47.8440000" startTime="2013-11-10T09:56:44.2580000+08:00" endTime="2013-11-10T10:15:32.1020000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da62b9ad-fcc8-4851-8e88-64ff87b34085">
+      <Output>
+        <ErrorInfo>
+          <Message>用户中止了测试运行。</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="0540712b-821b-4f6c-af3a-5823349b12bb" testId="855d5d94-1e07-644e-9f5e-6b05f47829dc" testName="byteToUpperTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0540712b-821b-4f6c-af3a-5823349b12bb">
+    </UnitTestResult>
+    <UnitTestResult executionId="77b64f3c-ac9c-451b-845d-9d40abad64e9" testId="8576ed06-aa91-fe80-339b-df030d0c3d77" testName="LoginTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="77b64f3c-ac9c-451b-845d-9d40abad64e9">
+    </UnitTestResult>
+    <UnitTestResult executionId="0f4304b3-336b-403b-bafe-485bbd2f107e" testId="8a364c9f-bb15-2698-d4cb-0d9d92ecfa59" testName="GetDirecteUrlTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0f4304b3-336b-403b-bafe-485bbd2f107e">
+    </UnitTestResult>
+    <UnitTestResult executionId="8694d8bd-093c-4dfe-8ceb-4bf360ce273e" testId="8cbf22b4-8ac0-ab2d-1c04-b48674e1530e" testName="CreateUserTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8694d8bd-093c-4dfe-8ceb-4bf360ce273e">
+    </UnitTestResult>
+    <UnitTestResult executionId="4d655380-7576-4735-89cf-f767a37676a0" testId="8fe2e91f-a50e-fff5-719e-770863d0fa14" testName="CookieTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d655380-7576-4735-89cf-f767a37676a0">
+    </UnitTestResult>
+    <UnitTestResult executionId="ddb0605c-0a2c-4b79-a14b-12fb2a206e37" testId="9098e44b-76d2-c943-6cd3-6b1007a1954d" testName="GetHashTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ddb0605c-0a2c-4b79-a14b-12fb2a206e37">
+    </UnitTestResult>
+    <UnitTestResult executionId="190bc541-98d9-44ee-8e54-aed32e6d02c3" testId="9124d0b0-b563-37b5-f3cc-c6eda345f2e9" testName="ToUnicodeStringTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="190bc541-98d9-44ee-8e54-aed32e6d02c3">
+    </UnitTestResult>
+    <UnitTestResult executionId="98e9c78b-f8a0-451b-802d-e112b905647a" testId="953d1187-908c-311d-f2dc-d44663e78175" testName="UpdateUserTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="98e9c78b-f8a0-451b-802d-e112b905647a">
+    </UnitTestResult>
+    <UnitTestResult executionId="ff280862-5774-4790-a31d-52b5b1cbb66d" testId="972d652d-8a35-0b2f-4855-6908a57fc0a2" testName="HashTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff280862-5774-4790-a31d-52b5b1cbb66d">
+    </UnitTestResult>
+    <UnitTestResult executionId="1b559e3b-3521-4555-b315-64ae55f717ff" testId="9b3a8cd6-9acf-02f2-6579-a3622c22c55c" testName="CheckStateTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1b559e3b-3521-4555-b315-64ae55f717ff">
+    </UnitTestResult>
+    <UnitTestResult executionId="1c8b07fd-58a6-410a-b499-0f2fed1fcade" testId="9c6ea83d-b77e-43ab-c3a5-a26d1fe36f60" testName="WriteLogTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c8b07fd-58a6-410a-b499-0f2fed1fcade">
+    </UnitTestResult>
+    <UnitTestResult executionId="62006eb1-3e44-404e-94d0-a5df36c4c880" testId="9ca87c3e-53e1-1bfe-2668-0a20d128a0af" testName="ReadCallBackTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="62006eb1-3e44-404e-94d0-a5df36c4c880">
+    </UnitTestResult>
+    <UnitTestResult executionId="4e3c61cb-dac8-4816-83e2-d99ca2c3b3be" testId="a07e097f-9fe0-a430-92eb-3d07f0c610b3" testName="RemoveLoginStateTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e3c61cb-dac8-4816-83e2-d99ca2c3b3be">
+    </UnitTestResult>
+    <UnitTestResult executionId="1ac4ae06-6562-46a6-bcd4-c4ed9c4dc270" testId="a17f268f-d0b5-6c84-851c-51b16417f583" testName="ParseKickMessage" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1ac4ae06-6562-46a6-bcd4-c4ed9c4dc270">
+    </UnitTestResult>
+    <UnitTestResult executionId="ff46d14f-3844-456a-98f9-bbe8ceff59c2" testId="a21973e8-7b0b-2c26-de29-220476bb851a" testName="PollWebRequestTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff46d14f-3844-456a-98f9-bbe8ceff59c2">
+    </UnitTestResult>
+    <UnitTestResult executionId="9c806843-59e2-4f73-b6a2-089055256c88" testId="aaf40b7b-163e-0551-d173-f83d8370194b" testName="MD5QQEncryptTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c806843-59e2-4f73-b6a2-089055256c88">
+    </UnitTestResult>
+    <UnitTestResult executionId="fb011578-d0d9-4236-bc54-848e78b3cbc7" testId="ae40523a-e262-4cec-bb6a-4ea2f07325cc" testName="CheckQQPasswordTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fb011578-d0d9-4236-bc54-848e78b3cbc7">
+    </UnitTestResult>
+    <UnitTestResult executionId="f591ebb9-1e83-4186-8c1e-f3f94f4f619f" testId="b0f598b4-ef64-b23b-454f-cdbac1d01ce5" testName="GetLoginVCImageTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f591ebb9-1e83-4186-8c1e-f3f94f4f619f">
+    </UnitTestResult>
+    <UnitTestResult executionId="be7db963-ef87-4146-b4f1-bf36754305c8" testId="b4b13681-42db-d9a0-2f05-e9a9e6946305" testName="MD5EncryptTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="be7db963-ef87-4146-b4f1-bf36754305c8">
+    </UnitTestResult>
+    <UnitTestResult executionId="682c389d-87cc-4cee-b6a6-817c317e280e" testId="b74431cd-5016-fd11-207a-02b65a6d518f" testName="ParseMessage" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="682c389d-87cc-4cee-b6a6-817c317e280e">
+    </UnitTestResult>
+    <UnitTestResult executionId="f32ef402-2e52-4542-9345-fa00847ee88b" testId="be2f4b24-2f8e-cb7e-ff67-7afc226cc40f" testName="LoginTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f32ef402-2e52-4542-9345-fa00847ee88b">
+    </UnitTestResult>
+    <UnitTestResult executionId="a44113b3-7a1b-4ab6-b0ad-3287716a4365" testId="bee7c668-71ea-8e4e-1fb1-3e1f310840a3" testName="GetFontStyleTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a44113b3-7a1b-4ab6-b0ad-3287716a4365">
+    </UnitTestResult>
+    <UnitTestResult executionId="d66f63e6-ce0a-4184-a726-a135d351e0b6" testId="c12ce2a4-e949-83db-66de-e48f4a84ec3f" testName="SendMessageTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d66f63e6-ce0a-4184-a726-a135d351e0b6">
+    </UnitTestResult>
+    <UnitTestResult executionId="6ddabc10-4590-4bd7-a38a-fe3e84653336" testId="c1b534fe-db36-8f9f-c1dd-6cc54bd5e0c6" testName="GetUserFriendsTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ddabc10-4590-4bd7-a38a-fe3e84653336">
+    </UnitTestResult>
+    <UnitTestResult executionId="c3db8393-182b-4471-8e89-d5a33ccc1720" testId="c9304d9a-15a8-14a6-6b8a-55b1c54be809" testName="TestTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c3db8393-182b-4471-8e89-d5a33ccc1720">
+    </UnitTestResult>
+    <UnitTestResult executionId="f204b651-ae1a-45e3-8b5b-05cf0957ef4f" testId="ca6a5832-777c-4417-4036-3107db167edf" testName="CreateHttpWebRequestTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f204b651-ae1a-45e3-8b5b-05cf0957ef4f">
+    </UnitTestResult>
+    <UnitTestResult executionId="661c2945-c121-415f-9d29-753d9d83f4fb" testId="cae2ff19-01ca-b2e9-7a59-97a2ed5a07c5" testName="BytesToMD5StringTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="661c2945-c121-415f-9d29-753d9d83f4fb">
+    </UnitTestResult>
+    <UnitTestResult executionId="1d586216-d528-4f81-9b82-42f33f606e0d" testId="d09c94d5-2b09-c4ae-9097-3de9500df433" testName="GetColorTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1d586216-d528-4f81-9b82-42f33f606e0d">
+    </UnitTestResult>
+    <UnitTestResult executionId="b5497193-0759-4660-b042-b515eea64934" testId="d2676d4c-8654-4f6d-4a55-8c9c5e459d6c" testName="EncodeConstructorTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b5497193-0759-4660-b042-b515eea64934">
+    </UnitTestResult>
+    <UnitTestResult executionId="d1404ab6-9960-453f-beb5-ce5feb10859c" testId="de48329e-1155-52d4-726c-dc29bc1d6639" testName="SysHeperConstructorTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d1404ab6-9960-453f-beb5-ce5feb10859c">
+    </UnitTestResult>
+    <UnitTestResult executionId="e1599c9a-ae4a-4147-86de-266833117e4b" testId="de6b0bf0-6de3-01d9-3c30-a0a8d533f373" testName="MD5EncryptTest1" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e1599c9a-ae4a-4147-86de-266833117e4b">
+    </UnitTestResult>
+    <UnitTestResult executionId="946df1ac-62b4-4ae9-93ef-c6d0173fa29e" testId="e04a87c5-ab2d-0c52-0896-29ef2e659e11" testName="OnReciveMessageTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="946df1ac-62b4-4ae9-93ef-c6d0173fa29e">
+    </UnitTestResult>
+    <UnitTestResult executionId="5811d094-5a1e-4284-bd38-e26d43cb39e7" testId="e5c88fb6-8266-136c-67f6-6af7de08a58a" testName="ToUnicodeTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5811d094-5a1e-4284-bd38-e26d43cb39e7">
+    </UnitTestResult>
+    <UnitTestResult executionId="780584d3-d6ab-4a6b-aa7f-6df543d81c3f" testId="e8b52a67-201b-2cc0-4524-e1c777a01f39" testName="ReLoginTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="780584d3-d6ab-4a6b-aa7f-6df543d81c3f">
+    </UnitTestResult>
+    <UnitTestResult executionId="3b181a62-d938-4f47-9090-ae7329105695" testId="ea3e9170-65d3-92a5-158a-d1254916d2ac" testName="DeUnicodeTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3b181a62-d938-4f47-9090-ae7329105695">
+    </UnitTestResult>
+    <UnitTestResult executionId="c90ec1e5-5071-40c7-ae66-44f5ffed1d20" testId="f3583493-34ca-8e76-7522-f8d09d1bf83c" testName="GetLoginVCTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c90ec1e5-5071-40c7-ae66-44f5ffed1d20">
+    </UnitTestResult>
+    <UnitTestResult executionId="9f5bc55b-a286-499d-bbd1-2e7ed30372e1" testId="f389bd5e-8558-022e-99c8-3da4bcd2efa4" testName="ToGB2312Test" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9f5bc55b-a286-499d-bbd1-2e7ed30372e1">
+    </UnitTestResult>
+    <UnitTestResult executionId="0ccb757b-5e5b-45b1-b6e8-1d8c3d02d7e8" testId="f3958ead-3511-efed-63b0-086cd100726b" testName="GetColorTest1" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ccb757b-5e5b-45b1-b6e8-1d8c3d02d7e8">
+    </UnitTestResult>
+    <UnitTestResult executionId="00b8f84f-3dca-492c-8e1f-b3b184180448" testId="f483b767-ef7f-680d-d44e-42dce8c5c5ab" testName="UserMangerConstructorTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="00b8f84f-3dca-492c-8e1f-b3b184180448">
+    </UnitTestResult>
+    <UnitTestResult executionId="28984507-a676-4a5d-a444-d64ee01a2d3b" testId="f8730511-3b68-f2c5-0bd7-79fdb0753b60" testName="GetUserListTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="28984507-a676-4a5d-a444-d64ee01a2d3b">
+    </UnitTestResult>
+    <UnitTestResult executionId="136bbbba-a60d-45ce-8dbb-0122c016c9aa" testId="fad608b0-6a19-01ab-dcf0-bbcb42b92936" testName="OnReciveMessageTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="136bbbba-a60d-45ce-8dbb-0122c016c9aa">
+    </UnitTestResult>
+    <UnitTestResult executionId="cdac9fa3-6342-4b0c-83be-8569a0fdd67d" testId="fc6e0900-dc5f-f6a5-4d06-44a9dced8635" testName="RefererTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cdac9fa3-6342-4b0c-83be-8569a0fdd67d">
+    </UnitTestResult>
+    <UnitTestResult executionId="6eecaae2-babf-414c-853f-c24012c08684" testId="fcbe154b-67ce-3b02-40e0-9bb403ff03b8" testName="UserAgentTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6eecaae2-babf-414c-853f-c24012c08684">
+    </UnitTestResult>
+    <UnitTestResult executionId="b7dd79e7-9665-4706-8e1c-8296c2c3153a" testId="fd4e4b9b-67ae-f454-4949-a639f2984ba0" testName="PostWebRequestTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b7dd79e7-9665-4706-8e1c-8296c2c3153a">
+    </UnitTestResult>
+    <UnitTestResult executionId="9e987fe3-28c9-4dd6-84e2-f755e8a5aed0" testId="fd560ca7-110f-860d-4659-4c645c1825ed" testName="MD5EncodeTest" computerName="QO5P9AA3YLGC5OR" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9e987fe3-28c9-4dd6-84e2-f755e8a5aed0">
+    </UnitTestResult>
+  </Results>
+</TestRun>

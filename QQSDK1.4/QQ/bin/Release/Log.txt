@@ -1,0 +1,379 @@
+Time:2013/12/1 21:09:33
+错误消息:没有终结点在侦听可以接受消息的 http://192.168.0.226/Service/QQManger.svc/Calculator。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+堆栈消息:
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   在 System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 QQMessage.IService.KeepOnline(String usrName)
+   在 CWebQQ.Froms.FrmManageUser.timer1_Tick(Object sender, EventArgs e) 位置 K:\QQSDK1.3\QQ\Froms\FrmManageUser.cs:行号 204
+ 异常方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+
+
+Time:2013/12/1 21:10:33
+错误消息:没有终结点在侦听可以接受消息的 http://192.168.0.226/Service/QQManger.svc/Calculator。这通常是由于不正确的地址或者 SOAP 操作导致的。如果存在此情况，请参见 InnerException 以了解详细信息。
+堆栈消息:
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   在 System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 QQMessage.IService.KeepOnline(String usrName)
+   在 CWebQQ.Froms.FrmManageUser.timer1_Tick(Object sender, EventArgs e) 位置 K:\QQSDK1.3\QQ\Froms\FrmManageUser.cs:行号 204
+ 异常方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+
+
+Time:2013/12/1 21:10:46
+Group :retcode:0,result:poll_type:group_message,value:msg_id:17668,from_uin:1791167012,to_uin:398117542,msg_id2:15015,msg_type:43,reply_ip:176488602,group_code:3506848819,send_uin:3158577557,seq:2576,time:1385903295,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,1256365 
+
+
+Time:2013/12/1 21:10:46
+错误消息:未将对象引用设置到对象的实例。
+堆栈消息:   在 QQSDK.Net.WebQQ.ListenMessage() 位置 K:\QQSDK1.3\QQSDK\Net\WebQQ.cs:行号 890
+ 异常方法:Void ListenMessage()
+
+
+Time:2013/12/1 22:37:47
+接收到 other:retcode:0,result:poll_type:buddies_status_change,value:uin:1865452381,status:online,client_type:1
+
+
+Time:2013/12/1 22:37:47
+错误消息:未将对象引用设置到对象的实例。
+堆栈消息:   在 QQSDK.Net.WebQQ.ListenMessage() 位置 K:\QQSDK1.3\QQSDK\Net\WebQQ.cs:行号 890
+ 异常方法:Void ListenMessage()
+
+
+Time:2013/12/1 22:37:47
+接收到 other:retcode:0,result:poll_type:buddies_status_change,value:uin:1865452381,status:busy,client_type:1
+
+
+Time:2013/12/1 22:37:47
+错误消息:未将对象引用设置到对象的实例。
+堆栈消息:   在 QQSDK.Net.WebQQ.ListenMessage() 位置 K:\QQSDK1.3\QQSDK\Net\WebQQ.cs:行号 890
+ 异常方法:Void ListenMessage()
+
+
+Time:2013/12/1 22:37:52
+接收到 other:retcode:0,result:poll_type:buddies_status_change,value:uin:1865452381,status:online,client_type:1
+
+
+Time:2013/12/1 22:37:52
+错误消息:未将对象引用设置到对象的实例。
+堆栈消息:   在 QQSDK.Net.WebQQ.ListenMessage() 位置 K:\QQSDK1.3\QQSDK\Net\WebQQ.cs:行号 890
+ 异常方法:Void ListenMessage()
+
+
+Time:2013/12/1 22:38:00
+Group :retcode:0,result:poll_type:group_message,value:msg_id:17693,from_uin:2683949064,to_uin:398117542,msg_id2:393599,msg_type:43,reply_ip:176886372,group_code:877183089,send_uin:427721089,seq:2577,time:1385908529,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,156989 
+
+
+Time:2013/12/1 23:05:33
+Group :retcode:0,result:poll_type:group_message,value:msg_id:17696,from_uin:1395348777,to_uin:398117542,msg_id2:624592,msg_type:43,reply_ip:176756431,group_code:3647997043,send_uin:405625685,seq:2580,time:1385909908,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,789 ,poll_type:message,value:msg_id:30224,from_uin:405625685,to_uin:398117542,msg_id2:624591,msg_type:9,reply_ip:176756431,time:1385909960,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,1256 ,poll_type:group_message,value:msg_id:17695,from_uin:1395348777,to_uin:398117542,msg_id2:624590,msg_type:43,reply_ip:176756431,group_code:3647997043,send_uin:405625685,seq:2579,time:1385909877,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,4586 ,poll_type:group_message,value:msg_id:17694,from_uin:1395348777,to_uin:398117542,msg_id2:624589,msg_type:43,reply_ip:176756431,group_code:3647997043,send_uin:405625685,seq:2578,time:1385909793,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,478989 
+
+
+Time:2013/12/3 15:48:49
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 305
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/3 15:49:05
+Group :retcode:0,result:poll_type:group_message,value:msg_id:2609,from_uin:922240894,to_uin:496063973,msg_id2:273466,msg_type:43,reply_ip:176756755,group_code:881964872,send_uin:1629466269,seq:2581,time:1385993845,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,\u4E24\u5730\u5206\u5C45 
+
+
+Time:2013/12/3 15:49:06
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 305
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/3 15:49:06
+Group :retcode:0,result:poll_type:group_message,value:msg_id:2612,from_uin:922240894,to_uin:496063973,msg_id2:273470,msg_type:43,reply_ip:176756755,group_code:881964872,send_uin:1629466269,seq:2584,time:1386052385,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,8654 ,poll_type:group_message,value:msg_id:2610,from_uin:922240894,to_uin:496063973,msg_id2:273468,msg_type:43,reply_ip:176756755,group_code:881964872,send_uin:1629466269,seq:2582,time:1385993897,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,\u4E86\u53D1\u52A8\u673A\u554A ,poll_type:group_message,value:msg_id:2611,from_uin:922240894,to_uin:496063973,msg_id2:273467,msg_type:43,reply_ip:176756755,group_code:881964872,send_uin:1629466269,seq:2583,time:1386052328,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,313212 
+
+
+Time:2013/12/3 15:50:18
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 305
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/3 15:55:27
+QQ号码:496063973 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133392e372e31363000005cda00000001016e0400e555911d6d0000000a404d7a334c6c5a62736c6d00000028e7b5fefd89b8c6b861bffd5da05f2be02556f8b7fa370a0360b26bf1396abb6582fdc4a6d204f39f
+PTWebQQ:d8919e81755df8f3f12fcaf9e109a491415cb6bd2d37ea49d982ff9547f15055
+VFWebQQ:e7b5fefd89b8c6b861bffd5da05f2be02556f8b7fa370a0360b26bf1396abb6582fdc4a6d204f39f
+
+Time:2013/12/3 15:58:42
+QQ号码:496063973 
+PsessionID:8368046764001e636f6e6e7365727665725f77656271714031302e3132382e36362e31313200007e6500000000016e0400e555911d6d0000000a404d7a334c6c5a62736c6d000000282fc8575436fc778b0f940b7418d395aae35813a3975087ec3dbff1e8c3e1329c6b7f221a4058f3d1
+PTWebQQ:d8919e81755df8f3f12fcaf9e109a491415cb6bd2d37ea49d982ff9547f15055
+VFWebQQ:2fc8575436fc778b0f940b7418d395aae35813a3975087ec3dbff1e8c3e1329c6b7f221a4058f3d1
+
+Time:2013/12/3 16:14:51
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 305
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/3 16:15:18
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 305
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/3 16:17:55
+错误消息:基础连接已经关闭: 接收时发生错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 260
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/3 16:17:55
+错误消息:基础连接已经关闭: 接收时发生错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 243
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/3 16:20:59
+QQ号码:398117542 
+PsessionID:8368046764001e636f6e6e7365727665725f77656271714031302e3133332e34312e323032000057b800000000026e0400a6caba176d0000000a404a3672394746724b6f6d00000028e58259f29c6d432db63a3ea19d632d5c72574327cc09911089945e9d9c024171a61e236a4c1d12fc
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:e58259f29c6d432db63a3ea19d632d5c72574327cc09911089945e9d9c024171a61e236a4c1d12fc
+
+Time:2013/12/3 16:21:14
+QQ号码:496063973 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133332e342e313732000052b700000001036e0400e555911d6d0000000a406c5050355a73544a716d00000028fb06e15126e2a16eea5ac2fd82fa0642312f19187fe51fc16ab1d57ed62c80f81ac5b6e8ae01c98a
+PTWebQQ:cd22453546caffe66d7fcd4d2a9babf98500b3576a5b188e57d16a1fa8676771
+VFWebQQ:fb06e15126e2a16eea5ac2fd82fa0642312f19187fe51fc16ab1d57ed62c80f81ac5b6e8ae01c98a
+
+Time:2013/12/3 16:21:45
+QQ号码:496063973 
+PsessionID:8368046764001e636f6e6e7365727665725f77656271714031302e3133332e34312e3230320000173600000001026e0400e555911d6d0000000a406c5050355a73544a716d000000285cd59ae71dfd7a9271751809f242553c00bdcd41f7d93631e8adc57a7be7f372d78163b029c75e65
+PTWebQQ:cd22453546caffe66d7fcd4d2a9babf98500b3576a5b188e57d16a1fa8676771
+VFWebQQ:5cd59ae71dfd7a9271751809f242553c00bdcd41f7d93631e8adc57a7be7f372d78163b029c75e65
+
+Time:2013/12/3 16:23:04
+QQ号码:398117542 
+PsessionID:8368046764001e636f6e6e7365727665725f77656271714031302e3132382e36362e313132000042b900000001036e0400a6caba176d0000000a404a3672394746724b6f6d00000028d1ae955ee64f262ad1675fa228689e7dfa9033a87fdcf6ef23c5a30075838f9d7777be9a2ea2cde7
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:d1ae955ee64f262ad1675fa228689e7dfa9033a87fdcf6ef23c5a30075838f9d7777be9a2ea2cde7
+
+Time:2013/12/3 16:24:04
+QQ号码:398117542 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400004a7f00000000016e0400a6caba176d0000000a404a3672394746724b6f6d000000282237768f0488adeb0a513cbad6ece7f877f6c47a0281cac86576d3cd1aa912f5092ab699be43a1b3
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:2237768f0488adeb0a513cbad6ece7f877f6c47a0281cac86576d3cd1aa912f5092ab699be43a1b3
+
+Time:2013/12/3 16:24:31
+QQ号码:496063973 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e383400005a1a00000000016e0400e555911d6d0000000a406c5050355a73544a716d0000002822db7a99a9bd1462e3f9fe86baad0816b2f69304b5bd7c4f9f5296186245e8b47216fa9e9026ab8e
+PTWebQQ:cd22453546caffe66d7fcd4d2a9babf98500b3576a5b188e57d16a1fa8676771
+VFWebQQ:22db7a99a9bd1462e3f9fe86baad0816b2f69304b5bd7c4f9f5296186245e8b47216fa9e9026ab8e
+
+Time:2013/12/3 16:36:25
+QQ号码:398117542 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133332e342e313732000040f600000001026e0400a6caba176d0000000a404a3672394746724b6f6d00000028bc56f11fd33310caaf28512fec756a7c37089b400ff6b5682788219eb9299d9919129544546761e7
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:bc56f11fd33310caaf28512fec756a7c37089b400ff6b5682788219eb9299d9919129544546761e7
+
+Time:2013/12/3 16:36:25
+QQ号码:496063973 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133392e372e3136340000048c00000001026e0400e555911d6d0000000a406c5050355a73544a716d000000286257d1d7db29e363a3b2e589dc5d9d3b5a80c23c389489c1ea985181c6f6ef152fc20280aa9da540
+PTWebQQ:cd22453546caffe66d7fcd4d2a9babf98500b3576a5b188e57d16a1fa8676771
+VFWebQQ:6257d1d7db29e363a3b2e589dc5d9d3b5a80c23c389489c1ea985181c6f6ef152fc20280aa9da540
+
+Time:2013/12/3 16:46:10
+QQ号码:496063973 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133332e342e31373200002abc00000002026e0400e555911d6d0000000a406c5050355a73544a716d0000002804999001130195c645d3ed855468b0ade95f27030687ddf4971c0c4a75e1380980b5ee9710ff3808
+PTWebQQ:cd22453546caffe66d7fcd4d2a9babf98500b3576a5b188e57d16a1fa8676771
+VFWebQQ:04999001130195c645d3ed855468b0ade95f27030687ddf4971c0c4a75e1380980b5ee9710ff3808
+
+Time:2013/12/3 16:46:38
+QQ号码:496063973 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133392e372e313630000060db00000000026e0400e555911d6d0000000a406c5050355a73544a716d000000282afbcf2780fd12bbcda677676ea1f091fc70a807c3b1114256c41f9e990f47093b7def1bd0229dd2
+PTWebQQ:cd22453546caffe66d7fcd4d2a9babf98500b3576a5b188e57d16a1fa8676771
+VFWebQQ:2afbcf2780fd12bbcda677676ea1f091fc70a807c3b1114256c41f9e990f47093b7def1bd0229dd2
+
+Time:2013/12/3 16:46:40
+QQ号码:398117542 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133392e372e3136300000612100000000026e0400a6caba176d0000000a404a3672394746724b6f6d000000286b04ed15f2d97a3ef50622a4a874ddb190bf94d3ecc0f5295447006ab8c6fb26ebdf161f0dd356c4
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:6b04ed15f2d97a3ef50622a4a874ddb190bf94d3ecc0f5295447006ab8c6fb26ebdf161f0dd356c4
+
+Time:2013/12/3 16:51:47
+QQ号码:398117542 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133392e372e3136300000612100000000026e0400a6caba176d0000000a404a3672394746724b6f6d000000286b04ed15f2d97a3ef50622a4a874ddb190bf94d3ecc0f5295447006ab8c6fb26ebdf161f0dd356c4
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:6b04ed15f2d97a3ef50622a4a874ddb190bf94d3ecc0f5295447006ab8c6fb26ebdf161f0dd356c4
+
+Time:2013/12/3 16:51:57
+QQ号码:496063973 
+PsessionID:8368046764001e636f6e6e7365727665725f77656271714031302e3132382e36362e313132000066b500000000036e0400e555911d6d0000000a406c5050355a73544a716d00000028a67815bb78702f7e41758e3138144c93ae5215eaa0c0eaaa20d61cced8116d8be3f45e276e5578ae
+PTWebQQ:cd22453546caffe66d7fcd4d2a9babf98500b3576a5b188e57d16a1fa8676771
+VFWebQQ:a67815bb78702f7e41758e3138144c93ae5215eaa0c0eaaa20d61cced8116d8be3f45e276e5578ae
+
+Time:2013/12/3 16:51:59
+QQ号码:398117542 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133392e372e3136300000612100000000026e0400a6caba176d0000000a404a3672394746724b6f6d000000286b04ed15f2d97a3ef50622a4a874ddb190bf94d3ecc0f5295447006ab8c6fb26ebdf161f0dd356c4
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:6b04ed15f2d97a3ef50622a4a874ddb190bf94d3ecc0f5295447006ab8c6fb26ebdf161f0dd356c4
+
+Time:2013/12/3 16:52:00
+QQ号码:398117542 
+PsessionID:8368046764001e636f6e6e7365727665725f77656271714031302e3133332e34312e32303200006cab00000000026e0400a6caba176d0000000a404a3672394746724b6f6d00000028c39db2a040bde09dfb82a1f7fff7308de2289372c00941582200add0c5f8373315ec24621943e67e
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:c39db2a040bde09dfb82a1f7fff7308de2289372c00941582200add0c5f8373315ec24621943e67e
+
+Time:2013/12/3 16:58:46
+QQ号码:398117542 
+PsessionID:8368046764001e636f6e6e7365727665725f77656271714031302e3133332e34312e32303200006cab00000000026e0400a6caba176d0000000a404a3672394746724b6f6d00000028c39db2a040bde09dfb82a1f7fff7308de2289372c00941582200add0c5f8373315ec24621943e67e
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:c39db2a040bde09dfb82a1f7fff7308de2289372c00941582200add0c5f8373315ec24621943e67e
+
+Time:2013/12/3 16:58:58
+QQ号码:398117542 
+PsessionID:8368046764001e636f6e6e7365727665725f77656271714031302e3133332e34312e32303200006cab00000000026e0400a6caba176d0000000a404a3672394746724b6f6d00000028c39db2a040bde09dfb82a1f7fff7308de2289372c00941582200add0c5f8373315ec24621943e67e
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:c39db2a040bde09dfb82a1f7fff7308de2289372c00941582200add0c5f8373315ec24621943e67e
+
+Time:2013/12/3 16:59:02
+QQ号码:398117542 
+PsessionID:8368046764001e636f6e6e7365727665725f77656271714031302e3133332e34312e32303200006cab00000000026e0400a6caba176d0000000a404a3672394746724b6f6d00000028c39db2a040bde09dfb82a1f7fff7308de2289372c00941582200add0c5f8373315ec24621943e67e
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:c39db2a040bde09dfb82a1f7fff7308de2289372c00941582200add0c5f8373315ec24621943e67e
+
+Time:2013/12/3 16:59:04
+QQ号码:398117542 
+PsessionID:8368046764001e636f6e6e7365727665725f77656271714031302e3132382e36362e3131320000350600000001036e0400a6caba176d0000000a404a3672394746724b6f6d0000002811ca732735a71d7df8df3113497207817acdabe49752316d96e150c63de9ff6a8b4ac93d7a803136
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:11ca732735a71d7df8df3113497207817acdabe49752316d96e150c63de9ff6a8b4ac93d7a803136
+
+Time:2013/12/3 16:59:14
+QQ号码:398117542 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133392e372e3136340000479800000000016e0400a6caba176d0000000a404a3672394746724b6f6d00000028e3f9d1607f5f57d6bf2c9ceb64899d80a77a114ceed1897d238f2d84b6d2aec3815e087f2be3c8b6
+PTWebQQ:6436c323bfd0919b68c76e38c507df5cdbc1723e3c82f0e775e0c8419ac3a8b6
+VFWebQQ:e3f9d1607f5f57d6bf2c9ceb64899d80a77a114ceed1897d238f2d84b6d2aec3815e087f2be3c8b6
+
+Time:2013/12/3 16:59:14
+QQ号码:496063973 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133332e34312e3834000014c700000001036e0400e555911d6d0000000a406c5050355a73544a716d000000283860c2e0723b3d34e99f169f18198e8f180dfab0d115c339168eb83584bd931fe59f9dfff8508323
+PTWebQQ:cd22453546caffe66d7fcd4d2a9babf98500b3576a5b188e57d16a1fa8676771
+VFWebQQ:3860c2e0723b3d34e99f169f18198e8f180dfab0d115c339168eb83584bd931fe59f9dfff8508323
+
+Time:2013/12/3 17:03:59
+QQ号码:496063973 
+PsessionID:8368046764001d636f6e6e7365727665725f77656271714031302e3133392e372e3136300000217600000001036e0400e555911d6d0000000a406c5050355a73544a716d00000028fc14178b9ce8796c104eefcd50ab2587d2b57ff63e686ebb5baa4a2d6099213d97ab9a715174f19a
+PTWebQQ:cd22453546caffe66d7fcd4d2a9babf98500b3576a5b188e57d16a1fa8676771
+VFWebQQ:fc14178b9ce8796c104eefcd50ab2587d2b57ff63e686ebb5baa4a2d6099213d97ab9a715174f19a
+
+Time:2013/12/6 8:49:25
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 305
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/6 8:50:26
+其他接收错误:{"retcode":102,"errmsg":""}
+
+
+Time:2013/12/6 8:51:27
+其他接收错误:{"retcode":102,"errmsg":""}
+
+
+Time:2013/12/10 8:28:53
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/10 8:29:39
+Group :retcode:0,result:poll_type:group_message,value:msg_id:61312,from_uin:2428241540,to_uin:398117542,msg_id2:9439,msg_type:43,reply_ip:180064290,group_code:1281834972,send_uin:4211560898,seq:127898,time:1386606019,info_seq:86626038,content:font,size:9,color:000000,style:0,0,0,name:\u5B8B\u4F53,\r\r  \u606D\u559C\u5404\u4F4D\u53D1\u5927\u8D22\u3002    noh\r  \u4E0A\u7F51\u8D5A\u94B1\u5C31\u662F\u8FD9\u4E48\u7B80\u5355\u3002  \r  \u8BF7\u52A0QQ- 627773898   \u6BCF\u5929\u53EF\u8D5A\u4E94\u5341\u4EE5\u4E0A\u3002  \r\r\u4E0B\u4E2A\u8DEF\u53E3\u3001\u6211\u7B49\u4F60\u307A \u3003\u3005 zag 
+
+
+Time:2013/12/10 8:29:40
+Group :retcode:0,result:poll_type:group_message,value:msg_id:61313,from_uin:2428241540,to_uin:398117542,msg_id2:9440,msg_type:43,reply_ip:180064290,group_code:1281834972,send_uin:850426887,seq:127899,time:1386606114,info_seq:86626038,content:font,size:11,color:2264ff,style:0,0,0,name:Helvetica,\u5DF2\u8E22 
+
+
+Time:2013/12/10 8:30:47
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/10 8:32:15
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/10 8:34:29
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/10 8:40:49
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/10 8:42:18
+Group :retcode:0,result:poll_type:group_message,value:msg_id:27950,from_uin:1582079534,to_uin:496063973,msg_id2:808220,msg_type:43,reply_ip:176756770,group_code:2090090225,send_uin:1128242033,seq:2585,time:1386636136,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,2313;\u4E0A\u5E1D\u53D1\u8A93 
+
+
+Time:2013/12/10 8:42:36
+Group :retcode:0,result:poll_type:group_message,value:msg_id:27951,from_uin:1582079534,to_uin:496063973,msg_id2:912142,msg_type:43,reply_ip:176498277,group_code:2090090225,send_uin:1128242033,seq:2586,time:1386636154,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,str\u5012\u8428\u7A7A\u95F4 
+
+
+Time:2013/12/10 8:43:06
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/10 8:43:07
+Group :retcode:0,result:poll_type:group_message,value:msg_id:26881,from_uin:3288996662,to_uin:398117542,msg_id2:976864,msg_type:43,reply_ip:176488462,group_code:352322613,send_uin:516992200,seq:2586,time:1386636154,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,str\u5012\u8428\u7A7A\u95F4 ,poll_type:group_message,value:msg_id:26880,from_uin:3288996662,to_uin:398117542,msg_id2:976862,msg_type:43,reply_ip:176488462,group_code:352322613,send_uin:516992200,seq:2585,time:1386636136,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,2313;\u4E0A\u5E1D\u53D1\u8A93 
+
+
+Time:2013/12/10 17:06:30
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/10 17:06:42
+Group :retcode:0,result:poll_type:group_message,value:msg_id:20093,from_uin:1573324081,to_uin:398117542,msg_id2:596429,msg_type:43,reply_ip:176756770,group_code:569328593,send_uin:1004000350,seq:127901,time:1386641754,info_seq:86626038,content:font,size:11,color:2670e6,style:0,0,0,name:Helvetica,\u6728\u6709\u3002\u3002 
+
+

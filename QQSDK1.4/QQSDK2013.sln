@@ -1,0 +1,141 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QQSDK", "QQSDK\QQSDK.csproj", "{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestQQSDK", "TestQQSDK\TestQQSDK.csproj", "{993FC11C-AAC9-4432-9B18-E995811E5CDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F8E97554-E96C-475F-8836-C339FED8AAB7}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		QQSDK.vsmdi = QQSDK.vsmdi
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebQQ", "QQ\WebQQ.csproj", "{3EF55851-9965-45D7-8F7B-2BFD0A368E56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QQServer", "QQServer\QQServer.csproj", "{237709E9-780C-42CB-9DB0-93C357C89591}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QQMessage", "QQMessage\QQMessage.csproj", "{4D94F60A-F24C-4152-90EF-174DE7D522C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestQQServer", "TestQQServer\TestQQServer.csproj", "{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QQParser", "QQParser\QQParser.csproj", "{25D85087-8697-4DE4-800D-54B4A7147C85}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://crcruicai.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = QQ\\WebQQ.csproj
+		SccProjectName1 = QQ
+		SccLocalPath1 = QQ
+		SccProjectUniqueName2 = QQMessage\\QQMessage.csproj
+		SccProjectName2 = QQMessage
+		SccLocalPath2 = QQMessage
+		SccProjectUniqueName3 = QQSDK\\QQSDK.csproj
+		SccProjectName3 = QQSDK
+		SccLocalPath3 = QQSDK
+		SccProjectUniqueName4 = QQServer\\QQServer.csproj
+		SccProjectName4 = QQServer
+		SccLocalPath4 = QQServer
+		SccProjectUniqueName5 = TestQQSDK\\TestQQSDK.csproj
+		SccProjectName5 = TestQQSDK
+		SccLocalPath5 = TestQQSDK
+		SccProjectUniqueName6 = TestQQServer\\TestQQServer.csproj
+		SccProjectName6 = TestQQServer
+		SccLocalPath6 = TestQQServer
+		SccProjectUniqueName7 = QQParser\\QQParser.csproj
+		SccProjectName7 = QQParser
+		SccLocalPath7 = QQParser
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}.Debug|x86.ActiveCfg = Debug|x86
+		{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}.Debug|x86.Build.0 = Debug|x86
+		{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}.Release|Any CPU.ActiveCfg = Release|x86
+		{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}.Release|Mixed Platforms.Build.0 = Release|x86
+		{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}.Release|x86.ActiveCfg = Release|x86
+		{A2AF24F3-7227-4D62-9BCA-2020BAFAA4C6}.Release|x86.Build.0 = Release|x86
+		{993FC11C-AAC9-4432-9B18-E995811E5CDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{993FC11C-AAC9-4432-9B18-E995811E5CDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{993FC11C-AAC9-4432-9B18-E995811E5CDF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{993FC11C-AAC9-4432-9B18-E995811E5CDF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{993FC11C-AAC9-4432-9B18-E995811E5CDF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{993FC11C-AAC9-4432-9B18-E995811E5CDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{993FC11C-AAC9-4432-9B18-E995811E5CDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{993FC11C-AAC9-4432-9B18-E995811E5CDF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{993FC11C-AAC9-4432-9B18-E995811E5CDF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{993FC11C-AAC9-4432-9B18-E995811E5CDF}.Release|x86.ActiveCfg = Release|Any CPU
+		{3EF55851-9965-45D7-8F7B-2BFD0A368E56}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{3EF55851-9965-45D7-8F7B-2BFD0A368E56}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{3EF55851-9965-45D7-8F7B-2BFD0A368E56}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{3EF55851-9965-45D7-8F7B-2BFD0A368E56}.Debug|x86.ActiveCfg = Debug|x86
+		{3EF55851-9965-45D7-8F7B-2BFD0A368E56}.Debug|x86.Build.0 = Debug|x86
+		{3EF55851-9965-45D7-8F7B-2BFD0A368E56}.Release|Any CPU.ActiveCfg = Release|x86
+		{3EF55851-9965-45D7-8F7B-2BFD0A368E56}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{3EF55851-9965-45D7-8F7B-2BFD0A368E56}.Release|Mixed Platforms.Build.0 = Release|x86
+		{3EF55851-9965-45D7-8F7B-2BFD0A368E56}.Release|x86.ActiveCfg = Release|x86
+		{3EF55851-9965-45D7-8F7B-2BFD0A368E56}.Release|x86.Build.0 = Release|x86
+		{237709E9-780C-42CB-9DB0-93C357C89591}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{237709E9-780C-42CB-9DB0-93C357C89591}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{237709E9-780C-42CB-9DB0-93C357C89591}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{237709E9-780C-42CB-9DB0-93C357C89591}.Debug|x86.ActiveCfg = Debug|x86
+		{237709E9-780C-42CB-9DB0-93C357C89591}.Debug|x86.Build.0 = Debug|x86
+		{237709E9-780C-42CB-9DB0-93C357C89591}.Release|Any CPU.ActiveCfg = Release|x86
+		{237709E9-780C-42CB-9DB0-93C357C89591}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{237709E9-780C-42CB-9DB0-93C357C89591}.Release|Mixed Platforms.Build.0 = Release|x86
+		{237709E9-780C-42CB-9DB0-93C357C89591}.Release|x86.ActiveCfg = Release|x86
+		{237709E9-780C-42CB-9DB0-93C357C89591}.Release|x86.Build.0 = Release|x86
+		{4D94F60A-F24C-4152-90EF-174DE7D522C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D94F60A-F24C-4152-90EF-174DE7D522C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D94F60A-F24C-4152-90EF-174DE7D522C7}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4D94F60A-F24C-4152-90EF-174DE7D522C7}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4D94F60A-F24C-4152-90EF-174DE7D522C7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D94F60A-F24C-4152-90EF-174DE7D522C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D94F60A-F24C-4152-90EF-174DE7D522C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D94F60A-F24C-4152-90EF-174DE7D522C7}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4D94F60A-F24C-4152-90EF-174DE7D522C7}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4D94F60A-F24C-4152-90EF-174DE7D522C7}.Release|x86.ActiveCfg = Release|Any CPU
+		{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{D2F341A4-C9B4-4431-8BF9-EF2703AA1BCE}.Release|x86.ActiveCfg = Release|Any CPU
+		{25D85087-8697-4DE4-800D-54B4A7147C85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25D85087-8697-4DE4-800D-54B4A7147C85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25D85087-8697-4DE4-800D-54B4A7147C85}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{25D85087-8697-4DE4-800D-54B4A7147C85}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{25D85087-8697-4DE4-800D-54B4A7147C85}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{25D85087-8697-4DE4-800D-54B4A7147C85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25D85087-8697-4DE4-800D-54B4A7147C85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25D85087-8697-4DE4-800D-54B4A7147C85}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{25D85087-8697-4DE4-800D-54B4A7147C85}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{25D85087-8697-4DE4-800D-54B4A7147C85}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = QQSDK.vsmdi
+	EndGlobalSection
+EndGlobal

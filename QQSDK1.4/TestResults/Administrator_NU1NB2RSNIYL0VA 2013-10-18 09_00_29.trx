@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="10930ee7-ab87-48d3-ab0c-c15ebf4d199b" name="Administrator@NU1NB2RSNIYL0VA 2013-10-18 09:00:29" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="a5544eb8-3911-41ab-bc85-489b668152d2">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2013-10-18 09_00_29">
+      <DeploymentItem filename="C:\Users\Administrator\Desktop\QQSDK\QQSDK\bin\Debug\QQSDK.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-10-18T09:00:29.4778246+08:00" queuing="2013-10-18T09:00:30.2208671+08:00" start="2013-10-18T09:00:30.3328735+08:00" finish="2013-10-18T09:01:09.4211092+08:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="NU1NB2RSNIYL0VA" outcome="Error" timestamp="2013-10-18T09:01:09.4191091+08:00">
+        <Text>测试宿主进程意外退出。</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ParseKickMessage" storage="c:\users\administrator\desktop\qqsdk\testqqsdk\bin\debug\testqqsdk.dll" id="a17f268f-d0b5-6c84-851c-51b16417f583">
+      <Execution id="525969bd-29ad-4d91-9a99-cdc57584728a" />
+      <TestMethod codeBase="C:/Users/Administrator/Desktop/QQSDK/TestQQSDK/bin/Debug/TestQQSDK.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.QQMessageEventArgsTest, TestQQSDK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ParseKickMessage" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="a17f268f-d0b5-6c84-851c-51b16417f583" executionId="525969bd-29ad-4d91-9a99-cdc57584728a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="525969bd-29ad-4d91-9a99-cdc57584728a" testId="a17f268f-d0b5-6c84-851c-51b16417f583" testName="ParseKickMessage" computerName="NU1NB2RSNIYL0VA" duration="00:00:38.9942303" startTime="2013-10-18T09:00:30.4258788+08:00" endTime="2013-10-18T09:01:09.4201091+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="525969bd-29ad-4d91-9a99-cdc57584728a">
+    </UnitTestResult>
+  </Results>
+</TestRun>

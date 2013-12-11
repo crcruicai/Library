@@ -1,0 +1,24 @@
+H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.dll
+H:\QQSDK1.3\TestQQServer\bin\Debug\TestQQServer.pdb
+H:\QQSDK1.3\TestQQServer\bin\Debug\QQMessage.dll
+H:\QQSDK1.3\TestQQServer\bin\Debug\QQServer.exe
+H:\QQSDK1.3\TestQQServer\bin\Debug\QQMessage.pdb
+H:\QQSDK1.3\TestQQServer\bin\Debug\QQServer.pdb
+H:\QQSDK1.3\TestQQServer\bin\Debug\QQServer_Accessor.exe
+H:\QQSDK1.3\TestQQServer\bin\Debug\QQServer_Accessor.pdb
+H:\QQSDK1.3\TestQQServer\obj\Debug\TestQQServer.dll
+H:\QQSDK1.3\TestQQServer\obj\Debug\TestQQServer.pdb
+H:\QQSDK1.3\TestQQServer\bin\Debug\OrderedTest1.orderedtest
+H:\QQSDK1.3\TestQQServer\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\bin\Debug\OrderedTest1.orderedtest
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\bin\Debug\TestQQServer.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\bin\Debug\TestQQServer.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\bin\Debug\QQMessage.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\bin\Debug\QQServer.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\bin\Debug\QQMessage.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\bin\Debug\QQServer.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\bin\Debug\QQServer_Accessor.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\bin\Debug\QQServer_Accessor.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\obj\Debug\TestQQServer.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\obj\Debug\TestQQServer.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQServer\obj\Debug\TestQQServer.pdb

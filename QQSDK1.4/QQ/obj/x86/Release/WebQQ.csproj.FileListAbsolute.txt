@@ -1,0 +1,121 @@
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\bin\Release\WebQQ.exe.config
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\bin\Release\WebQQ.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\bin\Release\WebQQ.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\bin\Release\QQSDK.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\bin\Release\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.FrmCostomMessage.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogin.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.FrmMain.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.FrmMulLogon.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\CRC.Controls.ChatListBox.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\WebQQ.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQ\obj\x86\Release\WebQQ.pdb
+H:\QQSDK1.1\QQ\bin\Release\WebQQ.exe.config
+H:\QQSDK1.1\QQ\obj\x86\Release\WebQQ.exe
+H:\QQSDK1.1\QQ\obj\x86\Release\WebQQ.pdb
+H:\QQSDK1.1\QQ\bin\Release\WebQQ.exe
+H:\QQSDK1.1\QQ\bin\Release\WebQQ.pdb
+H:\QQSDK1.1\QQ\bin\Release\QQSDK.dll
+H:\QQSDK1.1\QQ\bin\Release\QQSDK.pdb
+H:\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.AboutBox1.resources
+H:\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.FrmCostomMessage.resources
+H:\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogin.resources
+H:\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogon.resources
+H:\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.FrmMain.resources
+H:\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.Froms.FrmManageUser.resources
+H:\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.FrmMulLogon.resources
+H:\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.Properties.Resources.resources
+H:\QQSDK1.1\QQ\obj\x86\Release\CRC.Controls.ChatListBox.resources
+H:\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.UI.SearchBox.resources
+H:\QQSDK1.1\QQ\obj\x86\Release\WebQQ.csprojResolveAssemblyReference.cache
+H:\QQSDK1.1\QQ\obj\x86\Release\WebQQ.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\bin\Release\WebQQ.exe.config
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\WebQQ.exe
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\WebQQ.pdb
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\bin\Release\WebQQ.exe
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\bin\Release\WebQQ.pdb
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\bin\Release\QQSDK.dll
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\bin\Release\QQSDK.pdb
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.AboutBox1.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.FrmCostomMessage.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogin.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogon.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.FrmMain.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.Froms.FrmManageUser.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.FrmMulLogon.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.Properties.Resources.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\CRC.Controls.ChatListBox.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\CWebQQ.UI.SearchBox.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\QQSDK1.1\QQ\obj\x86\Release\GenerateResource.write.1.tlog
+K:\QQSDK1.3\QQ\bin\Release\WebQQ.exe.config
+K:\QQSDK1.3\QQ\bin\Release\WebQQ.exe
+K:\QQSDK1.3\QQ\bin\Release\WebQQ.pdb
+K:\QQSDK1.3\QQ\bin\Release\QQMessage.dll
+K:\QQSDK1.3\QQ\bin\Release\QQSDK.dll
+K:\QQSDK1.3\QQ\bin\Release\QQMessage.pdb
+K:\QQSDK1.3\QQ\bin\Release\QQSDK.pdb
+K:\QQSDK1.3\QQ\obj\x86\Release\WebQQ.csprojResolveAssemblyReference.cache
+K:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.AboutBox1.resources
+K:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.FrmCostomMessage.resources
+K:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogin.resources
+K:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogon.resources
+K:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.FrmMain.resources
+K:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.Froms.FrmManageUser.resources
+K:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.FrmMulLogon.resources
+K:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.Properties.Resources.resources
+K:\QQSDK1.3\QQ\obj\x86\Release\CRC.Controls.ChatListBox.resources
+K:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.UI.SearchBox.resources
+K:\QQSDK1.3\QQ\obj\x86\Release\WebQQ.csproj.GenerateResource.Cache
+K:\QQSDK1.3\QQ\obj\x86\Release\WebQQ.exe
+K:\QQSDK1.3\QQ\obj\x86\Release\WebQQ.pdb
+H:\QQSDK1.3\QQ\bin\Release\WebQQ.exe.config
+H:\QQSDK1.3\QQ\bin\Release\WebQQ.exe
+H:\QQSDK1.3\QQ\bin\Release\WebQQ.pdb
+H:\QQSDK1.3\QQ\bin\Release\QQMessage.dll
+H:\QQSDK1.3\QQ\bin\Release\QQSDK.dll
+H:\QQSDK1.3\QQ\bin\Release\QQMessage.pdb
+H:\QQSDK1.3\QQ\bin\Release\QQSDK.pdb
+H:\QQSDK1.3\QQ\obj\x86\Release\ResolveAssemblyReference.cache
+H:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.AboutBox1.resources
+H:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.FrmCostomMessage.resources
+H:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogin.resources
+H:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogon.resources
+H:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.FrmMain.resources
+H:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.Froms.FrmManageUser.resources
+H:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.FrmMulLogon.resources
+H:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.Properties.Resources.resources
+H:\QQSDK1.3\QQ\obj\x86\Release\CRC.Controls.ChatListBox.resources
+H:\QQSDK1.3\QQ\obj\x86\Release\CWebQQ.UI.SearchBox.resources
+H:\QQSDK1.3\QQ\obj\x86\Release\GenerateResource.read.1.tlog
+H:\QQSDK1.3\QQ\obj\x86\Release\GenerateResource.write.1.tlog
+H:\QQSDK1.3\QQ\obj\x86\Release\WebQQ.exe
+H:\QQSDK1.3\QQ\obj\x86\Release\WebQQ.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\bin\Release\WebQQ.exe.config
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\bin\Release\WebQQ.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\bin\Release\WebQQ.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\bin\Release\QQMessage.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\bin\Release\QQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\bin\Release\QQMessage.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\bin\Release\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\WebQQ.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.Form1.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.FrmTest.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.AboutBox1.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.FrmCostomMessage.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogin.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.Froms.FrmLogon.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.FrmMain.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.Froms.FrmManageUser.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.FrmMulLogon.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CRC.Controls.ChatListBox.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\CWebQQ.UI.SearchBox.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\WebQQ.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\WebQQ.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\WebQQ.pdb

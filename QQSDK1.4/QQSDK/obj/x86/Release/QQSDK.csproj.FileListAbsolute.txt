@@ -1,0 +1,57 @@
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\bin\Release\QQSDK.exe.config
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\bin\Release\QQSDK.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\bin\Release\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Release\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.Form1.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Release\GenerateResource.read.1.tlog
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Release\GenerateResource.write.1.tlog
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.pdb
+H:\QQSDK1.1\QQSDK\bin\Release\QQSDK.dll.config
+H:\QQSDK1.1\QQSDK\bin\Release\QQSDK.dll
+H:\QQSDK1.1\QQSDK\bin\Release\QQSDK.pdb
+H:\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.Properties.Resources.resources
+H:\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.Form1.resources
+H:\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.csproj.GenerateResource.Cache
+H:\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.dll
+H:\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.pdb
+H:\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\QQSDK1.1\QQSDK\bin\Release\QQSDK.dll.config
+C:\Users\Administrator\Desktop\QQSDK1.1\QQSDK\bin\Release\QQSDK.dll
+C:\Users\Administrator\Desktop\QQSDK1.1\QQSDK\bin\Release\QQSDK.pdb
+C:\Users\Administrator\Desktop\QQSDK1.1\QQSDK\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.Properties.Resources.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.Form1.resources
+C:\Users\Administrator\Desktop\QQSDK1.1\QQSDK\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\QQSDK1.1\QQSDK\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\Administrator\Desktop\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.dll
+C:\Users\Administrator\Desktop\QQSDK1.1\QQSDK\obj\x86\Release\QQSDK.pdb
+K:\QQSDK1.3\QQSDK\bin\Release\QQSDK.dll.config
+K:\QQSDK1.3\QQSDK\bin\Release\QQSDK.dll
+K:\QQSDK1.3\QQSDK\bin\Release\QQSDK.pdb
+K:\QQSDK1.3\QQSDK\obj\x86\Release\QQSDK.Properties.Resources.resources
+K:\QQSDK1.3\QQSDK\obj\x86\Release\QQSDK.Form1.resources
+K:\QQSDK1.3\QQSDK\obj\x86\Release\QQSDK.csproj.GenerateResource.Cache
+K:\QQSDK1.3\QQSDK\obj\x86\Release\QQSDK.dll
+K:\QQSDK1.3\QQSDK\obj\x86\Release\QQSDK.pdb
+K:\QQSDK1.3\QQSDK\obj\x86\Release\QQSDK.csprojResolveAssemblyReference.cache
+H:\QQSDK1.3\QQSDK\bin\Release\QQSDK.dll.config
+H:\QQSDK1.3\QQSDK\bin\Release\QQSDK.dll
+H:\QQSDK1.3\QQSDK\bin\Release\QQSDK.pdb
+H:\QQSDK1.3\QQSDK\obj\x86\Release\ResolveAssemblyReference.cache
+H:\QQSDK1.3\QQSDK\obj\x86\Release\QQSDK.Properties.Resources.resources
+H:\QQSDK1.3\QQSDK\obj\x86\Release\QQSDK.Form1.resources
+H:\QQSDK1.3\QQSDK\obj\x86\Release\GenerateResource.read.1.tlog
+H:\QQSDK1.3\QQSDK\obj\x86\Release\GenerateResource.write.1.tlog
+H:\QQSDK1.3\QQSDK\obj\x86\Release\QQSDK.dll
+H:\QQSDK1.3\QQSDK\obj\x86\Release\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\bin\Release\QQSDK.dll.config
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\bin\Release\QQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\bin\Release\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Release\QQSDK.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Release\QQSDK.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Release\QQSDK.Form1.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Release\QQSDK.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Release\QQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Release\QQSDK.pdb

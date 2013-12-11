@@ -1,0 +1,63 @@
+Time:2013/11/11 19:48:56
+错误消息:正在中止线程。
+堆栈消息:   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 QQServer.UserManger.CheckState() 位置 H:\QQSDK1.3\QQServer\UserManger.cs:行号 178
+ 异常方法:Void SleepInternal(Int32)
+
+
+Time:2013/11/11 19:48:56
+错误消息:正在中止线程。
+堆栈消息:   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 QQServer.UserManger.CheckState() 位置 H:\QQSDK1.3\QQServer\UserManger.cs:行号 178
+ 异常方法:Void SleepInternal(Int32)
+
+
+Time:2013/11/11 19:48:56
+错误消息:正在中止线程。
+堆栈消息:   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 QQServer.UserManger.CheckState() 位置 H:\QQSDK1.3\QQServer\UserManger.cs:行号 178
+ 异常方法:Void SleepInternal(Int32)
+
+
+Time:2013/11/11 19:48:56
+错误消息:正在中止线程。
+堆栈消息:   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 QQServer.UserManger.CheckState() 位置 H:\QQSDK1.3\QQServer\UserManger.cs:行号 178
+ 异常方法:Void SleepInternal(Int32)
+
+
+Time:2013/11/11 19:48:56
+错误消息:正在中止线程。
+堆栈消息:   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 QQServer.UserManger.CheckState() 位置 H:\QQSDK1.3\QQServer\UserManger.cs:行号 178
+ 异常方法:Void SleepInternal(Int32)
+
+
+Time:2013/11/11 19:48:56
+错误消息:正在中止线程。
+堆栈消息:   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 QQServer.UserManger.CheckState() 位置 H:\QQSDK1.3\QQServer\UserManger.cs:行号 178
+ 异常方法:Void SleepInternal(Int32)
+
+
+Time:2013/11/11 19:48:56
+错误消息:正在中止线程。
+堆栈消息:   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 QQServer.UserManger.CheckState() 位置 H:\QQSDK1.3\QQServer\UserManger.cs:行号 178
+ 异常方法:Void SleepInternal(Int32)
+
+
+Time:2013/11/11 19:48:56
+错误消息:正在中止线程。
+堆栈消息:   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 QQServer.UserManger.CheckState() 位置 H:\QQSDK1.3\QQServer\UserManger.cs:行号 178
+ 异常方法:Void SleepInternal(Int32)
+
+
+Time:2013/11/11 19:48:56
+错误消息:正在中止线程。
+堆栈消息:   在 System.Threading.Thread.SleepInternal(Int32 millisecondsTimeout)
+   在 QQServer.UserManger.CheckState() 位置 H:\QQSDK1.3\QQServer\UserManger.cs:行号 178
+ 异常方法:Void SleepInternal(Int32)
+
+

@@ -1,0 +1,26 @@
+Time:2013/11/3 13:31:03
+错误消息:不支持类型 QQRobot.DictionaryCollection`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[QQRobot.AutoMessage, QQRobot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]，因为它实现 IDictionary。
+堆栈消息:   在 System.Xml.Serialization.TypeScope.GetDefaultIndexer(Type type, String memberInfo)
+   在 System.Xml.Serialization.TypeScope.ImportTypeDesc(Type type, MemberInfo memberInfo, Boolean directReference)
+   在 System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
+   在 System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   在 System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   在 QQRobot.Util.SerializeHelper.SaveXml[T](T obj, String path) 位置 H:\QQSDK1.1\QQRobot\Util\SerializeHelper.cs:行号 136
+ 异常方法:System.Reflection.PropertyInfo GetDefaultIndexer(System.Type, System.String)
+
+
+Time:2013/11/3 13:39:32
+错误消息:不支持类型 QQRobot.DictionaryCollection`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[QQRobot.AutoMessage, QQRobot, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]，因为它实现 IDictionary。
+堆栈消息:   在 System.Xml.Serialization.TypeScope.GetDefaultIndexer(Type type, String memberInfo)
+   在 System.Xml.Serialization.TypeScope.ImportTypeDesc(Type type, MemberInfo memberInfo, Boolean directReference)
+   在 System.Xml.Serialization.TypeScope.GetTypeDesc(Type type, MemberInfo source, Boolean directReference, Boolean throwOnError)
+   在 System.Xml.Serialization.ModelScope.GetTypeModel(Type type, Boolean directReference)
+   在 System.Xml.Serialization.XmlReflectionImporter.ImportTypeMapping(Type type, XmlRootAttribute root, String defaultNamespace)
+   在 System.Xml.Serialization.XmlSerializer..ctor(Type type, String defaultNamespace)
+   在 System.Xml.Serialization.XmlSerializer..ctor(Type type)
+   在 QQRobot.Util.SerializeHelper.SaveXml[T](T obj, String path) 位置 H:\QQSDK1.1\QQRobot\Util\SerializeHelper.cs:行号 136
+ 异常方法:System.Reflection.PropertyInfo GetDefaultIndexer(System.Type, System.String)
+
+

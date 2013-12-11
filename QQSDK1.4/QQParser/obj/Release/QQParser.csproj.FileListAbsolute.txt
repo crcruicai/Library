@@ -1,0 +1,11 @@
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\obj\Release\QQParser.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\obj\Release\QQParser.Form1.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\obj\Release\QQParser.Form2.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\obj\Release\QQParser.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\obj\Release\QQParser.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\bin\Release\QQParser.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\bin\Release\QQParser.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\bin\Release\QQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\bin\Release\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\obj\Release\QQParser.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQParser\obj\Release\QQParser.pdb

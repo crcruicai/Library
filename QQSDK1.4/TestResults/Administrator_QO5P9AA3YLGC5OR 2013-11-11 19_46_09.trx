@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a8e0238d-d038-471b-9a18-61463339da17" name="Administrator@QO5P9AA3YLGC5OR 2013-11-11 19:46:09" runUser="QO5P9AA3YLGC5OR\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="a5544eb8-3911-41ab-bc85-489b668152d2">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_QO5P9AA3YLGC5OR 2013-11-11 19_46_09">
+      <DeploymentItem filename="H:\QQSDK1.3\QQMessage\bin\Release\QQMessage.dll" />
+      <DeploymentItem filename="H:\QQSDK1.3\QQServer\bin\Release\QQServer.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-11-11T19:46:09.7332000+08:00" queuing="2013-11-11T19:46:11.7082000+08:00" start="2013-11-11T19:46:11.7922000+08:00" finish="2013-11-11T19:46:14.4462000+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="UpdateUserTest" storage="h:\qqsdk1.3\testqqserver\bin\release\testqqserver.dll" id="953d1187-908c-311d-f2dc-d44663e78175">
+      <Execution id="da0fe3db-f0d7-4fb8-a0e2-1120c2894b64" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Release\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="UpdateUserTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="953d1187-908c-311d-f2dc-d44663e78175" executionId="da0fe3db-f0d7-4fb8-a0e2-1120c2894b64" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="da0fe3db-f0d7-4fb8-a0e2-1120c2894b64" testId="953d1187-908c-311d-f2dc-d44663e78175" testName="UpdateUserTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:00.5822575" startTime="2013-11-11T19:46:12.0312000+08:00" endTime="2013-11-11T19:46:14.2932000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da0fe3db-f0d7-4fb8-a0e2-1120c2894b64">
+    </UnitTestResult>
+  </Results>
+</TestRun>

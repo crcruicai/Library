@@ -1,0 +1,55 @@
+G:\Projects\C#\自己的项目\QQSDK\QQSDK\bin\Debug\QQSDK.exe
+G:\Projects\C#\自己的项目\QQSDK\QQSDK\bin\Debug\QQSDK.pdb
+G:\Projects\C#\自己的项目\QQSDK\QQSDK\obj\x86\Debug\QQSDK.Properties.Resources.resources
+G:\Projects\C#\自己的项目\QQSDK\QQSDK\obj\x86\Debug\QQSDK.csproj.GenerateResource.Cache
+G:\Projects\C#\自己的项目\QQSDK\QQSDK\obj\x86\Debug\QQSDK.exe
+G:\Projects\C#\自己的项目\QQSDK\QQSDK\obj\x86\Debug\QQSDK.pdb
+G:\Projects\C#\自己的项目\QQSDK\QQSDK\bin\Debug\QQSDK.exe.config
+G:\Projects\C#\自己的项目\QQSDK\QQSDK\obj\x86\Debug\QQSDK.Form1.resources
+C:\Users\Administrator\Desktop\QQSDK\QQSDK\bin\Debug\QQSDK.exe.config
+C:\Users\Administrator\Desktop\QQSDK\QQSDK\obj\x86\Debug\QQSDK.exe
+C:\Users\Administrator\Desktop\QQSDK\QQSDK\obj\x86\Debug\QQSDK.pdb
+C:\Users\Administrator\Desktop\QQSDK\QQSDK\bin\Debug\QQSDK.exe
+C:\Users\Administrator\Desktop\QQSDK\QQSDK\bin\Debug\QQSDK.pdb
+C:\Users\Administrator\Desktop\QQSDK\QQSDK\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\QQSDK\QQSDK\obj\x86\Debug\QQSDK.Properties.Resources.resources
+C:\Users\Administrator\Desktop\QQSDK\QQSDK\obj\x86\Debug\QQSDK.Form1.resources
+C:\Users\Administrator\Desktop\QQSDK\QQSDK\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Administrator\Desktop\QQSDK\QQSDK\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\bin\Debug\QQSDK.exe.config
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\bin\Debug\QQSDK.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\bin\Debug\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Debug\QQSDK.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Debug\QQSDK.Form1.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Debug\QQSDK.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\obj\x86\Debug\QQSDK.pdb
+H:\QQSDK1.1\QQSDK\bin\Debug\QQSDK.dll.config
+H:\QQSDK1.1\QQSDK\bin\Debug\QQSDK.dll
+H:\QQSDK1.1\QQSDK\bin\Debug\QQSDK.pdb
+H:\QQSDK1.1\QQSDK\obj\x86\Debug\QQSDK.Properties.Resources.resources
+H:\QQSDK1.1\QQSDK\obj\x86\Debug\QQSDK.Form1.resources
+H:\QQSDK1.1\QQSDK\obj\x86\Debug\QQSDK.csproj.GenerateResource.Cache
+H:\QQSDK1.1\QQSDK\obj\x86\Debug\QQSDK.dll
+H:\QQSDK1.1\QQSDK\obj\x86\Debug\QQSDK.pdb
+H:\QQSDK1.3\QQSDK\bin\Debug\QQSDK.dll.config
+H:\QQSDK1.3\QQSDK\bin\Debug\QQSDK.dll
+H:\QQSDK1.3\QQSDK\bin\Debug\QQSDK.pdb
+H:\QQSDK1.3\QQSDK\obj\x86\Debug\QQSDK.Properties.Resources.resources
+H:\QQSDK1.3\QQSDK\obj\x86\Debug\QQSDK.Form1.resources
+H:\QQSDK1.3\QQSDK\obj\x86\Debug\QQSDK.dll
+H:\QQSDK1.3\QQSDK\obj\x86\Debug\QQSDK.pdb
+H:\QQSDK1.3\QQSDK\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\QQSDK1.3\QQSDK\obj\x86\Debug\GenerateResource.read.1.tlog
+H:\QQSDK1.3\QQSDK\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\bin\Debug\QQSDK.dll.config
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\bin\Debug\QQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\bin\Debug\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.Properties.Resources.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.Form1.resources
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.csproj.GenerateResource.Cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.csprojResolveAssemblyReference.cache

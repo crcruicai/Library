@@ -1,0 +1,54 @@
+G:\Projects\C#\自己的项目\QQSDK\TestQQSDK\bin\Debug\TestQQSDK.dll
+G:\Projects\C#\自己的项目\QQSDK\TestQQSDK\bin\Debug\TestQQSDK.pdb
+G:\Projects\C#\自己的项目\QQSDK\TestQQSDK\bin\Debug\QQSDK.exe
+G:\Projects\C#\自己的项目\QQSDK\TestQQSDK\bin\Debug\QQSDK.pdb
+G:\Projects\C#\自己的项目\QQSDK\TestQQSDK\obj\Debug\TestQQSDK.csprojResolveAssemblyReference.cache
+G:\Projects\C#\自己的项目\QQSDK\TestQQSDK\obj\Debug\TestQQSDK.dll
+G:\Projects\C#\自己的项目\QQSDK\TestQQSDK\obj\Debug\TestQQSDK.pdb
+G:\Projects\C#\自己的项目\QQSDK\TestQQSDK\bin\Debug\QQSDK_Accessor.exe
+G:\Projects\C#\自己的项目\QQSDK\TestQQSDK\bin\Debug\QQSDK_Accessor.pdb
+C:\Users\Administrator\Desktop\QQSDK\TestQQSDK\bin\Debug\TestQQSDK.dll
+C:\Users\Administrator\Desktop\QQSDK\TestQQSDK\bin\Debug\TestQQSDK.pdb
+C:\Users\Administrator\Desktop\QQSDK\TestQQSDK\bin\Debug\QQSDK.exe
+C:\Users\Administrator\Desktop\QQSDK\TestQQSDK\bin\Debug\QQSDK.pdb
+C:\Users\Administrator\Desktop\QQSDK\TestQQSDK\bin\Debug\QQSDK_Accessor.exe
+C:\Users\Administrator\Desktop\QQSDK\TestQQSDK\bin\Debug\QQSDK_Accessor.pdb
+C:\Users\Administrator\Desktop\QQSDK\TestQQSDK\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\QQSDK\TestQQSDK\obj\Debug\TestQQSDK.dll
+C:\Users\Administrator\Desktop\QQSDK\TestQQSDK\obj\Debug\TestQQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\TestQQSDK\bin\Debug\TestQQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\TestQQSDK\bin\Debug\TestQQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\TestQQSDK\bin\Debug\QQSDK.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\TestQQSDK\bin\Debug\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\TestQQSDK\bin\Debug\QQSDK_Accessor.exe
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\TestQQSDK\bin\Debug\QQSDK_Accessor.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\TestQQSDK\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\TestQQSDK\obj\Debug\TestQQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\TestQQSDK\obj\Debug\TestQQSDK.pdb
+H:\QQSDK1.1\TestQQSDK\obj\Debug\TestQQSDK.dll
+H:\QQSDK1.1\TestQQSDK\bin\Debug\TestQQSDK.dll
+H:\QQSDK1.1\TestQQSDK\bin\Debug\TestQQSDK.pdb
+H:\QQSDK1.1\TestQQSDK\bin\Debug\QQSDK.pdb
+H:\QQSDK1.1\TestQQSDK\bin\Debug\QQSDK_Accessor.pdb
+H:\QQSDK1.1\TestQQSDK\obj\Debug\TestQQSDK.pdb
+H:\QQSDK1.1\TestQQSDK\bin\Debug\QQSDK.dll
+H:\QQSDK1.1\TestQQSDK\bin\Debug\QQSDK_Accessor.dll
+H:\QQSDK1.1\TestQQSDK\obj\Debug\TestQQSDK.csprojResolveAssemblyReference.cache
+H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.dll
+H:\QQSDK1.3\TestQQSDK\bin\Debug\TestQQSDK.pdb
+H:\QQSDK1.3\TestQQSDK\bin\Debug\QQSDK.dll
+H:\QQSDK1.3\TestQQSDK\bin\Debug\QQSDK.pdb
+H:\QQSDK1.3\TestQQSDK\bin\Debug\QQSDK_Accessor.dll
+H:\QQSDK1.3\TestQQSDK\bin\Debug\QQSDK_Accessor.pdb
+H:\QQSDK1.3\TestQQSDK\obj\Debug\TestQQSDK.dll
+H:\QQSDK1.3\TestQQSDK\obj\Debug\TestQQSDK.pdb
+H:\QQSDK1.3\TestQQSDK\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQSDK\bin\Debug\TestQQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQSDK\bin\Debug\TestQQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQSDK\bin\Debug\QQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQSDK\bin\Debug\QQSDK.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQSDK\bin\Debug\QQSDK_Accessor.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQSDK\bin\Debug\QQSDK_Accessor.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQSDK\obj\Debug\TestQQSDK.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQSDK\obj\Debug\TestQQSDK.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\TestQQSDK\obj\Debug\TestQQSDK.pdb

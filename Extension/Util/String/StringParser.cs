@@ -25,15 +25,15 @@ namespace CRC.Util
         /// <summary>
         /// 当前所处的位置.
         /// </summary>
-        private int m_nIndex;
+        private int _CurrentIndex;
         /// <summary>
         /// 解析的内容.
         /// </summary>
-        private string m_strContent;
+        private string _Content;
         /// <summary>
         /// 解析内容的小写形式.
         /// </summary>
-        private string m_strContentLC;
+        private string _ContentLower;
 
         #endregion
 
@@ -43,9 +43,9 @@ namespace CRC.Util
         /// </summary>
         public StringParser()
         {
-            this.m_strContent = "";
-            this.m_strContentLC = "";
-            this.m_nIndex = 0;
+            this._Content = "";
+            this._ContentLower = "";
+            this._CurrentIndex = 0;
         }
 
         /// <summary>
@@ -54,9 +54,9 @@ namespace CRC.Util
         /// <param name="strContent"></param>
         public StringParser(string strContent)
         {
-            this.m_strContent = "";
-            this.m_strContentLC = "";
-            this.m_nIndex = 0;
+            this._Content = "";
+            this._ContentLower = "";
+            this._CurrentIndex = 0;
             this.Content = strContent;
         }
         #endregion
@@ -69,7 +69,7 @@ namespace CRC.Util
         /// <returns></returns>
         public bool At(string strString)
         {
-            return (this.m_strContent.IndexOf(strString, this.Position) == this.Position);
+            return (this._Content.IndexOf(strString, this.Position) == this.Position);
         }
         /// <summary>
         /// 检查指定的关键字是否在当前的位置.(忽略大小写)
@@ -79,40 +79,44 @@ namespace CRC.Util
         public bool AtNoCase(string strString)
         {
             strString = strString.ToLower();
-            return (this.m_strContentLC.IndexOf(strString, this.Position) == this.Position);
+            return (this._ContentLower.IndexOf(strString, this.Position) == this.Position);
         }
         /// <summary>
         /// 提取从当前位置到关键字位置之间的内容.(属性Position受影响)
+        /// <para>例如:字符串 "Font is song ti", 位置为0,查找关键字song</para>
+        /// 那么提取的内容为 "Font is ",此时位置自动提升为12,即Font is song的长度.
         /// </summary>
         /// <param name="strString">关键字</param>
         /// <param name="strExtract">返回的内容.</param>
         /// <returns></returns>
         public bool ExtractTo(string strString, ref string strExtract)
         {
-            int index = this.m_strContent.IndexOf(strString, this.Position);
+            int index = this._Content.IndexOf(strString, this.Position);
             if (index != -1)
             {
-                strExtract = this.m_strContent.Substring(this.m_nIndex, index - this.m_nIndex);
-                this.m_nIndex = index + strString.Length;
+                strExtract = this._Content.Substring(this._CurrentIndex, index - this._CurrentIndex);
+                this._CurrentIndex = index + strString.Length;
                 return true;
             }
             return false;
         }
         /// <summary>
-        /// 提取到结束位置的内容.
+        /// 从当前位置提取到结束位置的内容.
         /// </summary>
         /// <param name="strExtract"></param>
         public void ExtractToEnd(ref string strExtract)
         {
             strExtract = "";
-            if (this.Position < this.m_strContent.Length)
+            if (this.Position < this._Content.Length)
             {
-                int length = this.m_strContent.Length - this.Position;
-                strExtract = this.m_strContent.Substring(this.Position, length);
+                int length = this._Content.Length - this.Position;
+                strExtract = this._Content.Substring(this.Position, length);
             }
         }
         /// <summary>
-        /// 从当前位置提取包含特定字符串的内容.
+        /// 从当前位置提取包含指定的字符串的内容,并自动提升位置.
+        /// <para>例如:字符串 "Font is song ti", 位置为0,查找关键字song</para>
+        /// 那么提取的内容为 "Font is ",此时位置自动提升为12,即Font is song的长度.
         /// </summary>
         /// <param name="strString">要查找的字符串.</param>
         /// <param name="strExtract">返回提取的内容.</param>
@@ -120,73 +124,77 @@ namespace CRC.Util
         public bool ExtractToNoCase(string strString, ref string strExtract)
         {
             strString = strString.ToLower();
-            int index = this.m_strContentLC.IndexOf(strString, this.Position);
+            int index = this._ContentLower.IndexOf(strString, this.Position);
             if (index != -1)
             {
-                strExtract = this.m_strContent.Substring(this.m_nIndex, index - this.m_nIndex);
-                this.m_nIndex = index + strString.Length;
+                strExtract = this._Content.Substring(this._CurrentIndex, index - this._CurrentIndex);
+                this._CurrentIndex = index + strString.Length;
                 return true;
             }
             return false;
         }
         /// <summary>
-        /// 提取指定的内容,并提升字符串的位置.
+        /// 提取指定的内容,并提升字符串的位置(设置为关键字的位置)
+        /// <para>例如:字符串 "Font is song ti", 位置为0,查找关键字song</para>
+        /// 那么提取的内容为 "Font is ",此时位置自动提升为8,即Font is 的长度.
         /// </summary>
         /// <param name="strString"></param>
         /// <param name="strExtract"></param>
         /// <returns></returns>
         public bool ExtractUntil(string strString, ref string strExtract)
         {
-            int index = this.m_strContent.IndexOf(strString, this.Position);
+            int index = this._Content.IndexOf(strString, this.Position);
             if (index != -1)
             {
-                strExtract = this.m_strContent.Substring(this.m_nIndex, index - this.m_nIndex);
-                this.m_nIndex = index;
+                strExtract = this._Content.Substring(this._CurrentIndex, index - this._CurrentIndex);
+                this._CurrentIndex = index;
                 return true;
             }
             return false;
         }
 
         /// <summary>
-        /// 提取指定的内容,并提升字符串的位置.(忽略大小写)
+        /// 提取指定的内容,并提升字符串的位置.(查找关键字忽略大小写)
+        /// <para>例如:字符串 "Font is song ti", 位置为0,查找关键字song</para>
+        /// 那么提取的内容为 "Font is ",此时位置自动提升为8,即Font is 的长度.
         /// </summary>
-        /// <param name="strString"></param>
-        /// <param name="strExtract"></param>
+        /// <param name="strString">查找关键字(忽略大小写)</param>
+        /// <param name="strExtract">提取的内容.</param>
         /// <returns></returns>
         public bool ExtractUntilNoCase(string strString, ref string strExtract)
         {
             strString = strString.ToLower();
-            int index = this.m_strContentLC.IndexOf(strString, this.Position);
+            int index = this._ContentLower.IndexOf(strString, this.Position);
             if (index != -1)
             {
-                strExtract = this.m_strContent.Substring(this.m_nIndex, index - this.m_nIndex);
-                this.m_nIndex = index;
+                strExtract = this._Content.Substring(this._CurrentIndex, index - this._CurrentIndex);
+                this._CurrentIndex = index;
                 return true;
             }
             return false;
         }
      
         /// <summary>
-        /// 
+        /// 替换字符,并返回替换的次数.
         /// </summary>
-        /// <param name="strOccurrence"></param>
-        /// <param name="strReplacement"></param>
-        /// <returns></returns>
+        /// <param name="strOccurrence">替换的关键字</param>
+        /// <param name="strReplacement">替换的内容.</param>
+        /// <returns>替换的次数</returns>
         public int ReplaceEvery(string strOccurrence, string strReplacement)
         {
             int num = 0;
             strOccurrence = strOccurrence.ToLower();
-            for (int i = this.m_strContentLC.IndexOf(strOccurrence); i != -1; i = this.m_strContentLC.IndexOf(strOccurrence))
+            for (int i = this._ContentLower.IndexOf(strOccurrence); i != -1; i = this._ContentLower.IndexOf(strOccurrence))
             {
-                string str = this.m_strContent.Substring(0, i) + strReplacement;
+                string str = this._Content.Substring(0, i) + strReplacement;
                 int startIndex = i + strOccurrence.Length;
-                if (startIndex < this.m_strContent.Length)
+                if (startIndex < this._Content.Length)
                 {
-                    string str2 = this.m_strContent.Substring(startIndex, this.m_strContent.Length - startIndex);
+                    string str2 = this._Content.Substring(startIndex, this._Content.Length - startIndex);
                     str = str + str2;
                 }
-                this.m_strContent = str;
-                this.m_strContentLC = this.m_strContent.ToLower();
+                this._Content = str;
+                this._ContentLower = this._Content.ToLower();
                 num++;
             }
             return num;
@@ -200,23 +208,23 @@ namespace CRC.Util
         public int ReplaceEveryExact(string strOccurrence, string strReplacement)
         {
             int num = 0;
-            while (this.m_strContent.IndexOf(strOccurrence) != -1)
+            while (this._Content.IndexOf(strOccurrence) != -1)
             {
-                this.m_strContent = this.m_strContent.Replace(strOccurrence, strReplacement);
+                this._Content = this._Content.Replace(strOccurrence, strReplacement);
                 num++;
             }
-            this.m_strContentLC = this.m_strContent.ToLower();
+            this._ContentLower = this._Content.ToLower();
             return num;
         }
         /// <summary>
-        /// 
+        /// 重置Position
         /// </summary>
         public void ResetPosition()
         {
-            this.m_nIndex = 0;
+            this._CurrentIndex = 0;
         }
         /// <summary>
-        /// 
+        /// 查找字符串.并指示是否提升位置.
         /// </summary>
         /// <param name="strString">查找的字符串.</param>
         /// <param name="bNoCase">是否忽略大小写.</param>
@@ -224,7 +232,7 @@ namespace CRC.Util
         /// <returns></returns>
         private bool SeekTo(string strString, bool bNoCase, bool bPositionAfter)
         {
-            if (this.Position >= this.m_strContent.Length)
+            if (this.Position >= this._Content.Length)
             {
                 return false;
             }
@@ -232,26 +240,26 @@ namespace CRC.Util
             if (bNoCase)
             {
                 strString = strString.ToLower();
-                index = this.m_strContentLC.IndexOf(strString, this.Position);
+                index = this._ContentLower.IndexOf(strString, this.Position);
             }
             else
             {
-                index = this.m_strContent.IndexOf(strString, this.Position);
+                index = this._Content.IndexOf(strString, this.Position);
             }
             if (index == -1)
             {
                 return false;
             }
-            this.m_nIndex = index;
+            this._CurrentIndex = index;
             if (bPositionAfter)
             {
-                this.m_nIndex += strString.Length;
+                this._CurrentIndex += strString.Length;
             }
             return true;
         }
 
         /// <summary>
-        /// 向后查找字符,如果找到返回true.
+        /// 查找字符,如果找到返回true. (找到后,提升位置)
         /// </summary>
         /// <param name="strString">要查找的字符</param>
         /// <returns></returns>
@@ -260,7 +268,8 @@ namespace CRC.Util
             return this.SeekTo(strString, false, true);
         }
         /// <summary>
-        /// 向后查找字符,忽略大小写.如果找到返回true.
+        /// 查找字符,忽略大小写.如果找到返回true.
+        /// (找到后,提升位置)
         /// </summary>
         /// <param name="strText">要查找的字符</param>
         /// <returns></returns>
@@ -269,7 +278,7 @@ namespace CRC.Util
             return this.SeekTo(strText, true, true);
         }
         /// <summary>
-        /// 
+        /// 查找字符,如果找到返回true.(找到后,不提升位置)
         /// </summary>
         /// <param name="strString"></param>
         /// <returns></returns>
@@ -278,7 +287,7 @@ namespace CRC.Util
             return this.SeekTo(strString, false, false);
         }
         /// <summary>
-        /// 
+        /// 查找字符,忽略大小写,如果找到返回true.(找到后,不提升位置)
         /// </summary>
         /// <param name="strText"></param>
         /// <returns></returns>
@@ -367,6 +376,11 @@ namespace CRC.Util
             }
         }
 
+        /// <summary>
+        /// 移除Hmtl注释标记.
+        /// </summary>
+        /// <param name="strString"></param>
+        /// <returns></returns>
         public static string RemoveComments(string strString)
         {
             string str = "";
@@ -384,6 +398,11 @@ namespace CRC.Util
             return (str + strExtract);
         }
 
+        /// <summary>
+        /// 移除Html的 a标记.
+        /// </summary>
+        /// <param name="strString"></param>
+        /// <returns></returns>
         public static string RemoveEnclosingAnchorTag(string strString)
         {
             string str = strString.ToLower();
@@ -528,12 +547,12 @@ namespace CRC.Util
         {
             get
             {
-                return this.m_strContent;
+                return this._Content;
             }
             set
             {
-                this.m_strContent = value;
-                this.m_strContentLC = this.m_strContent.ToLower();
+                this._Content = value;
+                this._ContentLower = this._Content.ToLower();
                 this.ResetPosition();
             }
         }
@@ -544,10 +563,58 @@ namespace CRC.Util
         {
             get
             {
-                return this.m_nIndex;
+                return this._CurrentIndex;
             }
         }
 
         #endregion
     }
+
+
+    /// <summary>
+    /// Json 格式刷.
+    /// </summary>
+    public class JsonFormatBrush
+    {
+        StringParser _Parser;
+
+        public JsonFormatBrush()
+        {
+            _Parser = new StringParser();
+        }
+
+        public string Done(string text)
+        {
+            _Parser.Content = text;
+
+
+
+            return null;
+        }
+
+        private string Replace(string text,char[] array)
+        {
+            Stack<int> stack = new Stack<int>();
+
+            StringBuilder sb = new StringBuilder(text);
+            for (int i = 0; i < text.Length; i++)
+            {
+                char c = text[i];
+                if (array.Contains(c))
+                {
+
+                }
+            }
+            return sb.ToString();
+
+        }
+        
+
+
+
+
+    }
+
+
+
 }

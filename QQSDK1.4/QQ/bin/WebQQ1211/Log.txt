@@ -1,0 +1,357 @@
+Time:2013/12/11 14:26:52
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:09
+错误消息:远程服务器返回错误: (504) 网关超时。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:09
+其他接收错误:远程服务器返回错误: (504) 网关超时。
+
+Time:2013/12/11 14:28:11
+错误消息:远程服务器返回了意外响应: (502) Fiddler - Connection Failed。
+堆栈消息:
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpChannelUtilities.ValidateRequestReplyResponse(HttpWebRequest request, HttpWebResponse response, HttpChannelFactory`1 factory, WebException responseException, ChannelBinding channelBinding)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 QQMessage.IService.KeepOnline(String usrName)
+   在 CWebQQ.Froms.FrmManageUser.timer1_Tick(Object sender, EventArgs e)
+ 异常方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+
+
+Time:2013/12/11 14:28:13
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:13
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:16
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:16
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:19
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:19
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:22
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:22
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:25
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:25
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:28
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:28
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:31
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:31
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:34
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:34
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:38
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:38
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:41
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:41
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:44
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:44
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:47
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:47
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:50
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:50
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:53
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:53
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:56
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:56
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:28:59
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:28:59
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:03
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:03
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:06
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:06
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:09
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:09
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:11
+错误消息:远程服务器返回了意外响应: (502) Fiddler - Connection Failed。
+堆栈消息:
+Server stack trace: 
+   在 System.ServiceModel.Channels.HttpChannelUtilities.ValidateRequestReplyResponse(HttpWebRequest request, HttpWebResponse response, HttpChannelFactory`1 factory, WebException responseException, ChannelBinding channelBinding)
+   在 System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.WaitForReply(TimeSpan timeout)
+   在 System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   在 System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   在 System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   在 System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   在 QQMessage.IService.KeepOnline(String usrName)
+   在 CWebQQ.Froms.FrmManageUser.timer1_Tick(Object sender, EventArgs e)
+ 异常方法:Void HandleReturnMessage(System.Runtime.Remoting.Messaging.IMessage, System.Runtime.Remoting.Messaging.IMessage)
+
+
+Time:2013/12/11 14:29:12
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:12
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:15
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:15
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:18
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:18
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:21
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:21
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:24
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:24
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:28
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:28
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:31
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:31
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:34
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:34
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:37
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:37
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:40
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:40
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+
+Time:2013/12/11 14:29:43
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode)
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 14:29:43
+其他接收错误:远程服务器返回错误: (502) 错误的网关。
+

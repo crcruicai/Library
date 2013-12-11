@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="30393141-7ce2-4177-989f-a95287e90aba" name="Administrator@QO5P9AA3YLGC5OR 2013-11-10 09:27:17" runUser="QO5P9AA3YLGC5OR\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="a5544eb8-3911-41ab-bc85-489b668152d2">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_QO5P9AA3YLGC5OR 2013-11-10 09_27_17">
+      <DeploymentItem filename="H:\QQSDK1.3\QQMessage\bin\Release\QQMessage.dll" />
+      <DeploymentItem filename="H:\QQSDK1.3\QQServer\bin\Release\QQServer.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-11-10T09:27:17.6380000+08:00" queuing="2013-11-10T09:27:26.4510000+08:00" start="2013-11-10T09:27:27.1120000+08:00" finish="2013-11-10T09:27:59.7600000+08:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="QO5P9AA3YLGC5OR" outcome="Error" timestamp="2013-11-10T09:27:59.7390000+08:00">
+        <Text>测试宿主进程意外退出。</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreateUserTest" storage="h:\qqsdk1.3\testqqserver\bin\release\testqqserver.dll" id="8cbf22b4-8ac0-ab2d-1c04-b48674e1530e">
+      <Execution id="460b0e1e-e4d3-4106-b6d0-8473c8bf5c38" />
+      <TestMethod codeBase="H:\QQSDK1.3\TestQQServer\bin\Release\TestQQServer.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQServer.UserMangerTest, TestQQServer" name="CreateUserTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="8cbf22b4-8ac0-ab2d-1c04-b48674e1530e" executionId="460b0e1e-e4d3-4106-b6d0-8473c8bf5c38" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="460b0e1e-e4d3-4106-b6d0-8473c8bf5c38" testId="8cbf22b4-8ac0-ab2d-1c04-b48674e1530e" testName="CreateUserTest" computerName="QO5P9AA3YLGC5OR" duration="00:00:32.4580000" startTime="2013-11-10T09:27:27.2820000+08:00" endTime="2013-11-10T09:27:59.7400000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="460b0e1e-e4d3-4106-b6d0-8473c8bf5c38">
+    </UnitTestResult>
+  </Results>
+</TestRun>

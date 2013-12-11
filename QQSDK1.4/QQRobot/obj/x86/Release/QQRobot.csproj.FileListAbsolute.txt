@@ -1,0 +1,4 @@
+H:\QQSDK1.1\QQRobot\obj\x86\Release\QQRobot.csprojResolveAssemblyReference.cache
+H:\QQSDK1.1\QQRobot\obj\x86\Release\QQSDK.FormTest.resources
+H:\QQSDK1.1\QQRobot\obj\x86\Release\QQRobot.Properties.Resources.resources
+H:\QQSDK1.1\QQRobot\obj\x86\Release\QQRobot.csproj.GenerateResource.Cache

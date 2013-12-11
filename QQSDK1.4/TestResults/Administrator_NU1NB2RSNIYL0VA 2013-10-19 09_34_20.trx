@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="288654df-5865-49d8-b8e3-c020f5856e12" name="Administrator@NU1NB2RSNIYL0VA 2013-10-19 09:34:20" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="a5544eb8-3911-41ab-bc85-489b668152d2">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2013-10-19 09_34_20">
+      <DeploymentItem filename="C:\Users\Administrator\Desktop\QQSDK\QQSDK\bin\Debug\QQSDK.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-10-19T09:34:20.2791123+08:00" queuing="2013-10-19T09:34:20.3221147+08:00" start="2013-10-19T09:34:20.3261150+08:00" finish="2013-10-19T09:34:20.4741234+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="IsEmailTest" storage="c:\users\administrator\desktop\qqsdk\testqqsdk\bin\debug\testqqsdk.dll" id="9e14a1b4-700c-8d3d-14f7-8cb9024d89e5">
+      <Execution id="51f7bbad-a6a8-47e8-b989-ad99e5f3c9e1" />
+      <TestMethod codeBase="C:/Users/Administrator/Desktop/QQSDK/TestQQSDK/bin/Debug/TestQQSDK.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestQQSDK.StringExtendTest, TestQQSDK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsEmailTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9e14a1b4-700c-8d3d-14f7-8cb9024d89e5" executionId="51f7bbad-a6a8-47e8-b989-ad99e5f3c9e1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="51f7bbad-a6a8-47e8-b989-ad99e5f3c9e1" testId="9e14a1b4-700c-8d3d-14f7-8cb9024d89e5" testName="IsEmailTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0097292" startTime="2013-10-19T09:34:20.3271150+08:00" endTime="2013-10-19T09:34:20.4651229+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51f7bbad-a6a8-47e8-b989-ad99e5f3c9e1">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,357 @@
+Time:2013/10/18 17:19:08
+错误消息:值不能为 null。
+参数名: key
+堆栈消息:   在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   在 CWebQQ.FrmMain.DealFriend(String qq, FriendMessageData data) 位置 C:\Users\Administrator\Desktop\QQSDK\QQ\Froms\FrmMain.cs:行号 86
+   在 CWebQQ.FrmMain.QQMangers_ReciveMessage(String arg1, QQMessageEventArgs e) 位置 C:\Users\Administrator\Desktop\QQSDK\QQ\Froms\FrmMain.cs:行号 68
+   在 CWebQQ.Manager.WebQQ_ReciveMessage(Object sender, QQMessageEventArgs e) 位置 C:\Users\Administrator\Desktop\QQSDK\QQ\Manager.cs:行号 126
+   在 QQSDK.Net.WebQQ.OnReciveMessage(QQMessageEventArgs e) 位置 C:\Users\Administrator\Desktop\QQSDK\QQSDK\Net\WebQQ.cs:行号 85
+   在 QQSDK.Net.WebQQ.ListenMessage() 位置 C:\Users\Administrator\Desktop\QQSDK\QQSDK\Net\WebQQ.cs:行号 320
+ 异常方法:Int32 FindEntry(TKey)
+
+
+Time:2013/10/18 17:20:07
+错误消息:值不能为 null。
+参数名: key
+堆栈消息:   在 System.Collections.Generic.Dictionary`2.FindEntry(TKey key)
+   在 System.Collections.Generic.Dictionary`2.ContainsKey(TKey key)
+   在 CWebQQ.FrmMain.DealFriend(String qq, FriendMessageData data) 位置 C:\Users\Administrator\Desktop\QQSDK\QQ\Froms\FrmMain.cs:行号 86
+   在 CWebQQ.FrmMain.QQMangers_ReciveMessage(String arg1, QQMessageEventArgs e) 位置 C:\Users\Administrator\Desktop\QQSDK\QQ\Froms\FrmMain.cs:行号 68
+   在 CWebQQ.Manager.WebQQ_ReciveMessage(Object sender, QQMessageEventArgs e) 位置 C:\Users\Administrator\Desktop\QQSDK\QQ\Manager.cs:行号 126
+   在 QQSDK.Net.WebQQ.OnReciveMessage(QQMessageEventArgs e) 位置 C:\Users\Administrator\Desktop\QQSDK\QQSDK\Net\WebQQ.cs:行号 85
+   在 QQSDK.Net.WebQQ.ListenMessage() 位置 C:\Users\Administrator\Desktop\QQSDK\QQSDK\Net\WebQQ.cs:行号 320
+ 异常方法:Int32 FindEntry(TKey)
+
+
+Time:2013/10/30 16:35:26
+错误消息:操作超时
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.1\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/10/31 20:33:48
+错误消息:未能解析此远程名称: 'ssl.captcha.qq.com'
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.GetImage(HttpWebRequest request) 位置 H:\QQSDK1.1\QQSDK\Net\HttpWeb.cs:行号 147
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/10/31 21:58:14
+错误消息:操作超时
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 H:\QQSDK1.1\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/10/31 22:17:09
+错误消息:操作超时
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 H:\QQSDK1.1\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/11/5 20:48:57
+错误消息:操作超时
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 H:\QQSDK1.1\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/11/5 21:12:41
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 370
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:12:41
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 370
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:12:41
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 370
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:12:41
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 370
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:12:41
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 370
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:26:55
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 389
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:26:55
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 389
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:26:55
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 389
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:26:56
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 389
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:26:56
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 389
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:29:31
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 389
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:29:32
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 389
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:29:32
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 389
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:29:32
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 389
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:29:33
+错误消息:值对于 Int32 太大或太小。
+堆栈消息:   在 System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   在 System.Int32.Parse(String s)
+   在 CWebQQ.FrmMain.AddFriend(Friend obj) 位置 H:\QQSDK1.1\QQ\Froms\FrmMain.cs:行号 389
+ 异常方法:Int32 ParseInt32(System.String, System.Globalization.NumberStyles, System.Globalization.NumberFormatInfo)
+
+
+Time:2013/11/5 21:40:23
+错误消息:操作超时
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 H:\QQSDK1.1\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/11/5 21:40:45
+错误消息:操作超时
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 H:\QQSDK1.1\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/11/5 21:41:11
+错误消息:操作超时
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 H:\QQSDK1.1\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/11/5 23:14:43
+错误消息:基础连接已经关闭: 接收时发生错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode) 位置 H:\QQSDK1.1\QQSDK\Net\HttpWeb.cs:行号 263
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/11/5 23:14:44
+错误消息:基础连接已经关闭: 接收时发生错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode) 位置 H:\QQSDK1.1\QQSDK\Net\HttpWeb.cs:行号 263
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 10:54:20
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 10:55:00
+Group :retcode:0,result:poll_type:group_message,value:msg_id:24865,from_uin:3683547241,to_uin:398117542,msg_id2:831068,msg_type:43,reply_ip:180028748,group_code:3249869539,send_uin:1670420698,seq:2587,time:1386730497,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,23113 
+
+
+Time:2013/12/11 10:55:17
+Group :retcode:0,result:poll_type:group_message,value:msg_id:24866,from_uin:3683547241,to_uin:398117542,msg_id2:863373,msg_type:43,reply_ip:176488602,group_code:3249869539,send_uin:1670420698,seq:2588,time:1386730514,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,21321321 
+
+
+Time:2013/12/11 10:55:55
+Group :retcode:0,result:poll_type:group_message,value:msg_id:24867,from_uin:3683547241,to_uin:398117542,msg_id2:973826,msg_type:43,reply_ip:176488602,group_code:3249869539,send_uin:1670420698,seq:2589,time:1386730553,info_seq:134236887,content:font,size:15,color:000000,style:0,0,0,name:\u5B8B\u4F53,face,62,21332 
+
+
+Time:2013/12/11 11:33:49
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 11:34:10
+错误消息:未将对象引用设置到对象的实例。
+堆栈消息:   在 CWebQQ.FrmMain.DealFriend(String qq, FriendMessageData data) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\Froms\FrmMain.cs:行号 405
+ 异常方法:Void DealFriend(System.String, QQSDK.Json.FriendMessageData)
+
+
+Time:2013/12/11 11:35:42
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 11:38:37
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 11:39:40
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 11:45:53
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 11:45:57
+错误消息:未能比较数组中的两个元素。
+堆栈消息:   在 System.Collections.Generic.ArraySortHelper`1.Sort(T[] keys, Int32 index, Int32 length, IComparer`1 comparer)
+   在 System.Array.Sort[T](T[] array, Int32 index, Int32 length, IComparer`1 comparer)
+   在 System.Collections.Generic.List`1.Sort(Int32 index, Int32 count, IComparer`1 comparer)
+   在 System.Collections.Generic.List`1.Sort()
+   在 QQSDK.Net.QQMessageEventArgs.Parse(String text) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\QQMessageEventArgs.cs:行号 215
+   在 QQSDK.Net.WebQQ.ListenMessage() 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\WebQQ.cs:行号 922
+ 异常方法:Void Sort(T[], Int32, Int32, System.Collections.Generic.IComparer`1[T])
+
+
+Time:2013/12/11 15:53:48
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 15:54:31
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 15:57:39
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 15:58:15
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 16:04:47
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 16:27:15
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 16:27:59
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 16:29:40
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 308
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 16:29:44
+错误消息:远程服务器返回错误: (502) 错误的网关。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.GetImage(HttpWebRequest request) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 144
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/11 16:30:47
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 309
+ 异常方法:System.Net.WebResponse GetResponse()
+
+

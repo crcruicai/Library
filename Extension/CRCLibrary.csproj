@@ -50,7 +50,7 @@
     <Compile Include="Collections\StringCollection.cs" />
     <Compile Include="DebuggerViews\Fcore_StringCollectionView.cs" />
     <Compile Include="Extension\ByteExtension.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="Util\ShockForm.cs" />
     <Compile Include="Extension\ColorExtensions.cs" />
     <Compile Include="Extension\DictionaryExtension.cs" />
     <Compile Include="Extension\ExceptionExtension.cs" />

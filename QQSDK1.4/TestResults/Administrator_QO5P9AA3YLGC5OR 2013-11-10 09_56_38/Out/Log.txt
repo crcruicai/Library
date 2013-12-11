@@ -1,0 +1,50 @@
+Time:2013/11/10 9:56:40
+错误消息:未将对象引用设置到对象的实例。
+堆栈消息:   在 QQSDK.Net.HttpWeb.GetImage(HttpWebRequest request) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 147
+ 异常方法:System.Drawing.Image GetImage(System.Net.HttpWebRequest)
+
+
+Time:2013/11/10 9:56:41
+错误消息:未将对象引用设置到对象的实例。
+堆栈消息:   在 QQSDK.Net.HttpWeb.RequestCallback(IAsyncResult ar) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 357
+ 异常方法:Void RequestCallback(System.IAsyncResult)
+
+
+Time:2013/11/10 9:56:42
+错误消息:应为来自命名空间“”的元素“root”。。遇到名称为“”、命名空间为“”的“None”。
+堆栈消息:   在 System.Runtime.Serialization.Json.DataContractJsonSerializer.InternalReadObject(XmlReaderDelegator xmlReader, Boolean verifyObjectName)
+   在 System.Runtime.Serialization.XmlObjectSerializer.InternalReadObject(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+   在 System.Runtime.Serialization.XmlObjectSerializer.ReadObjectHandleExceptions(XmlReaderDelegator reader, Boolean verifyObjectName, DataContractResolver dataContractResolver)
+   在 System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(XmlDictionaryReader reader)
+   在 System.Runtime.Serialization.Json.DataContractJsonSerializer.ReadObject(Stream stream)
+   在 QQSDK.Json.JSON.Parse[T](String jsonString) 位置 H:\QQSDK1.3\QQSDK\Json\Json.cs:行号 26
+   在 QQSDK.Net.WebQQ.GetLoginToken(String text) 位置 H:\QQSDK1.3\QQSDK\Net\WebQQ.cs:行号 971
+ 异常方法:System.Object InternalReadObject(System.Runtime.Serialization.XmlReaderDelegator, Boolean)
+
+
+Time:2013/11/10 9:56:42
+错误消息:无效的 URI: 此 URI 为空。
+堆栈消息:   在 System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   在 System.Uri..ctor(String uriString)
+   在 QQSDK.Net.HttpWeb.CreateHttpWebRequest(String url) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 172
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 301
+ 异常方法:Void CreateThis(System.String, Boolean, System.UriKind)
+
+
+Time:2013/11/10 10:15:39
+错误消息:正在中止线程。
+堆栈消息:   在 System.Net.ConnectStream.WriteHeaders(Boolean async)
+   在 System.Net.HttpWebRequest.EndSubmitRequest()
+   在 System.Net.HttpWebRequest.CheckDeferredCallDone(ConnectStream stream)
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 263
+ 异常方法:Void WriteHeaders(Boolean)
+
+
+Time:2013/11/10 10:15:39
+错误消息:正在中止线程。
+堆栈消息:   在 QQSDK.Net.HttpWeb.PollWebRequest(String postUrl, String paramData, Encoding dataEncode) 位置 H:\QQSDK1.3\QQSDK\Net\HttpWeb.cs:行号 286
+   在 QQSDK.Net.WebQQ.ListenMessage() 位置 H:\QQSDK1.3\QQSDK\Net\WebQQ.cs:行号 901
+ 异常方法:System.String PollWebRequest(System.String, System.String, System.Text.Encoding)
+
+

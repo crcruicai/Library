@@ -61,6 +61,7 @@
     <Compile Include="RegenPatternTest.cs" />
     <Compile Include="Collections\SortedSplitListTest.cs" />
     <Compile Include="SortedSplitListCodeFile.cs" />
+    <Compile Include="StringParserTest.cs" />
     <Compile Include="Util\AssertExtension.cs" />
     <Compile Include="Extension\ByteExtensionTest.cs" />
     <Compile Include="Extension\DictionaryExtensionTest.cs" />

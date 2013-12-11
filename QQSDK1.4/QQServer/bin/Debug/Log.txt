@@ -1,0 +1,84 @@
+Time:2013/11/11 8:51:23
+错误消息:属性“openTimeout”的值无效。错误为: 该值必须在 00:00:00-24.20:31:23.6470000 范围内。 (H:\QQSDK1.3\QQServer\bin\Debug\QQServer.vshost.exe.Config line 19)
+堆栈消息:   在 System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   在 System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   在 System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 System.ServiceModel.Activation.AspNetEnvironment.GetConfigurationSection(String sectionPath)
+   在 System.ServiceModel.Configuration.ConfigurationHelpers.GetAssociatedSection(ContextInformation evalContext, String sectionPath)
+   在 System.ServiceModel.Configuration.ConfigurationHelpers.GetAssociatedBindingCollectionElement(ContextInformation evaluationContext, String bindingCollectionName)
+   在 System.ServiceModel.BasicHttpBinding.ApplyConfiguration(String configurationName)
+   在 System.ServiceModel.BasicHttpBinding..ctor(String configurationName)
+   在 QQServer.Program.Start() 位置 H:\QQSDK1.3\QQServer\Program.cs:行号 41
+ 异常方法:System.Object EvaluateOne(System.String[], System.Configuration.SectionInput, Boolean, System.Configuration.FactoryRecord, System.Configuration.SectionRecord, System.Object)
+
+
+Time:2013/11/11 9:03:18
+错误消息:属性“openTimeout”的值无效。错误为: 该值必须在 00:00:00-24.20:31:23.6470000 范围内。 (H:\QQSDK1.3\QQServer\bin\Debug\QQServer.vshost.exe.Config line 19)
+堆栈消息:   在 System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   在 System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   在 System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 System.ServiceModel.Activation.AspNetEnvironment.GetConfigurationSection(String sectionPath)
+   在 System.ServiceModel.Configuration.ConfigurationHelpers.GetAssociatedSection(ContextInformation evalContext, String sectionPath)
+   在 System.ServiceModel.Configuration.ConfigurationHelpers.GetAssociatedBindingCollectionElement(ContextInformation evaluationContext, String bindingCollectionName)
+   在 System.ServiceModel.BasicHttpBinding.ApplyConfiguration(String configurationName)
+   在 System.ServiceModel.BasicHttpBinding..ctor(String configurationName)
+   在 QQServer.Program.Start() 位置 H:\QQSDK1.3\QQServer\Program.cs:行号 41
+ 异常方法:System.Object EvaluateOne(System.String[], System.Configuration.SectionInput, Boolean, System.Configuration.FactoryRecord, System.Configuration.SectionRecord, System.Object)
+
+
+Time:2013/11/11 9:05:09
+错误消息:属性“openTimeout”的值无效。错误为: 该值必须在 00:00:00-24.20:31:23.6470000 范围内。 (H:\QQSDK1.3\QQServer\bin\Debug\QQServer.vshost.exe.Config line 19)
+堆栈消息:   在 System.Configuration.BaseConfigurationRecord.EvaluateOne(String[] keys, SectionInput input, Boolean isTrusted, FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult)
+   在 System.Configuration.BaseConfigurationRecord.Evaluate(FactoryRecord factoryRecord, SectionRecord sectionRecord, Object parentResult, Boolean getLkg, Boolean getRuntimeObject, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSectionRecursive(String configKey, Boolean getLkg, Boolean checkPermission, Boolean getRuntimeObject, Boolean requestIsHere, Object& result, Object& resultRuntimeObject)
+   在 System.Configuration.BaseConfigurationRecord.GetSection(String configKey)
+   在 System.Configuration.ClientConfigurationSystem.System.Configuration.Internal.IInternalConfigSystem.GetSection(String sectionName)
+   在 System.Configuration.ConfigurationManager.GetSection(String sectionName)
+   在 System.ServiceModel.Activation.AspNetEnvironment.GetConfigurationSection(String sectionPath)
+   在 System.ServiceModel.Configuration.ConfigurationHelpers.GetAssociatedSection(ContextInformation evalContext, String sectionPath)
+   在 System.ServiceModel.Configuration.ConfigurationHelpers.GetAssociatedBindingCollectionElement(ContextInformation evaluationContext, String bindingCollectionName)
+   在 System.ServiceModel.BasicHttpBinding.ApplyConfiguration(String configurationName)
+   在 System.ServiceModel.BasicHttpBinding..ctor(String configurationName)
+   在 QQServer.Program.Start() 位置 H:\QQSDK1.3\QQServer\Program.cs:行号 41
+ 异常方法:System.Object EvaluateOne(System.String[], System.Configuration.SectionInput, Boolean, System.Configuration.FactoryRecord, System.Configuration.SectionRecord, System.Object)
+
+
+Time:2013/11/11 9:27:48
+错误消息:在配置元素集合中找不到任何元素与密钥“BasicHttpBinding”匹配。
+堆栈消息:   在 System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.get_Item(Object key)
+   在 System.ServiceModel.BasicHttpBinding.ApplyConfiguration(String configurationName)
+   在 System.ServiceModel.BasicHttpBinding..ctor(String configurationName)
+   在 QQServer.Program.Start() 位置 H:\QQSDK1.3\QQServer\Program.cs:行号 41
+ 异常方法:ConfigurationElementType get_Item(System.Object)
+
+
+Time:2013/11/11 9:29:37
+错误消息:在配置元素集合中找不到任何元素与密钥“dataControctBinding”匹配。
+堆栈消息:   在 System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.get_Item(Object key)
+   在 System.ServiceModel.BasicHttpBinding.ApplyConfiguration(String configurationName)
+   在 System.ServiceModel.BasicHttpBinding..ctor(String configurationName)
+   在 QQServer.Program.Start() 位置 H:\QQSDK1.3\QQServer\Program.cs:行号 41
+ 异常方法:ConfigurationElementType get_Item(System.Object)
+
+
+Time:2013/11/11 9:48:43
+错误消息:在配置元素集合中找不到任何元素与密钥“dataControctBinding”匹配。
+堆栈消息:   在 System.ServiceModel.Configuration.ServiceModelConfigurationElementCollection`1.get_Item(Object key)
+   在 System.ServiceModel.BasicHttpBinding.ApplyConfiguration(String configurationName)
+   在 System.ServiceModel.BasicHttpBinding..ctor(String configurationName)
+   在 QQServer.Program.Start() 位置 H:\QQSDK1.3\QQServer\Program.cs:行号 41
+ 异常方法:ConfigurationElementType get_Item(System.Object)
+
+

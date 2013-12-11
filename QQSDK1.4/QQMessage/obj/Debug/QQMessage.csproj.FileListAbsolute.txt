@@ -1,0 +1,10 @@
+H:\QQSDK1.3\QQMessage\bin\Debug\QQMessage.dll
+H:\QQSDK1.3\QQMessage\bin\Debug\QQMessage.pdb
+H:\QQSDK1.3\QQMessage\obj\Debug\QQMessage.dll
+H:\QQSDK1.3\QQMessage\obj\Debug\QQMessage.pdb
+H:\QQSDK1.3\QQMessage\obj\Debug\ResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQMessage\bin\Debug\QQMessage.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQMessage\bin\Debug\QQMessage.pdb
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQMessage\obj\Debug\QQMessage.csprojResolveAssemblyReference.cache
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQMessage\obj\Debug\QQMessage.dll
+D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQMessage\obj\Debug\QQMessage.pdb
