@@ -355,3 +355,17 @@ Time:2013/12/11 16:30:47
  异常方法:System.Net.WebResponse GetResponse()
 
 
+Time:2013/12/12 9:00:55
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\GitHub\Library\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 309
+ 异常方法:System.Net.WebResponse GetResponse()
+
+
+Time:2013/12/12 9:30:57
+错误消息:远程服务器返回错误: (500) 内部服务器错误。
+堆栈消息:   在 System.Net.HttpWebRequest.GetResponse()
+   在 QQSDK.Net.HttpWeb.SendToText(String url) 位置 d:\Documents\GitHub\Library\QQSDK1.4\QQSDK\Net\HttpWeb.cs:行号 309
+ 异常方法:System.Net.WebResponse GetResponse()
+
+

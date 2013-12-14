@@ -31,6 +31,6 @@ D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\CRCLibrary.dll
 D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\CRCLibrary.pdb
 D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\CRCLibrary_Accessor.dll
 D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\CRCLibrary_Accessor.pdb
-D:\Documents\GitHub\Library\TestCRCLibrary\obj\Debug\ResolveAssemblyReference.cache
 D:\Documents\GitHub\Library\TestCRCLibrary\obj\Debug\TestCRCLibrary.dll
 D:\Documents\GitHub\Library\TestCRCLibrary\obj\Debug\TestCRCLibrary.pdb
+D:\Documents\GitHub\Library\TestCRCLibrary\obj\Debug\TestCRCLibrary.csprojResolveAssemblyReference.cache

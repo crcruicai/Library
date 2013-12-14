@@ -64,16 +64,7 @@ namespace TestCRCLibrary
         #endregion
 
 
-        /// <summary>
-        ///EncryptUtil 构造函数 的测试
-        ///</summary>
-        [TestMethod()]
-        public void EncryptUtilConstructorTest()
-        {
-            EncryptUtil target = new EncryptUtil();
-            Assert.Inconclusive("TODO: 实现用来验证目标的代码");
-        }
-
+     
         /// <summary>
         ///DecryptWithKey 的测试
         ///</summary>

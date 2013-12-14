@@ -75,17 +75,31 @@ namespace TestCRCLibrary
             actual = IPUtil.GetIPText(data);
             Assert.AreEqual(expected, actual);
 
-            //验证抛出异常的情况
-            try
-            {
-                data = new byte[] { 127, 0, 0 };
-                actual = IPUtil.GetIPText(data);
-                Assert.AreEqual(expected, actual);
-            }
-            catch (Exception)
-            {
-                Assert.IsFalse(false);
-            }
+        }
+
+        /// <summary>
+        /// 验证 NulllReference异常
+        /// </summary>
+        [ExpectedException(typeof(NullReferenceException))]
+        public void GetIPText_Exception_NulllReference_Test()
+        {
+            byte[] data=null;
+            string actual = IPUtil.GetIPText(data);
+            Assert.AreEqual(actual, string.Empty);
+   
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        [ExpectedException(typeof(IndexOutOfRangeException))]
+        public void GetIPText_Exception_IndexOutOfRange_Test()
+        {
+
+            byte[] data = new byte[] { 127, 0, 0 };
+            string actual = IPUtil.GetIPText(data);
+            string expected = "";
+            Assert.AreEqual(expected, actual);
         }
 
         /// <summary>
@@ -112,6 +126,20 @@ namespace TestCRCLibrary
                 Assert.IsFalse(false);
             }
         }
+
+        /// <summary>
+        /// 验证 ArgumentNullException 异常
+        /// </summary>
+        [ExpectedException(typeof(ArgumentNullException))]
+        public void GetIPAddress_ArgumentNullException_Test()
+        {
+            byte[] data = null;
+            IPAddress actual = IPUtil.GetIPAddress(data);
+            Assert.AreEqual(actual, null);
+
+        }
+
+
 
         /// <summary>
         ///GetIPAddress 的测试
@@ -231,11 +259,7 @@ namespace TestCRCLibrary
             IPEndPoint actual;
             actual = IPUtil.ParseIPEndPoint(ipString);
             Assert.AreEqual(expected, actual);
-        
 
-        
-        
-        
         }
 
 

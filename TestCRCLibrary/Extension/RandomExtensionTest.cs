@@ -15,7 +15,7 @@ namespace TestCRCLibrary
     public class RandomExtensionTest
     {
 
-
+        private static Random _Rnd;
         private TestContext testContextInstance;
 
         /// <summary>
@@ -39,10 +39,12 @@ namespace TestCRCLibrary
         //编写测试时，还可使用以下特性:
         //
         //使用 ClassInitialize 在运行类中的第一个测试前先运行代码
-        //[ClassInitialize()]
-        //public static void MyClassInitialize(TestContext testContext)
-        //{
-        //}
+        [ClassInitialize()]
+        public static void MyClassInitialize(TestContext testContext)
+        {
+            _Rnd = new Random();
+
+        }
         //
         //使用 ClassCleanup 在运行完类中的所有测试后再运行代码
         //[ClassCleanup()]
@@ -71,12 +73,18 @@ namespace TestCRCLibrary
         [TestMethod()]
         public void NextBoolTest()
         {
-            Random random = null; 
+            Random random = _Rnd; 
             bool expected = false; 
             bool actual;
             actual = RandomExtension.NextBool(random);
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("验证此测试方法的正确性。");
+            if (actual)
+            {
+                actual.IsTrue();
+            }
+            else
+            {
+                Assert.AreEqual(expected, actual);
+            }
         }
 
         /// <summary>
@@ -85,13 +93,13 @@ namespace TestCRCLibrary
         [TestMethod()]
         public void NextBytesTest()
         {
-            Random random = null; 
-            int length = 0; 
-            byte[] expected = null; 
+            Random random = _Rnd; 
+            int length = 8; 
+           
             byte[] actual;
             actual = RandomExtension.NextBytes(random, length);
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("验证此测试方法的正确性。");
+
+            actual.Length.AreEqualWith(length);
         }
 
         /// <summary>
@@ -160,13 +168,12 @@ namespace TestCRCLibrary
         [TestMethod()]
         public void NextNumberTest()
         {
-            Random random = null; 
-            int length = 0; 
-            string expected = string.Empty; 
+            Random random = new Random (); 
+            int length = 5; 
             string actual;
             actual = RandomExtension.NextNumber(random, length);
-            Assert.AreEqual(expected, actual);
-            Assert.Inconclusive("验证此测试方法的正确性。");
+            Assert.AreEqual(actual.Length, length);
+
         }
 
         /// <summary>

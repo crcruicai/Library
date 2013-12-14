@@ -33,8 +33,9 @@ namespace CWebQQ
                 Application.Run(new FrmMain());
             }
 #else
-            Application.Run(new FrmMain());
+            //Application.Run(new FrmMain());
             //Application.Run(new FrmTest());
+            Application.Run(new Form1());
 #endif
 
             

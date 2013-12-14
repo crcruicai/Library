@@ -119,3 +119,6 @@ D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Rel
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\WebQQ.csproj.GenerateResource.Cache
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\WebQQ.exe
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Release\WebQQ.pdb
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\bin\Release\WebQQ.exe.config
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Release\WebQQ.exe
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Release\WebQQ.pdb

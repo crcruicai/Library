@@ -53,3 +53,12 @@ D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.dll
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.pdb
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Library\QQSDK1.4\QQSDK\bin\Debug\QQSDK.dll.config
+D:\Documents\GitHub\Library\QQSDK1.4\QQSDK\bin\Debug\QQSDK.dll
+D:\Documents\GitHub\Library\QQSDK1.4\QQSDK\bin\Debug\QQSDK.pdb
+D:\Documents\GitHub\Library\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Library\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.Properties.Resources.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.Form1.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.csproj.GenerateResource.Cache
+D:\Documents\GitHub\Library\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.dll
+D:\Documents\GitHub\Library\QQSDK1.4\QQSDK\obj\x86\Debug\QQSDK.pdb

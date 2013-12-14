@@ -55,12 +55,13 @@
   <ItemGroup>
     <Compile Include="ConvertCodeTest.cs" />
     <Compile Include="DoubleKeyDictionaryTest.cs" />
+    <Compile Include="Util\EncodeUtilTest.cs" />
     <Compile Include="EncryptUtilTest.cs" />
     <Compile Include="JhEncryptTest.cs" />
     <Compile Include="Net\IPUtilTest.cs" />
     <Compile Include="RegenPatternTest.cs" />
     <Compile Include="Collections\SortedSplitListTest.cs" />
-    <Compile Include="SortedSplitListCodeFile.cs" />
+    <Compile Include="Collections\SortedSplitListCodeFile.cs" />
     <Compile Include="StringParserTest.cs" />
     <Compile Include="Util\AssertExtension.cs" />
     <Compile Include="Extension\ByteExtensionTest.cs" />

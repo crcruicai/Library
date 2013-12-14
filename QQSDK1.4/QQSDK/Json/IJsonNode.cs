@@ -259,7 +259,7 @@ namespace QQSDK.Json
         private static JSONObject DeserializeSingletonObject(string text)
         {
             JSONObject jsonObject = new JSONObject();
-
+            text = StrDecode(text);
             MatchCollection matches = Regex.Matches(text, "(\\\"(?<key>[^\\\"]+)\\\":\\\"(?<value>[^,\\\"]+)\\\")|(\\\"(?<key>[^\\\"]+)\\\":(?<value>[^,\\\"\\}]+))");
             foreach (Match match in matches)
             {

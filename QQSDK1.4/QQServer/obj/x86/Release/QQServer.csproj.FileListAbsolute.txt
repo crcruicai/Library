@@ -30,3 +30,6 @@ D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQServer\bin\R
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQServer\bin\Release\QQMessage.dll
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQServer\bin\Release\QQMessage.pdb
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQServer\obj\x86\Release\QQServer.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Library\QQSDK1.4\QQServer\bin\Release\QQServer.exe.config
+D:\Documents\GitHub\Library\QQSDK1.4\QQServer\obj\x86\Release\QQServer.exe
+D:\Documents\GitHub\Library\QQSDK1.4\QQServer\obj\x86\Release\QQServer.pdb

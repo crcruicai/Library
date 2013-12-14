@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="597cca73-57af-4686-9975-c1a784dd6374" name="Administrator@NU1NB2RSNIYL0VA 2013-12-14 16:22:28" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2013-12-14 16_22_28">
+      <DeploymentItem filename="D:\Documents\GitHub\Library\Extension\bin\Debug\CRCLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-14T16:22:28.7109215+08:00" queuing="2013-12-14T16:22:28.8549298+08:00" start="2013-12-14T16:22:28.8709307+08:00" finish="2013-12-14T16:22:29.1449464+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="11" executed="11" passed="6" error="0" failed="4" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Sha1EncodeTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="aff7361b-78ec-03f9-b2c7-9758e8b3539d">
+      <Execution id="8857fd9f-0d62-4ac2-b8fa-f77df50a0c43" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Sha1EncodeTest" />
+    </UnitTest>
+    <UnitTest name="MD5EncodeTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="839cb4fe-95bf-5533-59dc-4e85e0aecad5">
+      <Execution id="3e70cd0a-22c7-42a6-a3e2-553418fc92ac" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MD5EncodeTest" />
+    </UnitTest>
+    <UnitTest name="EncodeUnicodeTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="1ab71655-d750-bbe7-38f0-46df6f88b5ae">
+      <Execution id="caaa0e49-1280-435c-90d0-535e9026940b" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EncodeUnicodeTest" />
+    </UnitTest>
+    <UnitTest name="IsHexTest1" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="87aaae1d-42ec-0f30-0091-c3267d04fb65">
+      <Execution id="bd71265f-6885-4499-be8b-cffde2e68091" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsHexTest1" />
+    </UnitTest>
+    <UnitTest name="IsHexTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="ff595f81-fb6a-86d3-e6ea-cb3345c666a2">
+      <Execution id="6b9ff255-947b-464a-99b0-09d835752a4a" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="IsHexTest" />
+    </UnitTest>
+    <UnitTest name="EncodeUnicodeTest1" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="1f33f71a-0513-36d0-08f6-39743667d914">
+      <Execution id="0af2ab10-063d-4a56-9df8-f587a7a3ba8f" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="EncodeUnicodeTest1" />
+    </UnitTest>
+    <UnitTest name="ToBase64Test" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="b75e7473-103d-5751-3def-99b3a17a5073">
+      <Execution id="7013206d-50ab-4c8c-aaa3-11a160216af4" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ToBase64Test" />
+    </UnitTest>
+    <UnitTest name="DeBase64Test" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="862e6268-ff9e-7617-5e4e-26de30325928">
+      <Execution id="6d2e1f30-0820-4434-a6b0-6e44f0acdfd2" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DeBase64Test" />
+    </UnitTest>
+    <UnitTest name="DecodeUnicodeTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="1b1ea453-509d-3f12-42e0-07a425263b03">
+      <Execution id="01bc5d33-c773-4423-805a-9b715486681d" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DecodeUnicodeTest" />
+    </UnitTest>
+    <UnitTest name="MD5EncodeTest1" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="24dca1a5-af2f-1d7c-e220-7d26b7299ef6">
+      <Execution id="3277e37e-b256-4809-a7e5-c8f6408a58c8" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MD5EncodeTest1" />
+    </UnitTest>
+    <UnitTest name="GetHexLengthTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="be59e77b-8391-52ef-65f7-7dbcdca4b10d">
+      <Execution id="4d75475e-2d4e-449d-bdbf-d12965924dda" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.EncodeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetHexLengthTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1ab71655-d750-bbe7-38f0-46df6f88b5ae" executionId="caaa0e49-1280-435c-90d0-535e9026940b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b1ea453-509d-3f12-42e0-07a425263b03" executionId="01bc5d33-c773-4423-805a-9b715486681d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f33f71a-0513-36d0-08f6-39743667d914" executionId="0af2ab10-063d-4a56-9df8-f587a7a3ba8f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="24dca1a5-af2f-1d7c-e220-7d26b7299ef6" executionId="3277e37e-b256-4809-a7e5-c8f6408a58c8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="839cb4fe-95bf-5533-59dc-4e85e0aecad5" executionId="3e70cd0a-22c7-42a6-a3e2-553418fc92ac" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="862e6268-ff9e-7617-5e4e-26de30325928" executionId="6d2e1f30-0820-4434-a6b0-6e44f0acdfd2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="87aaae1d-42ec-0f30-0091-c3267d04fb65" executionId="bd71265f-6885-4499-be8b-cffde2e68091" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aff7361b-78ec-03f9-b2c7-9758e8b3539d" executionId="8857fd9f-0d62-4ac2-b8fa-f77df50a0c43" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b75e7473-103d-5751-3def-99b3a17a5073" executionId="7013206d-50ab-4c8c-aaa3-11a160216af4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be59e77b-8391-52ef-65f7-7dbcdca4b10d" executionId="4d75475e-2d4e-449d-bdbf-d12965924dda" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff595f81-fb6a-86d3-e6ea-cb3345c666a2" executionId="6b9ff255-947b-464a-99b0-09d835752a4a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="caaa0e49-1280-435c-90d0-535e9026940b" testId="1ab71655-d750-bbe7-38f0-46df6f88b5ae" testName="EncodeUnicodeTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0101013" startTime="2013-12-14T16:22:28.8749309+08:00" endTime="2013-12-14T16:22:29.0779425+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="caaa0e49-1280-435c-90d0-535e9026940b">
+    </UnitTestResult>
+    <UnitTestResult executionId="01bc5d33-c773-4423-805a-9b715486681d" testId="1b1ea453-509d-3f12-42e0-07a425263b03" testName="DecodeUnicodeTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0002100" startTime="2013-12-14T16:22:29.0779425+08:00" endTime="2013-12-14T16:22:29.0799426+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="01bc5d33-c773-4423-805a-9b715486681d">
+    </UnitTestResult>
+    <UnitTestResult executionId="0af2ab10-063d-4a56-9df8-f587a7a3ba8f" testId="1f33f71a-0513-36d0-08f6-39743667d914" testName="EncodeUnicodeTest1" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001510" startTime="2013-12-14T16:22:29.0799426+08:00" endTime="2013-12-14T16:22:29.0819428+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0af2ab10-063d-4a56-9df8-f587a7a3ba8f">
+    </UnitTestResult>
+    <UnitTestResult executionId="3277e37e-b256-4809-a7e5-c8f6408a58c8" testId="24dca1a5-af2f-1d7c-e220-7d26b7299ef6" testName="MD5EncodeTest1" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0193881" startTime="2013-12-14T16:22:29.0819428+08:00" endTime="2013-12-14T16:22:29.1029440+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3277e37e-b256-4809-a7e5-c8f6408a58c8">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;&gt;，实际为: &lt;067972C3F34F094B&gt;。</Message>
+          <StackTrace>   在 TestCRCLibrary.EncodeUtilTest.MD5EncodeTest1() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\Util\EncodeUtilTest.cs:行号 163
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3e70cd0a-22c7-42a6-a3e2-553418fc92ac" testId="839cb4fe-95bf-5533-59dc-4e85e0aecad5" testName="MD5EncodeTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0015859" startTime="2013-12-14T16:22:29.1039440+08:00" endTime="2013-12-14T16:22:29.1069442+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e70cd0a-22c7-42a6-a3e2-553418fc92ac">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;&gt;，实际为: &lt;83D948B3F6D02132&gt;。</Message>
+          <StackTrace>   在 TestCRCLibrary.EncodeUtilTest.MD5EncodeTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\Util\EncodeUtilTest.cs:行号 151
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6d2e1f30-0820-4434-a6b0-6e44f0acdfd2" testId="862e6268-ff9e-7617-5e4e-26de30325928" testName="DeBase64Test" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0003143" startTime="2013-12-14T16:22:29.1079442+08:00" endTime="2013-12-14T16:22:29.1089443+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d2e1f30-0820-4434-a6b0-6e44f0acdfd2">
+    </UnitTestResult>
+    <UnitTestResult executionId="bd71265f-6885-4499-be8b-cffde2e68091" testId="87aaae1d-42ec-0f30-0091-c3267d04fb65" testName="IsHexTest1" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0006629" startTime="2013-12-14T16:22:29.1099444+08:00" endTime="2013-12-14T16:22:29.1119445+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bd71265f-6885-4499-be8b-cffde2e68091">
+    </UnitTestResult>
+    <UnitTestResult executionId="8857fd9f-0d62-4ac2-b8fa-f77df50a0c43" testId="aff7361b-78ec-03f9-b2c7-9758e8b3539d" testName="Sha1EncodeTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0013800" startTime="2013-12-14T16:22:29.1119445+08:00" endTime="2013-12-14T16:22:29.1149446+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8857fd9f-0d62-4ac2-b8fa-f77df50a0c43">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;&gt;，实际为: &lt;DA-39-A3-EE-5E-6B-4B-0D-32-55-BF-EF-95-60-18-90-AF-D8-07-09&gt;。</Message>
+          <StackTrace>   在 TestCRCLibrary.EncodeUtilTest.Sha1EncodeTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\Util\EncodeUtilTest.cs:行号 173
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7013206d-50ab-4c8c-aaa3-11a160216af4" testId="b75e7473-103d-5751-3def-99b3a17a5073" testName="ToBase64Test" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0005076" startTime="2013-12-14T16:22:29.1149446+08:00" endTime="2013-12-14T16:22:29.1169448+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7013206d-50ab-4c8c-aaa3-11a160216af4">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestCRCLibrary.EncodeUtilTest.ToBase64Test() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\Util\EncodeUtilTest.cs:行号 185
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4d75475e-2d4e-449d-bdbf-d12965924dda" testId="be59e77b-8391-52ef-65f7-7dbcdca4b10d" testName="GetHexLengthTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0006456" startTime="2013-12-14T16:22:29.1169448+08:00" endTime="2013-12-14T16:22:29.1189449+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d75475e-2d4e-449d-bdbf-d12965924dda">
+    </UnitTestResult>
+    <UnitTestResult executionId="6b9ff255-947b-464a-99b0-09d835752a4a" testId="ff595f81-fb6a-86d3-e6ea-cb3345c666a2" testName="IsHexTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0012607" startTime="2013-12-14T16:22:29.1199449+08:00" endTime="2013-12-14T16:22:29.1219450+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b9ff255-947b-464a-99b0-09d835752a4a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;True&gt;，实际为: &lt;False&gt;。</Message>
+          <StackTrace>   在 TestCRCLibrary.EncodeUtilTest.IsHexTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\Util\EncodeUtilTest.cs:行号 129
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

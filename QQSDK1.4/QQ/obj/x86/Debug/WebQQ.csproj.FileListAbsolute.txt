@@ -95,3 +95,27 @@ D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Deb
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.UI.SearchBox.resources
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Debug\WebQQ.csproj.GenerateResource.Cache
 D:\Documents\Visual Studio 2010\Projects\桌面程序\QQ\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.Froms.FrmStatus.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\bin\Debug\WebQQ.exe.config
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\WebQQ.exe
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\WebQQ.pdb
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\bin\Debug\WebQQ.exe
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\bin\Debug\WebQQ.pdb
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\bin\Debug\QQMessage.dll
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\bin\Debug\QQSDK.dll
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\bin\Debug\QQMessage.pdb
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\bin\Debug\QQSDK.pdb
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\WebQQ.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.Form1.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.FrmTest.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.AboutBox1.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.FrmCostomMessage.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.Froms.FrmLogin.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.Froms.FrmLogon.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.FrmMain.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.Froms.FrmManageUser.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.FrmMulLogon.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.Froms.FrmStatus.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.Properties.Resources.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CRC.Controls.ChatListBox.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.UI.SearchBox.resources
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\WebQQ.csproj.GenerateResource.Cache

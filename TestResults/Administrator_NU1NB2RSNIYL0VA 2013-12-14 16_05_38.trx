@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="fd054979-5196-44d7-b375-7940b81c91f3" name="Administrator@NU1NB2RSNIYL0VA 2013-12-14 16:05:38" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2013-12-14 16_05_38">
+      <DeploymentItem filename="D:\Documents\GitHub\Library\Extension\bin\Debug\CRCLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-12-14T16:05:38.2921289+08:00" queuing="2013-12-14T16:05:39.8812198+08:00" start="2013-12-14T16:05:39.9282225+08:00" finish="2013-12-14T16:05:40.4362515+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="13" executed="13" passed="13" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="BTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="46ccb8f7-f863-e0f6-f369-0cf8b9e2fab9">
+      <Execution id="ae73005b-07cc-48b4-b751-4a6df2a35a16" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BTest" />
+    </UnitTest>
+    <UnitTest name="HexToStringTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="8d3e4694-4b7a-ce78-7199-63dab38d5ce2">
+      <Execution id="497169a4-e153-4fde-bd13-30e9e6b11ff9" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HexToStringTest" />
+    </UnitTest>
+    <UnitTest name="BytesToBinaryTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="e5d5ef2e-80f0-df9a-9ddf-32f550e0c198">
+      <Execution id="fa054c3e-df5e-41b1-a6dc-60b5a6170a5b" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BytesToBinaryTest" />
+    </UnitTest>
+    <UnitTest name="HexToBtyesTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="b056cf59-8fa4-2601-3e07-22bbd4cdef7a">
+      <Execution id="fe35958d-be87-44d4-8e43-801733fe3751" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HexToBtyesTest" />
+    </UnitTest>
+    <UnitTest name="StringToBytesTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="9e3266c6-f6a7-e7ba-1802-395fd46e531f">
+      <Execution id="750ac724-6255-4e7f-b0a2-262eeb5875fb" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="StringToBytesTest" />
+    </UnitTest>
+    <UnitTest name="ByteToBinaryTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="121e2e18-7197-e132-400e-708115b79e72">
+      <Execution id="2889c813-a334-4469-85b2-76dbbb0e8b0f" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ByteToBinaryTest" />
+    </UnitTest>
+    <UnitTest name="BytesToStringTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="50815036-d271-14ab-29ec-1149e9c95e57">
+      <Execution id="1eefc1f9-33ea-4bcf-9102-9da50f731936" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BytesToStringTest" />
+    </UnitTest>
+    <UnitTest name="StringToHexTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="bc0f01b1-f1ba-51ef-7e65-566bd897ecf4">
+      <Execution id="47f02c4e-3d7b-4038-8943-12d76cb6bc39" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="StringToHexTest" />
+    </UnitTest>
+    <UnitTest name="DelSeparateTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="ded0b5ef-d35f-ab8b-9fd3-c5fce5a0eca8">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="fa331728-e73a-4dbf-9ef6-b86d8ff72c17" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DelSeparateTest" />
+    </UnitTest>
+    <UnitTest name="ConvertCodeConstructorTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="b3d38d81-5db3-af13-19d8-3b66c9091b47">
+      <Execution id="71a24eee-cdd4-47ee-99f1-0a35a5e6ca28" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertCodeConstructorTest" />
+    </UnitTest>
+    <UnitTest name="BytesTo16Test" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="53b8deb8-659a-3ee4-6285-cbe99f511352">
+      <Execution id="296cc4dd-77be-4634-9432-3e5c1868369f" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="BytesTo16Test" />
+    </UnitTest>
+    <UnitTest name="AddSeparateTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="49f1990b-49db-5adf-5df3-07da899614c8">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="5044284f-b53e-48cb-be00-615c31c3ec6e" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="AddSeparateTest" />
+    </UnitTest>
+    <UnitTest name="StringToBtyesTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="8c8b919d-f65b-81bb-fc57-ac40ce9d7ba6">
+      <Execution id="3489a612-e388-468a-aeb3-800f2522e5bb" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertCodeTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="StringToBtyesTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="121e2e18-7197-e132-400e-708115b79e72" executionId="2889c813-a334-4469-85b2-76dbbb0e8b0f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="46ccb8f7-f863-e0f6-f369-0cf8b9e2fab9" executionId="ae73005b-07cc-48b4-b751-4a6df2a35a16" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49f1990b-49db-5adf-5df3-07da899614c8" executionId="5044284f-b53e-48cb-be00-615c31c3ec6e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="50815036-d271-14ab-29ec-1149e9c95e57" executionId="1eefc1f9-33ea-4bcf-9102-9da50f731936" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="53b8deb8-659a-3ee4-6285-cbe99f511352" executionId="296cc4dd-77be-4634-9432-3e5c1868369f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8c8b919d-f65b-81bb-fc57-ac40ce9d7ba6" executionId="3489a612-e388-468a-aeb3-800f2522e5bb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8d3e4694-4b7a-ce78-7199-63dab38d5ce2" executionId="497169a4-e153-4fde-bd13-30e9e6b11ff9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9e3266c6-f6a7-e7ba-1802-395fd46e531f" executionId="750ac724-6255-4e7f-b0a2-262eeb5875fb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b056cf59-8fa4-2601-3e07-22bbd4cdef7a" executionId="fe35958d-be87-44d4-8e43-801733fe3751" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3d38d81-5db3-af13-19d8-3b66c9091b47" executionId="71a24eee-cdd4-47ee-99f1-0a35a5e6ca28" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bc0f01b1-f1ba-51ef-7e65-566bd897ecf4" executionId="47f02c4e-3d7b-4038-8943-12d76cb6bc39" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ded0b5ef-d35f-ab8b-9fd3-c5fce5a0eca8" executionId="fa331728-e73a-4dbf-9ef6-b86d8ff72c17" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e5d5ef2e-80f0-df9a-9ddf-32f550e0c198" executionId="fa054c3e-df5e-41b1-a6dc-60b5a6170a5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2889c813-a334-4469-85b2-76dbbb0e8b0f" testId="121e2e18-7197-e132-400e-708115b79e72" testName="ByteToBinaryTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0098454" startTime="2013-12-14T16:05:39.9682248+08:00" endTime="2013-12-14T16:05:40.2842428+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2889c813-a334-4469-85b2-76dbbb0e8b0f">
+    </UnitTestResult>
+    <UnitTestResult executionId="ae73005b-07cc-48b4-b751-4a6df2a35a16" testId="46ccb8f7-f863-e0f6-f369-0cf8b9e2fab9" testName="BTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0008797" startTime="2013-12-14T16:05:40.2842428+08:00" endTime="2013-12-14T16:05:40.2872430+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae73005b-07cc-48b4-b751-4a6df2a35a16">
+    </UnitTestResult>
+    <UnitTestResult executionId="5044284f-b53e-48cb-be00-615c31c3ec6e" testId="49f1990b-49db-5adf-5df3-07da899614c8" testName="AddSeparateTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0038556" startTime="2013-12-14T16:05:40.2872430+08:00" endTime="2013-12-14T16:05:40.2932433+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5044284f-b53e-48cb-be00-615c31c3ec6e">
+    </UnitTestResult>
+    <UnitTestResult executionId="1eefc1f9-33ea-4bcf-9102-9da50f731936" testId="50815036-d271-14ab-29ec-1149e9c95e57" testName="BytesToStringTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0019878" startTime="2013-12-14T16:05:40.2942434+08:00" endTime="2013-12-14T16:05:40.2972436+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1eefc1f9-33ea-4bcf-9102-9da50f731936">
+    </UnitTestResult>
+    <UnitTestResult executionId="296cc4dd-77be-4634-9432-3e5c1868369f" testId="53b8deb8-659a-3ee4-6285-cbe99f511352" testName="BytesTo16Test" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0002540" startTime="2013-12-14T16:05:40.2982436+08:00" endTime="2013-12-14T16:05:40.3002437+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="296cc4dd-77be-4634-9432-3e5c1868369f">
+    </UnitTestResult>
+    <UnitTestResult executionId="3489a612-e388-468a-aeb3-800f2522e5bb" testId="8c8b919d-f65b-81bb-fc57-ac40ce9d7ba6" testName="StringToBtyesTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001837" startTime="2013-12-14T16:05:40.3012438+08:00" endTime="2013-12-14T16:05:40.3022439+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3489a612-e388-468a-aeb3-800f2522e5bb">
+    </UnitTestResult>
+    <UnitTestResult executionId="497169a4-e153-4fde-bd13-30e9e6b11ff9" testId="8d3e4694-4b7a-ce78-7199-63dab38d5ce2" testName="HexToStringTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001747" startTime="2013-12-14T16:05:40.3032439+08:00" endTime="2013-12-14T16:05:40.3042440+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="497169a4-e153-4fde-bd13-30e9e6b11ff9">
+    </UnitTestResult>
+    <UnitTestResult executionId="750ac724-6255-4e7f-b0a2-262eeb5875fb" testId="9e3266c6-f6a7-e7ba-1802-395fd46e531f" testName="StringToBytesTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0000997" startTime="2013-12-14T16:05:40.3052440+08:00" endTime="2013-12-14T16:05:40.3072441+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="750ac724-6255-4e7f-b0a2-262eeb5875fb">
+    </UnitTestResult>
+    <UnitTestResult executionId="fe35958d-be87-44d4-8e43-801733fe3751" testId="b056cf59-8fa4-2601-3e07-22bbd4cdef7a" testName="HexToBtyesTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001792" startTime="2013-12-14T16:05:40.3082442+08:00" endTime="2013-12-14T16:05:40.3092443+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fe35958d-be87-44d4-8e43-801733fe3751">
+    </UnitTestResult>
+    <UnitTestResult executionId="71a24eee-cdd4-47ee-99f1-0a35a5e6ca28" testId="b3d38d81-5db3-af13-19d8-3b66c9091b47" testName="ConvertCodeConstructorTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001593" startTime="2013-12-14T16:05:40.3102443+08:00" endTime="2013-12-14T16:05:40.3122444+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71a24eee-cdd4-47ee-99f1-0a35a5e6ca28">
+    </UnitTestResult>
+    <UnitTestResult executionId="47f02c4e-3d7b-4038-8943-12d76cb6bc39" testId="bc0f01b1-f1ba-51ef-7e65-566bd897ecf4" testName="StringToHexTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001956" startTime="2013-12-14T16:05:40.3132445+08:00" endTime="2013-12-14T16:05:40.3142445+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47f02c4e-3d7b-4038-8943-12d76cb6bc39">
+    </UnitTestResult>
+    <UnitTestResult executionId="fa331728-e73a-4dbf-9ef6-b86d8ff72c17" testId="ded0b5ef-d35f-ab8b-9fd3-c5fce5a0eca8" testName="DelSeparateTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0006658" startTime="2013-12-14T16:05:40.3792483+08:00" endTime="2013-12-14T16:05:40.3822484+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa331728-e73a-4dbf-9ef6-b86d8ff72c17">
+    </UnitTestResult>
+    <UnitTestResult executionId="fa054c3e-df5e-41b1-a6dc-60b5a6170a5b" testId="e5d5ef2e-80f0-df9a-9ddf-32f550e0c198" testName="BytesToBinaryTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0008252" startTime="2013-12-14T16:05:40.3832485+08:00" endTime="2013-12-14T16:05:40.3872487+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa054c3e-df5e-41b1-a6dc-60b5a6170a5b">
+    </UnitTestResult>
+  </Results>
+</TestRun>

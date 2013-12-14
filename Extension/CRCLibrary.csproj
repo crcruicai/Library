@@ -43,13 +43,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\BinaryTree.cs" />
     <Compile Include="Collections\DoubleKeyDictionary.cs" />
     <Compile Include="Collections\KeyedCollection.cs" />
     <Compile Include="Collections\SafeQueue.cs" />
     <Compile Include="Collections\SortedSplitList.cs" />
     <Compile Include="Collections\StringCollection.cs" />
+    <Compile Include="Collections\Synchonized\SynchronizedDictionary.cs" />
+    <Compile Include="Collections\Synchonized\SynchronizedLinkedList.cs" />
+    <Compile Include="Collections\Synchonized\SynchronizedList.cs" />
+    <Compile Include="Collections\Synchonized\SynchronizedQueue.cs" />
+    <Compile Include="Collections\Synchonized\SynchronizedSortedDictionary.cs" />
+    <Compile Include="Collections\Synchonized\SynchronizedSortedList.cs" />
+    <Compile Include="Collections\Synchonized\SynchronizedStack.cs" />
     <Compile Include="DebuggerViews\Fcore_StringCollectionView.cs" />
+    <Compile Include="Extension\ArrayExtension.cs" />
     <Compile Include="Extension\ByteExtension.cs" />
+    <Compile Include="Extension\CharExtension.cs" />
+    <Compile Include="Files\FileDatabase.cs" />
+    <Compile Include="Files\FileDatabaseException.cs" />
     <Compile Include="Util\ShockForm.cs" />
     <Compile Include="Extension\ColorExtensions.cs" />
     <Compile Include="Extension\DictionaryExtension.cs" />
@@ -74,12 +86,13 @@
     <Compile Include="Util\EncodeUtil.cs" />
     <Compile Include="Util\EncryptUtil.cs" />
     <Compile Include="Util\HotKeyUtil.cs" />
-    <Compile Include="Util\String\ConvertCode.cs" />
+    <Compile Include="Util\Strings\ConvertCode.cs" />
+    <Compile Include="Util\Strings\ObjectID.cs" />
     <Compile Include="Util\Sytems\SystemIconUtil.cs" />
     <Compile Include="Util\Sytems\HotKeyUtil.cs" />
-    <Compile Include="Util\String\StringParser.cs" />
+    <Compile Include="Util\Strings\StringParser.cs" />
     <Compile Include="Util\Sytems\OSVersionUtil.cs" />
-    <Compile Include="Util\String\RegenPattern.cs" />
+    <Compile Include="Util\Strings\RegenPattern.cs" />
     <Compile Include="Util\ShortCutLnk.cs" />
     <Compile Include="Util\Sytems\ShutDownComputer.cs" />
     <Compile Include="Util\Sytems\SingleInstance.cs" />

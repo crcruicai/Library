@@ -140,32 +140,33 @@ namespace QQSDK.Net
             for (int i = 0; i < bytes.Length; i++)
             {
                 item = bytes[i];
-                bool a = item > 37 ? false : item > 32 ? true : false;
-                a |= item > 45 ? false : item > 37 ? true : false;
-                a |= item > 60 ? false : item > 46 ? true : false;
-                a |= item == 61;
-                a |= item > 92 ? false : item > 62 ? true : false;
-                a |= item == 93;
-                a |= item > 123 ? false : item > 96 ? true : false;
-                
+                bool a = false;
+                if (item > 32 && item < 37) a = true;
+                else if (item > 37 && item < 60) a = true;
+                else if (item == 61 || item == 91 || item == 95) a = true;
+                else if (item > 62 && item < 92) a = true;
+                else if (item > 96 && item < 123) a = true;
+                else a = false;
+
                 //! * ' ( ) ; : @ & = + $ , / ? # [ ]
-               
+
                 if (a)
                 {
-
-
                     if (isAll)
                         sb.Append("%" + byteToUpper(item, isAll));
                     else
                         sb.Append(Convert.ToChar(item).ToString());
-
+                }
+                else if (item == 32)//空格.
+                {
+                    if (isAll)
+                        sb.Append("%" + byteToUpper(item, isAll));
+                    else
+                        sb.Append('+');
                 }
                 else
                 {
-
                     sb.AppendFormat("%{0}", byteToUpper(bytes[i], isUpper));
-                   
-
                 }
 
             }
