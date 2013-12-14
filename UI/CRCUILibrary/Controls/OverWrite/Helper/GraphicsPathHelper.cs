@@ -78,17 +78,6 @@ namespace CRC.Controls
             return path;
         }
 
-
-        public static GraphicsPath CreateRoundRectangle(Rectangle rect)
-        {
-            GraphicsPath path = new GraphicsPath();
-            int center = rect.Height / 2;
-            path.AddArc(rect.X + center, rect.Y + center, center, center, 270, 90);
-
-
-        }
-
-
         /// <summary>
         /// 创建圆角矩形.
         /// </summary>
