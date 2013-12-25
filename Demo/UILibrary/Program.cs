@@ -21,7 +21,7 @@ namespace UILibrary
             //Application.Run(new FrmListViewEmbeddedControls());
             //Application.Run(new FrmChatGroupBox());
             //Application.Run(new FrmGroupBox());
-            Application.Run(new FrmControlPaintExTest ());
+            Application.Run(new FrmMain());
             //Application.Run(new DemoApp.FrmCheckComboBox());
 
             //Application.Run(new FrmDragableListBox());

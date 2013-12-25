@@ -1,6 +1,6 @@
 ﻿using CRC.Controls;
 
-namespace DemoApp
+namespace UILibrary
 {
     partial class FrmCheckComboBox
     {

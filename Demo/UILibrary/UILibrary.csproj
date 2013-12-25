@@ -74,10 +74,16 @@
     <Compile Include="FrmAGauge.Designer.cs">
       <DependentUpon>FrmAGauge.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmAutoDockManage.cs">
+    <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAutoDockManage.Designer.cs">
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmAutoDockManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmAutoDockManage.Designer.cs">
       <DependentUpon>FrmAutoDockManage.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmChatGroupBox.cs">
@@ -92,16 +98,31 @@
     <Compile Include="FrmControlPaintExTest.Designer.cs">
       <DependentUpon>FrmControlPaintExTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Panel\FrmGrouper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBox\FrmSelectListSwap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListBox\FrmSelectListSwap.Designer.cs">
+      <DependentUpon>FrmSelectListSwap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Froms\FrmTaskbarNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Froms\FrmTaskbarNotifier.Designer.cs">
+      <DependentUpon>FrmTaskbarNotifier.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListBox\FrmDragableListBox.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ListBox\FrmDragableListBox.Designer.cs">
       <DependentUpon>FrmDragableListBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmGroupBox.cs">
+    <Compile Include="Panel\FrmGroupBox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmGroupBox.Designer.cs">
+    <Compile Include="Panel\FrmGroupBox.Designer.cs">
       <DependentUpon>FrmGroupBox.cs</DependentUpon>
     </Compile>
     <Compile Include="ListView\FrmListViewEmbeddedControls.cs">
@@ -143,6 +164,7 @@
     <Compile Include="ListBox\FrmGroupListBox.Designer.cs">
       <DependentUpon>FrmGroupListBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="PlaceManager.cs" />
     <Compile Include="TreeView\FrmLayerTreeView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,7 +222,10 @@
     <EmbeddedResource Include="FrmAGauge.resx">
       <DependentUpon>FrmAGauge.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmAutoDockManage.resx">
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmAutoDockManage.resx">
       <DependentUpon>FrmAutoDockManage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmChatGroupBox.resx">
@@ -209,13 +234,22 @@
     <EmbeddedResource Include="FrmControlPaintExTest.resx">
       <DependentUpon>FrmControlPaintExTest.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Panel\FrmGrouper.resx">
+      <DependentUpon>FrmGrouper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListBox\FrmSelectListSwap.resx">
+      <DependentUpon>FrmSelectListSwap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Froms\FrmTaskbarNotifier.resx">
+      <DependentUpon>FrmTaskbarNotifier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListBox\FrmColorListBox.resx">
       <DependentUpon>FrmColorListBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListBox\FrmDragableListBox.resx">
       <DependentUpon>FrmDragableListBox.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmGroupBox.resx">
+    <EmbeddedResource Include="Panel\FrmGroupBox.resx">
       <DependentUpon>FrmGroupBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListView\FrmListViewEmbeddedControls.resx">
@@ -280,14 +314,19 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Panel\" />
-    <Folder Include="ui\" />
+    <Folder Include="UI\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\UI\CRCUILibrary\CRCUILibrary.csproj">
       <Project>{B463AC21-6B95-4CC0-A115-C4BCE4AB1416}</Project>
       <Name>CRCUILibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\skin.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

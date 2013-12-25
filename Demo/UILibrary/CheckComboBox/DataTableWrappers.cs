@@ -7,7 +7,7 @@ using CRC.Controls;
 using System.Data;
 using System.ComponentModel;
 
-namespace DemoApp
+namespace UILibrary
 {
     public class DataTableWrapper : ListSelectionWrapper<DataRow>
     {

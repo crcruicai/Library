@@ -18,3 +18,5 @@ G:\Code\Library\Demo\TrackBarDemo\obj\Debug\UILibrary.FrmLoadingBar.resources
 G:\Code\Library\Demo\TrackBarDemo\obj\Debug\UILibrary.FrmPlayerTrackBar.resources
 G:\Code\Library\Demo\TrackBarDemo\bin\Debug\TrackBarLibrary.dll
 G:\Code\Library\Demo\TrackBarDemo\bin\Debug\TrackBarLibrary.pdb
+D:\Documents\GitHub\Library\Demo\TrackBarDemo\obj\Debug\TrackBarDemo.exe
+D:\Documents\GitHub\Library\Demo\TrackBarDemo\obj\Debug\TrackBarDemo.pdb

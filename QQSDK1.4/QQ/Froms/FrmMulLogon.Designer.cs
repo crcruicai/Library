@@ -35,6 +35,7 @@
             this.buttonLogon = new System.Windows.Forms.Button();
             this.buttonDelete = new System.Windows.Forms.Button();
             this.buttonOK = new System.Windows.Forms.Button();
+            this.buttonAutoLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -70,7 +71,7 @@
             // 
             // buttonLogon
             // 
-            this.buttonLogon.Location = new System.Drawing.Point(96, 365);
+            this.buttonLogon.Location = new System.Drawing.Point(157, 365);
             this.buttonLogon.Name = "buttonLogon";
             this.buttonLogon.Size = new System.Drawing.Size(75, 23);
             this.buttonLogon.TabIndex = 1;
@@ -80,7 +81,7 @@
             // 
             // buttonDelete
             // 
-            this.buttonDelete.Location = new System.Drawing.Point(187, 365);
+            this.buttonDelete.Location = new System.Drawing.Point(248, 365);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 23);
             this.buttonDelete.TabIndex = 2;
@@ -90,7 +91,7 @@
             // 
             // buttonOK
             // 
-            this.buttonOK.Location = new System.Drawing.Point(277, 365);
+            this.buttonOK.Location = new System.Drawing.Point(338, 365);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(75, 23);
             this.buttonOK.TabIndex = 5;
@@ -98,11 +99,22 @@
             this.buttonOK.UseVisualStyleBackColor = true;
             this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
             // 
+            // buttonAutoLogin
+            // 
+            this.buttonAutoLogin.Location = new System.Drawing.Point(53, 365);
+            this.buttonAutoLogin.Name = "buttonAutoLogin";
+            this.buttonAutoLogin.Size = new System.Drawing.Size(75, 23);
+            this.buttonAutoLogin.TabIndex = 6;
+            this.buttonAutoLogin.Text = "自动登录";
+            this.buttonAutoLogin.UseVisualStyleBackColor = true;
+            this.buttonAutoLogin.Click += new System.EventHandler(this.buttonAutoLogin_Click);
+            // 
             // FrmMulLogon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(450, 400);
+            this.Controls.Add(this.buttonAutoLogin);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.buttonDelete);
             this.Controls.Add(this.buttonLogon);
@@ -126,5 +138,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.Button buttonAutoLogin;
     }
 }

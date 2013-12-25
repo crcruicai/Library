@@ -130,8 +130,14 @@ namespace CWebQQ
 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
-           
 
+            if (listView1.SelectedItems.Count > 0)
+            {
+                Person person = listView1.SelectedItems[0].Tag as Person;
+                _QQManager.PersonList.Remove(person);
+                listView1.Items.Remove(listView1.SelectedItems[0]);
+
+            }
         }
 
         private void listView1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -172,6 +178,32 @@ namespace CWebQQ
         private void buttonOK_Click(object sender, EventArgs e)
         {
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
+        }
+
+        private void buttonAutoLogin_Click(object sender, EventArgs e)
+        {
+            Person item;
+
+            for (int i = 0; i < _QQManager.PersonList.Count; i++)
+            {
+                item = _QQManager.PersonList[i];
+                item = _QQManager.AutoLogin(item, (image) =>
+                    {
+                        string num = "";
+                        FrmInputCode code = new FrmInputCode(image);
+                        if (code.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                        {
+                            num = code.InputText;
+                        }
+                        code.Close();
+                        return num;
+                    });
+                if (item.IsLogin)
+                {
+                    listView1.Items[0].SubItems[2].Text = "在线";
+                }
+
+            }
         }
 
 

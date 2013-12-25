@@ -67,6 +67,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmInputCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmInputCode.Designer.cs">
+      <DependentUpon>FrmInputCode.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,6 +167,9 @@
     <Compile Include="UI\TextSubItem.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmInputCode.resx">
+      <DependentUpon>FrmInputCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmTest.resx">
       <DependentUpon>FrmTest.cs</DependentUpon>

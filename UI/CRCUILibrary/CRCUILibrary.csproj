@@ -45,6 +45,15 @@
     <Compile Include="Controls\DragableListBox.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Controls\Panel\Grouper.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SwapSelectList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SwapSelectList.Designer.cs">
+      <DependentUpon>SwapSelectList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Froms\AutoDockManger.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -246,6 +255,9 @@
       <DependentUpon>FormEx.cs</DependentUpon>
     </Compile>
     <Compile Include="Froms\KeyStateCheck.cs" />
+    <Compile Include="Froms\TaskbarNotifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -290,6 +302,9 @@
     <Folder Include="Controls\Edit\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controls\Panel\Grouper.resx">
+      <DependentUpon>Grouper.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\Picture\CaptureImage\CaptureImageTool.resx">
       <DependentUpon>CaptureImageTool.cs</DependentUpon>
     </EmbeddedResource>
@@ -304,6 +319,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\CheckCombox\PopupComboBox.resx">
       <DependentUpon>PopupComboBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SwapSelectList.resx">
+      <DependentUpon>SwapSelectList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

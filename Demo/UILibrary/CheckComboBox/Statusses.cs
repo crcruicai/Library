@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using CRC.Controls;
 
-namespace DemoApp
+namespace UILibrary
 {
     /// <summary>
     /// Class used for demo purposes. This could be anything listed in a CheckBoxComboBox.

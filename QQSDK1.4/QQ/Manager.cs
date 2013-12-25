@@ -182,6 +182,41 @@ namespace CWebQQ
         #region 公共函数
 
         #region 登录与登出
+
+        public Person AutoLogin(Person person,Func<Image ,string> func)
+        {
+            WebQQ qq = new WebQQ();
+            string num;
+            if (qq.GetLoginVC(person.QQ, out num) != LoginResult.NotVerifyCode)
+            {
+                Image image = qq.GetLoginVCImage(person.QQ);
+                num = func(image);
+            }
+            if (qq.Login(person.QQ, person.Password, num) == LoginResult.LoginSucceed)
+            {
+                person.IsLogin = true;
+                person.State = "在线";
+                AddQQ(qq);
+            }
+            return person;
+        }
+
+        private void AddQQ(WebQQ qq)
+        {
+            if (!_QQMap.ContainsKey(qq.MyQQNumber))
+            {
+                _QQMap.Add(qq.MyQQNumber, qq);
+                qq.ReciveMessage += WebQQ_ReciveMessage;
+            }
+            else
+            {
+                _QQMap[qq.MyQQNumber] = qq;
+            }
+
+            GetFriendTask(qq.MyQQNumber);
+        }
+
+
         /// <summary>
         /// QQ登录.如果登录成功,返回更新后的Person,如果失败,就返回null.
         /// <para>注意,该函数将显示登录对话框.</para>

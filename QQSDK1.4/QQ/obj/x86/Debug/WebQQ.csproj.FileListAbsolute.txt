@@ -119,3 +119,4 @@ D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.Properties.Resource
 D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CRC.Controls.ChatListBox.resources
 D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.UI.SearchBox.resources
 D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\WebQQ.csproj.GenerateResource.Cache
+D:\Documents\GitHub\Library\QQSDK1.4\QQ\obj\x86\Debug\CWebQQ.FrmInputCode.resources

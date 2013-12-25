@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using CRC.Controls;
 
-namespace DemoApp
+namespace UILibrary
 {
     public partial class FrmCheckComboBox : Form
     {

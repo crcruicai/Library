@@ -6,7 +6,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using System.Data;
 // 演示如何为ListBox控件的每一个Item添加背景色和修改文字的颜色
-namespace ColorListBox
+namespace UILibrary
 {
 	/// <summary>
 	/// Summary description for Form1.

@@ -57,8 +57,6 @@ D:\Documents\GitHub\Library\Demo\UILibrary\bin\Debug\Test.exe
 D:\Documents\GitHub\Library\Demo\UILibrary\bin\Debug\Test.pdb
 D:\Documents\GitHub\Library\Demo\UILibrary\bin\Debug\CRCUILibrary.dll
 D:\Documents\GitHub\Library\Demo\UILibrary\bin\Debug\CRCUILibrary.pdb
-D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\ResolveAssemblyReference.cache
-D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\DemoApp.FrmCheckComboBox.resources
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmAGauge.resources
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmAutoDockManage.resources
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmChatGroupBox.resources
@@ -76,8 +74,6 @@ D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmMultiLineListB
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmRadioListBox.resources
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmInstruments.resources
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.Properties.Resources.resources
-D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\GenerateResource.read.1.tlog
-D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\GenerateResource.write.1.tlog
 G:\Code\Library\Demo\UILibrary\bin\Debug\Test.exe.config
 G:\Code\Library\Demo\UILibrary\obj\Debug\Test.exe
 G:\Code\Library\Demo\UILibrary\obj\Debug\Test.pdb
@@ -108,4 +104,11 @@ G:\Code\Library\Demo\UILibrary\obj\Debug\UILibrary.csprojResolveAssemblyReferenc
 G:\Code\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmControlPaintExTest.resources
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmControlPaintExTest.resources
 D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmDragableListBox.resources
-D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\ColorListBox.FrmColorListBox.resources
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmTaskbarNotifier.resources
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.csproj.GenerateResource.Cache
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmCheckComboBox.resources
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmMain.resources
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmColorListBox.resources
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmSelectListSwap.resources
+D:\Documents\GitHub\Library\Demo\UILibrary\obj\Debug\UILibrary.FrmGrouper.resources
