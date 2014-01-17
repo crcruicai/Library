@@ -28,27 +28,41 @@ namespace CRC.Register
         /// <param name="fileTypeName">指定关联文件扩展名.例如:".txt"</param>
         public static void SetFileTypeWith(string fileName, string fileTypeName)
         {
-            RegistryKey _RegKey = Registry.ClassesRoot.OpenSubKey("", true);              //打开注册表 
+            RegistryKey regKey = Registry.ClassesRoot.OpenSubKey("", true);              //打开注册表 
 
-            RegistryKey _VRPkey = _RegKey.OpenSubKey(fileTypeName);
-            if (_VRPkey != null) _RegKey.DeleteSubKey(fileTypeName, true);
-            _RegKey.CreateSubKey(fileTypeName);
-            _VRPkey = _RegKey.OpenSubKey(fileTypeName, true);
-            _VRPkey.SetValue("", "Exec");
+            if(regKey != null)
+            {
+                RegistryKey vrPkey = regKey.OpenSubKey(fileTypeName);
+                if (vrPkey != null) regKey.DeleteSubKey(fileTypeName, true);
+                regKey.CreateSubKey(fileTypeName);
+                vrPkey = regKey.OpenSubKey(fileTypeName, true);
+                if(vrPkey != null)
+                    vrPkey.SetValue("", "Exec");
 
-            _VRPkey = _RegKey.OpenSubKey("Exec", true);
-            if (_VRPkey != null) _RegKey.DeleteSubKeyTree("Exec");         //如果等于空 就删除注册表DSKJIVR 
+                vrPkey = regKey.OpenSubKey("Exec", true);
+                if (vrPkey != null) regKey.DeleteSubKeyTree("Exec");         //如果等于空 就删除注册表DSKJIVR 
 
-            _RegKey.CreateSubKey("Exec");
-            _VRPkey = _RegKey.OpenSubKey("Exec", true);
-            _VRPkey.CreateSubKey("shell");
-            _VRPkey = _VRPkey.OpenSubKey("shell", true);                      //写入必须路径 
-            _VRPkey.CreateSubKey("open");
-            _VRPkey = _VRPkey.OpenSubKey("open", true);
-            _VRPkey.CreateSubKey("command");
-            _VRPkey = _VRPkey.OpenSubKey("command", true);
-            string _PathString = "\"" + fileName + "\" \"%1\"";
-            _VRPkey.SetValue("", _PathString);                                    //写入数据 
+                regKey.CreateSubKey("Exec");
+                vrPkey = regKey.OpenSubKey("Exec", true);
+                if(vrPkey != null)
+                {
+                    vrPkey.CreateSubKey("shell");
+                    vrPkey = vrPkey.OpenSubKey("shell", true);                      //写入必须路径 
+                    if(vrPkey != null)
+                    {
+                        vrPkey.CreateSubKey("open");
+                        vrPkey = vrPkey.OpenSubKey("open", true);
+                        if(vrPkey != null)
+                        {
+                            vrPkey.CreateSubKey("command");
+                            vrPkey = vrPkey.OpenSubKey("command", true);
+                            string pathString = "\"" + fileName + "\" \"%1\"";
+                            if(vrPkey != null)
+                                vrPkey.SetValue("", pathString);                                    //写入数据 
+                        }
+                    }
+                }
+            }
 
         }
 
@@ -58,11 +72,14 @@ namespace CRC.Register
         /// <param name="fileTypeName">扩展名,例如:".txt"</param>
         public static void DeleteFileWith(string fileTypeName)
         {
-            RegistryKey _Regkey = Registry.ClassesRoot.OpenSubKey("", true);
+            RegistryKey regkey = Registry.ClassesRoot.OpenSubKey("", true);
 
-            RegistryKey _VRPkey = _Regkey.OpenSubKey(fileTypeName);
-            if (_VRPkey != null) _Regkey.DeleteSubKey(fileTypeName, true);
-            if (_VRPkey != null) _Regkey.DeleteSubKeyTree("Exec");
+            if(regkey != null)
+            {
+                RegistryKey vrPkey = regkey.OpenSubKey(fileTypeName);
+                if (vrPkey != null) regkey.DeleteSubKey(fileTypeName, true);
+                if (vrPkey != null) regkey.DeleteSubKeyTree("Exec");
+            }
         } 
 
     }

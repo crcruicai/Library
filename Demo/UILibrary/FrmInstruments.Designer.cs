@@ -202,7 +202,7 @@ namespace UILibrary
             this.button_Clear.Text = "&CLEAR";
             this.button_Clear.Click += new System.EventHandler(this.Button_Clear_Click);
             // 
-            // timer
+            // _Timer
             // 
             this.timer.Enabled = true;
             this.timer.Interval = 60;

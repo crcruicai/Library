@@ -71,32 +71,33 @@ namespace CRC.Controls
         {
             get 
             {
-                string Name = null;
+                string name = null;
                 if (string.IsNullOrEmpty(_Container.DisplayNameProperty))
-                    Name = Item.ToString();
+                    name = Item.ToString();
                 else if (Item is DataRow) // A specific implementation for DataRow
-                    Name = ((DataRow)((Object)Item))[_Container.DisplayNameProperty].ToString();
+                    name = ((DataRow)((Object)Item))[_Container.DisplayNameProperty].ToString();
                 else
                 {
-                    PropertyDescriptorCollection PDs = TypeDescriptor.GetProperties(Item);
-                    foreach (PropertyDescriptor PD in PDs)
-                        if (PD.Name.CompareTo(_Container.DisplayNameProperty) == 0)
+                    PropertyDescriptorCollection pds = TypeDescriptor.GetProperties(Item);
+                    foreach (PropertyDescriptor pd in pds)
+                        if (pd.Name.CompareTo(_Container.DisplayNameProperty) == 0)
                         {
-                            Name = (string)PD.GetValue(Item).ToString();
+                            var value = pd.GetValue(Item);
+                            if(value != null)
+                                name = (string)value.ToString();
                             break;
                         }
-                    if (string.IsNullOrEmpty(Name))
-                    {
-                        PropertyInfo PI = Item.GetType().GetProperty(_Container.DisplayNameProperty);
-                        if (PI == null)
-                            throw new Exception(String.Format(
-                                      "Property {0} cannot be found on {1}.",
-                                      _Container.DisplayNameProperty,
-                                      Item.GetType()));
-                        Name = PI.GetValue(Item, null).ToString();
-                    }
+                    if(!string.IsNullOrEmpty(name))
+                        return _Container.ShowCounts ? String.Format("{0} [{1}]", name, Count) : name;
+                    PropertyInfo pi = Item.GetType().GetProperty(_Container.DisplayNameProperty);
+                    if (pi == null)
+                        throw new Exception(String.Format(
+                            "Property {0} cannot be found on {1}.",
+                            _Container.DisplayNameProperty,
+                            Item.GetType()));
+                    name = pi.GetValue(Item, null).ToString();
                 }
-                return _Container.ShowCounts ? String.Format("{0} [{1}]", Name, Count) : Name;
+                return _Container.ShowCounts ? String.Format("{0} [{1}]", name, Count) : name;
             }
         }
         /// <summary>

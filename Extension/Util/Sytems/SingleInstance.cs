@@ -8,9 +8,6 @@
  * *******************************************************/
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.InteropServices;
@@ -63,8 +60,8 @@ namespace CRC.Util
         private static Process RuningInstance()
         {
             Process currentProcess = Process.GetCurrentProcess();
-            Process[] Processes = Process.GetProcessesByName(currentProcess.ProcessName);
-            foreach (Process process in Processes)
+            Process[] processes = Process.GetProcessesByName(currentProcess.ProcessName);
+            foreach (Process process in processes)
             {
                 if (process.Id != currentProcess.Id)
                 {
@@ -85,11 +82,11 @@ namespace CRC.Util
         public static void Run(string runName,Action action)
         {
             bool canCreateNew;
-            Mutex MutexLock = new Mutex(true, "Global\\"+runName, out canCreateNew);
+            Mutex mutexLock = new Mutex(true, "Global\\"+runName, out canCreateNew);
             if (canCreateNew)//没有实例在运行.
             {
                 action();
-                MutexLock.ReleaseMutex();
+                mutexLock.ReleaseMutex();
             }
             else
             {
@@ -108,11 +105,11 @@ namespace CRC.Util
         public static void Run<T>(string runName, Action<T> action,T obj)
         {
             bool canCreateNew;
-            Mutex MutexLock = new Mutex(true, "Global\\" + runName, out canCreateNew);
+            Mutex mutexLock = new Mutex(true, "Global\\" + runName, out canCreateNew);
             if (canCreateNew)
             {
                 action(obj);
-                MutexLock.ReleaseMutex();
+                mutexLock.ReleaseMutex();
             }
             else
             {

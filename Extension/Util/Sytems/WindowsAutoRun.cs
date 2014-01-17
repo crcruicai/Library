@@ -8,9 +8,6 @@
  * *******************************************************/
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Microsoft.Win32;
 
 namespace CRC.Util
@@ -33,11 +30,12 @@ namespace CRC.Util
             {
                 bool result = false;
                 RegistryKey runKey = Registry.LocalMachine.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
-                if (runKey.GetValue(keyName) != null)
+                if (runKey != null && runKey.GetValue(keyName) != null)
                 {
-                    result = true;
+                    result = true;  
+                    runKey.Close();
                 }
-                runKey.Close();
+              
                 return result;
             }
             catch (Exception e)
@@ -83,8 +81,11 @@ namespace CRC.Util
             try
             {
                 RegistryKey runKey = Registry.LocalMachine.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
-                runKey.DeleteValue(keyName);
-                runKey.Close();
+                if(runKey != null)
+                {
+                    runKey.DeleteValue(keyName);
+                    runKey.Close();
+                }
             }
             catch
             {

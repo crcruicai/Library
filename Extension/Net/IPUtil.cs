@@ -18,7 +18,7 @@ namespace CRC.Net
     /// <summary>
     /// IP工具类.
     /// </summary>
-    public class IPUtil
+    public static class IPUtil
     {
 
         /// <summary>
@@ -102,12 +102,12 @@ namespace CRC.Net
         /// <returns></returns>
         public static IPAddress GetIPAddress()
         {
-            System.Net.IPHostEntry IpEntry = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
-            for (int i = 0; i != IpEntry.AddressList.Length; i++)
+            System.Net.IPHostEntry ipEntry = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName());
+            for (int i = 0; i != ipEntry.AddressList.Length; i++)
             {
-                if (!IpEntry.AddressList[i].IsIPv6LinkLocal)
+                if (!ipEntry.AddressList[i].IsIPv6LinkLocal)
                 {
-                    return IpEntry.AddressList[i];
+                    return ipEntry.AddressList[i];
                 }
             }
             return IPAddress.Parse("127.0.0.1");

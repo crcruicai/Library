@@ -16,3 +16,14 @@ D:\Documents\GitHub\Library\Extension\obj\Debug\CRCLibrary.dll
 D:\Documents\GitHub\Library\Extension\obj\Debug\CRCLibrary.pdb
 D:\Documents\GitHub\Library\Extension\bin\Debug\CRCLibrary.dll
 D:\Documents\GitHub\Library\Extension\bin\Debug\CRCLibrary.pdb
+D:\Documents\GitHub\Library\Extension\bin\Debug\System.Web.Http.dll
+D:\Documents\GitHub\Library\Extension\bin\Debug\System.Net.Http.dll
+D:\Documents\GitHub\Library\Extension\bin\Debug\System.Net.Http.Formatting.dll
+D:\Documents\GitHub\Library\Extension\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\GitHub\Library\Extension\bin\Debug\System.Web.Http.xml
+D:\Documents\GitHub\Library\Extension\bin\Debug\System.Net.Http.xml
+D:\Documents\GitHub\Library\Extension\bin\Debug\System.Net.Http.Formatting.xml
+D:\Documents\GitHub\Library\Extension\bin\Debug\zh-Hans\System.Web.Http.resources.dll
+D:\Documents\GitHub\Library\Extension\bin\Debug\zh-Hans\System.Net.Http.resources.dll
+D:\Documents\GitHub\Library\Extension\bin\Debug\zh-Hans\System.Net.Http.Formatting.resources.dll
+D:\Documents\GitHub\Library\Extension\obj\Debug\CRCLibrary.csprojResolveAssemblyReference.cache

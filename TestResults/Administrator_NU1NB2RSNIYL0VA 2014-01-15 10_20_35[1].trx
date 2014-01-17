@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="974c9531-f389-4de7-a23b-29356f6c1b3e" name="Administrator@NU1NB2RSNIYL0VA 2014-01-15 10:20:35" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment userDeploymentRoot="D:\Documents\GitHub\Library\TestResults" useDefaultDeploymentRoot="false" enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2014-01-15 10_20_35[1]">
+      <DeploymentItem filename="C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Web.Http.dll" />
+      <DeploymentItem filename="D:\Documents\GitHub\Library\Extension\bin\Debug\CRCLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-15T10:20:35.9165367+08:00" queuing="2014-01-15T10:20:35.9825404+08:00" start="2014-01-15T10:20:35.9865407+08:00" finish="2014-01-15T10:20:36.1455498+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="8" executed="8" passed="8" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ConvertTest1" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="e6603af9-bba2-03aa-6fe6-18bddeb02677">
+      <Execution id="5ab6ab46-8223-48ca-958b-2eabc0890651" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertTest1" />
+    </UnitTest>
+    <UnitTest name="CombinUnitTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="17debb2f-7e32-3f4d-6c47-d4e46def01e3">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="6fa7fceb-7623-488c-8a93-eb23e78dfa4e" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CombinUnitTest" />
+    </UnitTest>
+    <UnitTest name="CheckNumber_Max_RmbExceptionTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="daa1608f-bb5e-7f89-bb80-84d4e5e36f32">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="dba7dcb6-0566-42fd-beba-9388b71b6ca4" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckNumber_Max_RmbExceptionTest" />
+    </UnitTest>
+    <UnitTest name="ConvertIntTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="c063abdd-5618-0174-fe8d-e9a53c34642a">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="51a4cbeb-a6b0-40e2-b502-9c787cfa19cd" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertIntTest" />
+    </UnitTest>
+    <UnitTest name="DigToCcTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="83f7aa14-b41b-3de8-a0cb-4ad4b172c8e9">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="3f443670-2106-4e72-be8d-cf76b395dccf" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DigToCcTest" />
+    </UnitTest>
+    <UnitTest name="ConvertDecimalTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="0858e4c8-69fa-d4a0-ce0b-38e7f9361944">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="6b7c5e44-a032-4d11-bbc4-f8cedbd92062" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertDecimalTest" />
+    </UnitTest>
+    <UnitTest name="ConvertTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="a899c629-2e75-b1cc-6916-c7aa32b982cc">
+      <Execution id="4e90f1db-9f6d-4f10-9fbf-bd93a0e2f7a5" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertTest" />
+    </UnitTest>
+    <UnitTest name="CheckNumber_Min_RmbExceptionTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="839e3f8c-5de0-2572-cba4-c8fa60b1ce27">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="e8a0e626-a25c-4dcf-9267-492b09cdeed3" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckNumber_Min_RmbExceptionTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0858e4c8-69fa-d4a0-ce0b-38e7f9361944" executionId="6b7c5e44-a032-4d11-bbc4-f8cedbd92062" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17debb2f-7e32-3f4d-6c47-d4e46def01e3" executionId="6fa7fceb-7623-488c-8a93-eb23e78dfa4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="839e3f8c-5de0-2572-cba4-c8fa60b1ce27" executionId="e8a0e626-a25c-4dcf-9267-492b09cdeed3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="83f7aa14-b41b-3de8-a0cb-4ad4b172c8e9" executionId="3f443670-2106-4e72-be8d-cf76b395dccf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a899c629-2e75-b1cc-6916-c7aa32b982cc" executionId="4e90f1db-9f6d-4f10-9fbf-bd93a0e2f7a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c063abdd-5618-0174-fe8d-e9a53c34642a" executionId="51a4cbeb-a6b0-40e2-b502-9c787cfa19cd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="daa1608f-bb5e-7f89-bb80-84d4e5e36f32" executionId="dba7dcb6-0566-42fd-beba-9388b71b6ca4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6603af9-bba2-03aa-6fe6-18bddeb02677" executionId="5ab6ab46-8223-48ca-958b-2eabc0890651" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6b7c5e44-a032-4d11-bbc4-f8cedbd92062" testId="0858e4c8-69fa-d4a0-ce0b-38e7f9361944" testName="ConvertDecimalTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0108113" startTime="2014-01-15T10:20:35.9875407+08:00" endTime="2014-01-15T10:20:36.1125479+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6b7c5e44-a032-4d11-bbc4-f8cedbd92062">
+    </UnitTestResult>
+    <UnitTestResult executionId="6fa7fceb-7623-488c-8a93-eb23e78dfa4e" testId="17debb2f-7e32-3f4d-6c47-d4e46def01e3" testName="CombinUnitTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0005333" startTime="2014-01-15T10:20:36.1135479+08:00" endTime="2014-01-15T10:20:36.1155480+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6fa7fceb-7623-488c-8a93-eb23e78dfa4e">
+    </UnitTestResult>
+    <UnitTestResult executionId="e8a0e626-a25c-4dcf-9267-492b09cdeed3" testId="839e3f8c-5de0-2572-cba4-c8fa60b1ce27" testName="CheckNumber_Min_RmbExceptionTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0038094" startTime="2014-01-15T10:20:36.1165481+08:00" endTime="2014-01-15T10:20:36.1215484+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8a0e626-a25c-4dcf-9267-492b09cdeed3">
+    </UnitTestResult>
+    <UnitTestResult executionId="3f443670-2106-4e72-be8d-cf76b395dccf" testId="83f7aa14-b41b-3de8-a0cb-4ad4b172c8e9" testName="DigToCcTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0003989" startTime="2014-01-15T10:20:36.1225484+08:00" endTime="2014-01-15T10:20:36.1245486+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3f443670-2106-4e72-be8d-cf76b395dccf">
+    </UnitTestResult>
+    <UnitTestResult executionId="4e90f1db-9f6d-4f10-9fbf-bd93a0e2f7a5" testId="a899c629-2e75-b1cc-6916-c7aa32b982cc" testName="ConvertTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0008980" startTime="2014-01-15T10:20:36.1255486+08:00" endTime="2014-01-15T10:20:36.1285488+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e90f1db-9f6d-4f10-9fbf-bd93a0e2f7a5">
+    </UnitTestResult>
+    <UnitTestResult executionId="51a4cbeb-a6b0-40e2-b502-9c787cfa19cd" testId="c063abdd-5618-0174-fe8d-e9a53c34642a" testName="ConvertIntTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0003524" startTime="2014-01-15T10:20:36.1285488+08:00" endTime="2014-01-15T10:20:36.1315490+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51a4cbeb-a6b0-40e2-b502-9c787cfa19cd">
+    </UnitTestResult>
+    <UnitTestResult executionId="dba7dcb6-0566-42fd-beba-9388b71b6ca4" testId="daa1608f-bb5e-7f89-bb80-84d4e5e36f32" testName="CheckNumber_Max_RmbExceptionTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0009217" startTime="2014-01-15T10:20:36.1315490+08:00" endTime="2014-01-15T10:20:36.1335491+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dba7dcb6-0566-42fd-beba-9388b71b6ca4">
+    </UnitTestResult>
+    <UnitTestResult executionId="5ab6ab46-8223-48ca-958b-2eabc0890651" testId="e6603af9-bba2-03aa-6fe6-18bddeb02677" testName="ConvertTest1" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0001747" startTime="2014-01-15T10:20:36.1345491+08:00" endTime="2014-01-15T10:20:36.1365492+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5ab6ab46-8223-48ca-958b-2eabc0890651">
+    </UnitTestResult>
+  </Results>
+</TestRun>

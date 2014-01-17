@@ -9,6 +9,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
 using System.Linq;
 using System.Text;
 using System.Drawing;
@@ -171,12 +172,11 @@ SHGetFileInfo(PAnsiChar(FileName),
         public static Icon GetIcon(string fileName, bool isLargeIcon)
         {
             SHFILEINFO shfi = new SHFILEINFO();
-            IntPtr hI;
 
             if (isLargeIcon)
-                hI = SHGetFileInfo(fileName, 0, ref shfi, (uint)Marshal.SizeOf(shfi), SHGFI_ICON | SHGFI_USEFILEATTRIBUTES | SHGFI_LARGEICON);
+                SHGetFileInfo(fileName, 0, ref shfi, (uint)Marshal.SizeOf(shfi), SHGFI_ICON | SHGFI_USEFILEATTRIBUTES | SHGFI_LARGEICON);
             else
-                hI = SHGetFileInfo(fileName, 0, ref shfi, (uint)Marshal.SizeOf(shfi), SHGFI_ICON | SHGFI_USEFILEATTRIBUTES | SHGFI_SMALLICON);
+                SHGetFileInfo(fileName, 0, ref shfi, (uint)Marshal.SizeOf(shfi), SHGFI_ICON | SHGFI_USEFILEATTRIBUTES | SHGFI_SMALLICON);
 
 
             Icon icon = Icon.FromHandle(shfi.hIcon).Clone() as Icon;
@@ -187,15 +187,15 @@ SHGetFileInfo(PAnsiChar(FileName),
         /// <summary>
         /// 获取文件图标 
         /// </summary>
-        /// <param name="p_Path">文件全路径</param>
+        /// <param name="pPath">文件全路径</param>
         /// <returns>图标</returns>
-        public static Icon GetFileIcon(string p_Path)
+        public static Icon GetFileIcon(string pPath)
         {
-            SHFILEINFO _SHFILEINFO = new SHFILEINFO();
-            IntPtr _IconIntPtr = SHGetFileInfo(p_Path, 0, ref _SHFILEINFO, (uint)Marshal.SizeOf(_SHFILEINFO), (uint)(SHGFI_ICON | SHGFI_LARGEICON | SHGFI_USEFILEATTRIBUTES));
+            SHFILEINFO shfileinfo = new SHFILEINFO();
+            IntPtr _IconIntPtr = SHGetFileInfo(pPath, 0, ref shfileinfo, (uint)Marshal.SizeOf(shfileinfo), (uint)(SHGFI_ICON | SHGFI_LARGEICON | SHGFI_USEFILEATTRIBUTES));
             if (_IconIntPtr.Equals(IntPtr.Zero)) return null;
-            Icon _Icon = System.Drawing.Icon.FromHandle(_SHFILEINFO.hIcon);
-            return _Icon;
+            Icon icon = System.Drawing.Icon.FromHandle(shfileinfo.hIcon);
+            return icon;
         }
 
         /// <summary>
@@ -204,11 +204,11 @@ SHGetFileInfo(PAnsiChar(FileName),
         /// <returns>图标</returns>
         public static Icon GetDirectoryIcon()
         {
-            SHFILEINFO _SHFILEINFO = new SHFILEINFO();
-            IntPtr _IconIntPtr = SHGetFileInfo(@"", 0, ref _SHFILEINFO, (uint)Marshal.SizeOf(_SHFILEINFO), (uint)(SHGFI_ICON | SHGFI_LARGEICON));
-            if (_IconIntPtr.Equals(IntPtr.Zero)) return null;
-            Icon _Icon = System.Drawing.Icon.FromHandle(_SHFILEINFO.hIcon);
-            return _Icon;
+            SHFILEINFO shfileinfo = new SHFILEINFO();
+            IntPtr iconIntPtr = SHGetFileInfo(@"", 0, ref shfileinfo, (uint)Marshal.SizeOf(shfileinfo), (uint)(SHGFI_ICON | SHGFI_LARGEICON));
+            if (iconIntPtr.Equals(IntPtr.Zero)) return null;
+            Icon icon = System.Drawing.Icon.FromHandle(shfileinfo.hIcon);
+            return icon;
         }
 
         /// <summary>
@@ -247,9 +247,8 @@ SHGetFileInfo(PAnsiChar(FileName),
         /// <returns></returns>
         public static Bitmap FixAlphaBitmap(Bitmap bmSource)
         {
-            System.Drawing.Imaging.BitmapData bmData;
             Rectangle bmBounds = new Rectangle(0, 0, bmSource.Width, bmSource.Height);
-            bmData = bmSource.LockBits(bmBounds, System.Drawing.Imaging.ImageLockMode.ReadOnly, bmSource.PixelFormat);
+            BitmapData bmData = bmSource.LockBits(bmBounds, System.Drawing.Imaging.ImageLockMode.ReadOnly, bmSource.PixelFormat);
             Bitmap dstBitmap = new Bitmap(bmData.Width, bmData.Height, bmData.Stride, System.Drawing.Imaging.PixelFormat.Format32bppArgb, bmData.Scan0);
             bmSource.UnlockBits(bmData);
             return dstBitmap;

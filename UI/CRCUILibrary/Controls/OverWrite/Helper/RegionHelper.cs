@@ -21,7 +21,7 @@ namespace CRC.Controls
         /// <param name="bounds">窗口区域.</param>
         /// <param name="radius">圆角半径.</param>
         /// <param name="roundStyle">圆角样式.</param>
-        public static void SetControlRegion(Control control, Rectangle bounds,int radius,RoundStyle roundStyle)
+        public static void SetControlRegion(Control control, Rectangle bounds,int radius = 8,RoundStyle roundStyle = RoundStyle.All)
         {
             using (GraphicsPath path =GraphicsPathHelper.CreateFilletRectangle(bounds, radius, roundStyle, true)) 
             {
@@ -36,15 +36,6 @@ namespace CRC.Controls
             }
         }
 
-        /// <summary>
-        /// 为控件设置关联的窗口区域.
-        /// </summary>
-        /// <param name="control">要设置窗口区域的控件.</param>
-        /// <param name="bounds">窗口区域.</param>
-        public static void SetControlRegion(Control control, Rectangle bounds)
-        {
-            SetControlRegion(control, bounds, 8, RoundStyle.All);
-        }
     }
 
 

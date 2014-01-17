@@ -18,7 +18,7 @@ namespace CRC.Controls
     /// <summary>
     /// 渲染帮助器.
     /// </summary>
-    public class RenderHelper
+    public static class RenderHelper
     {
 
         #region 背景
@@ -492,6 +492,6 @@ namespace CRC.Controls
         }
 
         [System.Runtime.InteropServices.DllImport("gdi32.dll")]
-        private static extern uint SetPixel(IntPtr hdc, int X, int Y, int crColor);
+        private static extern uint SetPixel(IntPtr hdc, int x, int y, int crColor);
     }
 }

@@ -18,7 +18,7 @@ namespace CRC.Util
     /// <summary>
     /// 封装常用的正则表达式.
     /// </summary>
-    public class RegenPattern
+    public static class RegenPattern
     {
         #region 网页相关
 

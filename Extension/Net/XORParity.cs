@@ -17,7 +17,7 @@ namespace CRC.Net
     /// <summary>
     /// 校验码 帮助类.
     /// </summary>
-    public class XORParity
+    public static class XORParity
     {
 
 
@@ -68,13 +68,8 @@ namespace CRC.Net
         /// <returns>返回校验码.</returns>
         public static byte GetParity(byte[] data)
         {
-            byte parity = 0x00;
             if (data == null) throw new Exception("Array is Null");
-            foreach (var item in data)
-            {
-                parity ^= item;
-            }
-            return parity;
+            return data.Aggregate<byte, byte>(0x00, (current, item) => (byte) (current ^ item));
         }
 
         /// <summary>
@@ -85,12 +80,7 @@ namespace CRC.Net
         public static byte GetParity(IEnumerable<byte> data)
         {
             if (data == null) throw new ArgumentNullException("data");
-            byte parity = 0x00;
-            foreach (var item in data)
-            {
-                parity ^= item;
-            }
-            return parity;
+            return data.Aggregate<byte, byte>(0x00, (current, item) => (byte) (current ^ item));
         }
 
       

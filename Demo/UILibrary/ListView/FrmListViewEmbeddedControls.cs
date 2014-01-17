@@ -31,7 +31,7 @@ namespace UILibrary
         }
 
         // Once an embedded ProgressBar is clicked, it's removed from the ListView.
-        // This way the ListViewSubItem's Text value becomes visible.
+        // This way the ListViewSubItem's Text value becomes Visible.
         private void pb_Click(object sender, EventArgs e)
         {
             listViewEmbeddedControls1.RemoveEmbeddedControl(sender as Control);
@@ -99,7 +99,7 @@ namespace UILibrary
             // Put it in the first column of the fourth row
             listViewEmbeddedControls1.AddEmbeddedControl(b, 0, 3);
 
-            // Third, a number of ProcessBars that will be updated by a timer
+            // Third, a number of ProcessBars that will be updated by a _Timer
             Random r = new Random();
             foreach (ListViewItem i in listViewEmbeddedControls1.Items)
             {

@@ -18,7 +18,7 @@ namespace TestCRCLibrary
     {
 
 
-        private TestContext testContextInstance;
+        private TestContext __TestContextInstance;
 
         /// <summary>
         ///获取或设置测试上下文，上下文提供
@@ -28,11 +28,11 @@ namespace TestCRCLibrary
         {
             get
             {
-                return testContextInstance;
+                return __TestContextInstance;
             }
             set
             {
-                testContextInstance = value;
+                __TestContextInstance = value;
             }
         }
 
@@ -97,9 +97,9 @@ namespace TestCRCLibrary
         ///</summary>
         public void ClearTestHelper<T>()
         {
-            IComparer<T> defaultComparer = null; // TODO: 初始化为适当的值
-            int deepness = 0; // TODO: 初始化为适当的值
-            SortedSplitList<T> target = new SortedSplitList<T>(defaultComparer, deepness); // TODO: 初始化为适当的值
+            IComparer<T> defaultComparer = null; 
+            int deepness = 0; 
+            SortedSplitList<T> target = new SortedSplitList<T>(defaultComparer, deepness); 
             target.Clear();
             Assert.Inconclusive("无法验证不返回值的方法。");
         }

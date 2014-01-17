@@ -24,7 +24,7 @@ namespace CRC.Controls
         /// 建立带有圆角样式的矩形路径。
         /// </summary>
         /// <param name="rect">用来建立路径的矩形。</param>
-        /// <param name="_radius">圆角的大小。</param>
+        /// <param name="radius">圆角的大小。</param>
         /// <param name="style">圆角的样式。</param>
         /// <param name="correction">是否把矩形长宽减 1,以便画出边框。</param>
         /// <returns>建立的路径。</returns>

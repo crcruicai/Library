@@ -1,4 +1,18 @@
-﻿using System;
+﻿ //Martin Lottering : 2007-10-27
+ //--------------------------------
+ //This is a usefull control in Filters. Allows you to save space and can replace a Grouped Box of CheckBoxes.
+ //Currently used on the TasksFilter for TaskStatusses, which means the user can select which Statusses to include
+ //in the "Search".
+ //This control does not implement a CheckBoxListBox, instead it adds a wrapper for the normal ComboBox and Items. 
+ //See the CheckBoxItems property.
+ //----------------
+ //ALSO IMPORTANT: In Data Binding when setting the DataSource. The ValueMember must be a bool type property, because it will 
+ //be binded to the Checked property of the displayed CheckBox. Also see the DisplayMemberSingleItem for more information.
+ //----------------
+ //Extends the CodeProject PopupComboBox "Simple pop-up control" "http://www.codeproject.com/cs/miscctrl/simplepopup.asp"
+ //by Lukasz Swiatkowski.
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -10,19 +24,8 @@ using System.Reflection;
 namespace CRC.Controls
 {
     /// <summary>
-    /// Martin Lottering : 2007-10-27
-    /// --------------------------------
-    /// This is a usefull control in Filters. Allows you to save space and can replace a Grouped Box of CheckBoxes.
-    /// Currently used on the TasksFilter for TaskStatusses, which means the user can select which Statusses to include
-    /// in the "Search".
-    /// This control does not implement a CheckBoxListBox, instead it adds a wrapper for the normal ComboBox and Items. 
-    /// See the CheckBoxItems property.
-    /// ----------------
-    /// ALSO IMPORTANT: In Data Binding when setting the DataSource. The ValueMember must be a bool type property, because it will 
-    /// be binded to the Checked property of the displayed CheckBox. Also see the DisplayMemberSingleItem for more information.
-    /// ----------------
-    /// Extends the CodeProject PopupComboBox "Simple pop-up control" "http://www.codeproject.com/cs/miscctrl/simplepopup.asp"
-    /// by Lukasz Swiatkowski.
+    /// 下拉Item为CheakBox 的ComboBox
+    /// <para></para>
     /// </summary>
     public partial class CheckComboBox : PopupComboBox
     {
@@ -158,11 +161,11 @@ namespace CRC.Controls
         {
             if (DropDownStyle != ComboBoxStyle.DropDownList)
             {
-                string ListText = "";
-                foreach (CheckComboBoxItem Item in _CheckBoxComboBoxListControl.Items)
-                    if (Item.Checked)
-                        ListText += string.IsNullOrEmpty(ListText) ? Item.Text : String.Format(", {0}", Item.Text);
-                Text = ListText;
+                string listText = "";
+                foreach (CheckComboBoxItem item in _CheckBoxComboBoxListControl.Items)
+                    if (item.Checked)
+                        listText += string.IsNullOrEmpty(listText) ? item.Text : String.Format(", {0}", item.Text);
+                Text = listText;
             }
 
             EventHandler handler = CheckBoxCheckedChanged;
@@ -174,8 +177,8 @@ namespace CRC.Controls
         {
             // When the ComboBox is resized, the width of the dropdown 
             // is also resized to match the width of the ComboBox. I think it looks better.
-            Size Size = new Size(Width, DropDownControl.Height);
-            dropDown.Size = Size;
+            Size size = new Size(Width, DropDownControl.Height);
+            dropDown.Size = size;
             base.OnResize(e);
         }
 
@@ -184,13 +187,13 @@ namespace CRC.Controls
         #region HELPER MEMBERS
 
         /// <summary>
-        /// Uncheck all items.
+        /// 清理所有选中的Item
         /// </summary>
         public void ClearSelection()
         {
-            foreach (CheckComboBoxItem Item in CheckBoxItems)
-                if (Item.Checked)
-                    Item.Checked = false;
+            foreach (CheckComboBoxItem item in CheckBoxItems)
+                if (item.Checked)
+                    item.Checked = false;
         }
 
         #endregion
@@ -212,8 +215,8 @@ namespace CRC.Controls
 
         private void _CheckBoxProperties_PropertyChanged(object sender, EventArgs e)
         {
-            foreach (CheckComboBoxItem Item in CheckBoxItems)
-                Item.ApplyProperties(CheckBoxProperties);
+            foreach (CheckComboBoxItem item in CheckBoxItems)
+                item.ApplyProperties(CheckBoxProperties);
         }
 
         #endregion
@@ -225,14 +228,14 @@ namespace CRC.Controls
     /// not work as I expected.
     /// </summary>
     [ToolboxItem(false)]
-    public class CheckComboBoxListControlContainer : UserControl
+    public sealed class CheckComboBoxListControlContainer : UserControl
     {
         #region CONSTRUCTOR
 
         public CheckComboBoxListControlContainer()
             : base()
         {
-            BackColor = SystemColors.Window;
+            this.BackColor = SystemColors.Window;
             BorderStyle = BorderStyle.FixedSingle;
             AutoScaleMode = AutoScaleMode.Inherit;
             ResizeRedraw = true;
@@ -250,7 +253,8 @@ namespace CRC.Controls
         /// <param name="m"></param>
         protected override void WndProc(ref Message m)
         {
-            if ((Parent as Popup).ProcessResizing(ref m))
+            Popup popup = Parent as Popup;
+            if (popup != null && popup.ProcessResizing(ref m))
             {
                 return;
             }
@@ -264,7 +268,7 @@ namespace CRC.Controls
     /// The items are docked DockStyle.Top in this control.
     /// </summary>
     [ToolboxItem(false)]
-    public class CheckComboBoxListControl : ScrollableControl
+    public sealed class CheckComboBoxListControl : ScrollableControl
     {
         #region CONSTRUCTOR
 
@@ -289,11 +293,11 @@ namespace CRC.Controls
         /// <summary>
         /// Simply a reference to the CheckBoxComboBox.
         /// </summary>
-        private CheckComboBox _CheckBoxComboBox;
+        private readonly CheckComboBox _CheckBoxComboBox;
         /// <summary>
         /// A Typed list of ComboBoxCheckBoxItems.
         /// </summary>
-        private CheckComboBoxItemList _Items = new CheckComboBoxItemList();
+        private readonly CheckComboBoxItemList _Items = new CheckComboBoxItemList();
 
         #endregion
 
@@ -307,7 +311,8 @@ namespace CRC.Controls
         /// <param name="m"></param>
         protected override void WndProc(ref Message m)
         {
-            if ((Parent.Parent as Popup).ProcessResizing(ref m))
+            Popup popup = Parent.Parent as Popup;
+            if (popup != null && popup.ProcessResizing(ref m))
             {
                 return;
             }
@@ -334,51 +339,47 @@ namespace CRC.Controls
             Controls.Clear();
             #region Disposes all items that are no longer in the combo box list
 
-            for (int Index = _Items.Count - 1; Index >= 0; Index--)
+            for (int index = _Items.Count - 1; index >= 0; index--)
             {
-                CheckComboBoxItem Item = _Items[Index];
-                if (!_CheckBoxComboBox.Items.Contains(Item.ComboBoxItem))
+                CheckComboBoxItem item = _Items[index];
+                if (!_CheckBoxComboBox.Items.Contains(item.ComboBoxItem))
                 {
-                    _Items.Remove(Item);
-                    Item.Dispose();
+                    _Items.Remove(item);
+                    item.Dispose();
                 }
             }
 
             #endregion
             #region Recreate the list in the same order of the combo box items
 
-            CheckComboBoxItemList NewList = new CheckComboBoxItemList();
+            CheckComboBoxItemList newList = new CheckComboBoxItemList();
             foreach (object Object in _CheckBoxComboBox.Items)
             {
-                CheckComboBoxItem Item = _Items.Find(new Predicate<CheckComboBoxItem>(
-                                                        delegate(CheckComboBoxItem target)
-                                                        {
-                                                            return target.ComboBoxItem == Object;
-                                                        }));
-                if (Item == null)
+                CheckComboBoxItem item = _Items.Find(new Predicate<CheckComboBoxItem>(target => target.ComboBoxItem == Object));
+                if (item == null)
                 {
-                    Item = new CheckComboBoxItem(_CheckBoxComboBox, Object);
-                    Item.ApplyProperties(_CheckBoxComboBox.CheckBoxProperties);
+                    item = new CheckComboBoxItem(_CheckBoxComboBox, Object);
+                    item.ApplyProperties(_CheckBoxComboBox.CheckBoxProperties);
                     // Item.TextAlign = ContentAlignment.MiddleCenter;
                 }
-                NewList.Add(Item);
-                Item.Dock = DockStyle.Top;
+                newList.Add(item);
+                item.Dock = DockStyle.Top;
             }
             //NewList.CheckBoxCheckedChanged += _Items.CheckBoxCheckedChanged;
             _Items.Clear();
-            _Items.AddRange(NewList);
+            _Items.AddRange(newList);
 
             #endregion
             #region Add the items to the controls in reversed order to maintain correct docking order
 
-            if (NewList.Count > 0)
+            if (newList.Count > 0)
             {
                 // This reverse helps to maintain correct docking order.
-                NewList.Reverse();
+                newList.Reverse();
                 // If you get an error here that "Cannot convert to the desired type, it probably
                 // means the controls are not binding correctly.
                 // The Checked property is binded to the ValueMember property. It must be a bool for example.
-                Controls.AddRange(NewList.ToArray());
+                Controls.AddRange(newList.ToArray());
             }
 
             #endregion
@@ -392,7 +393,7 @@ namespace CRC.Controls
     /// The CheckBox items displayed in the Popup of the ComboBox.
     /// </summary>
     [ToolboxItem(false)]
-    public class CheckComboBoxItem : CheckBox
+    public sealed class CheckComboBoxItem : CheckBox
     {
         #region CONSTRUCTOR
 
@@ -419,11 +420,11 @@ namespace CRC.Controls
         /// <summary>
         /// A reference to the CheckBoxComboBox.
         /// </summary>
-        private CheckComboBox _CheckBoxComboBox;
+        private readonly CheckComboBox _CheckBoxComboBox;
         /// <summary>
         /// A reference to the Item in ComboBox.Items that this object is extending.
         /// </summary>
-        private object _ComboBoxItem;
+        private readonly object _ComboBoxItem;
 
         #endregion
 
@@ -473,8 +474,8 @@ namespace CRC.Controls
             // Found that when this event is raised, the bool value of the binded item is not yet updated.
             if (_CheckBoxComboBox.DataSource != null)
             {
-                PropertyInfo PI = ComboBoxItem.GetType().GetProperty(_CheckBoxComboBox.ValueMember);
-                PI.SetValue(ComboBoxItem, Checked, null);
+                PropertyInfo pi = ComboBoxItem.GetType().GetProperty(_CheckBoxComboBox.ValueMember);
+                pi.SetValue(ComboBoxItem, Checked, null);
             }
             base.OnCheckedChanged(e);
             // Forces a refresh of the Text displayed in the main TextBox of the ComboBox,
@@ -482,9 +483,9 @@ namespace CRC.Controls
             // Also see DisplayMemberSingleItem on the CheckBoxComboBox for more information.
             if (_CheckBoxComboBox.DataSource != null)
             {
-                string OldDisplayMember = _CheckBoxComboBox.DisplayMember;
+                string oldDisplayMember = _CheckBoxComboBox.DisplayMember;
                 _CheckBoxComboBox.DisplayMember = null;
-                _CheckBoxComboBox.DisplayMember = OldDisplayMember;
+                _CheckBoxComboBox.DisplayMember = oldDisplayMember;
             }
         }
 
@@ -552,8 +553,10 @@ namespace CRC.Controls
 
         public new void AddRange(IEnumerable<CheckComboBoxItem> collection)
         {
-            foreach (CheckComboBoxItem Item in collection)
-                Item.CheckedChanged += new EventHandler(item_CheckedChanged);
+            if(collection == null)
+                return;
+            foreach (CheckComboBoxItem item in collection)
+                item.CheckedChanged += new EventHandler(item_CheckedChanged);
             base.AddRange(collection);
         }
 

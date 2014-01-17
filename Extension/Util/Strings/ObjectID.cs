@@ -17,27 +17,27 @@ using System.Diagnostics;
 
 namespace CRC.Util.Strings
 {
-    //http://www.cnblogs.com/gaochundong/archive/2013/04/24/csharp_generate_mongodb_objectid.html
-    //    在MongoDB中，文档（document）在集合（collection）中的存储需要一个唯一的_id字段作为主键。这个_id默认使用ObjectId来定义，因为ObjectId定义的足够短小，并尽最大可能的保持唯一性，同时能被快速的生成。
-
-    //ObjectId 是一个 12 Bytes 的 BSON 类型，其包含：
-
-    //4 Bytes 自纪元时间开始的秒数
-    //3 Bytes 机器描述符
-    //2 Bytes 进程ID
-    //3 Bytes 随机数
-    //从定义可以看出，在同一秒内，在不同的机器上相同进程ID条件下，非常有可能生成相同的ObjectId。
-    //同时可以根据定义判断出，在给定条件下，ObjectId本身即可描述生成的时间顺序
-
-    //ObjectId的存储使用Byte数组，而其展现需将Byte数组转换成字符串进行显示，所以通常我们看到的ObjectId都类似于：ObjectId("507f191e810c19729de860ea")
 
     /// <summary>
     /// ObjectId实体类.
+    /// <para>在MongoDB中，文档（document）在集合（collection）中的存储需要一个唯一的_id字段作为主键。</para>
+    /// <para>这个_id默认使用ObjectId来定义，因为ObjectId定义的足够短小，并尽最大可能的保持唯一性，同时能被快速的生成。</para>
+    /// <para>ObjectId 是一个 12 Bytes 的 BSON 类型，其包含：</para>
+    /// <para>4 Bytes 自纪元时间开始的秒数</para>
+    /// <para>3 Bytes 机器描述符</para>
+    /// <para>2 Bytes 进程ID</para>  
+    /// <para>3 Bytes 随机数</para>
+    /// <para>从定义可以看出，在同一秒内，在不同的机器上相同进程ID条件下，非常有可能生成相同的ObjectId。</para>   
+    /// <para>同时可以根据定义判断出，在给定条件下，ObjectId本身即可描述生成的时间顺序</para>
+    ///  ObjectId的存储使用Byte数组，而其展现需将Byte数组转换成字符串进行显示，所以通常我们看到的ObjectId都类似于：ObjectId("507f191e810c19729de860ea")
+    /// <para>http://www.cnblogs.com/gaochundong/archive/2013/04/24/csharp_generate_mongodb_objectid.html</para>
     /// </summary>
     public class ObjectId
     {
-        private string _string;
-
+        private string _String;
+        /// <summary>
+        /// 
+        /// </summary>
         public ObjectId()
         {
         }
@@ -52,18 +52,34 @@ namespace CRC.Util.Strings
             Value = value;
         }
 
+        /// <summary>
+        /// 空ObjectId
+        /// </summary>
         public static ObjectId Empty
         {
             get { return new ObjectId("000000000000000000000000"); }
         }
 
+        /// <summary>
+        /// 获取ObjectId的字节流.
+        /// </summary>
         public byte[] Value { get; private set; }
 
+        /// <summary>
+        /// 创建一个新的ObjectId
+        /// </summary>
+        /// <returns></returns>
         public static ObjectId NewObjectId()
         {
             return new ObjectId { Value = ObjectIdGenerator.Generate() };
         }
 
+        /// <summary>
+        /// 尝试解析ObjectId
+        /// </summary>
+        /// <param name="value">ObjectId字符串形式</param>
+        /// <param name="objectId">ObjectId对象</param>
+        /// <returns></returns>
         public static bool TryParse(string value, out ObjectId objectId)
         {
             objectId = Empty;
@@ -83,6 +99,11 @@ namespace CRC.Util.Strings
             }
         }
 
+        /// <summary>
+        /// 解析为字节流形象.
+        /// </summary>
+        /// <param name="value"></param>
+        /// <returns></returns>
         protected static byte[] DecodeHex(string value)
         {
             if (string.IsNullOrEmpty(value))
@@ -99,22 +120,33 @@ namespace CRC.Util.Strings
 
             return bytes;
         }
-
+        /// <summary>
+        /// 获取哈希码.
+        /// </summary>
+        /// <returns></returns>
         public override int GetHashCode()
         {
             return Value != null ? ToString().GetHashCode() : 0;
         }
 
+        /// <summary>
+        /// 将对象转换为字符串形式.
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
-            if (_string == null && Value != null)
+            if (_String == null && Value != null)
             {
-                _string = BitConverter.ToString(Value)
+                _String = BitConverter.ToString(Value)
                   .Replace("-", string.Empty)
                   .ToLowerInvariant();
+                return _String;
+            }
+            else
+            {
+                return _String;
             }
 
-            return _string;
         }
 
         public override bool Equals(object obj)
@@ -145,7 +177,7 @@ namespace CRC.Util.Strings
                 return true;
             }
 
-            if (((object)left == null) || ((object)right == null))
+            if (((object) left == null) || ((object)right == null))
             {
                 return false;
             }
@@ -164,14 +196,17 @@ namespace CRC.Util.Strings
     /// </summary>
     internal static class ObjectIdGenerator
     {
-        private static readonly DateTime Epoch =
+        private static readonly DateTime _Epoch =
           new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-        private static readonly object _innerLock = new object();
-        private static int _counter;
-        private static readonly byte[] _machineHash = GenerateHostHash();
-        private static readonly byte[] _processId =
+        private static readonly object _InnerLock = new object();
+        private static int _Counter;
+        private static readonly byte[] _MachineHash = GenerateHostHash();
+        private static readonly byte[] _ProcessId =
           BitConverter.GetBytes(GenerateProcessId());
-
+        /// <summary>
+        /// 生成一个ObjectId的字节流.
+        /// </summary>
+        /// <returns></returns>
         public static byte[] Generate()
         {
             var oid = new byte[12];
@@ -180,10 +215,10 @@ namespace CRC.Util.Strings
             Array.Copy(BitConverter.GetBytes(GenerateTime()), 0, oid, copyidx, 4);
             copyidx += 4;
 
-            Array.Copy(_machineHash, 0, oid, copyidx, 3);
+            Array.Copy(_MachineHash, 0, oid, copyidx, 3);
             copyidx += 3;
 
-            Array.Copy(_processId, 0, oid, copyidx, 2);
+            Array.Copy(_ProcessId, 0, oid, copyidx, 2);
             copyidx += 2;
 
             Array.Copy(BitConverter.GetBytes(GenerateCounter()), 0, oid, copyidx, 3);
@@ -191,15 +226,23 @@ namespace CRC.Util.Strings
             return oid;
         }
 
+        /// <summary>
+        /// 产生时间.
+        /// </summary>
+        /// <returns></returns>
         private static int GenerateTime()
         {
             var now = DateTime.UtcNow;
-            var nowtime = new DateTime(Epoch.Year, Epoch.Month, Epoch.Day,
+            var nowtime = new DateTime(_Epoch.Year, _Epoch.Month, _Epoch.Day,
               now.Hour, now.Minute, now.Second, now.Millisecond);
-            var diff = nowtime - Epoch;
+            var diff = nowtime - _Epoch;
             return Convert.ToInt32(Math.Floor(diff.TotalMilliseconds));
         }
 
+        /// <summary>
+        /// 获取主机哈希的字节流.
+        /// </summary>
+        /// <returns></returns>
         private static byte[] GenerateHostHash()
         {
             using (var md5 = MD5.Create())
@@ -209,17 +252,24 @@ namespace CRC.Util.Strings
             }
         }
 
+        /// <summary>
+        /// 获取进程ID.
+        /// </summary>
+        /// <returns></returns>
         private static int GenerateProcessId()
         {
             var process = Process.GetCurrentProcess();
             return process.Id;
         }
-
+        /// <summary>
+        /// 获取计数值.
+        /// </summary>
+        /// <returns></returns>
         private static int GenerateCounter()
         {
-            lock (_innerLock)
+            lock (_InnerLock)
             {
-                return _counter++;
+                return _Counter++;
             }
         }
     }

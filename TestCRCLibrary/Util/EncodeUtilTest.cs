@@ -11,17 +11,17 @@ namespace TestCRCLibrary
     {
 
 
-        private TestContext testContextInstance;
+        private TestContext _TestContextInstance;
 
         public TestContext TestContext
         {
             get
             {
-                return testContextInstance;
+                return _TestContextInstance;
             }
             set
             {
-                testContextInstance = value;
+                _TestContextInstance = value;
             }
         }
 
@@ -147,7 +147,7 @@ namespace TestCRCLibrary
             int len = 16; 
             string expected = "83D948B3F6D02132"; 
             string actual;
-            actual = EncodeUtil.MD5Encode(text, len);
+            actual = EncodeUtil.Md5Encode(text, len);
             Assert.AreEqual(expected, actual);
         }
 
@@ -159,7 +159,7 @@ namespace TestCRCLibrary
             int len = 16; 
             string expected = "067972C3F34F094B"; 
             string actual;
-            actual = EncodeUtil.MD5Encode(data, len);
+            actual = EncodeUtil.Md5Encode(data, len);
             Assert.AreEqual(expected, actual);
         }
 

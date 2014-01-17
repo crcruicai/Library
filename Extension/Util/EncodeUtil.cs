@@ -19,7 +19,7 @@ namespace CRC.Util
     /// <summary>
     /// 编码与解码帮助类.
     /// </summary>
-    public class EncodeUtil
+    public static class EncodeUtil
     {
         #region MD5 编码
         /// <summary>
@@ -28,20 +28,25 @@ namespace CRC.Util
         /// <param name="data">字节流</param>
         /// <param name="len">指定MD5的长度.</param>
         /// <returns></returns>
-        public static string MD5Encode(byte[] data, int len = 32)
+        public static string Md5Encode(byte[] data, int len = 32)
         {
             if (data == null) throw new ArgumentNullException("data");
+            if (len > 32)
+                throw new ArgumentException("len must be less than 33");
             MD5 md = MD5.Create();
             byte[] array = md.ComputeHash(data);
             StringBuilder text = new StringBuilder();
             foreach (var item in array)
             {
-
                 text.Append(item.ToString("X2"));
             }
-            if (len == 32) return text.ToString().ToUpper();
-            else//TODO:这里会有问题.
-                return text.ToString().ToUpper().Substring(8, len);
+            if(len == 32)
+                return text.ToString().ToUpper();
+            else
+            {
+                return text.ToString().ToUpper().Substring(0,len);
+            }
+               
 
         }
 
@@ -51,9 +56,11 @@ namespace CRC.Util
         /// <param name="text">要加密的字符串.</param>
         /// <param name="len">指定长度.</param>
         /// <returns>返回的加密字符串.</returns>
-        public static string MD5Encode(string text, int len = 32)
+        public static string Md5Encode(string text, int len = 32)
         {
             if (string.IsNullOrEmpty(text)) throw new ArgumentException("text");
+            if(len > 32)
+                throw new ArgumentException("len must be less than 33");
             MD5 md = MD5.Create();
             byte[] bytes = Encoding.ASCII.GetBytes(text);
             bytes = md.ComputeHash(bytes);
@@ -66,7 +73,7 @@ namespace CRC.Util
 
             if (len == 32) return sb.ToString().ToUpper();
             else
-                return sb.ToString().ToUpper().Substring(8, len);
+                return sb.ToString().ToUpper().Substring(0,len);
 
         }
 
@@ -339,10 +346,9 @@ namespace CRC.Util
         {
             byte[] bytes = Encoding.UTF8.GetBytes(text);
             StringBuilder sb = new StringBuilder();
-            byte item;
             for (int i = 0; i < bytes.Length; i++)
             {
-                item = bytes[i];
+                byte item = bytes[i];
                 bool a = false;
                 if (item > 32 && item < 37) a = true;
                 else if (item > 37 && item < 60) a = true;
@@ -356,29 +362,35 @@ namespace CRC.Util
                 if (a)
                 {
                     if (isAll)
-                        sb.Append("%" + byteToUpper(item, isAll));
+                        sb.Append("%" + ByteToUpper(item, true));
                     else
                         sb.Append(Convert.ToChar(item).ToString());
                 }
                 else if (item == 32)//空格.
                 {
                     if (isAll)
-                        sb.Append("%" + byteToUpper(item, isAll));
+                        sb.Append("%" + ByteToUpper(item, true));
                     else
                         sb.Append('+');
                 }
                 else
                 {
-                    sb.AppendFormat("%{0}", byteToUpper(bytes[i], isUpper));
+                    sb.AppendFormat("%{0}", ByteToUpper(bytes[i], isUpper));
                 }
 
             }
             return sb.ToString();
         }
 
-        private static string byteToUpper(byte item, bool flag)
+        /// <summary>
+        /// 将字节输出为16进制字符
+        /// </summary>
+        /// <param name="item">字节.</param>
+        /// <param name="isUpper">true 大写形式,false 小写形式</param>
+        /// <returns></returns>
+        private static string ByteToUpper(byte item, bool isUpper)
         {
-            return flag == true ? item.ToString("X2") : item.ToString("x2");
+            return isUpper == true ? item.ToString("X2") : item.ToString("x2");
         }
 
 

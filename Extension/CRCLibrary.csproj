@@ -34,7 +34,10 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CrifanLib\crifanLib%27Cookie.cs" />
+    <Compile Include="CrifanLib\crifanLib.cs" />
+    <Compile Include="Security\AesSecurity.cs" />
+    <Compile Include="Class1.cs" />
     <Compile Include="Collections\BinaryTree.cs" />
     <Compile Include="Collections\DoubleKeyDictionary.cs" />
     <Compile Include="Collections\KeyedCollection.cs" />
@@ -62,6 +69,10 @@
     <Compile Include="Extension\CharExtension.cs" />
     <Compile Include="Files\FileDatabase.cs" />
     <Compile Include="Files\FileDatabaseException.cs" />
+    <Compile Include="Security\DesSecurity.cs" />
+    <Compile Include="Security\Md5Security.cs" />
+    <Compile Include="Util\Convert\ConvertResource.cs" />
+    <Compile Include="Util\Convert\ConvertRmb.cs" />
     <Compile Include="Util\ShockForm.cs" />
     <Compile Include="Extension\ColorExtensions.cs" />
     <Compile Include="Extension\DictionaryExtension.cs" />
@@ -84,9 +95,9 @@
     <Compile Include="Util\DateTimeUtil.cs" />
     <Compile Include="Collections\DictionaryColletion.cs" />
     <Compile Include="Util\EncodeUtil.cs" />
-    <Compile Include="Util\EncryptUtil.cs" />
+    <Compile Include="Security\EncryptUtil.cs" />
     <Compile Include="Util\HotKeyUtil.cs" />
-    <Compile Include="Util\Strings\ConvertCode.cs" />
+    <Compile Include="Util\Convert\ConvertCode.cs" />
     <Compile Include="Util\Strings\ObjectID.cs" />
     <Compile Include="Util\Sytems\SystemIconUtil.cs" />
     <Compile Include="Util\Sytems\HotKeyUtil.cs" />

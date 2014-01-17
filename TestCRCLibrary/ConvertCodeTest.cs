@@ -15,7 +15,7 @@ namespace TestCRCLibrary
     {
 
 
-        private TestContext testContextInstance;
+        private TestContext __TestContextInstance;
 
         /// <summary>
         ///获取或设置测试上下文，上下文提供
@@ -25,11 +25,11 @@ namespace TestCRCLibrary
         {
             get
             {
-                return testContextInstance;
+                return __TestContextInstance;
             }
             set
             {
-                testContextInstance = value;
+                __TestContextInstance = value;
             }
         }
 
@@ -82,8 +82,7 @@ namespace TestCRCLibrary
         {
             Separate se = Separate.Bank;
             string expected = " ";
-            string actual;
-            actual = ConvertCode_Accessor.AddSeparate(se);
+            string actual = ConvertCode_Accessor.AddSeparate(se);
             Assert.AreEqual(expected, actual);
 
             se = Separate.None;
@@ -112,8 +111,7 @@ namespace TestCRCLibrary
         {
             byte data = 0;
             string expected = "00000000";
-            string actual;
-            actual = ConvertCode.ByteToBinary(data);
+            string actual = ConvertCode.ByteToBinary(data);
             Assert.AreEqual(expected, actual);
 
             data = 255;
@@ -136,8 +134,7 @@ namespace TestCRCLibrary
             byte[] bytes = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8 };
             Separate se = Separate.Ox;
             string expected = "0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08 ";
-            string actual;
-            actual = ConvertCode.BytesTo16(bytes, se);
+            string actual = ConvertCode.BytesTo16(bytes, se);
             Assert.AreEqual(expected, actual);
 
             se = Separate.OX;
@@ -165,8 +162,7 @@ namespace TestCRCLibrary
             byte[] bytes = new byte[] { 1, 2, 3 };
             Separate se = Separate.None;
             string expected = "000000010000001000000011";
-            string actual;
-            actual = ConvertCode.BytesToBinary(bytes, se);
+            string actual = ConvertCode.BytesToBinary(bytes, se);
             Assert.AreEqual(expected, actual);
 
             se = Separate.Bank;
@@ -194,8 +190,7 @@ namespace TestCRCLibrary
             byte[] bytes = new byte[] { 1, 2, 3 };
             Separate se = new Separate();
 
-            string actual;
-            actual = ConvertCode.BytesToString(bytes, se);
+            string actual = ConvertCode.BytesToString(bytes, se);
             byte[] expected = ConvertCode.StringToBtyes(actual);
             Assert.AreEqual(expected.ArrayAreEqual(bytes), true);
 
@@ -210,8 +205,7 @@ namespace TestCRCLibrary
         {
             string inString = "0X01 0X02 0X03 0X04 0x05 0X06 0X07 0X08 ";
             string expected = "0102030405060708";
-            string actual;
-            actual = ConvertCode_Accessor.DelSeparate(inString);
+            string actual = ConvertCode_Accessor.DelSeparate(inString);
             Assert.AreEqual(expected, actual);
 
         }
@@ -222,10 +216,9 @@ namespace TestCRCLibrary
         [TestMethod()]
         public void HexToBtyesTest()
         {
-            string inSting = "0X01 0X02 0X03 0X04 0x05 0X06 0X07 0X08 "; // TODO: 初始化为适当的值
-            byte[] expected = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8 }; // TODO: 初始化为适当的值
-            byte[] actual;
-            actual = ConvertCode.HexToBtyes(inSting);
+            string inSting = "0X01 0X02 0X03 0X04 0x05 0X06 0X07 0X08 "; 
+            byte[] expected = new byte[] { 1, 2, 3, 4, 5, 6, 7, 8 };
+            byte[] actual = ConvertCode.HexToBtyes(inSting);
 
             Assert.AreEqual(expected.ArrayAreEqual(actual), true);
 
@@ -239,8 +232,7 @@ namespace TestCRCLibrary
         {
             string inSting = ConvertCode.StringToHex("初始化为适当的值", Separate.OX);
             string expected = "初始化为适当的值";
-            string actual;
-            actual = ConvertCode.HexToString(inSting);
+            string actual = ConvertCode.HexToString(inSting);
             Assert.AreEqual(expected, actual);
 
 
@@ -253,8 +245,7 @@ namespace TestCRCLibrary
         public void StringToBtyesTest()
         {
             string inSting = "初始化为适当的值";
-            byte[] actual;
-            actual = ConvertCode.StringToBtyes(inSting);
+            byte[] actual = ConvertCode.StringToBtyes(inSting);
             string text = ConvertCode.BytesToString(actual, Separate.None);
             Assert.AreEqual(text, inSting);
 
@@ -277,10 +268,8 @@ namespace TestCRCLibrary
         {
             string str = "TODO: 初始化为适当的值";
             Separate se = Separate.Bank;
-            string expected = string.Empty;
-            string actual;
-            actual = ConvertCode.StringToHex(str, se);
-            expected = ConvertCode.HexToString(actual);
+            string actual = ConvertCode.StringToHex(str, se);
+            string expected = ConvertCode.HexToString(actual);
 
             Assert.AreEqual(expected, str);
 

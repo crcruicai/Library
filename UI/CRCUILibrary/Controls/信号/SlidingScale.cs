@@ -67,13 +67,13 @@ namespace CRC.Controls
 
         private double scaleRange = 100.0;
         /// <summary>
-        /// The visible range of the scale.
+        /// The Visible range of the scale.
         /// </summary>
         [
             Browsable(true),
             DesignerSerializationVisibility(DesignerSerializationVisibility.Visible),
             Category("Appearance"),
-            Description("The visible range of the scale."),
+            Description("The Visible range of the scale."),
             DefaultValue(typeof(double), "100.0")
         ]
         public double ScaleRange

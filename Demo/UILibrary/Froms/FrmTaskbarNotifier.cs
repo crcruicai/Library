@@ -15,29 +15,29 @@ namespace UILibrary
     /// </summary>
     public partial class FrmTaskbarNotifier : Form
     {
-        PlaceManager manager;
+        readonly PlaceManager _Manager;
         public FrmTaskbarNotifier()
         {
             InitializeComponent();
             taskbarNotifier1 = NewMessageForm();
-            manager = new PlaceManager(10);
+            _Manager = new PlaceManager(10);
         }
 
         void MessageHide(object sender, PlaceIndexEventArgs e)
         {
-            manager.FreePlaceIndex(e.Index);
+            _Manager.FreePlaceIndex(e.Index);
         }
 
         private void DisplayMessage(string strTitle,string strContent)
         {
-            if (taskbarNotifier1.TaskbarState == TaskbarNotifier.TaskbarStates.hidden)//没显示
+            if (taskbarNotifier1.TaskbarState == TaskbarNotifier.TaskbarStates.Hidden)//没显示
             {
-                taskbarNotifier1.Show(strTitle, strContent, manager.GetPlaceIndex());
+                taskbarNotifier1.Show(strTitle, strContent, _Manager.GetPlaceIndex());
             }
             else
             {
                 //New一个新窗口
-                NewMessageForm().Show(strTitle, strContent,manager.GetPlaceIndex());
+                NewMessageForm().Show(strTitle, strContent,_Manager.GetPlaceIndex());
             }
         }
         private TaskbarNotifier NewMessageForm()
@@ -68,19 +68,19 @@ namespace UILibrary
             DisplayMessage("提示", "有新的消息，请注意查收");
         }
 
-        void CloseClick(object obj, EventArgs ea)
+        private void CloseClick(object obj, EventArgs ea)
         {
-            MessageBox.Show("Closed was Clicked");
+            MessageBox.Show(@"Closed was Clicked");
         }
 
-        void TitleClick(object obj, EventArgs ea)
+        private void TitleClick(object obj, EventArgs ea)
         {
-            MessageBox.Show("Title was Clicked");
+            MessageBox.Show(@"Title was Clicked");
         }
 
-        void ContentClick(object obj, EventArgs ea)
+        private void ContentClick(object obj, EventArgs ea)
         {
-            MessageBox.Show("Content was Clicked");
+            MessageBox.Show(@"Content was Clicked");
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -8,50 +8,47 @@ using System.ComponentModel;
 
 namespace CRC.Controls
 {
-    /// <summary><para>保持一个额外的选择“与计数“值的每个项目在列表中。
+    /// <summary>
+    /// <para>保持一个额外的选择“与计数“值的每个项目在列表中。
     /// 有用的CheckBoxComboBox。它保存了一个引用列表[索引]项目是否被选中与否，也提供了计数，</para>
-    /// 
-    /// Maintains an additional "Selected" & "Count" value for each item in a List.
+    /// Maintains an additional "Selected"  "Count" value for each item in a List.
     /// Useful in the CheckBoxComboBox. It holds a reference to the List[Index] Item and 
     /// whether it is selected or not.
     /// It also caters for a Count, if needed.
     /// </summary>
-    /// <typeparam name="TSelectionWrapper"></typeparam>
+    /// <typeparam name="T"></typeparam>
     public class ListSelectionWrapper<T> : List<ObjectSelectionWrapper<T>>
     {
         #region 构造函数.
 
-        /// <summary><para>对象没有属性被指定用于显示目的，就这么简单的ToString（）操作将被执行。并没有计数将显示</para>
-        /// No property on the object is specified for display purposes, so simple ToString() operation 
-        /// will be performed. And no Counts will be displayed
-        /// </summary>
-        public ListSelectionWrapper(IEnumerable source) : this(source, false) { }
         /// <summary><para>对象没有属性被指定用于显示目的，就这么简单的ToString（）操作将被执行。</para>
         /// No property on the object is specified for display purposes, so simple ToString() operation 
         /// will be performed.
         /// </summary>
-        public ListSelectionWrapper(IEnumerable source, bool showCounts)
-            : base()
+        public ListSelectionWrapper(IEnumerable source, bool showCounts = false) : base()
         {
             _Source = source;
             _ShowCounts = showCounts;
-            if (_Source is IBindingList)
-                ((IBindingList)_Source).ListChanged += new ListChangedEventHandler(ListSelectionWrapper_ListChanged);
+            if(_Source is IBindingList)
+                ((IBindingList) _Source).ListChanged += new ListChangedEventHandler(ListSelectionWrapper_ListChanged);
             Populate();
         }
+
         /// <summary><para>显示名称“属性指定的ToString（）将不会被执行的项目，这是特别有用的DataTable中实现的PropertyDescriptor用于读取值的PropertyDescriptor如果没有找到，物业将用于</para>
         /// A Display "Name" property is specified. ToString() will not be performed on items.
         /// This is specifically useful on DataTable implementations, or where PropertyDescriptors are used to read the values.
         /// If a PropertyDescriptor is not found, a Property will be used.
         /// </summary>
-        public ListSelectionWrapper(IEnumerable source, string usePropertyAsDisplayName) : this(source, false, usePropertyAsDisplayName) { }
+        public ListSelectionWrapper(IEnumerable source, string usePropertyAsDisplayName) : this(source, false, usePropertyAsDisplayName)
+        {
+        }
+
         /// <summary><para>显示名称“属性指定的ToString（）将不会被执行的项目，这是特别有用的DataTable中实现的PropertyDescriptor用于读取值的PropertyDescriptor如果没有找到，物业将用于</para>
         /// A Display "Name" property is specified. ToString() will not be performed on items.
         /// This is specifically useful on DataTable implementations, or where PropertyDescriptors are used to read the values.
         /// If a PropertyDescriptor is not found, a Property will be used.
         /// </summary>
-        public ListSelectionWrapper(IEnumerable source, bool showCounts, string usePropertyAsDisplayName)
-            : this(source, showCounts)
+        public ListSelectionWrapper(IEnumerable source, bool showCounts, string usePropertyAsDisplayName) : this(source, showCounts)
         {
             _DisplayNameProperty = usePropertyAsDisplayName;
         }
@@ -64,10 +61,12 @@ namespace CRC.Controls
         /// Is a Count indicator used.
         /// </summary>
         private bool _ShowCounts;
+
         /// <summary><para>原来包裹的值列表的选择“，可能是计数“功能。</para>
         /// The original List of values wrapped. A "Selected" and possibly "Count" functionality is added.
         /// </summary>
         private IEnumerable _Source;
+
         /// <summary><para>用来表示不使用ToString（），但读取此属性，而不是作为一个显示值。</para>
         /// Used to indicate NOT to use ToString(), but read this property instead as a display value.
         /// </summary>
@@ -87,6 +86,7 @@ namespace CRC.Controls
             get { return _DisplayNameProperty; }
             set { _DisplayNameProperty = value; }
         }
+
         /// <summary>
         /// Builds a concatenation list of selected items in the list.
         /// </summary>
@@ -94,16 +94,16 @@ namespace CRC.Controls
         {
             get
             {
-                string Text = "";
-                foreach (ObjectSelectionWrapper<T> Item in this)
-                    if (Item.Selected)
-                        Text += (
-                            string.IsNullOrEmpty(Text)
-                            ? String.Format("\"{0}\"", Item.Name)
-                            : String.Format(" & \"{0}\"", Item.Name));
-                return Text;
+                string text = "";
+                foreach(ObjectSelectionWrapper<T> item in this)
+                {
+                    if(item.Selected)
+                        text += (string.IsNullOrEmpty(text) ? String.Format("\"{0}\"", item.Name) : String.Format(" & \"{0}\"", item.Name));
+                }
+                return text;
             }
         }
+
         /// <summary><para>表示项目显示值（姓名）是否应包括计数。</para>
         /// Indicates whether the Item display value (Name) should include a count.
         /// </summary>
@@ -122,9 +122,10 @@ namespace CRC.Controls
         /// </summary>
         public void ClearCounts()
         {
-            foreach (ObjectSelectionWrapper<T> Item in this)
-                Item.Count = 0;
+            foreach(ObjectSelectionWrapper<T> item in this)
+                item.Count = 0;
         }
+
         /// <summary><para>创建一个ObjectSelectionWrapper项目，需要注意的是子类的构造函数签名是重要的。</para>
         /// Creates a ObjectSelectionWrapper item.
         /// Note that the constructor signature of sub classes classes are important.
@@ -133,26 +134,18 @@ namespace CRC.Controls
         /// <returns></returns>
         private ObjectSelectionWrapper<T> CreateSelectionWrapper(IEnumerator Object)
         {
-            Type[] Types = new Type[] { typeof(T), this.GetType() };
-            ConstructorInfo CI = typeof(ObjectSelectionWrapper<T>).GetConstructor(Types);
-            if (CI == null)
-                throw new Exception(String.Format(
-                              "The selection wrapper class {0} must have a constructor with ({1} Item, {2} Container) parameters.",
-                              typeof(ObjectSelectionWrapper<T>),
-                              typeof(T),
-                              this.GetType()));
-            object[] parameters = new object[] { Object.Current, this };
-            object result = CI.Invoke(parameters);
-            return (ObjectSelectionWrapper<T>)result;
+            Type[] types = new Type[] {typeof(T), this.GetType()};
+            ConstructorInfo ci = typeof(ObjectSelectionWrapper<T>).GetConstructor(types);
+            if(ci == null)
+                throw new Exception(String.Format("The selection wrapper class {0} must have a constructor with ({1} Item, {2} Container) parameters.", typeof(ObjectSelectionWrapper<T>), typeof(T), this.GetType()));
+            object[] parameters = new object[] {Object.Current, this};
+            object result = ci.Invoke(parameters);
+            return (ObjectSelectionWrapper<T>) result;
         }
 
         public ObjectSelectionWrapper<T> FindObjectWithItem(T Object)
         {
-            return Find(new Predicate<ObjectSelectionWrapper<T>>(
-                            delegate(ObjectSelectionWrapper<T> target)
-                            {
-                                return target.Item.Equals(Object);
-                            }));
+            return Find(new Predicate<ObjectSelectionWrapper<T>>(delegate(ObjectSelectionWrapper<T> target) { return target.Item.Equals(Object); }));
         }
 
         /*
@@ -202,6 +195,7 @@ namespace CRC.Controls
             return List.ToArray();
         }
         */
+
         private void Populate()
         {
             Clear();
@@ -209,10 +203,9 @@ namespace CRC.Controls
             for(int Index = 0; Index <= _Source.Count -1; Index++)
                 Add(CreateSelectionWrapper(_Source[Index]));
              */
-            IEnumerator Enumerator = _Source.GetEnumerator();
-            if (Enumerator != null)
-                while (Enumerator.MoveNext())
-                    Add(CreateSelectionWrapper(Enumerator));
+            IEnumerator enumerator = _Source.GetEnumerator();
+            while(enumerator.MoveNext())
+                Add(CreateSelectionWrapper(enumerator));
         }
 
         #endregion
@@ -226,13 +219,13 @@ namespace CRC.Controls
         /// <param name="e"></param>
         private void ListSelectionWrapper_ListChanged(object sender, ListChangedEventArgs e)
         {
-            switch (e.ListChangedType)
+            switch(e.ListChangedType)
             {
                 case ListChangedType.ItemAdded:
-                    Add(CreateSelectionWrapper((IEnumerator)((IBindingList)_Source)[e.NewIndex]));
+                    Add(CreateSelectionWrapper((IEnumerator) ((IBindingList) _Source)[e.NewIndex]));
                     break;
                 case ListChangedType.ItemDeleted:
-                    Remove(FindObjectWithItem((T)((IBindingList)_Source)[e.OldIndex]));
+                    Remove(FindObjectWithItem((T) ((IBindingList) _Source)[e.OldIndex]));
                     break;
                 case ListChangedType.Reset:
                     Populate();

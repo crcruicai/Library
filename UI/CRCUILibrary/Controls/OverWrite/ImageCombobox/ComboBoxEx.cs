@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Windows.Forms;
-using System.Drawing;
-using System.Runtime.InteropServices;
-using System.Drawing.Drawing2D;
 using System.ComponentModel;
+using System.Drawing;
+using System.Drawing.Drawing2D;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 
 namespace CRC.Controls
 {
@@ -17,26 +15,25 @@ namespace CRC.Controls
      */
 
     /// <summary>
-    /// 美化的ComboBox.
+    ///     美化的ComboBox.
     /// </summary>
     [ToolboxBitmap(typeof(ComboBox))]
     public class ComboBoxEx : ComboBox
     {
         #region Fields
 
-        private IntPtr _editHandle;
-        private ControlState _buttonState;
-        private Color _baseColor = Color.FromArgb(51, 161, 224);
-        private Color _borderColor = Color.FromArgb(51, 161, 224);
-        private Color _arrowColor = Color.FromArgb(19, 88, 128);
-        private bool _bPainting;
+        private Color _ArrowColor = Color.FromArgb(19, 88, 128);
+        private bool _BPainting;
+        private Color _BaseColor = Color.FromArgb(51, 161, 224);
+        private Color _BorderColor = Color.FromArgb(51, 161, 224);
+        private ControlState _ButtonState;
+        private IntPtr _EditHandle;
 
         #endregion
 
         #region Constructors
 
         public ComboBoxEx()
-            : base()
         {
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
         }
@@ -45,15 +42,15 @@ namespace CRC.Controls
 
         #region Properties
 
-        [DefaultValue(typeof(Color),"51, 161, 224")]
+        [DefaultValue(typeof(Color), "51, 161, 224")]
         public Color BaseColor
         {
-            get { return _baseColor; }
-            set 
+            get { return _BaseColor; }
+            set
             {
-                if (_baseColor != value)
+                if(_BaseColor != value)
                 {
-                    _baseColor = value;
+                    _BaseColor = value;
                     base.Invalidate();
                 }
             }
@@ -62,12 +59,12 @@ namespace CRC.Controls
         [DefaultValue(typeof(Color), "51, 161, 224")]
         public Color BorderColor
         {
-            get { return _borderColor; }
+            get { return _BorderColor; }
             set
             {
-                if (_borderColor != value)
+                if(_BorderColor != value)
                 {
-                    _borderColor = value;
+                    _BorderColor = value;
                     base.Invalidate();
                 }
             }
@@ -76,12 +73,12 @@ namespace CRC.Controls
         [DefaultValue(typeof(Color), "19, 88, 128")]
         public Color ArrowColor
         {
-            get { return _arrowColor; }
+            get { return _ArrowColor; }
             set
             {
-                if (_arrowColor != value)
+                if(_ArrowColor != value)
                 {
-                    _arrowColor = value;
+                    _ArrowColor = value;
                     base.Invalidate();
                 }
             }
@@ -89,12 +86,12 @@ namespace CRC.Controls
 
         internal ControlState ButtonState
         {
-            get { return _buttonState; }
+            get { return _ButtonState; }
             set
             {
-                if (_buttonState != value)
+                if(_ButtonState != value)
                 {
-                    _buttonState = value;
+                    _ButtonState = value;
                     Invalidate(ButtonRect);
                 }
             }
@@ -102,46 +99,35 @@ namespace CRC.Controls
 
         internal Rectangle ButtonRect
         {
-            get
-            {
-                return GetDropDownButtonRect();
-            }
+            get { return GetDropDownButtonRect(); }
         }
 
         internal bool ButtonPressed
         {
-            get
-            {
-                if (IsHandleCreated)
-                {
-                    return GetComboBoxButtonPressed();
-                }
-                return false;
-            }
+            get { return IsHandleCreated && GetComboBoxButtonPressed(); }
         }
 
         internal IntPtr EditHandle
         {
-            get { return _editHandle; }
+            get { return _EditHandle; }
         }
 
         internal Rectangle EditRect
         {
             get
             {
-                if (DropDownStyle == ComboBoxStyle.DropDownList)
+                if(DropDownStyle == ComboBoxStyle.DropDownList)
                 {
-                    Rectangle rect = new Rectangle(
-                        3, 3, Width - ButtonRect.Width - 6, Height - 6);
-                    if (RightToLeft == RightToLeft.Yes)
+                    var rect = new Rectangle(3, 3, Width - ButtonRect.Width - 6, Height - 6);
+                    if(RightToLeft == RightToLeft.Yes)
                     {
                         rect.X += ButtonRect.Right;
                     }
                     return rect;
                 }
-                if (IsHandleCreated && EditHandle != IntPtr.Zero)
+                if(IsHandleCreated && EditHandle != IntPtr.Zero)
                 {
-                    NativeMethods.RECT rcClient = new NativeMethods.RECT();
+                    var rcClient = new NativeMethods.RECT();
                     NativeMethods.GetWindowRect(EditHandle, ref rcClient);
                     return RectangleToClient(rcClient.Rect);
                 }
@@ -158,14 +144,14 @@ namespace CRC.Controls
             base.OnCreateControl();
 
             NativeMethods.ComboBoxInfo cbi = GetComboBoxInfo();
-            _editHandle = cbi.hwndEdit;
+            _EditHandle = cbi.hwndEdit;
         }
 
         protected override void OnMouseMove(MouseEventArgs e)
         {
             base.OnMouseMove(e);
             Point point = e.Location;
-            if (ButtonRect.Contains(point))
+            if(ButtonRect.Contains(point))
             {
                 ButtonState = ControlState.Hover;
             }
@@ -180,7 +166,7 @@ namespace CRC.Controls
             base.OnMouseEnter(e);
 
             Point point = PointToClient(Cursor.Position);
-            if (ButtonRect.Contains(point))
+            if(ButtonRect.Contains(point))
             {
                 ButtonState = ControlState.Hover;
             }
@@ -201,9 +187,9 @@ namespace CRC.Controls
 
         protected override void WndProc(ref Message m)
         {
-            switch (m.Msg)
+            switch(m.Msg)
             {
-                case (int)NativeMethods.WindowsMessage.WM_PAINT:
+                case (int) NativeMethods.WindowsMessage.WM_PAINT:
                     WmPaint(ref m);
                     break;
                 default:
@@ -218,26 +204,25 @@ namespace CRC.Controls
 
         private void WmPaint(ref Message m)
         {
-            if (base.DropDownStyle == ComboBoxStyle.Simple)
+            if(base.DropDownStyle == ComboBoxStyle.Simple)
             {
                 base.WndProc(ref m);
                 return;
             }
 
-            if (base.DropDownStyle == ComboBoxStyle.DropDown)
+            if(base.DropDownStyle == ComboBoxStyle.DropDown)
             {
-                if (!_bPainting)
+                if(!_BPainting)
                 {
-                    NativeMethods.PAINTSTRUCT ps = 
-                        new NativeMethods.PAINTSTRUCT();
+                    var ps = new NativeMethods.PAINTSTRUCT();
 
-                    _bPainting = true;
+                    _BPainting = true;
                     NativeMethods.BeginPaint(m.HWnd, ref ps);
 
                     RenderComboBox(ref m);
 
                     NativeMethods.EndPaint(m.HWnd, ref ps);
-                    _bPainting = false;
+                    _BPainting = false;
                     m.Result = NativeMethods.TRUE;
                 }
                 else
@@ -258,11 +243,10 @@ namespace CRC.Controls
 
         private void RenderComboBox(ref Message m)
         {
-            Rectangle rect = new Rectangle(Point.Empty, Size);
+            var rect = new Rectangle(Point.Empty, Size);
             Rectangle buttonRect = ButtonRect;
-            ControlState state = ButtonPressed ?
-                ControlState.Pressed : ButtonState;
-            using (Graphics g = Graphics.FromHwnd(m.HWnd))
+            ControlState state = ButtonPressed ? ControlState.Pressed : ButtonState;
+            using(Graphics g = Graphics.FromHwnd(m.HWnd))
             {
                 RenderComboBoxBackground(g, rect, buttonRect);
                 RenderConboBoxDropDownButton(g, ButtonRect, state);
@@ -270,12 +254,10 @@ namespace CRC.Controls
             }
         }
 
-        private void RenderConboBoxBorder(
-            Graphics g, Rectangle rect)
+        private void RenderConboBoxBorder(Graphics g, Rectangle rect)
         {
-            Color borderColor = base.Enabled ?
-                _borderColor : SystemColors.ControlDarkDark;
-            using (Pen pen = new Pen(borderColor))
+            Color borderColor = base.Enabled ? _BorderColor : SystemColors.ControlDarkDark;
+            using(var pen = new Pen(borderColor))
             {
                 rect.Width--;
                 rect.Height--;
@@ -283,18 +265,14 @@ namespace CRC.Controls
             }
         }
 
-        private void RenderComboBoxBackground(
-            Graphics g, 
-            Rectangle rect, 
-            Rectangle buttonRect)
+        private void RenderComboBoxBackground(Graphics g, Rectangle rect, Rectangle buttonRect)
         {
-            Color backColor = base.Enabled ?
-                base.BackColor : SystemColors.Control;
-            using (SolidBrush brush = new SolidBrush(backColor))
+            Color backColor = base.Enabled ? base.BackColor : SystemColors.Control;
+            using(var brush = new SolidBrush(backColor))
             {
                 buttonRect.Inflate(-1, -1);
                 rect.Inflate(-1, -1);
-                using (Region region = new Region(rect))
+                using(var region = new Region(rect))
                 {
                     region.Exclude(buttonRect);
                     region.Exclude(EditRect);
@@ -303,33 +281,26 @@ namespace CRC.Controls
             }
         }
 
-        private void RenderConboBoxDropDownButton(
-            Graphics g, 
-            Rectangle buttonRect, 
-            ControlState state)
+        private void RenderConboBoxDropDownButton(Graphics g, Rectangle buttonRect, ControlState state)
         {
             Color baseColor;
             Color backColor = Color.FromArgb(160, 250, 250, 250);
-            Color borderColor = base.Enabled ?
-                _borderColor : SystemColors.ControlDarkDark;
-            Color arrowColor = base.Enabled ? 
-                _arrowColor : SystemColors.ControlDarkDark;
+            Color borderColor = base.Enabled ? _BorderColor : SystemColors.ControlDarkDark;
+            Color arrowColor = base.Enabled ? _ArrowColor : SystemColors.ControlDarkDark;
             Rectangle rect = buttonRect;
 
-            if (base.Enabled)
+            if(base.Enabled)
             {
-                switch (state)
+                switch(state)
                 {
                     case ControlState.Hover:
-                        baseColor = RenderHelper.GetColor(
-                            _baseColor, 0, -33, -22, -13);
+                        baseColor = RenderHelper.GetColor(_BaseColor, 0, -33, -22, -13);
                         break;
                     case ControlState.Pressed:
-                        baseColor = RenderHelper.GetColor(
-                            _baseColor, 0, -65, -47, -25);
+                        baseColor = RenderHelper.GetColor(_BaseColor, 0, -65, -47, -25);
                         break;
                     default:
-                        baseColor = _baseColor;
+                        baseColor = _BaseColor;
                         break;
                 }
             }
@@ -340,94 +311,63 @@ namespace CRC.Controls
 
             rect.Inflate(-1, -1);
 
-            RenderScrollBarArrowInternal(
-                g,
-                rect,
-                baseColor,
-                borderColor,
-                backColor,
-                arrowColor,
-                RoundStyle.None,
-                true,
-                false,
-                ArrowDirection.Down,
-                LinearGradientMode.Vertical);
+            RenderScrollBarArrowInternal(g, rect, baseColor, borderColor, backColor, arrowColor, RoundStyle.None,
+                true, false, ArrowDirection.Down, LinearGradientMode.Vertical);
         }
 
-        internal void RenderScrollBarArrowInternal(
-           Graphics g,
-           Rectangle rect,
-           Color baseColor,
-           Color borderColor,
-           Color innerBorderColor,
-           Color arrowColor,
-           RoundStyle roundStyle,
-           bool drawBorder,
-           bool drawGlass,
-           ArrowDirection arrowDirection,
-           LinearGradientMode mode)
+        internal void RenderScrollBarArrowInternal(Graphics g, Rectangle rect, Color baseColor, 
+            Color borderColor, Color innerBorderColor, Color arrowColor, RoundStyle roundStyle, 
+            bool drawBorder, bool drawGlass, ArrowDirection arrowDirection, LinearGradientMode mode)
         {
-            RenderHelper.RenderBackgroundInternal(
-               g,
-               rect,
-               baseColor,
-               borderColor,
-               innerBorderColor,
-               roundStyle,
-               0,
-               .45F,
-               drawBorder,
-               drawGlass,
-               mode);
+            RenderHelper.RenderBackgroundInternal(g, rect, baseColor, borderColor, innerBorderColor,
+                roundStyle, 0, .45F, drawBorder, drawGlass, mode);
 
-            using (SolidBrush brush = new SolidBrush(arrowColor))
+            using(var brush = new SolidBrush(arrowColor))
             {
-                RenderArrowInternal(
-                    g,
-                    rect,
-                    arrowDirection,
-                    brush);
+                RenderArrowInternal(g, rect, arrowDirection, brush);
             }
         }
 
-        internal void RenderArrowInternal(
-            Graphics g,
-            Rectangle dropDownRect,
-            ArrowDirection direction,
-            Brush brush)
+        internal void RenderArrowInternal(Graphics g, Rectangle dropDownRect, ArrowDirection direction, Brush brush)
         {
-            Point point = new Point(
-                dropDownRect.Left + (dropDownRect.Width / 2),
-                dropDownRect.Top + (dropDownRect.Height / 2));
+            var point = new Point(dropDownRect.Left + (dropDownRect.Width/2), dropDownRect.Top + (dropDownRect.Height/2));
             Point[] points = null;
-            switch (direction)
+            switch(direction)
             {
                 case ArrowDirection.Left:
-                    points = new Point[] { 
+                    points = new[] 
+                    {
                         new Point(point.X + 2, point.Y - 3), 
                         new Point(point.X + 2, point.Y + 3), 
-                        new Point(point.X - 1, point.Y) };
+                        new Point(point.X - 1, point.Y)
+                    };
                     break;
 
                 case ArrowDirection.Up:
-                    points = new Point[] { 
+                    points = new[] 
+                    {
                         new Point(point.X - 3, point.Y + 2), 
-                        new Point(point.X + 3, point.Y + 2), 
-                        new Point(point.X, point.Y - 2) };
+                        new Point(point.X + 3, point.Y + 2),
+                        new Point(point.X, point.Y - 2)
+                    };
                     break;
 
                 case ArrowDirection.Right:
-                    points = new Point[] {
-                        new Point(point.X - 2, point.Y - 3), 
-                        new Point(point.X - 2, point.Y + 3), 
-                        new Point(point.X + 1, point.Y) };
+                    points = new[]
+                    {
+                        new Point(point.X - 2, point.Y - 3),
+                        new Point(point.X - 2, point.Y + 3),
+                        new Point(point.X + 1, point.Y)
+                    };
                     break;
 
                 default:
-                    points = new Point[] {
+                    points = new[] 
+                    {
                         new Point(point.X - 2, point.Y - 1), 
-                        new Point(point.X + 3, point.Y - 1), 
-                        new Point(point.X, point.Y + 2) };
+                        new Point(point.X + 3, point.Y - 1),
+                        new Point(point.X, point.Y + 2)
+                    };
                     break;
             }
             g.FillPolygon(brush, points);
@@ -439,7 +379,7 @@ namespace CRC.Controls
 
         private NativeMethods.ComboBoxInfo GetComboBoxInfo()
         {
-            NativeMethods.ComboBoxInfo cbi = new NativeMethods.ComboBoxInfo();
+            var cbi = new NativeMethods.ComboBoxInfo();
             cbi.cbSize = Marshal.SizeOf(cbi);
             NativeMethods.GetComboBoxInfo(base.Handle, ref cbi);
             return cbi;
@@ -448,8 +388,7 @@ namespace CRC.Controls
         private bool GetComboBoxButtonPressed()
         {
             NativeMethods.ComboBoxInfo cbi = GetComboBoxInfo();
-            return cbi.stateButton == 
-                NativeMethods.ComboBoxButtonState.STATE_SYSTEM_PRESSED;
+            return cbi.stateButton == NativeMethods.ComboBoxButtonState.STATE_SYSTEM_PRESSED;
         }
 
         private Rectangle GetDropDownButtonRect()

@@ -34,3 +34,13 @@ D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\CRCLibrary_Accessor.pdb
 D:\Documents\GitHub\Library\TestCRCLibrary\obj\Debug\TestCRCLibrary.dll
 D:\Documents\GitHub\Library\TestCRCLibrary\obj\Debug\TestCRCLibrary.pdb
 D:\Documents\GitHub\Library\TestCRCLibrary\obj\Debug\TestCRCLibrary.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\System.Web.Http.dll
+D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\System.Net.Http.dll
+D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\System.Net.Http.Formatting.dll
+D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\System.Web.Http.xml
+D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\System.Net.Http.xml
+D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\System.Net.Http.Formatting.xml
+D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\zh-Hans\System.Web.Http.resources.dll
+D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\zh-Hans\System.Net.Http.resources.dll
+D:\Documents\GitHub\Library\TestCRCLibrary\bin\Debug\zh-Hans\System.Net.Http.Formatting.resources.dll

@@ -12,7 +12,7 @@ namespace UILibrary
 	{
 		#region Variables
 
-		private System.ComponentModel.Container components = null;
+		private System.ComponentModel.Container _Components = null;
 		private Grouper groupBox1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button Visit;
@@ -43,9 +43,9 @@ namespace UILibrary
 		{
 			if( disposing )
 			{
-				if (components != null) 
+				if (_Components != null) 
 				{
-					components.Dispose();
+					_Components.Dispose();
 				}
 			}
 			base.Dispose( disposing );

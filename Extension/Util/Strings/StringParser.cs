@@ -106,6 +106,8 @@ namespace CRC.Util
         /// <param name="strExtract"></param>
         public void ExtractToEnd(ref string strExtract)
         {
+            if(strExtract == null)
+                throw new ArgumentNullException("strExtract");
             strExtract = "";
             if (this.Position < this._Content.Length)
             {

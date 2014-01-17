@@ -8,29 +8,28 @@
  * *******************************************************/
 
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace CRC.Util
 {
     /// <summary>
     /// DateTime 工具.
     /// </summary>
-    public class DateTimeUtil
+    public static class DateTimeUtil
     {
 
         /// <summary>
         /// 获取当前时间的时间戳
+        /// <para>(以UTC时间为准的时间戳)</para>
         /// </summary>
         /// <returns></returns>
         public static Int64 GetValidityNum()
         {
             TimeSpan ts = DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, 0);
-            return Convert.ToInt64(ts.TotalSeconds);// 以UTC时间为准的时间戳
+            return Convert.ToInt64(ts.TotalSeconds);// 
         }
         /// <summary>
         /// 获取指定时间的时间戳.
+        /// <para>(以UTC时间为准的时间戳)</para>
         /// </summary>
         /// <param name="now"></param>
         /// <returns></returns>
@@ -53,10 +52,11 @@ namespace CRC.Util
             DateTime dtResult = dtStart.Add(toNow);
             return dtResult.ToString("yyyy-MM-dd HH:mm:ss");
         }
+
         /// <summary>
         /// 将nuix中的日期格式转换成日期时间
         /// </summary>
-        /// <param name="timestam">传入的时间戳</param>
+        /// <param name="timestamp">传入的时间戳</param>
         /// <returns></returns>
         public static DateTime ConvertToDateTime(long timestamp)
         {

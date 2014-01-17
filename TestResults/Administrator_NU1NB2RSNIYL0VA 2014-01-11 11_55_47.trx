@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d7d0443a-b512-4f4e-a940-ee12e2aaf0d3" name="Administrator@NU1NB2RSNIYL0VA 2014-01-11 11:55:47" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2014-01-11 11_55_47">
+      <DeploymentItem filename="D:\Documents\GitHub\Library\Extension\bin\Debug\CRCLibrary.dll" />
+      <DeploymentItem filename="C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Web.Http.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-11T11:55:47.1592056+08:00" queuing="2014-01-11T11:55:47.2102085+08:00" start="2014-01-11T11:55:47.2142087+08:00" finish="2014-01-11T11:55:47.3582170+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ConvertToUnixofLongTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="dd65379c-b5bb-0d4b-bdec-2057070cdf68">
+      <Execution id="118681c5-2d49-4366-8458-9294bb6c1e38" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.DateTimeUtilTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertToUnixofLongTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="dd65379c-b5bb-0d4b-bdec-2057070cdf68" executionId="118681c5-2d49-4366-8458-9294bb6c1e38" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="118681c5-2d49-4366-8458-9294bb6c1e38" testId="dd65379c-b5bb-0d4b-bdec-2057070cdf68" testName="ConvertToUnixofLongTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0225949" startTime="2014-01-11T11:55:47.2152088+08:00" endTime="2014-01-11T11:55:47.3502165+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="118681c5-2d49-4366-8458-9294bb6c1e38">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;0&gt;，实际为: &lt;1389412547&gt;。</Message>
+          <StackTrace>   在 TestCRCLibrary.DateTimeUtilTest.ConvertToUnixofLongTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\DateTimeUtilTest.cs:行号 133
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

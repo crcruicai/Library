@@ -20,20 +20,16 @@ namespace CRC.Controls
     
     //[ToolboxBitmap("C:\\SearchButton.ico")]
     /// <summary>
-    /// 自动根据文本进行刷选的ComboBox
+    /// 自动根据文本进行刷选Item的ComboBox
     /// <para>可以通过修改委托方法,对自定义对子项进行刷选.</para>
-    /// <para>需要此功能时,请修改属性Fitler</para>
+    /// <para>需要此功能时,请修改属性Fitler委托来指示如何进行刷选item</para>
     /// </summary>
     public class AutoChangComboBox : ComboBox
     {
-        public AutoChangComboBox()
-        {
-
-        }
 
         private FitlerItem  _Fitler;
         /// <summary>
-        /// 指示如何刷新子项的.
+        /// 指示如何刷选子项.
         /// </summary>
         public FitlerItem  Fitler
         {
@@ -53,15 +49,15 @@ namespace CRC.Controls
 
 
         //定义数组
-        private ArrayList m_list = new ArrayList();
+        private readonly ArrayList _List = new ArrayList();
 
         //当控件成为窗体的活动控件时
         protected override void OnEnter(EventArgs e)
         {
             //数组清空
-            m_list.Clear();
+            _List.Clear();
             //将ComboBox中的项追加到数组集合
-            m_list.AddRange(this.Items);
+            _List.AddRange(this.Items);
             //触发父类事件
             base.OnEnter(e);
         }
@@ -72,7 +68,7 @@ namespace CRC.Controls
             //ComboBox的集合清空
             this.Items.Clear();
             //将数组中的项追加到ComboBox
-            this.Items.AddRange(m_list.ToArray());
+            this.Items.AddRange(_List.ToArray());
             //触发父类事件
             base.OnLeave(e);
         }
@@ -85,7 +81,7 @@ namespace CRC.Controls
             {
                 this.Items.RemoveAt(0);
             }
-            foreach (object o in this.m_list)
+            foreach (object o in this._List)
             {
                 if(Fitler(this.Text ,o.ToString ()))
                 {
@@ -106,7 +102,7 @@ namespace CRC.Controls
         /// <param name="souce"></param>
         /// <param name="dest"></param>
         /// <returns></returns>
-        private bool GetFitler(string souce, string dest)
+        private static bool GetFitler(string souce, string dest)
         {
             return GetChineseSpell(dest.ToLower()).Contains(souce.ToLower());
         }
@@ -123,7 +119,7 @@ namespace CRC.Controls
             string myStr = "";
             for (int i = 0; i < len; i++)
             {
-                myStr += getSpell(strText.Substring(i, 1));
+                myStr += GetSpell(strText.Substring(i, 1));
             }
             return myStr;
         }
@@ -134,13 +130,13 @@ namespace CRC.Controls
         /// </summary>
         /// <param name="cnChar"></param>
         /// <returns></returns>
-        static private string getSpell(string cnChar)
+        static private string GetSpell(string cnChar)
         {
-            byte[] arrCN = Encoding.Default.GetBytes(cnChar);
-            if (arrCN.Length > 1)
+            byte[] arrry = Encoding.Default.GetBytes(cnChar);
+            if (arrry.Length > 1)
             {
-                int area = (short)arrCN[0];
-                int pos = (short)arrCN[1];
+                int area = (short)arrry[0];
+                int pos = (short)arrry[1];
                 int code = (area << 8) + pos;
                 int[] areacode = { 45217, 45253, 45761, 46318, 46826, 47010, 47297, 47614, 48119, 48119, 49062, 49324, 49896, 50371, 50614, 50622, 50906, 51387, 51446, 52218, 52698, 52698, 52698, 52980, 53689, 54481 };
                 for (int i = 0; i < 26; i++)

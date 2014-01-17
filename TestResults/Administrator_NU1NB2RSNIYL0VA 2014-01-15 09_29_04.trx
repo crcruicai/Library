@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="680fc761-b113-4441-b6f7-7d50789f1a42" name="Administrator@NU1NB2RSNIYL0VA 2014-01-15 09:29:04" runUser="NU1NB2RSNIYL0VA\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="32b136b7-6e41-488e-8fd0-005393bbd4f8">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="Administrator_NU1NB2RSNIYL0VA 2014-01-15 09_29_04">
+      <DeploymentItem filename="C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET MVC 4\Assemblies\System.Web.Http.dll" />
+      <DeploymentItem filename="D:\Documents\GitHub\Library\Extension\bin\Debug\CRCLibrary.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-01-15T09:29:04.2187017+08:00" queuing="2014-01-15T09:29:04.2867056+08:00" start="2014-01-15T09:29:04.2897057+08:00" finish="2014-01-15T09:29:04.4877171+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="8" executed="8" passed="2" error="0" failed="5" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ConvertTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="a899c629-2e75-b1cc-6916-c7aa32b982cc">
+      <Execution id="da60be4a-27f0-48d2-ad75-6bb42604ea05" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertTest" />
+    </UnitTest>
+    <UnitTest name="CombinUnitTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="17debb2f-7e32-3f4d-6c47-d4e46def01e3">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="953e20dd-119c-4ba1-9e06-a48191313bf6" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CombinUnitTest" />
+    </UnitTest>
+    <UnitTest name="CheckNumberLimitTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="80d21abb-0c59-539c-a7a9-f3570f8e19d1">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="020ec985-7e53-4754-a462-436cbbafd151" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CheckNumberLimitTest" />
+    </UnitTest>
+    <UnitTest name="ConvertIntTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="c063abdd-5618-0174-fe8d-e9a53c34642a">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="34b6c47c-b953-4b79-97e9-c073992e4f3c" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertIntTest" />
+    </UnitTest>
+    <UnitTest name="ConvertTest1" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="e6603af9-bba2-03aa-6fe6-18bddeb02677">
+      <Execution id="7b09b69b-a1d9-43ff-8f78-74982e7682a6" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertTest1" />
+    </UnitTest>
+    <UnitTest name="ConvertDecimalTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="0858e4c8-69fa-d4a0-ce0b-38e7f9361944">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="8653d472-961a-4efb-ac8d-4ffa4f34e3bf" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ConvertDecimalTest" />
+    </UnitTest>
+    <UnitTest name="DigToCCTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="3d085ff4-b758-8c11-6e4b-28c168bb3d0b">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="75198080-e1c3-46e0-bde8-81a42b5dec63" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DigToCCTest" />
+    </UnitTest>
+    <UnitTest name="GetUnitTest" storage="d:\documents\github\library\testcrclibrary\bin\debug\testcrclibrary.dll" id="893405fe-ae42-f18d-4d5d-485c6d7b7aef">
+      <DeploymentItems>
+        <DeploymentItem filename="CRCLibrary.dll" />
+      </DeploymentItems>
+      <Execution id="c34a39c9-4b63-4ec6-b2f3-196f89d3b07e" />
+      <TestMethod codeBase="D:/Documents/GitHub/Library/TestCRCLibrary/bin/Debug/TestCRCLibrary.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestCRCLibrary.ConvertRmbTest, TestCRCLibrary, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetUnitTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0858e4c8-69fa-d4a0-ce0b-38e7f9361944" executionId="8653d472-961a-4efb-ac8d-4ffa4f34e3bf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="17debb2f-7e32-3f4d-6c47-d4e46def01e3" executionId="953e20dd-119c-4ba1-9e06-a48191313bf6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d085ff4-b758-8c11-6e4b-28c168bb3d0b" executionId="75198080-e1c3-46e0-bde8-81a42b5dec63" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="80d21abb-0c59-539c-a7a9-f3570f8e19d1" executionId="020ec985-7e53-4754-a462-436cbbafd151" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="893405fe-ae42-f18d-4d5d-485c6d7b7aef" executionId="c34a39c9-4b63-4ec6-b2f3-196f89d3b07e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a899c629-2e75-b1cc-6916-c7aa32b982cc" executionId="da60be4a-27f0-48d2-ad75-6bb42604ea05" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c063abdd-5618-0174-fe8d-e9a53c34642a" executionId="34b6c47c-b953-4b79-97e9-c073992e4f3c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e6603af9-bba2-03aa-6fe6-18bddeb02677" executionId="7b09b69b-a1d9-43ff-8f78-74982e7682a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8653d472-961a-4efb-ac8d-4ffa4f34e3bf" testId="0858e4c8-69fa-d4a0-ce0b-38e7f9361944" testName="ConvertDecimalTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0421535" startTime="2014-01-15T09:29:04.2917058+08:00" endTime="2014-01-15T09:29:04.4487148+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8653d472-961a-4efb-ac8d-4ffa4f34e3bf">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.ConvertRmbTest.ConvertDecimalTest 引发了异常: 
+System.IndexOutOfRangeException: 索引超出了数组界限。</Message>
+          <StackTrace>   在 CRC.Util.ConvertRmb_Accessor.ConvertDecimal(String decPart)
+   在 TestCRCLibrary.ConvertRmbTest.ConvertDecimalTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\ConvertRmbTest.cs:行号 182
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="953e20dd-119c-4ba1-9e06-a48191313bf6" testId="17debb2f-7e32-3f4d-6c47-d4e46def01e3" testName="CombinUnitTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0051744" startTime="2014-01-15T09:29:04.4497149+08:00" endTime="2014-01-15T09:29:04.4567153+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="953e20dd-119c-4ba1-9e06-a48191313bf6">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。验证此测试方法的正确性。</Message>
+          <StackTrace>   在 TestCRCLibrary.ConvertRmbTest.CombinUnitTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\ConvertRmbTest.cs:行号 124
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="75198080-e1c3-46e0-bde8-81a42b5dec63" testId="3d085ff4-b758-8c11-6e4b-28c168bb3d0b" testName="DigToCCTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0023338" startTime="2014-01-15T09:29:04.4577153+08:00" endTime="2014-01-15T09:29:04.4617156+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="75198080-e1c3-46e0-bde8-81a42b5dec63">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.ConvertRmbTest.DigToCCTest 引发了异常: 
+System.IndexOutOfRangeException: 索引超出了数组界限。</Message>
+          <StackTrace>   在 CRC.Util.ConvertRmb_Accessor.DigToCC(Char c)
+   在 TestCRCLibrary.ConvertRmbTest.DigToCCTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\ConvertRmbTest.cs:行号 152
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="020ec985-7e53-4754-a462-436cbbafd151" testId="80d21abb-0c59-539c-a7a9-f3570f8e19d1" testName="CheckNumberLimitTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0006209" startTime="2014-01-15T09:29:04.4627156+08:00" endTime="2014-01-15T09:29:04.4647157+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="020ec985-7e53-4754-a462-436cbbafd151">
+    </UnitTestResult>
+    <UnitTestResult executionId="c34a39c9-4b63-4ec6-b2f3-196f89d3b07e" testId="893405fe-ae42-f18d-4d5d-485c6d7b7aef" testName="GetUnitTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0016532" startTime="2014-01-15T09:29:04.4657158+08:00" endTime="2014-01-15T09:29:04.4687160+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c34a39c9-4b63-4ec6-b2f3-196f89d3b07e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;&gt;，实际为: &lt;元&gt;。</Message>
+          <StackTrace>   在 TestCRCLibrary.ConvertRmbTest.GetUnitTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\ConvertRmbTest.cs:行号 138
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="da60be4a-27f0-48d2-ad75-6bb42604ea05" testId="a899c629-2e75-b1cc-6916-c7aa32b982cc" testName="ConvertTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0007405" startTime="2014-01-15T09:29:04.4697160+08:00" endTime="2014-01-15T09:29:04.4717161+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da60be4a-27f0-48d2-ad75-6bb42604ea05">
+    </UnitTestResult>
+    <UnitTestResult executionId="34b6c47c-b953-4b79-97e9-c073992e4f3c" testId="c063abdd-5618-0174-fe8d-e9a53c34642a" testName="ConvertIntTest" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0022960" startTime="2014-01-15T09:29:04.4717161+08:00" endTime="2014-01-15T09:29:04.4767164+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="34b6c47c-b953-4b79-97e9-c073992e4f3c">
+      <Output>
+        <ErrorInfo>
+          <Message>测试方法 TestCRCLibrary.ConvertRmbTest.ConvertIntTest 引发了异常: 
+System.IndexOutOfRangeException: 索引超出了数组界限。</Message>
+          <StackTrace>   在 CRC.Util.ConvertRmb_Accessor.ConvertInt(String intPart)
+   在 TestCRCLibrary.ConvertRmbTest.ConvertIntTest() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\ConvertRmbTest.cs:行号 167
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7b09b69b-a1d9-43ff-8f78-74982e7682a6" testId="e6603af9-bba2-03aa-6fe6-18bddeb02677" testName="ConvertTest1" computerName="NU1NB2RSNIYL0VA" duration="00:00:00.0013880" startTime="2014-01-15T09:29:04.4777165+08:00" endTime="2014-01-15T09:29:04.4797166+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7b09b69b-a1d9-43ff-8f78-74982e7682a6">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;壹拾伍万贰仟壹佰肆拾贰元壹分&gt;，实际为: &lt;壹拾伍万贰仟壹佰肆拾贰元贰分&gt;。</Message>
+          <StackTrace>   在 TestCRCLibrary.ConvertRmbTest.ConvertTest1() 位置 D:\Documents\GitHub\Library\TestCRCLibrary\ConvertRmbTest.cs:行号 88
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

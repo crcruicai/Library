@@ -76,7 +76,7 @@ namespace CRC.Controls
 
             //
             /// <summary>
-            ///  Amount of currently visible values (calculated from control width and value spacing)
+            ///  Amount of currently Visible values (calculated from control width and value spacing)
             /// </summary>
             private int visibleValues = 0;
             // Horizontal value space in Pixels
@@ -377,7 +377,7 @@ namespace CRC.Controls
                     DrawAverageLine(g);
                 }
 
-                // Connect all visible values with lines
+                // Connect all Visible values with lines
                 for (int i = 0; i < visibleValues; i++)
                 {
                     currentPoint.X = previousPoint.X - valueSpacing;
@@ -425,7 +425,7 @@ namespace CRC.Controls
                     g.FillRectangle(gradientBrush, baseRectangle);
                 }
 
-                // Draw all visible, vertical gridlines (if wanted)
+                // Draw all Visible, vertical gridlines (if wanted)
                 if (perfChartStyle.ShowVerticalGridLines)
                 {
                     for (int i = Width - gridScrollOffset; i >= 0; i -= GRID_SPACING)
@@ -434,7 +434,7 @@ namespace CRC.Controls
                     }
                 }
 
-                // Draw all visible, horizontal gridlines (if wanted)
+                // Draw all Visible, horizontal gridlines (if wanted)
                 if (perfChartStyle.ShowHorizontalGridLines)
                 {
                     for (int i = 0; i < Height; i += GRID_SPACING)

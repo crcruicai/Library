@@ -28,14 +28,14 @@ namespace CRC.Files
         /// <summary>
         /// 文件数据库操作锁
         /// </summary>
-        protected static readonly object operationLock = new object();
-        private static HashSet<char> invalidFileNameChars;
+        protected static readonly object _OperationLock = new object();
+        private static readonly HashSet<char> _InvalidFileNameChars;
 
         static FileDatabase()
         {
-            invalidFileNameChars = new HashSet<char>() { '\0', ' ', '.', '$', '/', '\\' };
-            foreach (var c in Path.GetInvalidPathChars()) { invalidFileNameChars.Add(c); }
-            foreach (var c in Path.GetInvalidFileNameChars()) { invalidFileNameChars.Add(c); }
+            _InvalidFileNameChars = new HashSet<char>() { '\0', ' ', '.', '$', '/', '\\' };
+            foreach (var c in Path.GetInvalidPathChars()) { _InvalidFileNameChars.Add(c); }
+            foreach (var c in Path.GetInvalidFileNameChars()) { _InvalidFileNameChars.Add(c); }
         }
 
         /// <summary>
@@ -103,7 +103,7 @@ namespace CRC.Files
                 string fileName = GenerateFileFullPath<TDocument>(id);
                 string output = Serialize(document);
 
-                lock (operationLock)
+                lock (_OperationLock)
                 {
                     System.IO.FileInfo info = new System.IO.FileInfo(fileName);
                     System.IO.Directory.CreateDirectory(info.Directory.FullName);
@@ -114,7 +114,7 @@ namespace CRC.Files
             {
                 throw new FileDatabaseException(
                   string.Format(CultureInfo.InvariantCulture,
-                  "Save document failed with id [{0}].", id), ex);
+                  "Save document failed with id [{0}].", id), ex.Message);
             }
 
             return id;
@@ -146,7 +146,7 @@ namespace CRC.Files
             {
                 throw new FileDatabaseException(
                   string.Format(CultureInfo.InvariantCulture,
-                  "Find document by id [{0}] failed.", id), ex);
+                  "Find document by id [{0}] failed.", id), ex.Message);
             }
         }
 
@@ -180,7 +180,7 @@ namespace CRC.Files
             catch (Exception ex)
             {
                 throw new FileDatabaseException(
-                  "Find all documents failed.", ex);
+                  "Find all documents failed.", ex.Message);
             }
         }
 
@@ -199,7 +199,7 @@ namespace CRC.Files
                 string fileName = GenerateFileFullPath<TDocument>(id);
                 if (File.Exists(fileName))
                 {
-                    lock (operationLock)
+                    lock (_OperationLock)
                     {
                         File.Delete(fileName);
                     }
@@ -209,7 +209,7 @@ namespace CRC.Files
             {
                 throw new FileDatabaseException(
                   string.Format(CultureInfo.InvariantCulture,
-                  "Delete document by id [{0}] failed.", id), ex);
+                  "Delete document by id [{0}] failed.", id), ex.Message);
             }
         }
 
@@ -227,7 +227,7 @@ namespace CRC.Files
 
                 foreach (string fileName in files)
                 {
-                    lock (operationLock)
+                    lock (_OperationLock)
                     {
                         File.Delete(fileName);
                     }
@@ -236,7 +236,7 @@ namespace CRC.Files
             catch (Exception ex)
             {
                 throw new FileDatabaseException(
-                  "Delete all documents failed.", ex);
+                  "Delete all documents failed.", ex.Message);
             }
         }
 
@@ -252,19 +252,12 @@ namespace CRC.Files
                 string[] files = System.IO.Directory.GetFiles(
                   GenerateFilePath<TDocument>(),
                   "*." + FileExtension, SearchOption.TopDirectoryOnly);
-                if (files != null)
-                {
-                    return files.Length;
-                }
-                else
-                {
-                    return 0;
-                }
+                return files.Length;
             }
             catch (Exception ex)
             {
                 throw new FileDatabaseException(
-                  "Count all documents failed.", ex);
+                  "Count all documents failed.", ex.Message);
             }
         }
 
@@ -307,11 +300,11 @@ namespace CRC.Files
 
             foreach (char c in id)
             {
-                if (invalidFileNameChars.Contains(c))
+                if (_InvalidFileNameChars.Contains(c))
                 {
                     throw new FileDatabaseException(
                       string.Format(CultureInfo.InvariantCulture,
-                      "The character '{0}' is not a valid file name identifier.", c));
+                      "The character '{0}' is not a valid file name identifier.", c),"");
                 }
             }
 
@@ -410,7 +403,7 @@ namespace CRC.Files
     /// </remarks>
     public class StringWriterWithEncoding : StringWriter
     {
-        private Encoding _encoding;
+        private readonly Encoding _Encoding;
 
         public StringWriterWithEncoding()
             : base() { }
@@ -428,32 +421,32 @@ namespace CRC.Files
         public StringWriterWithEncoding(Encoding encoding)
             : base()
         {
-            _encoding = encoding;
+            _Encoding = encoding;
         }
 
         public StringWriterWithEncoding(IFormatProvider formatProvider, Encoding encoding)
             : base(formatProvider)
         {
-            _encoding = encoding;
+            _Encoding = encoding;
         }
 
         public StringWriterWithEncoding(StringBuilder sb, Encoding encoding)
             : base(sb)
         {
-            _encoding = encoding;
+            _Encoding = encoding;
         }
 
         public StringWriterWithEncoding(StringBuilder sb, IFormatProvider formatProvider, Encoding encoding)
             : base(sb, formatProvider)
         {
-            _encoding = encoding;
+            _Encoding = encoding;
         }
 
         public override Encoding Encoding
         {
             get
             {
-                return (null == _encoding) ? base.Encoding : _encoding;
+                return _Encoding ?? base.Encoding;
             }
         }
     }

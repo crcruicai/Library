@@ -12,17 +12,17 @@ namespace TestCRCLibrary
     {
 
 
-        private TestContext testContextInstance;
+        private TestContext _TestContextInstance;
 
         public TestContext TestContext
         {
             get
             {
-                return testContextInstance;
+                return _TestContextInstance;
             }
             set
             {
-                testContextInstance = value;
+                _TestContextInstance = value;
             }
         }
 

@@ -16,7 +16,7 @@ namespace TestCRCLibrary
     {
 
 
-        private TestContext testContextInstance;
+        private TestContext _TestContextInstance;
 
         /// <summary>
         ///获取或设置测试上下文，上下文提供
@@ -26,11 +26,11 @@ namespace TestCRCLibrary
         {
             get
             {
-                return testContextInstance;
+                return _TestContextInstance;
             }
             set
             {
-                testContextInstance = value;
+                _TestContextInstance = value;
             }
         }
 
